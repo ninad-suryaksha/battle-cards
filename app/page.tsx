@@ -1,4 +1,5 @@
 import { BattleCard, type BattleCardProps } from "@/components/battle-card"
+import { PdfDownloadButton } from "@/components/pdf-download-button"
 
 const cardData: BattleCardProps[] = [
   {
@@ -4107,6 +4108,7 @@ export default function Home() {
 
   return (
     <main className="bg-gray-50 min-h-screen w-full p-4 sm:p-8">
+      <PdfDownloadButton />
       <div className="max-w-[1320px] mx-auto">
         <h1 className="text-4xl font-bold text-center mb-8">1. Bonding</h1>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
