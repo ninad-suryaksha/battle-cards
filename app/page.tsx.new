@@ -1,0 +1,101 @@
+"use client";
+
+import { BattleCard, type BattleCardProps } from "@/components/battle-card"
+import { PdfDownloadButton } from "@/components/pdf-download-button"
+import { SectionNavigator } from "@/components/section-navigator"
+
+// All the existing card data definitions go here
+// We're keeping the same card data but restructuring the main component's JSX
+
+export default function Home() {
+  // All the card data declarations go here (preserved from original file)
+  
+  // Create an array of section IDs for navigation
+  const sectionIds = [
+    "section-bonding",
+    "section-strategy-by-design",
+    "section-mindfulness",
+    "section-barnett-strategy",
+    "section-barnett-strategy-2",
+    "section-sorensen-strategy",
+    "section-levav-thinking",
+    "section-peter-silicon-valley",
+    "section-demarzo-finance",
+    "section-levav-choice",
+    "section-zoom-eric-yuan",
+    "section-sorensen-strategy-2",
+    "section-barnett-growth",
+    "section-lowry-lego",
+    "section-strategic-comm",
+    "section-presentation-mastery",
+    "section-acting-with-power",
+    "section-financial-statements",
+    "section-barnett-leading",
+    "section-ai-ml",
+    "section-finance-npv",
+    "section-valuation-strategic-finance",
+    "section-finance",
+    "section-value-creation-capture",
+    "section-performing-with-power",
+    "section-power-exec-presence",
+    "section-game-theory",
+    "section-culture",
+    "section-sustainable-enterprise",
+    "section-self-awareness",
+    "section-creativity-workout",
+    "section-tata-political-risk",
+    "section-sorensen-strategy-mapping",
+    "section-sorensen-strategy-formulation",
+    "section-building-ai-agents",
+    "section-wesley-marketing",
+    "section-netflix-pivoting",
+    "section-ai-ethics",
+    "section-humor",
+    "section-crisis",
+    "section-aaa-value-chain",
+    "section-value-chain-innovation",
+  ];
+
+  return (
+    <main className="bg-gray-50 min-h-screen w-full p-4 sm:p-8">
+      <PdfDownloadButton />
+      <SectionNavigator sectionIds={sectionIds} initialSection={0} />
+      <div className="max-w-[1320px] mx-auto">
+        {/* Each section will be wrapped in a proper section tag with ID */}
+        
+        {/* Section 1: Bonding */}
+        <section id="section-bonding">
+          <h1 className="text-4xl font-bold text-center mb-8">1. Bonding</h1>
+          <div className="flex flex-wrap justify-center items-stretch gap-8">
+            {/* Content here */}
+          </div>
+        </section>
+        
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        
+        {/* Section 2: Strategy By Design */}
+        <section id="section-strategy-by-design">
+          <h2 className="text-3xl font-bold text-center mb-8">2. Discovering Stratergy By Design</h2>
+          <div className="flex flex-wrap justify-center items-stretch gap-8">
+            {/* Content here */}
+          </div>
+        </section>
+        
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        
+        {/* Section 3: Mindfulness */}
+        <section id="section-mindfulness">
+          <h2 className="text-3xl font-bold text-center mb-8">3. Mindfulness</h2>
+          <div className="flex flex-wrap justify-center items-stretch gap-8">
+            {/* Content here */}
+          </div>
+        </section>
+        
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        
+        {/* And so on for all other sections... */}
+        
+      </div>
+    </main>
+  )
+} 
