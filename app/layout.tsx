@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
 import './globals.css'
+import '../styles/sf-pro.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Battle Cards',
+  description: 'Battle Cards App',
   generator: 'v0.dev',
 }
 
@@ -17,13 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
-        `}</style>
+        {/* SF Pro font is now imported from the CSS file */}
       </head>
       <body>{children}</body>
     </html>

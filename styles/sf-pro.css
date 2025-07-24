@@ -1,0 +1,44 @@
+/* SF Pro Font */
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+/* SF Pro Text */
+@import url("https://fonts.cdnfonts.com/css/sf-pro-text");
+
+/* SF Pro Rounded */
+@import url("https://fonts.cdnfonts.com/css/sf-pro-rounded");
+
+/* SF Mono for code */
+@import url("https://fonts.cdnfonts.com/css/sf-mono");
+
+/* Apply SF Pro to all elements */
+* {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui,
+    sans-serif;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: "SF Mono", SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, system-ui,
+    sans-serif;
+  font-weight: 600;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, system-ui,
+    sans-serif;
+}

@@ -11,6 +11,11 @@ const config = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      sans: ['"SF Pro Display"', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+      serif: ['"SF Pro Display"', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'serif'],
+      mono: ['SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+    },
     container: {
       center: true,
       padding: "2rem",
