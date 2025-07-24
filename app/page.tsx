@@ -1,5 +1,6 @@
 import { BattleCard, type BattleCardProps } from "@/components/battle-card"
 import { PdfDownloadButton } from "@/components/pdf-download-button"
+import { SectionNavigator } from "@/components/section-navigator"
 
 const cardData: BattleCardProps[] = [
   {
@@ -4106,18 +4107,69 @@ export default function Home() {
     },
   ];
 
+  // Create an array of section IDs for navigation
+  const sectionIds = [
+    "section-bonding",
+    "section-strategy-by-design",
+    "section-mindfulness",
+    "section-barnett-strategy",
+    "section-barnett-strategy-2",
+    "section-sorensen-strategy",
+    "section-levav-thinking",
+    "section-peter-silicon-valley",
+    "section-demarzo-finance",
+    "section-levav-choice",
+    "section-zoom-eric-yuan",
+    "section-sorensen-strategy-2",
+    "section-barnett-growth",
+    "section-lowry-lego",
+    "section-strategic-comm",
+    "section-presentation-mastery",
+    "section-acting-with-power",
+    "section-financial-statements",
+    "section-barnett-leading",
+    "section-ai-ml",
+    "section-finance-npv",
+    "section-valuation-strategic-finance",
+    "section-finance",
+    "section-value-creation-capture",
+    "section-performing-with-power",
+    "section-power-exec-presence",
+    "section-game-theory",
+    "section-culture",
+    "section-sustainable-enterprise",
+    "section-self-awareness",
+    "section-creativity-workout",
+    "section-tata-political-risk",
+    "section-sorensen-strategy-mapping",
+    "section-sorensen-strategy-formulation",
+    "section-building-ai-agents",
+    "section-wesley-marketing",
+    "section-netflix-pivoting",
+    "section-ai-ethics",
+    "section-humor",
+    "section-crisis",
+    "section-aaa-value-chain",
+    "section-value-chain-innovation",
+  ];
+
   return (
     <main className="bg-gray-50 min-h-screen w-full p-4 sm:p-8">
       <PdfDownloadButton />
+      <SectionNavigator sectionIds={sectionIds} initialSection={0} />
       <div className="max-w-[1320px] mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8">1. Bonding</h1>
+        <section id="section-bonding">
+          <h1 className="text-4xl font-bold text-center mb-8">1. Bonding</h1>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {cardData.slice(0, 7).map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">2. Discovering Stratergy By Design</h2>
+        <section id="section-strategy-by-design">
+          <h2 className="text-3xl font-bold text-center mb-8">2. Discovering Stratergy By Design</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {section2Cards.map((card, index) => (
             <BattleCard key={index} {...card} />
@@ -4128,279 +4180,361 @@ export default function Home() {
             <BattleCard key={index + 7} {...card} />
           ))}
         </div>
+        </section>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">3. Mindfulness</h2>
+        <section id="section-mindfulness">
+          <h2 className="text-3xl font-bold text-center mb-8">3. Mindfulness</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {mindfulnessCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Barnett - Strategy by Design</h2>
+        <section id="section-barnett-strategy">
+          <section id="section-barnett-strategy-2">
+          <h2 className="text-3xl font-bold text-center mb-8">Barnett - Strategy by Design</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {barnettCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Barnett - Strategy by Design</h2>
+        <section id="section-barnett-strategy">
+          <section id="section-barnett-strategy-2">
+          <h2 className="text-3xl font-bold text-center mb-8">Barnett - Strategy by Design</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {barnett2Cards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Sorensen - Strategy</h2>
+        <section id="section-sorensen-strategy">
+          <h2 className="text-3xl font-bold text-center mb-8">Sorensen - Strategy</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {sorensenCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Jonathan Levav: Thinking inside the box</h2>
+        <section id="section-levav-thinking">
+          <h2 className="text-3xl font-bold text-center mb-8">Jonathan Levav: Thinking inside the box</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {levavCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Peter - Secrets of silicon valley</h2>
+        <section id="section-peter-silicon-valley">
+          <h2 className="text-3xl font-bold text-center mb-8">Peter - Secrets of silicon valley</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {peterCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Demarzo - Finance</h2>
+        <section id="section-demarzo-finance">
+          <h2 className="text-3xl font-bold text-center mb-8">Demarzo - Finance</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {demarzoCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Jonathan Levav: Choice Architecture</h2>
+        <section id="section-levav-choice">
+          <h2 className="text-3xl font-bold text-center mb-8">Jonathan Levav: Choice Architecture</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {levavChoiceCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Zoom: Eric Yuan</h2>
+        <section id="section-zoom-eric-yuan">
+          <h2 className="text-3xl font-bold text-center mb-8">Zoom: Eric Yuan</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {zoomCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Sorensen: Strategy II</h2>
+        <section id="section-sorensen-strategy-2">
+          <h2 className="text-3xl font-bold text-center mb-8">Sorensen: Strategy II</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {sorensen2Cards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Barnett on Growth by Design</h2>
+        <section id="section-barnett-growth">
+          <h2 className="text-3xl font-bold text-center mb-8">Barnett on Growth by Design</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {barnettGrowthCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Brian Lowry: LEGO Activity</h2>
+        <section id="section-lowry-lego">
+          <h2 className="text-3xl font-bold text-center mb-8">Brian Lowry: LEGO Activity</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {lowryLegoCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Strategic Communication</h2>
+        <section id="section-strategic-comm">
+          <h2 className="text-3xl font-bold text-center mb-8">Strategic Communication</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {strategicCommCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Presentation Mastery</h2>
+        <section id="section-presentation-mastery">
+          <h2 className="text-3xl font-bold text-center mb-8">Presentation Mastery</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {presentationMasteryCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Acting with Power</h2>
+        <section id="section-acting-with-power">
+          <h2 className="text-3xl font-bold text-center mb-8">Acting with Power</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {actingWithPowerCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Financial Statements</h2>
+        <section id="section-financial-statements">
+          <h2 className="text-3xl font-bold text-center mb-8">Financial Statements</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {financialStatementsCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Barnett: Leading by Design</h2>
+        <section id="section-barnett-leading">
+          <h2 className="text-3xl font-bold text-center mb-8">Barnett: Leading by Design</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {barnettLeadingCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">AI & Machine Learning Demystified</h2>
+        <section id="section-ai-ml">
+          <h2 className="text-3xl font-bold text-center mb-8">AI & Machine Learning Demystified</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {aiMlCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Finance NPV DCF</h2>
+        <section id="section-finance-npv">
+          <h2 className="text-3xl font-bold text-center mb-8">Finance NPV DCF</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {financeNpvDcfCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Valuation and Strategic Finance</h2>
+        <section id="section-valuation-strategic-finance">
+          <h2 className="text-3xl font-bold text-center mb-8">Valuation and Strategic Finance</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {valuationStrategicFinanceCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Finance</h2>
+        <section id="section-finance">
+          <h2 className="text-3xl font-bold text-center mb-8">Finance</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {financeCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Value Creation vs. Value Capture</h2>
+        <section id="section-value-creation-capture">
+          <h2 className="text-3xl font-bold text-center mb-8">Value Creation vs. Value Capture</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {valueCreationCaptureCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Performing with Power</h2>
+        <section id="section-performing-with-power">
+          <h2 className="text-3xl font-bold text-center mb-8">Performing with Power</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {performingWithPowerCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Power & Executive Presence v2</h2>
+        <section id="section-power-exec-presence">
+          <h2 className="text-3xl font-bold text-center mb-8">Power & Executive Presence v2</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {powerExecPresenceCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Game Theory</h2>
+        <section id="section-game-theory">
+          <h2 className="text-3xl font-bold text-center mb-8">Game Theory</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {gameTheoryCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Culture</h2>
+        <section id="section-culture">
+          <h2 className="text-3xl font-bold text-center mb-8">Culture</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {cultureCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Purpose, Profit, and the Sustainable Enterprise</h2>
+        <section id="section-sustainable-enterprise">
+          <h2 className="text-3xl font-bold text-center mb-8">Purpose, Profit, and the Sustainable Enterprise</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {sustainableEnterpriseCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Self-Awareness</h2>
+        <section id="section-self-awareness">
+          <h2 className="text-3xl font-bold text-center mb-8">Self-Awareness</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {selfAwarenessCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Creativity Workout: Dan - Play</h2>
+        <section id="section-creativity-workout">
+          <h2 className="text-3xl font-bold text-center mb-8">Creativity Workout: Dan - Play</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {creativityWorkoutCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Political risk: Tata Case Study</h2>
+        <section id="section-tata-political-risk">
+          <h2 className="text-3xl font-bold text-center mb-8">Political risk: Tata Case Study</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {tataPoliticalRiskCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Sorensen: Strategy Mapping</h2>
+        <section id="section-sorensen-strategy-mapping">
+          <h2 className="text-3xl font-bold text-center mb-8">Sorensen: Strategy Mapping</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {sorensenStrategyMappingCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Sorensen - strategy formulation</h2>
+        <section id="section-sorensen-strategy-formulation">
+          <h2 className="text-3xl font-bold text-center mb-8">Sorensen - strategy formulation</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {sorensenStrategyFormulationCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Building Reliable AI Agents with Prof. Monica Lam</h2>
+        <section id="section-building-ai-agents">
+          <h2 className="text-3xl font-bold text-center mb-8">Building Reliable AI Agents with Prof. Monica Lam</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {buildingReliableAIAgentsCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Wesley - Introduction to marketing</h2>
+        <section id="section-wesley-marketing">
+          <h2 className="text-3xl font-bold text-center mb-8">Wesley - Introduction to marketing</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {wesleyMarketingCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Netflix & The Art of Strategic Pivoting</h2>
+        <section id="section-netflix-pivoting">
+          <h2 className="text-3xl font-bold text-center mb-8">Netflix & The Art of Strategic Pivoting</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {netflixStrategicPivotingCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">AI Ethics</h2>
+        <section id="section-ai-ethics">
+          <h2 className="text-3xl font-bold text-center mb-8">AI Ethics</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {aiEthicsCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Humor</h2>
+        <section id="section-humor">
+          <h2 className="text-3xl font-bold text-center mb-8">Humor</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {humorCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">Crisis</h2>
+        <section id="section-crisis">
+          <h2 className="text-3xl font-bold text-center mb-8">Crisis</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {crisisCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">AAA Value Chain</h2>
+        <section id="section-aaa-value-chain">
+          <h2 className="text-3xl font-bold text-center mb-8">AAA Value Chain</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {aaaValueChainCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
         <h2 className="text-3xl font-bold text-center mb-8">Value chain innovation</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
@@ -4408,6 +4542,7 @@ export default function Home() {
             <BattleCard key={index} {...card} />
           ))}
         </div>
+        </section>
         <hr className="my-10 border-t border-gray-300 w-full" />
       </div>
     </main>
