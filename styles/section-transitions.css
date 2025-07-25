@@ -1,0 +1,79 @@
+/* Section transition animations */
+section {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+/* Initial state for sections when they're hidden */
+section[style*="display: none"] {
+  position: absolute;
+  opacity: 0;
+  transform: translateX(-20px);
+  pointer-events: none;
+}
+
+/* Animation for sections becoming visible */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to sections when they become visible */
+section[style*="display: block"] {
+  animation-name: fadeInRight;
+  position: relative;
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/* Style for the navigator */
+.section-navigator {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.section-navigator:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Smooth animation for dot indicators */
+.section-indicator {
+  transition: all 0.2s ease;
+}
+
+.section-indicator.active {
+  transform: scale(1.5);
+}
+
+/* Navigation buttons hover effect */
+.nav-button {
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+/* Fullscreen mode for sections */
+.fullscreen-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 100;
+  padding: 2rem;
+  overflow-y: auto;
+}

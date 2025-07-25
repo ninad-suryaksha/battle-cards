@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import '../styles/sf-pro.css'
+import '../styles/section-transitions.css'
 
 export const metadata: Metadata = {
   title: 'Battle Cards',
