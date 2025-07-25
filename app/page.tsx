@@ -1,6 +1,8 @@
 import { BattleCard, type BattleCardProps } from "@/components/battle-card"
 import { PdfDownloadButton } from "@/components/pdf-download-button"
 
+// --- Card data arrays (copied from backup) ---
+
 const cardData: BattleCardProps[] = [
   {
     title: "Drowning in Context",
@@ -164,6 +166,5042 @@ const cardData: BattleCardProps[] = [
     },
   },
 ]
+
+const section2Cards: BattleCardProps[] = [
+  {
+    title: "Bad at Predicting, Great at Rationalizing",
+    titleEmoji: "🧩",
+    what: {
+      point:
+        "Our gut feelings about the future are unreliable, and our memory is a dangerous storyteller that creates neat narratives where there was only chaos and luck.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Google: The \"greatest business model in commerce\" was rejected by VCs. Its monetization strategy was invented by an acquired company (Overture), not by its founders or investors.",
+        "Apple: Steve Jobs explicitly forbade \"gadgets\" after the Newton failed. The iTunes store was launched into a \"dead\" music market, and its wild success was a complete surprise that forced the company to change its identity.",
+        "\"Monday Morning Quarterback\": Every culture has a term for this. It's easy to be a genius about Sunday's game on Monday. In business, this is a destructive habit that prevents us from learning from the messy reality of decision-making under uncertainty.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Run a \"Pre-Mortem\": Before a big decision, force the team to imagine it has already failed and write down all the reasons why. This combats optimism bias.",
+        "Document Decisions & Rationale: Keep a simple log of *why* a decision was made with the information available *at that time*. Review it later to see what you missed, not to assign blame.",
+        "Ask \"What Did We Learn?\": After every project (success or failure), make the first question in the retro \"What did we learn that we didn't know before?\" instead of \"What went wrong?\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Strategy is the Logic of Why You Might Win",
+    titleEmoji: "🧠",
+    what: {
+      point:
+        "Strategy is not a 50-page plan; it's a simple, communicable, and testable hypothesis about how your actions will lead to victory.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The Economist: The magazine's initial logic was about quality content. They *discovered* the true, more powerful logic was about status—people paid to be *seen* carrying the print magazine. Understanding this logic changes everything.",
+        "Apple's 2001 Logic: The initial logic was: 'We will create software so compelling (movies) that people will be forced to buy our desktop computers.' This logic was clear, testable, and ultimately proven wrong, but it guided their actions and allowed them to learn.",
+        "Clarity = Action: When the logic is simple, everyone in the company can understand it and use it to make their own decisions, creating alignment without constant oversight.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Distill to One Sentence: Force yourself to articulate your company's strategy in a single sentence: 'We will win by [Our Unique Approach] because it allows [Our Target Customer] to [Achieve a Core Outcome].'",
+        "Test the Logic: Ask your team members, from engineering to sales, to state the company's strategy. If the answers are inconsistent, the logic isn't clear enough.",
+        "Connect Actions to Logic: In every product meeting, ask: 'How does this feature directly support or test the core logic of why we will win?'",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Leader as Chief Sense-Maker",
+    titleEmoji: "🦸",
+    what: {
+      point:
+        "Your most critical role is not to have all the answers, but to interpret unexpected events and help your team understand what they mean for your strategy.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "NetApp CEO: A salesperson broke the rules but discovered a massive new market. Instead of punishing him, the CEO publicly praised him, saying he was listening to the *real* strategy. This single act of sense-making taught the entire company more than any memo ever could.",
+        "Apple's 'Hell Froze Over': When Apple opened iTunes to Windows, it violated a core company belief. Jobs had to get on stage and *explain* what this event meant for the company's future. He was making sense of a shocking change.",
+        "Data Doesn't Speak for Itself: 10 million downloads on the iTunes store was just a number. It required a leader to say, 'This number means we are no longer just a computer company.'",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Leverage Surprises: The next time something unexpected happens (a marketing campaign flops, a customer uses a feature in a weird way), immediately frame it for the team. 'Here's what I think this means for us...'",
+        "Reward Valuable Discovery: Find someone who deviated from the plan but generated a valuable insight. Publicly reward them and tell the story of *why* their discovery was more important than their process.",
+        "Narrate the Journey: In all-hands meetings, connect the dots for the team looking backward. 'Remember when we tried X and it failed? That taught us Y, which is why we are now doing Z.'",
+      ],
+      emoji: "⚙️",
+    },
+  },
+]
+
+const section3Cards: BattleCardProps[] = [
+  {
+    title: "The Obstacle Is You",
+    titleEmoji: "🧘",
+    what: {
+      point: "The biggest barrier to clear thinking and effective leadership is the internal 'craziness' and anxiety we actively avoid confronting.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "When you try to quiet down, the first thing you meet is your own unexamined mind, which is often 'not pretty.' This is why so many people start and stop meditation.",
+        "Avoiding this self-confrontation causes us to hide in culturally-accepted values (hyper-competition, wealth) instead of developing our own character.",
+        "You don't get to choose 'not crazy,' you only get to choose your flavor. Acknowledging this is the first step toward conscious leadership.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Schedule 10 minutes of 'do nothing' time into your calendar daily. No phone, no podcasts, just sit.",
+        "When feeling overwhelmed by a decision, ask: 'What part of my *own thinking* is creating this stress?'",
+        "End your day by journaling for 5 minutes on one thing that made you anxious, simply observing the thought without trying to solve it.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Attention is Your Most Valuable Asset",
+    titleEmoji: "🎯",
+    what: {
+      point: "Your ability to consciously direct your attention is the foundational skill for all high-stakes decision-making, innovation, and meaningful relationships.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "When we lose our center (like the professor's partner on the freeway), our decision-making ability is 'obliterated.' Practicing when calm makes the skill available during a crisis.",
+        "Technology hijacks our evolutionary wiring, which is attuned to 'newness and threat,' pulling our attention away from what is truly important.",
+        "The most critical use of your attention is nourishing the people you love by being present. This same skill applies to your team, co-founders, and investors.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Declare the first and last 10 minutes of every important meeting a 'no-device zone' to ensure full presence.",
+        "Practice single-tasking. Block 60-minute 'focus blocks' where you close all tabs and applications not related to the one task at hand.",
+        "When you walk in the door at home, physically put your phone in a drawer for the first 15 minutes to practice being present with family.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Close The File Before Opening a New One",
+    titleEmoji: "📁",
+    what: {
+      point: "Constantly switching between tasks without a deliberate pause degrades focus and trains your brain to be in a reactive, habit-driven state rather than a conscious, strategic one.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The habit of immediately checking your phone the second a meeting ends is 'corrosive to your well-being.'",
+        "The goal is to retain *choice* over where your attention goes next, rather than being compulsively pulled by an addiction to distraction.",
+        "A 10-second pause is enough to move from being a 'habit-bound addict' to a leader who is consciously deciding 'What's needed now?'",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "After finishing a call or meeting, take 3 deep, slow breaths before turning to your email or Slack.",
+        "Before switching from a strategic task (e.g., editing your pitch deck) to a tactical one (e.g., checking notifications), stand up and look out a window for 60 seconds.",
+        "Verbally state your intention for your next block of time: 'Okay, I am now choosing to focus on reviewing the financial model.'",
+      ],
+      emoji: "⚙️",
+    },
+  },
+]
+
+const barnettCards: BattleCardProps[] = [
+  {
+    title: "The Power of Irreplaceability",
+    titleEmoji: "🔗",
+    what: {
+      point: "True, sustainable market power stems from being irreplaceable to your customer, not from your company's size or scale.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The core case study showed Jerry Fiddler's two-person company forcing General Electric, a global titan, to change its entire internal development platform.",
+        "Fiddler had no coercive power but possessed immense *reciprocal power* because GE *needed* his superior product to succeed in its own multi-billion dollar digitization strategy.",
+        "This irreplaceability was a direct result of having the 'whole product' that perfectly solved the customer's high-stakes problem.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Obsess over a critical customer problem that, if you solve it better than anyone, makes you a dependency for their success.",
+        "Codify your unique expertise into a product or service that is demonstrably superior, not just incrementally better.",
+        "Resist the temptation to compromise your product's integrity for a large customer if it undermines your core value proposition.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Go Horizontal One Vertical at a Time",
+    titleEmoji: "↔️",
+    what: {
+      point: "To successfully capture a broad horizontal market, you must first systematically dominate a series of specific, narrow vertical markets.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Attempting to go wide immediately dilutes focus, masks failure signals, and prevents the development of deep, domain-specific knowledge.",
+        "Dominating a single vertical creates high-status 'reference customers.' New customers adopt your product not just on its merits, but because a trusted leader in their field already has.",
+        "This approach builds a strong, authentic market identity, moving you from an 'unknown Australian firm' to 'the expert in North American road tolling,' for example.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Define your initial vertical with extreme precision. Focus on a single industry, geography, or use case.",
+        "Focus all resources on winning a 'reference sale' in that vertical—the customer whose adoption will validate you to the rest of the market.",
+        "Use the knowledge and identity from the first vertical to create a playbook for entering and dominating the next adjacent vertical.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Red Queen Competition Creates Strength",
+    titleEmoji: "👑",
+    what: {
+      point: "Actively seeking and engaging with intense competition is a long-term advantage that builds organizational fitness, not a threat to be avoided.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Competition generates change, not equilibrium. The 'Red Queen' effect means you have to run faster and faster just to stay in the same place, forcing continuous improvement.",
+        "A competitor's solution becomes your new problem, forcing your team to develop superior capabilities. Survivors of fierce competition are far stronger than monopolists.",
+        "The popular 'Blue Ocean' strategy of seeking uncontested markets can lead to complacency and weakness when a competitor inevitably arrives.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Reframe your mindset: View your toughest competitors as your most valuable (and free) personal trainers.",
+        "Systematically study competitors' solutions. Don't just look at their features; understand the problems they solved and use that to define your next, harder problem to solve.",
+        "Instill a 'growth mindset' culture where competitive challenges are seen as opportunities to learn and innovate, not as threats to survival.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Discover the 'Whole Product' via Consulting as R&D",
+    titleEmoji: "🧑‍💻",
+    what: {
+      point: "The truly valuable 'whole product' is rarely obvious at the start; it is discovered through an intense process of solving diverse, high-stakes problems for a curated set of initial customers.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Jerry Fiddler didn't start with a product spec. He acted as a consultant for NASA, the NFL, and Francis Ford Coppola—wildly different clients with the same underlying technical need.",
+        "This deep, varied engagement was essentially R&D. It revealed the universal features and capabilities required for the final, scalable embedded OS product.",
+        "This process ensures you are building something the market desperately needs, because your 'consulting' fees are a direct measure of their pain.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify 3-5 potential customers in different verticals who all share a similar, painful core problem.",
+        "Treat these early engagements as paid R&D projects. Frame it as a partnership to build a custom solution, even if your goal is to distill a scalable product from it.",
+        "Debrief after each engagement to distill patterns and identify the common, high-value features that must be in the 'whole product.'",
+      ],
+      emoji: "⚙️",
+    },
+  },
+]
+
+const barnett2Cards: BattleCardProps[] = [
+  {
+    title: "The Innovator's Matrix: Consensus vs. Conviction",
+    titleEmoji: "🧮",
+    what: {
+      point: "The value of an idea is independent of its consensus, but its path to success is dictated by it.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "An idea can be Right + Consensus (easy to fund, but low value capture), Right + Non-Consensus (hardest path, highest potential reward), Wrong + Consensus (groupthink failure), or Wrong + Non-Consensus (the lone fool).",
+        "Because innovative ideas lack prior evidence by definition, you can't *know* if you are right. You only learn whether the idea has consensus.",
+        "The market rewards 'Right + Non-Consensus' most, but organizations and human psychology are optimized to avoid the 'Wrong + Non-Consensus' quadrant at all costs.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map your initiatives: Place your current strategic bets on the 2x2 matrix. Be honest about which are consensus vs. non-consensus.",
+        "Resource accordingly: Allocate a small 'foolishness budget' to high-risk, non-consensus ideas. Don't expect them to have the same support as consensus bets.",
+        "Reframe the goal: When pursuing a non-consensus idea, state explicitly that the goal is *learning* and *testing assumptions*, not immediate success.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Foolishness is the Price of Genius",
+    titleEmoji: "🤪",
+    what: {
+      point: "You cannot create an organization that generates genius ideas without also creating one that tolerates, and even encourages, foolish ones.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "When leaders ask for 'good innovation,' they implicitly ask to eliminate risk. This leads to filtering out all non-consensus ideas.",
+        "By trying to eliminate the foolish (bottom half of the matrix), you inadvertently eliminate the genius (the non-consensus ideas that turn out to be right).",
+        "You don't drive up the average quality of ideas; you simply drive down the variance. Variation is the raw material of innovation.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Publicly celebrate an intelligent failure: Find an example of a project that failed but generated crucial learning. Make the person who ran it a hero.",
+        "Ask 'What could go right?': When your team is stuck in 'devil's advocate' mode, pivot the conversation by asking them to articulate the most optimistic, blue-sky outcome.",
+        "Protect the deviant: As a leader, your job is to provide air cover for the person pursuing a non-consensus idea, shielding them from the organizational immune system.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Assemble Your 'Like-Minded Deviants'",
+    titleEmoji: "🧑‍🤝‍🧑",
+    what: {
+      point: "A non-consensus idea cannot survive in a vacuum; it requires a small, insulated group of believers to nurture it.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Irwin Jacobs couldn't convince the world about CDMA, so he started a company (Qualcomm) with people who already believed in it, creating a pocket of consensus within a world of non-consensus.",
+        "Humans are inherently social. Facing constant pushback alone is an exhausting, lonely, and almost impossible task.",
+        "This initial group provides the psychological safety and intellectual sparring necessary to refine the idea before it's ready for the broader world.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify your 'First Follower': Who is the first person you can bring into your non-consensus idea? Focus on converting one person, not everyone.",
+        "Create a 'skunkworks' project: Formally create a small, isolated team with its own budget and mandate to work on a non-consensus bet, shielded from normal company metrics.",
+        "Build your personal board of directors: Find mentors and peers outside your company who can offer the support and perspective your internal team cannot.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+]
+
+const networkEffect2Cards: BattleCardProps[] = [
+  {
+    title: "Going After a Niche Side of the Market",
+    titleEmoji: "🎯",
+    what: {
+      point: "A key method to compete with an established marketplace is to first find and dominate a niche, underserved segment of the market.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "DoorDash successfully onboarded restaurants by promising them better search rankings than they had on larger, incumbent platforms.",
+        "Twitch carved out a massive market from YouTube Live by first developing a product specifically tailored to the needs of video game streamers before expanding to other verticals like musicians.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify a segment of suppliers on an incumbent's platform that is being neglected or poorly served.",
+        "Build a product with tools and features specifically fit for that niche to provide them with superior value.",
+        "Focus initial efforts on winning over this single segment to build a strong foothold before broader expansion.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Three Forces Against Market Domination",
+    titleEmoji: "⚔️",
+    what: {
+      point: "It is extremely difficult for one marketplace to capture an entire market due to three persistent, counteracting forces.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Negative Network Effects: An excess of participants on one side can degrade the experience for the other (e.g., a single job post on LinkedIn receiving 1,400 applicants is a bad outcome for the recruiter).",
+        "Multi-Homing: When users or suppliers can easily use multiple platforms at once (like drivers for both Uber and Lyft), no single platform can lock in the market.",
+        "Product Differentiation: A competitor can always enter and win a part of the market by offering a product that is better for a specific subset of users (the Twitch strategy).",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Build your strategy with the assumption that you will face competitors; do not assume you will win the whole market.",
+        "If you are the incumbent, actively monitor for and manage negative network effects through curation and sorting.",
+        "If you are a new entrant, exploit a market leader's weakness in one of these three areas as your entry point.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Marketplace Management Toolkit",
+    titleEmoji: "🧰",
+    what: {
+      point: "You can effectively manage your marketplace and incentivize desired user behavior by using a three-level framework of hard rules, system design, and financial levers.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Policies: These are non-negotiable rules for your marketplace. For example, Airbnb made hosts sign a non-discrimination agreement and 'curated' (kicked out) the 2% who refused.",
+        "Procedures: These are non-monetary incentives baked into the system's architecture. Airbnb powerfully shifted behavior by changing its sorting algorithm to rank hosts with 'Instant Booking' higher, a change that cost them nothing.",
+        "Prices: These are direct financial incentives. For example, a platform could reduce its take rate for hosts who offer Instant Booking or for sellers who offer free shipping.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "To drive a behavior change, first analyze if a change in Procedure (e.g., search ranking, granting a 'Superhost' badge) can achieve the goal at zero marginal cost.",
+        "Reserve costly Prices (discounts, bonuses) for situations where procedural changes are not enough to shift behavior.",
+        "Use Policies (mandates, bans) only for non-negotiable constraints that are critical to the health and safety of your marketplace.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Costly Signaling to Solve Information Asymmetry",
+    titleEmoji: "📊",
+    what: {
+      point: "When one party in a transaction has more information than the other, you can establish trust by creating a mechanism for them to send a costly signal that credibly demonstrates their quality or intent.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The signal must be costly to send, but less costly for the 'high-quality' type you want to identify. For example, getting a difficult degree is less costly in terms of effort for a high-quality worker.",
+        "Tinder and other dating apps implemented 'Super Likes,' which require users to pay a small fee, to allow users to signal genuine interest that stands out from a costless, standard 'like.'",
+        "To ensure N95 masks went to the neediest health facilities during COVID, a platform created a painfully long and complex application form; only those in desperate need would bear the time cost of filling it out.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify a key area on your platform where users question the quality or intent of others (e.g., 'Is this a serious buyer?').",
+        "Design a feature that requires a user to expend a costly resource—time, effort, or money—to signal their seriousness.",
+        "Ensure the signal separates different types of users; for example, writing a long essay signals genuine interest in someone, not just that you are rich.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Sampling Bias Trap in Reviews",
+    titleEmoji: "⚠️",
+    what: {
+      point: "Your review and survey data is almost certainly biased and misleading because the small fraction of people who choose to respond are not a random sample of your total user base.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "There is no reason to believe that people who don't write reviews are a random group; in fact, people with very bad or very good experiences are often the most motivated to leave feedback.",
+        "A Stanford survey on sexual harassment had only a 15% response rate. It's highly plausible that those who had a negative experience were the most likely to respond, massively skewing the final percentage.",
+        "The eBay rating system showed that almost no sellers had less than 98% positive feedback, with a median of 100%. This suggests that users with negative experiences were likely not leaving feedback at all, making the scores look inflated.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Do not take your top-line survey or review data at face value; always question which users are not responding and why their silence might be skewing the data.",
+        "To get a truly accurate metric, you must either make responding mandatory for everyone or survey a small, truly random sample of the population and compel them to respond.",
+        "When you see a statistical claim from a survey, always investigate the response rate and the selection method of the respondents before trusting the conclusion.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const businessModelCards: BattleCardProps[] = [
+  {
+    title: "The Hype Cycle",
+    titleEmoji: "📈",
+    what: {
+      point: "Innovations tend to follow a predictable pattern of initial excitement, subsequent disillusionment, and eventual real-world value.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Innovations often start in a \"science fiction stage\" where everyone is excited, the press writes glowingly, and CEOs are on magazine covers.",
+        "This is typically followed by a product failure, leading to a \"depressed stage\" where people question why they ever believed in the idea and the press writes about the \"idiots who said it was going to work.\"",
+        "The NASDAQ composite index's dot-com boom and bust is a perfect real-world example of this cycle, showing a massive peak in 2000 followed by a crash and a long, slow climb back to creating real value.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When evaluating a new technology or market, consciously identify whether you are in the hype phase or the value phase.",
+        "Focus your team on building a business model designed to satisfy real customer needs and create commercial value from the beginning, rather than getting caught up in the buzz.",
+        "Structure your financial and operational plans to survive the inevitable \"depressed stage\" that follows the initial hype.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Aligning Value Creation & Profit Models",
+    titleEmoji: "⚖️",
+    what: {
+      point: "What is best for creating user value and what is best for maximizing profit are often in conflict, and this tension requires a deliberate, strategic choice.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Facebook's model demonstrates this tension: to maximize ad revenue (profit model), they need to maximize user engagement, which is often achieved through polarizing content that may not be good for the user (value creation model).",
+        "Sean Parker, an early Facebook insider, admitted the thought process was, \"How do we consume as much of your time and conscious attention as possible?\" by exploiting a \"vulnerability in human psychology.\"",
+        "An alternative model like Substack's subscription service creates a higher degree of alignment because the user pays directly for content, but it serves a much smaller market (3 million paying users vs. Facebook's 3 billion).",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Explicitly recognize and discuss the potential conflicts between what is best for your users and what is best for your revenue.",
+        "Make a conscious choice about where you want to be on the trade-off spectrum, rather than assuming user value and profit always align perfectly.",
+        "Evaluate your revenue model carefully; understand that choosing an ad-based model might force you into a business of capturing attention, while a subscription model forces you into a business of delivering direct value.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Journey is More Valuable than the Destination",
+    titleEmoji: "🛤️",
+    what: {
+      point: "The iterative process of discovering a working business model builds proprietary knowledge that is far more valuable and defensible than the initial idea itself.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Steve Jobs criticized the \"disease\" of thinking a great idea is 90% of the work, highlighting that there is \"a tremendous amount of craftsmanship\" and learning that happens as an idea evolves into a product.",
+        "If a team figures out a business model too quickly over pizza, another team in Shanghai or Boston can do the same, meaning there is no proprietary knowledge or competitive moat.",
+        "The \"chutes and ladders\" journey of experimentation is where you discover unique \"nuggets of information\" and insights into why something works, which cannot be discovered without going through the process.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Prioritize the process of experimentation (build, test, learn) over simply executing a fixed plan.",
+        "When you run an experiment, focus on understanding the why behind the result, as this learning is the proprietary asset you are building.",
+        "Don't be discouraged by failed tests; view them as a necessary part of the journey that builds a defensible advantage against competitors who haven't learned those same lessons.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Solving for User Behavior Modification",
+    titleEmoji: "🔄",
+    what: {
+      point: "The biggest hurdle for a novel business model is often overcoming the friction of getting people to change their existing behaviors, which requires a targeted adoption strategy.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Any model that requires significant behavior change—like convincing someone to sleep in a stranger's home (Airbnb) or undergo surgery for a Bluetooth implant (Ionic Ear)—will face massive initial resistance.",
+        "The market is segmented by its willingness to adopt: first come the Pioneers (adopt because it's new), then the Progressives (adopt for a competitive advantage), and then the large group of Pragmatists (adopt only when it's proven with users like them).",
+        "You cannot sell to the mainstream Pragmatists by telling them about features; they will say, \"Show me users like me that are already getting the values they're promising me.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify which user segment you are targeting right now (Pioneer, Progressive, etc.) and tailor your product and message specifically to their mindset.",
+        "Don't try to sell to everyone at once. Focus first on the Pioneers and Progressives to get initial traction and learnings.",
+        "To cross the chasm to the mainstream market, systematically collect and use case studies from your early adopters as the primary tool to convince the risk-averse Pragmatists.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const crossingTheChasmCards: BattleCardProps[] = [
+  {
+    title: "Crossing the Chasm is a Business Model Pivot, Not a Sales Tactic",
+    titleEmoji: "🌉",
+    what: {
+      point: "The business model that wins your first visionary customers will break when you try to sell to the pragmatic mainstream market.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Tesla's \"Production Hell\": Tesla successfully sold the high-priced Roadster and Model S to pioneers. However, scaling the mass-market Model 3 required a complete business model shift from innovation-focused luxury to operations-focused manufacturing, a transition that nearly bankrupted the company.",
+        "Airbnb's \"Stalled Growth\": Airbnb's growth from early adopters stalled in 2011 because mainstream hosts were terrified of the risks. They only crossed the chasm by fundamentally changing their product to include a Trust & Safety unit and a $1 Million Host Guarantee, addressing the pragmatists' core need for security.",
+        "Pragmatists Demand a \"Whole Product\": Early adopters will accept an 80% solution and build the rest themselves. Mainstream customers demand a 100% solution that is proven, referenced by people like them, and requires no risk or extra work on their part.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Pre-Mortem your mainstream launch: Before you scale, identify what a pragmatic customer (not a pioneer) fears most about your product. Build the solution to that fear now.",
+        "Fund your \"Production Hell\": Consciously plan for the operational and cultural crisis that comes with shifting from low-volume/high-touch to high-volume/low-cost. This is a capital expense, not an unforeseen problem.",
+        "Create a \"Pragmatist\" value proposition: Shift your marketing message from \"new and innovative\" to \"safe, reliable, and cost-effective,\" using tools like Total Cost of Ownership (TCO) calculators to prove the value.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Do Things That Don't Scale (To Find What Does)",
+    titleEmoji: "🔍",
+    what: {
+      point: "The most critical, scalable business insights are discovered by manually and intimately serving your first 100 customers.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The Airbnb Photography Epiphany: Brian Chesky and his co-founder personally met with their earliest hosts in New York. By living with them, they observed that poor photos were a major problem. They borrowed a camera and started taking photos themselves.",
+        "Unscalable Action, Scalable Insight: This manual \"don't scale\" activity led to a data-proven insight: professional photography increased bookings by 2.5x, paying for itself in the first month. This became a core, highly scalable part of their growth engine.",
+        "The Goal is Love, Not Likes: The objective is to get 100 people to love you. This requires deep empathy and manual effort—meeting them, writing their first reviews, handing them checks—to understand the problems that a scalable solution must solve.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Mandate \"Founder Fieldwork\": Require the founding team to spend a significant portion of their week directly serving your first users. Answer support tickets, handle onboarding, and deliver the service yourself.",
+        "Hunt for customer workarounds: Observe where your customers are struggling and creating their own inefficient solutions. These pain points are your most valuable opportunities for a scalable feature.",
+        "Solve for one person first: Before you think about a scalable system, build a solution so perfect that a single user absolutely loves it. Then, and only then, figure out how to scale that experience.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Weaponize Global Network Effects",
+    titleEmoji: "🌐",
+    what: {
+      point: "For a global business, your competitive threats are defined by cross-market travel patterns, forcing you to fight for dominance in regions that are critical to your network, not just your immediate revenue.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The Two-Way Threat: A European competitor like Wimdu was a threat to Airbnb not just in Europe, but in the US as well. Dominating Europe meant they could capture the lucrative US-to-Europe travel flow, damaging Airbnb's core business. Network effects are not contained within borders.",
+        "The China Outbound Strategy: Airbnb entered China not just to win the domestic market, but because Chinese outbound tourists were the largest and fastest-growing travel segment in the world. To protect their business in Japan, Thailand, and Europe, they had to have a presence in China to serve those travelers.",
+        "Supply Follows Demand (Across Borders): 30% of new Airbnb hosts are former guests. By capturing a Chinese tourist traveling to Paris, Airbnb not only made money on that trip but also created a high probability of acquiring a new host back in China for future travelers.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map your network flows: Use data (e.g., airline routes, credit card data) to understand the most critical travel corridors for your customers. Where do they come from and where are they going?",
+        "Prioritize markets based on network value: When expanding, prioritize markets that are a major source of customers for your existing core markets, even if the new market's domestic potential is smaller.",
+        "Acquire or neutralize network chokepoints: Identify competitors who dominate a key node in your global network. Your strategy must be to either acquire them, compete fiercely, or find a way to bypass their influence.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "You Are What You Build: Live Inside Your Product",
+    titleEmoji: "🏠",
+    what: {
+      point: "The most resilient companies are those where the entire organization, from the CEO down, is deeply immersed in the customer experience, using their own product relentlessly.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The CEO as Customer Zero: Brian Chesky lived exclusively in Airbnbs for nearly a year, not as a stunt, but out of necessity and a desire to \"test them.\" This gave him unparalleled insight into the product's flaws and magic.",
+        "The Office is the Product: Airbnb's headquarters are designed so that every meeting room is a recreation of an actual host's apartment. This ensures that even an engineer working on backend systems is constantly immersed in the world they are building for customers.",
+        "Disruption Comes from Disconnection: Companies that get disrupted are those where the leadership is disconnected from the end customer and their experience. They see their business as \"financial systems\" or \"websites\" instead of a mission to solve a human problem.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Mandate \"Product Immersion\": Every employee, especially in leadership, must use your product regularly as a real customer would. Make it part of their performance review.",
+        "Build a \"Temple\" to your customer: Design your physical workspace to constantly remind your team who they are serving and what world they are creating.",
+        "Fire yourself and become a customer: Once a quarter, block your calendar and force yourself to go through your entire customer journey, from discovery to purchase to support, without any internal shortcuts. Document every point of friction.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const llmsAndAiCards: BattleCardProps[] = [
+  {
+    title: "The AI Industry Stack & Vertical Dis-Integration",
+    titleEmoji: "🏗️",
+    what: {
+      point: "The AI industry is not a monolith; it's a multi-layered stack where value can be captured at each level, and the ease of building on top of foundational models resists complete vertical integration by any single player.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker outlines a clear value chain: a foundational model (from OpenAI), accessed via an API, used by Developer Tools, which a SaaS startup uses to build a \"chatbot in a box,\" which your enterprise then customizes.",
+        "Because it has gotten \"so cheap to code\" using AI tools, a startup can easily and inexpensively build a sophisticated application on top of a foundational model, creating a viable business in an intermediate layer.",
+        "While model providers like OpenAI will try to build and control adjacent layers like developer tools, it takes significant human time and iterative testing to perfect applications for specific business needs, leaving room for specialized third-party companies to exist and thrive.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Analyze your business strategy by locating your position within this multi-layered stack (Model Provider, Tool Developer, Application Builder, or Enterprise User).",
+        "If you are building an application, leverage the low cost of coding and the availability of APIs to build a best-in-class product for a specific niche, assuming you can add more value through focus than a large model provider can.",
+        "Do not assume the foundational model providers will own the entire stack. Identify opportunities to create value in the layers between the core model and the end-user, as this is where specialized solutions are needed.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Super App vs. The Incumbent Fortress",
+    titleEmoji: "🏰",
+    what: {
+      point: "The vision of a single AI \"super app\" that does everything for everyone will not come to pass because powerful incumbents with locked-in customer bases will refuse to cooperate and will embed AI into their own ecosystems instead.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker argues that if a super app becomes the sole intermediary, it's \"bad for every single other player in industry.\" Companies understand this threat and will not \"play ball.\"",
+        "Powerful incumbents like Amazon and Epic have data and functionality that AI agents need but cannot replicate. Amazon has a physical logistics network that OpenAI cannot build overnight; Epic has a monopoly on patient health records that it can choose to withhold.",
+        "These incumbents have seen this movie before (Google vs. Amazon search results) and know that allowing another company to mediate their customer relationship is \"business suicide.\" They will choose to keep customers on their own platforms.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Build your strategy on the assumption that the future will be a series of powerful, AI-enhanced ecosystems, not a single, all-powerful agent.",
+        "Identify the key incumbent \"fortresses\" in your industry whose data or services are critical. Do not assume you will get access; create a plan for a world where they refuse to interoperate.",
+        "If you are an incumbent, leverage your lock-in (data, user habits, integrations) as a strategic asset. You have years to integrate AI into your products before customers can feasibly switch away.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Why Crappy Software and Incumbents Will Survive",
+    titleEmoji: "💼",
+    what: {
+      point: "Entrenched enterprise incumbents will survive the AI transition, not because they are innovative, but because their customers face massive switching costs and the incumbents can now easily plug external AI innovation into their existing products.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker highlights the paradox: AI promises a perfect future, yet we are all stuck using \"horrible\" CRM and HR software. This is due to data lock-in, complex interdependencies between systems, and cybersecurity risks that make switching incredibly difficult and slow.",
+        "Incumbents like Salesforce don't need to invent AI from scratch. They can use APIs from foundation model providers and easily embed AI features (like AI-assisted email writing) into their existing products. The core innovation is \"actually not hard\" to integrate.",
+        "These incumbents have the advantage of time. The enterprise switching cycle is measured in years, giving them a long runway to \"figure out how to take AI and integrate it in their products so that you don't just dump their product.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "If you are an incumbent, prioritize integrating best-in-class AI tools into your existing platform over building your own from scratch. Your advantage lies in your distribution, data access, and customer lock-in, not your AI R&D.",
+        "If you are a startup trying to displace an incumbent, recognize that a technologically superior product is not enough. Your strategy must directly address and mitigate the customer's high switching costs.",
+        "When evaluating the market, do not underestimate the staying power of incumbents. Their survival is based on business realities (lock-in), not just the pace of technological change.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Strategic Power of Open Source Models",
+    titleEmoji: "🔓",
+    what: {
+      point: "Open-source models (like Llama) provide a permanent, free, and downloadable baseline of powerful AI capability, creating a strategic floor on the market that prevents a complete monopoly and gives power to developers and other nations.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Open models are just a set of equations and parameters (\"betas\") that, once downloaded, can be used forever without updates or external dependencies. This means the ability to understand language and perform many AI tasks is now \"free forever.\"",
+        "This acts as a powerful check on closed-model providers. For many use cases that combine pre-programmed logic with language understanding, the free open models are good enough, capping how much companies like OpenAI can charge.",
+        "From a geopolitical standpoint, no major country like China will allow itself to be dependent on a single American company's AI. They will use open-source models as a base and invest billions to build their own competitors for national security reasons, ensuring multiple global players.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Incorporate open-source models into your tech stack to handle baseline language tasks, reducing your marginal costs and avoiding vendor lock-in with proprietary APIs.",
+        "Use open-source models to \"fine-tune\" on your own proprietary data. This allows you to create a customized, powerful model that you own and control without sharing sensitive data.",
+        "When analyzing the competitive landscape, remember that there will always be a powerful, free alternative. A competitor's strategy cannot be based solely on having a slightly better proprietary model; it must offer value far beyond what is available for free.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Consumer Ecosystem Gatekeepers (The Phone is the Fortress)",
+    titleEmoji: "📱",
+    what: {
+      point: "The companies that control the smartphone operating system (Apple and Google) have the ultimate power to determine the success or failure of any AI agent by granting or denying access to the phone's most critical functions.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker has a long history of seeing these gatekeepers use their power. Apple \"destroyed a huge business\" (Facebook's ad ecosystem) with a single policy change and told banks \"no, we control the NFC radio\" when they wanted to build their own mobile wallets.",
+        "An AI agent from a third party like OpenAI is severely handicapped if it cannot access core phone functions like location services, contacts, or secure payment hardware. An incumbent's agent (from Apple or Google) will have privileged, seamless access to all of these.",
+        "Even if regulators intervene, the process takes years. In the meantime, the gatekeepers can use legitimate security concerns (\"an AI agent... could be dangerous\") as a powerful argument to lock out competitors and advantage their own integrated products.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "If your consumer AI strategy relies on a mobile app, assume that the platform owner (Apple/Google) is a potential competitor who can and will limit your app's functionality if it threatens them.",
+        "Design your product to offer compelling value even with limited access to core phone services. Build a \"Plan B\" for a world where you are denied privileged access.",
+        "Focus on building direct customer relationships and driving users to your own web properties, as the mobile app distribution channel is controlled by powerful gatekeepers who can change the rules at any time.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Downstream/Upstream Reinforcement Loop",
+    titleEmoji: "🔄",
+    what: {
+      point: "Competition at the foundational AI model layer is sustained by competition in the downstream application layer; a fragmented market of software applications creates a diverse customer base for LLMs, preventing a single model from winning.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker argues you cannot analyze the LLM market in isolation. The structure of the \"downstream application market\" (the customers of LLMs) is determinative.",
+        "Different applications have different needs. A nurse's mobile device needs a \"small lightning model\" that is fast and lightweight, not a giant model that has memorized all legal cases. This differentiated demand supports multiple, specialized LLM providers.",
+        "If the application layer were to become a monopoly (e.g., only Microsoft applications exist), that monopolist would likely vertically integrate and squash competition at the LLM layer. Conversely, because there are entry barriers in enterprise software that allow multiple incumbents to survive, this segmentation creates a \"viable business for large language models\" and prevents an upstream monopoly.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When assessing the long-term viability of LLM providers, analyze the health and fragmentation of their potential customer base in the application layer. The more diverse the application market, the more likely there will be multiple successful LLMs.",
+        "If you are an enterprise software provider, support a competitive LLM ecosystem. Relying on a single LLM provider makes you vulnerable to them encroaching on your business.",
+        "Resist the narrative that technology alone determines the winner. The structure of the customer market and business realities are what will ultimately shape the competitive landscape at every level of the stack.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const supplyChainFundamentalsCards: BattleCardProps[] = [
+  {
+    title: "The Art of Postponement",
+    titleEmoji: "🎯",
+    what: {
+      point: "The most effective way to offer massive customer variety is to maintain radical simplicity in your core production and delay customization to the last possible moment.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The HP Printer Problem: HP was plagued by having to forecast demand for 30 different country-specific printers months in advance, leading to massive overages of some models and stockouts of others. Their solution was to create a single \"vanilla box\" printer and postpone the \"localization\" (snapping in the correct power supply) to a European distribution center just before shipping to a specific country.",
+        "The Benetton Sweater Pivot: Instead of dyeing yarn into many colors and then knitting sweaters (a long process with high forecast risk), Benetton flipped the process. They first knitted all sweaters from undyed yarn and only dyed them into specific colors when they had much better demand signals, postponing the critical color decision.",
+        "Product vs. Process: This strategy can be applied to product design (HP's modular printer) or process design (Benetton's resequenced production). It resolves the core conflict between what sales wants (variety) and what operations wants (simplicity).",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "\"Split and Resequence\" your product: Deconstruct your product or service into its \"vanilla\" core and its \"customizable\" features. Re-engineer your process to handle the long, generic part first and the short, custom part last.",
+        "Design for Modularity: Build your products like HP built their printer. Ensure that the components that differentiate the final product can be added quickly and cheaply at the end of the supply chain, not the beginning.",
+        "Find your \"Dyeing\" moment: Identify the single most critical decision in your process that commits you to a specific product variant (e.g., color, feature set, language). Push that decision as late as possible.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Contract for Capacity, Not for Product",
+    titleEmoji: "📋",
+    what: {
+      point: "Beat forecasting uncertainty by buying flexible production time from your suppliers instead of committing to fixed product orders months in advance.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The Japanese Fashion Miracle: A department store wanted to test a risky, brightly-colored jacket but was blocked by a supplier's Minimum Order Quantity (MOQ). By shifting from buying a quantity of jackets to buying hours on the production line, they could place a tiny initial test order (100 units), confirm its success with real data, and then scale production dramatically.",
+        "Gilead's Biotech Strategy: A major biotech company like Gilead holds only 20% of its manufacturing capacity in-house. It manages the other 80% by outsourcing, not through fixed product orders, but by contracting for capacity at various suppliers around the world, giving them immense flexibility to respond to unpredictable drug demand.",
+        "The Power of Real-Time Data: This strategy is only possible in the internet era. By creating a tight feedback loop from point-of-sale data back to the (flexible) production line, companies can make multiple, adaptive production runs within a single season.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Renegotiate supplier contracts: Shift the negotiation from \"price-per-unit\" to \"price-per-hour\" of production line capacity. This transfers the risk of demand uncertainty and unlocks massive flexibility.",
+        "Place small, exploratory bets: Instead of one large, high-risk production run based on a forecast, place multiple small initial orders to test different product variations in the real market.",
+        "Double down on the winners: Once you have real sales data, use your reserved capacity to aggressively scale production of the products that prove to be hits, while cutting the losers with minimal loss.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Operate at the Knee of the Curve",
+    titleEmoji: "📈",
+    what: {
+      point: "Pushing for maximum capacity utilization is a trap; it creates exponential, system-breaking delays and kills your ability to respond to urgent needs.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The Gilead Factory Paradox: At 70% capacity utilization, a one-month job took 3-4 months to complete. At 99% utilization, the same job would take 7 years. The relationship between utilization and wait time is not linear; it is exponential.",
+        "Variability is the Villain: The core reason for this delay is variability—in the arrival of tasks (e.g., ER patients) and the time it takes to service them. A scheduled doctor's office (low variability) has a 5-minute wait; an ER (high variability) has a 7-hour wait, even if both have similar average utilization.",
+        "The Mission of the Buffer: The Gilead factory's mission was to handle \"critical and urgent jobs.\" This mission is mathematically impossible to achieve at 90%+ utilization because the system has no buffer to absorb unexpected urgent tasks.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Redefine \"Efficiency\": Stop rewarding managers solely for achieving 100% utilization. Define efficiency as predictable service times and low queue lengths, and build a strategic capacity buffer (e.g., 15-30% \"idle\" time) to achieve this.",
+        "Attack Variability Before Adding Capacity: Before investing in more capacity, focus on reducing variability. Implement \"metering lights\" to smooth the arrival of work, create \"express lanes\" to separate short tasks from long ones, and standardize processes wherever possible.",
+        "Find and operate at \"the knee\": Analyze your critical systems to identify the \"knee of the curve\"—the point where wait times begin to spike exponentially. Aim to operate your systems at or below this utilization level to maintain responsiveness.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const tamagoyaCards: BattleCardProps[] = [
+  {
+    title: "Interval Forecasting over Point Estimation",
+    titleEmoji: "📊",
+    what: {
+      point: "A precise, actionable forecast is not a single number but a statistically confident range; you must embrace the uncertainty and manage it by separating what you know from what you don't.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker's pivotal moment with \"Mr. Kim\" illustrates that asking for a single number forecast (like for \"week 53\") is asking for a guess that is \"guaranteed to be wrong.\" The correct initial answer is \"I don't know.\"",
+        "The practical method is to perform interval estimation. This involves calculating the historical average of the data (e.g., 52 weeks of sales) and then establishing an interval based on the standard deviation.",
+        "Specifically, by drawing horizontal lines at two standard deviations (two sigma) above and below the mean, you create a range that you can be \"95% sure\" the actual outcome will fall within. This transforms a random guess into a statement of statistical probability.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Stop asking your teams for single-point forecasts. Instead, mandate that all forecasts be presented as an interval with a specific confidence level (e.g., \"We are 95% confident that demand will be between X and Y\").",
+        "Integrate standard deviation as a mandatory metric alongside the mean in all forecasting discussions to quantify the level of uncertainty.",
+        "Structure your operational plans around this interval. Plan your committed resources for the low end of the forecast and your flexible, responsive resources for the high end.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Dual Response Framework: Separating Certainty from Uncertainty",
+    titleEmoji: "⚖️",
+    what: {
+      point: "By deconstructing an uncertain forecast into a \"fixed\" portion and a \"variable\" portion, you can apply two different operational strategies simultaneously: one optimized for cost efficiency and the other for maximum flexibility.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Tamagoya translates its interval forecast (e.g., a minimum of 58,000 and a maximum of 65,000) into two distinct parts. The 58,000 is the \"fixed portion\" that they know they will need, and the potential 0-7,000 extra is the \"variable part.\"",
+        "These two parts have opposing strategic goals. For the fixed portion, the goal is to \"minimize the cost.\" For the variable portion, the goal is to \"maximize their flexibility.\"",
+        "This dual approach is applied across the entire value chain. It exists in production (how ingredients are sourced) and in delivery (how trucks are dispatched), creating a hybrid push/pull system. The key realization is that flexibility is expensive, so you only apply it to the small, uncertain portion of your demand.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "For any given forecast, deconstruct it into a committed base volume (the \"fixed portion\") and a potential variable upside (the \"variable part\").",
+        "Design two separate fulfillment processes. One is a low-cost, high-efficiency process for the fixed portion. The other is a rapid-response, agile process for the variable part.",
+        "Apply rigorous cost controls and seek long-term contracts for the fixed portion. For the variable part, invest in speed and responsiveness, even if the per-unit cost is higher.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Building a Strategic Supplier Portfolio (The Push/Pull Mechanism)",
+    titleEmoji: "🏭",
+    what: {
+      point: "You must strategically segment your supplier base to mirror your dual response framework, cultivating different types of relationships to handle your certain and uncertain demand.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Tamagoya created a \"portfolio of suppliers.\" The \"fixed portion\" of demand is given to 30-40 \"regular suppliers.\" These suppliers are given a guaranteed, large volume order that will not be modified or canceled, allowing them to operate efficiently and give Tamagoya a better price.",
+        "The \"variable portion\" is assigned to five \"agile suppliers\" who are located nearby. These suppliers must bear the risk and prepare for the worst-case scenario (e.g., have 7,000 units of inventory ready) for an order that may end up being much smaller or even zero.",
+        "The relationship with agile suppliers is symbiotic, not exploitative. Tamagoya does not squeeze them on price like Toyota; instead, being an agile supplier for Tamagoya is a mark of quality and a \"very good marketing tool\" for them, which justifies the risk they carry.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Segment your supplier base into at least two tiers: \"Regular\" for cost and \"Agile\" for speed.",
+        "Negotiate contracts differently for each tier. For regular suppliers, offer guaranteed volume and long lead times in exchange for lower costs. For agile suppliers, offer higher margins and a prestigious partnership in exchange for them holding inventory and responding to last-minute orders.",
+        "Physically co-locate or prioritize agile suppliers who are geographically close to reduce lead times for your most uncertain demand.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Frontline as the Strategic Core",
+    titleEmoji: "🎯",
+    what: {
+      point: "Your frontline employees are not a cost center; they are your most critical strategic asset, capable of acting as your R&D, forecasting, sales, and engineering departments, and they must be trained, empowered, and compensated accordingly.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "When asked who designed their hyper-efficient, dual-response logistics system, the answer was not consultants or professors, but \"our van drivers,\" many of whom are high school dropouts.",
+        "The drivers perform multiple roles beyond delivery: Sales & Marketing (\"the face of the country\"), Forecasting (they meet and create the bottom-up forecast), System Engineers (they designed the process), and Finance (they collect payment).",
+        "Compensation reflects this value. They are paid double the market rate compared to competitors, with a salary around $100,000 (15 years ago), because the company recognizes they are not just \"dam drivers.\" The president's stated mission is simply: \"I support the van drivers.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Redefine the job description of your frontline staff from task execution to strategic contribution, including specific responsibilities for process improvement and data collection.",
+        "Invest disproportionately in the compensation of these roles to attract and retain talent who can handle the expanded responsibilities, paying based on their value to the entire system, not just the market rate for their title.",
+        "Create formal mechanisms for frontline staff to design, test, and implement operational improvements, trusting that those closest to the work know best how to improve it.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Engineering the Customer Feedback Loop",
+    titleEmoji: "🔄",
+    what: {
+      point: "Critical operational data, especially for forecasting, is not something you ask for, but something you engineer a process to collect; the product's lifecycle itself should be designed to force a feedback interaction.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Tamagoya intentionally uses \"reusable lunchboxes,\" which is \"slightly more expensive,\" for the sole purpose of creating a second interaction with the customer when they retrieve the empty boxes.",
+        "This afternoon pickup is the most valuable time for feedback, as customers have a \"fresh memory about the food.\" This is where drivers gather qualitative data and future demand signals (e.g., \"the development team is going to come next week\").",
+        "This feedback loop is considered so mission-critical that the company was prepared to fire a client ordering 3,000 units per day because a change in building logistics would have prevented drivers from having this direct contact with end consumers.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify the most valuable point in your customer's journey to gather unfiltered, high-quality feedback (often post-consumption).",
+        "Design a physical or digital process that requires this interaction. This could be collecting reusable packaging, a mandatory one-click survey to unlock a future feature, or a service call.",
+        "Empower frontline staff to not only collect this feedback but to immediately channel it into the forecasting and operational planning process for the next cycle.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Competing on Core Competence",
+    titleEmoji: "💎",
+    what: {
+      point: "Sustainable success comes from deeply understanding your single greatest competence and ruthlessly declining any opportunity, no matter how attractive, that does not align with it.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Tamagoya analyzed why they could cater for funerals but not for weddings. Weddings can be planned far in advance, but funerals often cannot be. Their core competence is not product leadership (a five-star hotel has better food) or customer intimacy. Their unbeatable strength is \"operational ethics\" and \"speed.\"",
+        "They turned down a guaranteed 10,000-unit-per-day deal to open in Dubai because it did not fit their model. They hesitate to even expand to Osaka because it has a \"different culture\" and would take ten years to understand.",
+        "They refuse to go public, saying \"never,\" because it would force them to \"compromise\" their operational philosophy and their \"Sanpoyoshi\" (three-way satisfaction) principle of benefiting the seller, the buyer, and society.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Force your team to articulate your single greatest, non-replicable core competence (e.g., operational speed, product design, customer intimacy).",
+        "Evaluate every new product, market, or business model opportunity against one question: \"Does this leverage our core competence better than anyone else?\"",
+        "Have the discipline to say no to profitable opportunities that fall outside your core competence, as they will dilute your focus and weaken what makes you truly exceptional.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const disruptionCards: BattleCardProps[] = [
+  {
+    title: "Leveraging External Science for Disruption",
+    titleEmoji: "🔬",
+    what: {
+      point: "The most powerful disruptions often come not from within your industry, but from leveraging a fundamental scientific or technological advancement from the outside and applying it to your market in a novel way.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Rachio didn't invent a better sprinkler; it took the science of IoT (Internet of Things) and applied it to the irrigation industry, fundamentally transforming a hardware market into a software market.",
+        "The road bike industry was revolutionized when carbon fiber, a material science innovation, was used to replace aluminum frames, making bikes much lighter and shifting consumer demand.",
+        "Lithium-ion batteries, first used in laptops, were leveraged by companies like Tesla to completely transform the automotive industry by changing the fundamental nature of the drivetrain.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Regularly ask your team, \"What is the new science that could fundamentally change our industry in the next 5-10 years?\" (e.g., GenAI, new materials, biotech).",
+        "Once a new science is identified, deep-dive to understand how it works and how it can be matched with your industry to create a new, superior business model.",
+        "Frame your strategy not just on competing with current players, but on what your industry would look like if it were rebuilt from the ground up using the latest external technology.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Monopolist Captures the Value of Innovation",
+    titleEmoji: "🎯",
+    what: {
+      point: "In a value chain with a single dominant player, that monopolist will often capture the financial benefits of an innovation, even if they are not the ones implementing it.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "When carbon fiber was introduced into the bicycle industry, it was the frame manufacturers who implemented the technology. However, Shimano, as the component monopolist, was able to capture the majority of the value created.",
+        "This dynamic disincentivizes other layers of the value chain from investing in R&D, because they know the monopolist will reap the rewards.",
+        "The power holder in the industry has the primary incentive to find and fund innovation, even if it has to happen at another layer of the value chain.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Analyze your industry's value chain using a framework like Porter's Five Forces to identify who holds the monopoly power.",
+        "If you are the monopolist, actively look for innovations in adjacent layers that you can fund or encourage, knowing you will capture the upside.",
+        "If you are not the monopolist, be wary of investing heavily in R&D that creates industry-wide value, as your returns will likely be captured by the dominant player. Instead, focus on innovations that strengthen your unique position.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Modern Smart Tech Resolves Old Smart Tech's Waste",
+    titleEmoji: "♻️",
+    what: {
+      point: "A powerful way to create and communicate value is to position your \"modern\" smart technology as the solution to the inefficiencies and waste created by the \"previous era\" of smart technology.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The \"first era\" of smart tech, like the Rain Bird timer, offered the convenience of \"set it and forget it,\" but its core flaw was waste—it would still run when it was raining or water at peak summer levels in the fall.",
+        "Rachio's primary value creation wasn't just the flashy \"rain skip\" feature, but the immense water savings achieved by resolving the waste of the old system—specifically, by automatically adjusting watering levels down as seasons changed from summer to fall.",
+        "The data showed that one Rachio device saved enough water to supply the entire indoor water usage of another house, highlighting that its true function was waste elimination.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify the previous generation of \"smart\" or \"automated\" technology in your industry that is now seen as dumb or inefficient.",
+        "Build your product's core value proposition around resolving the specific waste (of time, money, or resources) created by that older technology.",
+        "Focus your marketing on communicating this resolution of waste, as it provides a clear, quantifiable benefit to the consumer.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Revealed Preference Segmentation",
+    titleEmoji: "📊",
+    what: {
+      point: "You can quickly and effectively segment a market without expensive research by using the \"revealed preference\" technique: analyze the choices consumers already make between existing products to understand what different groups fundamentally value.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "By looking at the sprinkler controller market, you can infer segments. Consumers who choose the low-priced Orbit are price-sensitive. Consumers whose landscapers install the high-priced Hunter are price-insensitive and value aesthetics (\"a beautiful lawn\").",
+        "The products themselves are differentiated to serve these segments. The existence of an Orbit, a Rain Bird, and a Hunter proves the existence of at least three distinct clusters of customer desires.",
+        "This technique allows you to create a \"quick and dirty\" segmentation matrix to identify which benefits different groups care about, letting you decide who to serve and who to ignore.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "List the primary product alternatives in your market, from the cheapest to the most expensive or from the simplest to the most complex.",
+        "For each alternative, ask \"Why would a customer choose this specific product over the others?\" This will reveal the underlying benefits they prioritize (e.g., low price, durability, brand, specific features, aesthetics).",
+        "Cluster these benefits to define your core customer segments, and use this as the foundation for your positioning and targeting strategy.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Positioning as the Foundation of Marketing Strategy",
+    titleEmoji: "🎪",
+    what: {
+      point: "Your positioning statement is the most critical element of your marketing strategy because it dictates every subsequent tactical decision, including pricing, channel, advertising keywords, and even the design of your user interface.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Positioning Rachio against \"traditional controllers\" means your marketing keywords will be \"sprinkler controller.\" Positioning against Nest means your keywords will be \"smart home controller,\" a category where it's much harder to win.",
+        "Positioning for a DIY homeowner who values ease of adjustment means your app's primary feature should be simple on/off buttons. Positioning for a homeowner who values automatic water savings means your app should prominently feature data dashboards showing savings, with no manual controls needed.",
+        "Positioning against a low-cost alternative like Rain Bird ($75) gives you a terrible pricing anchor. Positioning against a tech product like Nest ($250) gives you a much better reference point that allows you to capture more value.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Develop multiple viable positioning statements for your product before committing to one.",
+        "For each positioning statement, war-game the downstream implications for the \"4 Ps\": Product (app design), Price (benchmark), Place (retail channel), and Promotion (ad strategy).",
+        "Choose the positioning statement that not only resonates with a target segment but also gives you a clear and winnable path for value delivery and capture.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Strategic Partnerships as a Growth Engine",
+    titleEmoji: "🤝",
+    what: {
+      point: "To escape the trap of expensive, marginal customer acquisition, pursue strategic partnerships with entities that can shape the market and deliver customers at scale.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker notes you can't just wait for controllers to break, as it \"takes 30 years for a controller to die.\" You must proactively initiate replacement, which is difficult one customer at a time.",
+        "A far more powerful approach is to partner with organizations like water utilities. They can communicate the value of your product to their entire customer base and even use their data to target high-water users with discounts.",
+        "The ultimate partnership is influencing policy. By working with the state of California to mandate the features found in smart controllers, you can grow the entire category and secure a market for the long term.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify organizations (utilities, government agencies, homeowners' associations) whose goals align with the value your product creates.",
+        "Move beyond traditional performance marketing and dedicate resources to building relationships with these strategic partners.",
+        "Frame your proposal to partners not as a sale, but as a collaboration to achieve a shared objective (e.g., water conservation), which can lead to them marketing your product for you.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const positioningCards: BattleCardProps[] = [
+  {
+    title: "The Creativity Dilemma: Platform vs. Producer",
+    titleEmoji: "🎨",
+    what: {
+      point: "A fundamental strategic decision is whether your business model should be based on outsourcing creativity by building a platform for others, or insourcing creativity by vertically integrating and owning the creative output.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The lecture highlights two opposing macro trends. Outsourcing: YouTube and Instagram's business models are \"fundamentally built on outsourcing creativity,\" enabling creators like the \"Runner the Labrador\" channel or the Instagram cook who got a cookbook deal.",
+        "Insourcing: Simultaneously, firms like Netflix (moving from distribution to making House of Cards), Amazon, and Apple are vertically integrating to create their own content. Even non-tech firms like Proctor & Gamble have brought creative agency work in-house.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When acquiring a creative brand or company, determine precisely what you are buying. Are you acquiring a static asset (a brand, a formula) or the founder's ongoing creative talent? This will fundamentally shape your acquisition and integration strategy.",
+        "Explicitly define your business model: Are you a platform that enables and profits from the creativity of a large user base, or are you a producer that creates and owns its own creative content to differentiate?",
+        "Analyze your market to determine which model has a stronger competitive advantage. A platform model scales, but a producer model offers greater control and brand definition.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Creativity Thrives Within Constraints",
+    titleEmoji: "🎯",
+    what: {
+      point: "True, applicable creativity is not born from absolute freedom, but is instead channeled and amplified by a well-defined structure of deadlines, requirements, and constraints.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Screenwriter Chris Kaiser states that the \"perfect breeding ground for real creativity\" is the \"proper balance between the freedom to write what you want and the obligation to conform to a structure.\"",
+        "For Kaiser, the shift from writing for network TV (with rigid commercial breaks) to Netflix was not a disruption to his creativity, but simply a change in requirements that channeled his work in a new way.",
+        "A product manager's role, like Max Roman's at Apple Podcasts, is fundamentally about setting the requirements and structure that shape how creators produce their content for the platform.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a leader, your role is not to demand creativity in a vacuum but to define the structure for it. Provide your creative teams with clear deadlines, budgets, technical specifications, and strategic goals.",
+        "Frame these constraints not as limitations but as the \"walls of the playground\" that focus creative energy on solving a specific business problem.",
+        "When a project is stuck, analyze the structure around it. The problem may not be a lack of ideas, but a lack of clear, focused constraints.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Agency Problem: Creativity vs. Business Value",
+    titleEmoji: "⚖️",
+    what: {
+      point: "There is an inherent conflict between what is considered \"creative\" and what is actually \"valuable\" for the business, and this agency problem exists whether you work with external agencies or have an in-house team.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In the refugee ad campaign study, the IOC's ad was rated as the most creative and surprising. However, the Nike ad was the most valuable, as it was the only one that successfully changed the minds of the target \"right-leaning\" audience.",
+        "Creative professionals and agencies are often motivated by winning awards and peer recognition, which may not align with the business's goal of selling a product or changing a specific perception.",
+        "Bringing creative teams in-house does not solve this problem; it merely internalizes it. Your internal creatives still want to build their portfolios and win awards, which may diverge from pure business performance metrics.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Explicitly acknowledge the potential disconnect between creative accolades and business results in all marketing discussions.",
+        "Structure compensation for your creative teams (internal or external) to reward both creative excellence and direct business performance metrics. CMO Doug Sweeney used this approach to balance the motivations of his in-house team.",
+        "When evaluating a creative proposal, ask two distinct questions: \"Is this creative?\" and \"Will this achieve the specific business objective with our target audience?\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Influencers as Co-Creators, Not Just Advertising Vehicles",
+    titleEmoji: "🤝",
+    what: {
+      point: "The most strategic way to use influencers is not as a transactional media buy based on follower counts, but as creative partners who can co-create new products, experiences, and value that neither party could create alone.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "While you can treat an influencer like traditional advertising (measuring reach and frequency), this misses their greater potential.",
+        "The collaboration between Brooklyn streetwear designer Kid Super and Puma is a prime example. They didn't just have him wear their clothes; they co-created a cartoon series featuring his designs and Puma's sponsored athletes (like Usain Bolt) as characters.",
+        "This approach was mutually beneficial: Puma reached a new audience in a highly creative way, and Kid Super gained access to Puma's resources and athletes to create a more ambitious project than he could have alone, expanding his own brand's value.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Look beyond an influencer's follower count and analyze their creative capabilities and brand alignment.",
+        "Instead of pitching them on a simple endorsement, approach potential influencer partners with a proposal for a joint creative project (a new product line, a unique event, a content series).",
+        "Structure the partnership so it creates new, tangible value for both your audience and the influencer's audience, moving beyond a simple transactional relationship.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Creative Problem-Solving (The \"One Star\" Campaign)",
+    titleEmoji: "⭐",
+    what: {
+      point: "A highly creative marketing solution can reframe a perceived negative into a strategic positive by embracing the criticism and using it to clarify your positioning for your ideal customer segment.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The ski resort Snowbird was getting mediocre 3.5-star average reviews because it was polarizing: hardcore skiers loved it (5 stars) while beginners hated it (1 star).",
+        "Instead of trying to defend their rating, they launched a \"One Star Campaign\" that featured actual one-star reviews from beginners complaining that the mountain was \"too advanced\" or didn't have enough groomed \"corduroy\" trails.",
+        "This campaign brilliantly solved the problem by using the negative reviews as a filter. It warned off the beginner skiers who wouldn't enjoy the resort anyway, while simultaneously signaling to its target audience of hardcore skiers that Snowbird was the challenging, authentic mountain they were looking for.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When faced with mixed or polarizing customer feedback, don't immediately try to \"fix\" the average rating. Instead, analyze if the feedback is revealing a sharp divide between different customer segments.",
+        "Consider if you can use the negative feedback from the \"wrong\" customer segment as a marketing tool to attract the \"right\" customer segment.",
+        "Reframe a product's \"flaw\" as a \"feature\" for a specific niche (e.g., \"It's not complicated, it's for experts\"; \"It's not basic, it's for purists\").",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const swarmTechnologiesCards: BattleCardProps[] = [
+  {
+    title: "The Small Satellite Revolution (From Perfection to Iteration)",
+    titleEmoji: "🛰️",
+    what: {
+      point: "The economics and culture of the space industry have been fundamentally transformed by a shift away from perfecting high-cost, single assets towards rapidly iterating with low-cost, miniaturized technology.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker contrasts her old JPL experience, where technology had to have flown 18 times to be considered, with the new startup mentality of \"Why don't we just launch a phone and see what happens?\"",
+        "This shift is enabled by two major trends: the 60x reduction in launch costs driven by SpaceX, and the miniaturization of powerful electronics (driven by the mobile phone industry) that makes satellites cheaper and more accessible.",
+        "The modern approach embraces learning from real-world tests. It is now more economical to launch something that might have a small problem, learn from it, and iterate quickly than it is to pursue flawless, expensive perfection on the ground.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Apply the \"launch a phone\" mentality to your R&D process. Identify the cheapest, fastest way to get a functional version of your product into a real-world environment to test its core assumptions.",
+        "Structure your development cycle around iteration, not perfection. Prioritize learning from real-world usage and failures over achieving flawless performance in a controlled lab setting.",
+        "Leverage commercially available, off-the-shelf components wherever possible. Avoid the cost and delay of developing custom components when a \"good enough\" solution already exists.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Extreme Miniaturization as a Business Model",
+    titleEmoji: "📱",
+    what: {
+      point: "A powerful and defensible business model can be built by taking an existing industry trend (like small satellites) and pushing it to a new extreme of miniaturization, fundamentally altering the unit economics.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Swarm's core innovation was not just building a small satellite, but building one that was 1/12th the size of a conventional \"small\" CubeSat—making it the size of a sandwich.",
+        "This radical size reduction flipped the industry's financial model on its head. It cost Swarm only ~$3 million to launch its entire constellation of 150 satellites, allowing them to do so with only $30 million in venture funding.",
+        "This economic advantage was a key reason Swarm became one of only two satellite constellations to achieve commercial success without going bankrupt, a common fate for capital-intensive space companies.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify the single most significant cost driver in your industry's value chain (e.g., hardware, customer acquisition, manufacturing).",
+        "Instead of seeking incremental improvements, brainstorm how you could reduce that cost by an order of magnitude (10x) through a radical change in form factor, process, or technology.",
+        "Build your entire business model around this extreme cost advantage, as it can unlock markets and create a moat that competitors cannot easily cross.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "De-Risking Through Real-World Prototypes",
+    titleEmoji: "🎈",
+    what: {
+      point: "For any deep-tech or hardware company, the single most critical milestone is getting a functional prototype to \"touch the real world,\" as this provides undeniable proof to investors and invaluable feedback for the team.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker emphasizes that for Swarm's Series A fundraising, the key milestone was demonstrating that their satellites actually worked in space. She notes many space companies fail to achieve this even by Series C, which she finds \"terrifying.\"",
+        "To accelerate this process, Swarm simulated the 500km distance to low-Earth orbit by testing their satellite on a high-altitude balloon, allowing them to validate their core radio technology within months.",
+        "Her core advice to other deep-tech founders is to define milestones around real-world tests, as it provides focus for the company and is more meaningful to investors than internal progress.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Define your next major funding milestone not by an internal metric (e.g., \"design complete\"), but by a tangible, real-world demonstration of your core technology.",
+        "Find clever, low-cost ways to simulate your product's operational environment to get early feedback and de-risk the technology before a full-scale deployment.",
+        "Prioritize getting a minimum viable product into the hands of real users in their actual environment, even if it's imperfect. The learning from this interaction is more valuable than perfecting the product in a lab.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Founder's \"Healthy Delusion\"",
+    titleEmoji: "🧠",
+    what: {
+      point: "Sustaining momentum through the immense challenges of a startup requires a \"healthy delusion\"—the paradoxical ability to be ruthlessly aware of everything that is broken while maintaining an unwavering optimism that you will ultimately succeed.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker describes her daily mindset at Swarm as a \"very kind of bipolar\" state: \"everything is bad, everything is broken, but also we're definitely going to succeed.\"",
+        "This mentality is crucial because it fuels the \"extreme amount of hard work\" required (\"80-hour work weeks for like five years\") while providing the positive energy needed to lead and motivate a team.",
+        "She also stresses the importance of trusting your gut. As a founder, \"you are the closest to everything,\" and you must learn to trust your own judgment over that of investors, advisors, or parents.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Acknowledge and address problems relentlessly, but frame every issue as a solvable challenge on the path to an inevitable, successful outcome.",
+        "When faced with difficult decisions, gather external input but learn to trust your own intuition. You have the most context.",
+        "Communicate this \"healthy delusion\" to your team. They need to see that you are clear-eyed about the challenges but completely confident in the mission's success.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The \"Acqui-hire\" Path to Scale (The Lego Model)",
+    titleEmoji: "🧩",
+    what: {
+      point: "A small, agile startup can serve as the perfect \"Lego version\" for a larger corporation, allowing a tight-knit team to master a complex, multi-disciplinary system at a small scale before being acquired and given massive resources to execute \"for real.\"",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The Swarm team's experience doing everything themselves—hardware, software, regulatory, financing—made them \"very well positioned\" to take on the massive \"Direct to Cell\" project for SpaceX.",
+        "The speaker describes the transition as someone giving them \"a billion dollars\" and saying, \"okay, now do it for real,\" after they had already proven they could build the \"LEGO version of a Constellation.\"",
+        "SpaceX didn't know how to solve the problem; their directive to the acquired Swarm team was effectively, \"we don't know how you do it. Figure it out,\" trusting the holistic expertise the team had built.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a large company seeking to enter a new, complex area, look for small, proven teams that have successfully built an entire end-to-end system, even at a tiny scale. Their integrated experience is more valuable than hiring individual experts.",
+        "As a startup founder, document and emphasize your team's capability across all functions. This holistic, battle-tested expertise is a highly valuable asset to a potential acquirer.",
+        "When integrating an acquired team, don't break them up. Give them a large, ambiguous mission and the autonomy and resources to solve it, leveraging the cohesive problem-solving capabilities they developed as a startup.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const amazonNokiaCards: BattleCardProps[] = [
+  {
+    title: "Working Backwards (The PR/FAQ Method)",
+    titleEmoji: "📰",
+    what: {
+      point: "A powerful way to vet new ideas and align teams is to start by writing a future press release (PR) and a list of frequently asked questions (FAQs) before any development begins, forcing you to fake success until you can make it.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "This best practice, famously used by Amazon, forces the innovator to start with a crystal-clear vision of the value proposition and what success looks like from the customer's perspective.",
+        "The press release defines the vision and headline value. The FAQs then translate that vision into a development roadmap, identifying potential customer pain points, red flags, and the specific features needed to deliver on the promise.",
+        "Creative agency Crispin, Porter and Boguski used a similar PR-first method, refusing to create any campaign that couldn't generate a compelling headline they could imagine being picked up by a major newspaper.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before allocating any significant resources to a new project, mandate that the project lead must first write a one-page press release announcing its successful launch.",
+        "Require an accompanying FAQ document that anticipates and answers the toughest questions from customers, engineers, finance, and leadership. This will expose weaknesses in the idea early.",
+        "Use this PR/FAQ document as the central artifact for the initial \"green light\" meeting to ensure everyone is debating a clear, customer-focused vision, not an abstract idea.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The \"Single-Threaded Leader\" Execution Model",
+    titleEmoji: "🎯",
+    what: {
+      point: "To ensure new ventures get the focus they need, assign a single-threaded leader who is pulled out of their current job and made 100% dedicated to the new initiative, with their career success tied to its progress.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "At Amazon, when an idea receives a green light, the person who proposed it is often pulled from their existing role to lead the new project, sometimes receiving a promotion on the spot.",
+        "This model ensures that the new venture is not a side project but has a dedicated, accountable owner from day one. It prevents the common failure mode of innovation being starved of resources or attention.",
+        "This forces a self-selection of innovators who are truly committed, as they are \"betting\" their current role on the success of the new idea. It also creates a powerful internal career path for ambitious, entrepreneurial employees.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When launching a new strategic initiative, identify a single, accountable leader and make it their only job. Do not allow it to be managed by a committee or as a part-time responsibility.",
+        "Create a clear organizational process for this transition, ensuring that the leader's former team and responsibilities are backfilled to minimize disruption to the core business.",
+        "Establish a career path where successfully launching new internal ventures is a primary route to senior leadership, incentivizing your best people to take on these high-risk, high-reward roles.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The \"One-Way vs. Two-Way Door\" Decision Framework",
+    titleEmoji: "🚪",
+    what: {
+      point: "Categorize all tough decisions as either a \"one-way door\" (irreversible and costly) or a \"two-way door\" (reversible and cheap), and empower your organization to make two-way door decisions quickly and without fear of failure.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "A one-way door decision involves a significant commitment of resources that is difficult or expensive to undo if you're wrong (e.g., launching a physical phone). These require deep analysis and senior leadership oversight.",
+        "A two-way door decision is one where a mistake is not costly. You can learn quickly and reverse course cheaply (e.g., testing a small software feature).",
+        "Amazon's culture explicitly encourages making non-costly mistakes with two-way doors, recognizing that the speed and learning gained outweigh the minor cost of being wrong. This is very difficult for most corporate cultures to adopt.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When faced with a difficult decision, the first question should be: \"Is this a one-way or a two-way door?\"",
+        "For two-way doors, delegate decision-making downward and create a culture where rapid, low-cost experiments are rewarded, even if they fail. The goal is learning, not perfection.",
+        "For one-way doors, break the decision down into smaller, sequential steps. Ask, \"What is the smallest experiment or test we can run to turn this one-way door into a series of two-way doors and gain more information before we commit?\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Leadership Accountability for Innovation Failure",
+    titleEmoji: "🛡️",
+    what: {
+      point: "In a successful innovation system, accountability for a failed project rests with the leaders who green-lit and funded it, not with the individual innovator who executed it, creating psychological safety for ambitious risk-taking.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The executive who led Amazon's most public humiliation, the Fire Phone, was not fired or demoted. To Amazon's leadership, the failure was owned by the senior leaders who approved the \"one-way door\" decision.",
+        "This same executive was then trusted to lead the development of one of Amazon's biggest successes, the Alexa. This demonstrates that the company separates the failure of an idea from the capability of the person.",
+        "This dynamic is unique. In most organizations, the project leader's career is tied to the project's success, discouraging big swings. At Amazon, leaders are measured on their portfolio of bets, so their reputation is on the line, incentivizing them to kill failing projects quickly.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Publicly and explicitly state that the accountability for approving a major innovation project lies with the senior leadership team, not the project manager.",
+        "When a project is killed, conduct a blameless post-mortem focused on the flawed assumptions or market realities, not the performance of the individuals on the team.",
+        "Create opportunities for employees who led failed-but-well-executed projects to immediately move on to other high-impact roles, signaling that intelligent risk-taking is valued regardless of the outcome.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Building an Internal Venture Capital Machine",
+    titleEmoji: "💼",
+    what: {
+      point: "A large organization can foster continuous innovation by mimicking the portfolio dynamics of a venture capital firm: placing many small, uncorrelated bets and having a rigorous, staged-gate process for allocating follow-on funding.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Amazon's model allows a \"million flowers to bloom,\" creating a large portfolio of risky, mostly uncorrelated ventures. This diversification means that the failure of any single project is not catastrophic.",
+        "The company is extremely frugal with initial funding. Innovators don't get a blank check; they get a small budget to reach the next milestone, at which point they must return to justify further investment. This staged funding mitigates risk.",
+        "The organization must have a \"money machine\" (like AWS or the core retail business) to fund this constant experimentation, and the patience from the market to tolerate years of investment before a venture becomes profitable.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Instead of making a few large innovation bets, create a formal process for many teams to pitch for small amounts of seed funding for new ideas.",
+        "Implement a milestone-based funding model. Define clear, aggressive milestones for each project, and only release the next tranche of funding when a milestone is met.",
+        "Ensure your core business is profitable and stable enough to support this portfolio of experiments, and manage investor expectations that this is a long-term strategy where most bets will fail, but the winners will be transformative.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const yossiAiStrategyCards: BattleCardProps[] = [
+  {
+    title: "The Four Layers of the AI Stack",
+    titleEmoji: "🏗️",
+    what: {
+      point: "The entire AI industry can be understood as a four-layer stack, and knowing which layer you operate in—or need to monitor—is critical for defining your strategy and anticipating change.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Layer 1: Compute Infrastructure & Frameworks: This is the physical layer of data centers, GPUs (NVIDIA), and the low-level code (like CUDA) that orchestrates training and inference. Innovation here is driven by changing workloads, such as the intense demands of model training.",
+        "Layer 2: Foundation Models: This is where the large language models themselves are created by players like Google (Gemini), Meta (Llama), and OpenAI. Competition exists between proprietary closed models and powerful open-source alternatives.",
+        "Layer 3: AI Service Platforms & APIs: This is the \"connecting tissue\"—the thousands of tools like LangChain that allow developers to orchestrate workflows, call LLMs, and integrate AI capabilities into other software without coding everything from scratch.",
+        "Layer 4: User Applications & Wrappers: This is the top layer where end-users interact with AI. It includes everything from wrappers that provide a better user experience (like Perplexity) to enterprise software that embeds AI to solve specific business problems.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify which layer of this stack is most critical to the future of your business. This is the layer your team must monitor for breakthroughs.",
+        "If you are a robotics company, your focus should be on Layer 1 (on-device compute and actuators). If you are building a new CRM, your focus is on Layer 4 (applications).",
+        "Structure your \"build vs. buy\" decisions around this framework. Decide where you need to own the technology versus where you can leverage platforms and services from other layers.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Accelerating Impact of General-Purpose Technology",
+    titleEmoji: "⚡",
+    what: {
+      point: "While previous general-purpose technologies (GPTs) like steam power and electricity took decades to impact the economy, AI is being adopted and integrated at a dramatically faster rate, compressing transformation timelines from decades to months.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Economic historian Nicholas Crafts showed that previous GPTs had a very long tail before their full impact on productivity was felt.",
+        "The speaker cites a year-old problem—Retrieval-Augmented Generation (RAG)—that went from being the \"biggest problem\" for business applications to a solved feature offered by all major players in \"way less than a year.\"",
+        "This acceleration is happening because the core infrastructure (cloud computing, data centers) is already in place, and the barriers to building and deploying AI-powered software are collapsing.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Assume that the timeline for AI-driven disruption in your industry is measured in months, not years. Horizon 3 is now Horizon 2.",
+        "Create a rapid-response mechanism within your organization to monitor and test emerging AI capabilities, as a critical problem for you today might be a solved feature in six months.",
+        "Do not get locked into long-term technology roadmaps. Build agile processes that allow you to pivot and integrate new AI tools as they become available.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Labor vs. Capital Shift on Steroids",
+    titleEmoji: "💰",
+    what: {
+      point: "Historically, technology has shifted economic returns from labor to capital; AI dramatically accelerates this trend by automating white-collar, knowledge-based tasks, creating a future where companies can grow aggressively without increasing headcount.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "A study by Daron Acemoglu showed that in the last 30 years of ICT, the return to capital was more than double the return to labor, as technology displaced more tasks than it created.",
+        "AI is \"particularly good\" at automating the tasks performed by the white-collar middle class—work done by junior lawyers, consultants, and coders.",
+        "The speaker notes a significant trend of tech companies with aggressive growth roadmaps that have no plans to increase their hiring, as AI makes their existing workforce exponentially more productive.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Mandate that every department in your organization must develop a strategy for leveraging AI to increase productivity without increasing headcount.",
+        "Invest in upskilling your existing workforce to become expert users and managers of AI tools, shifting their value from task execution to strategic oversight.",
+        "Model your future P&L on the assumption of decoupling revenue growth from headcount growth, and reallocate the capital saved from labor costs into further technology investment.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Unlocking of Coding Will Unlock Everything Else",
+    titleEmoji: "🔓",
+    what: {
+      point: "The massive productivity gains AI has brought to software development are a preview of what will happen in every other knowledge-work domain; the low barrier to entry for coding new solutions means incumbents in every software category are now vulnerable.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "AI has become \"fantastic in code,\" automating painful tasks like writing unit tests and enabling the creation of full applications from natural language prompts.",
+        "This \"unlocking of coding\" means the barrier to entry for creating sophisticated software has collapsed. The speaker notes an explosion of new startups trying to build CRMs, a task that was once prohibitively complex.",
+        "The next wave of disruption will come from applying the same AI-driven development model to other domains: \"writing legal contracts,\" \"design and conduct,\" etc., creating specialized, AI-powered tools that replace repetitive white-collar work.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify the most repetitive, high-value knowledge work processes within your organization (e.g., contract review, financial modeling, marketing campaign creation).",
+        "Assume that a specialized AI tool will be built to automate this process. Your choice is to build it yourself, buy it from a startup, or be disrupted by a competitor who does.",
+        "Do not be complacent with your existing enterprise software (e.g., Salesforce). Because building alternatives is now so easy, you should be actively evaluating new, AI-native startups that could provide a 10x better solution.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "A 5-Step Framework for Executing AI Initiatives",
+    titleEmoji: "📋",
+    what: {
+      point: "The majority of AI initiatives fail to generate returns because they start with the technology, not the business value. A simple five-step framework that begins with business outcomes can dramatically increase the probability of success.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Step 1: What is the business value or challenge? Do not start with \"We need to use AI.\" Start with a specific business outcome, such as \"We need to reduce customer service response time by 50%.\"",
+        "Step 2: Detail the business outcomes. Quantify the goal. This turns a vague idea into a measurable metric for execution and vendor evaluation.",
+        "Step 3: What data will drive that value? Assess if you have the necessary data to power the AI. This is a critical go/no-go checkpoint.",
+        "Step 4: How will technology deliver this value from this data? Only now do you consider the specific AI tools or models needed to connect the data to the outcome.",
+        "Step 5: Model ROI and assess risk. Before execution, build a financial model and identify the key risks. Do not start a big infrastructure project until you have completed this analysis for the portfolio of business outcomes it's supposed to enable.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Mandate that every AI project proposal must follow this five-step framework, starting with a quantified business value.",
+        "Reject any proposal that begins with a discussion of a specific technology without first defining the business problem it solves.",
+        "Use this framework to hold vendors accountable. Make them demonstrate how their technology will deliver on your specific, pre-defined business outcomes.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const innovationCards: BattleCardProps[] = [
+  {
+    title: "Innovation is a Mindset, Not a Process",
+    titleEmoji: "🧠",
+    what: {
+      point: "True innovation does not come from rigidly following a prescribed, linear process like the five steps of design thinking, but from internalizing a fluid set of core mindsets that can be adapted to any problem.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker debunks the myth of \"special innovation rooms\" and rigid processes, stating it's \"completely wrong.\" Innovation comes from cognitive strategies everyone possesses.",
+        "An analysis of over 80 different innovation frameworks revealed they are all built on the same six core mindsets. The specific steps or diagrams are just one representation.",
+        "The popular five-step design thinking model is useful for learning, but practitioners fail when they treat it as a linear checklist. Real projects are iterative and require moving back and forth between the different mindsets and abilities.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Focus on teaching your teams the underlying mindsets of innovation (e.g., empathy, iteration, inspiration) rather than forcing them to adhere to a rigid, step-by-step process.",
+        "Empower your teams to use different tools and methods as needed, trusting that if they have the right mindsets, they will find the right path.",
+        "When an innovation project stalls, diagnose the problem by asking which mindset is being neglected, not which process step was skipped.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Design for the Extreme User",
+    titleEmoji: "🎯",
+    what: {
+      point: "The most effective way to create a breakthrough solution for the mainstream market is to first design for an \"extreme user\" whose needs are the most pronounced.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The OXO Good Grips kitchen tools, a market-leading product, were initially designed for one person with extreme arthritis. The solution that worked for her turned out to be better for everyone.",
+        "The speaker advises teams to pick the most extreme low point from a user journey map to focus on, because \"extreme cases help illustrate the problem more than the mainstream cases.\"",
+        "By solving for the most difficult user case, you often create a product with superior design and functionality that benefits all users, even those who could have tolerated a less-optimal solution.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "In your user research, actively seek out the \"extreme\" users—those with the most acute pain points, the most unusual constraints, or the highest demands.",
+        "Center your initial design and prototyping efforts around solving the problem for this one extreme user (\"designing for an N of 1\").",
+        "Once you have a solution that works for the extreme case, test and adapt it for the broader market, leveraging the robust design principles discovered while solving the harder problem.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Fall in Love with the Problem, Not the Solution",
+    titleEmoji: "❤️",
+    what: {
+      point: "The quality of your solution is baked into the frame of the problem you're trying to solve; rushing to a solution before deeply understanding and framing the problem leads to running into walls repeatedly.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker quotes, \"A problem well-stated is a problem half-solved.\" Time spent defining the problem is the most leveraged part of the innovation process.",
+        "The GE MRI machine example is pivotal. The initial problem frame was technical (\"build a better MRI\"). But by observing a terrified child, designer Doug Dietz reframed the problem to an emotional one (\"How do we make patients feel safe, calm, and excited?\").",
+        "This reframing led to a completely different, low-cost, high-impact solution: the \"Adventure Series\" of themed MRI rooms, which dramatically reduced the need for sedation. The solution was only possible once the right problem was identified.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before any brainstorming for solutions, force your team to spend significant time on problem framing. Use techniques like the \"5 Whys\" to move up the ladder of purpose and understand the root need.",
+        "Experiment with reframing your problem statement. Changing one word (e.g., from \"birthday party\" to \"celebration\") can unlock completely different and more creative solution spaces.",
+        "When your team is stuck on solutions, stop ideating and return to the problem definition. It's likely the frame itself is too narrow or is focused on the wrong need.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Prototyping to Learn, Not to Sell",
+    titleEmoji: "🔬",
+    what: {
+      point: "The primary function of an early-stage prototype is not to sell an idea, but to make an abstract concept concrete in order to communicate it effectively and learn from user interactions.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Abstract ideas are easily misinterpreted. The speaker gives the example of describing a \"square\"—two people can agree on the abstract definition but be thinking of different shapes (a square vs. a parallelogram). A simple drawing makes the idea concrete and aligns understanding.",
+        "When testing a prototype, the goal is to listen, not to tell. The instructions are strict: give a one-breath explanation and then only ask, \"What do you like about it?\" and \"What would you like it to do?\" This prevents you from selling features and forces you to learn what the user actually experiences.",
+        "The process is iterative. Every piece of feedback from a low-cost, low-fidelity prototype allows you to make a small adjustment, shaping the idea until it truly meets the user's needs before you invest heavily in a polished product.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Build the lowest-fidelity prototype possible that can create a real-life experience for the user (e.g., arranging chairs to simulate an airplane cabin).",
+        "When testing, enforce a strict \"listen, don't sell\" rule. Use open-ended questions and resist the urge to explain features or correct the user's interpretation.",
+        "Embrace the iterative cycle. Start with a single user (N of 1) and a cheap paper prototype, learn, adjust, and gradually increase the prototype's fidelity and the size of your test group as you gain confidence in the idea.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const crisisManagementCards: BattleCardProps[] = [
+  {
+    title: "The Core Competency & Outsourcing Model",
+    titleEmoji: "🎯",
+    what: {
+      point: "An organization can achieve massive scale and impact by focusing relentlessly on a single core competency and outsourcing all other functions to best-in-class partners who can fulfill the mission.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The Komen Foundation's mission was to \"eradicate breast cancer\" through research, education, screening, and treatment.",
+        "However, their chosen strategy was to focus exclusively on their core competency: \"fundraising and awareness.\" They functioned as a world-class marketing and community-building organization.",
+        "They then outsourced the mission-critical functions, giving grants to researchers for the research prong and partnering with Planned Parenthood to execute on the screening and treatment prongs for low-income communities.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Define your single, non-negotiable core competency. What is the one thing your organization does better than anyone else? Pour all your internal resources into perfecting it.",
+        "Identify all other necessary functions required to deliver your value proposition and treat them as candidates for outsourcing.",
+        "Aggressively seek out and partner with external organizations whose core competencies match your non-core needs, allowing you to leverage their expertise without diluting your own focus.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Danger of Partner Brand Contagion",
+    titleEmoji: "⚠️",
+    what: {
+      point: "When you partner with another organization, you don't just gain their capabilities; you inherit their entire brand reputation, including their most polarizing controversies, which can drag your organization into fights it never intended to have.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The partnership between Komen and Planned Parenthood was strategically sound on a capabilities level: Planned Parenthood had over 600 clinics perfectly positioned to provide the cancer screening Komen needed to fund in low-income communities.",
+        "However, Planned Parenthood, despite providing a wide range of health services, is inextricably linked to the abortion debate. It is only 3% of their services, but it is a central and proud part of their identity.",
+        "By associating with Planned Parenthood, Komen—a previously non-partisan, universally loved cancer charity—was \"dragged into the abortion wars,\" alienating a portion of its donor base and becoming the target of activist pressure.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before entering any major partnership, conduct a thorough \"brand contagion\" risk assessment. Analyze not just the partner's capabilities, but also their most vocal critics and the political battles they are involved in.",
+        "Evaluate the \"second-order\" risk: Who will attack you because you are associated with your new partner?",
+        "Develop a proactive communication plan to address this inherited risk. Decide in advance how you will respond when your partner's controversy inevitably becomes your problem.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Activist Playbook: Attack the Supply Chain",
+    titleEmoji: "🔗",
+    what: {
+      point: "Activist groups often target a primary organization indirectly by applying intense public pressure to its critical partners—funders, suppliers, or corporate sponsors—to sever the relationship and choke off essential resources.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The primary target of the pro-life activists was Planned Parenthood. Their standard playbook was to make it difficult for them to operate by protesting clinics and pressuring business partners.",
+        "Upon discovering that Komen was a significant funder, the activists shifted their pressure \"up the supply chain\" to Komen.",
+        "Groups like the Susan B. Anthony List and the American Bishops Association began campaigning directly against Komen, telling their own members to boycott Komen's walks and withhold donations until Komen cut its funding to Planned Parenthood.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map your own organization's critical dependencies. Identify your most important funders, customers, and suppliers whose loss would significantly harm your operations.",
+        "Analyze which of these partners are most vulnerable to public pressure or have a stakeholder base that might be swayed by an activist campaign.",
+        "Prepare a defensive strategy in advance. How would you support a critical partner under attack? What is your plan to maintain that relationship in the face of public pressure?",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The \"Too Clever by Half\" Solution Backfire",
+    titleEmoji: "🎭",
+    what: {
+      point: "Attempting to solve a controversial problem with a clever, indirect policy instead of addressing it head-on is a high-risk gamble that can backfire, making the organization look deceptive and creating a much larger crisis of trust.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Komen's problem was the political pressure to defund Planned Parenthood. They wanted a way out that didn't look overtly political.",
+        "Their \"clever\" solution was to create a new, seemingly neutral policy: they would not fund any organization currently under government investigation.",
+        "This policy was transparently designed to apply only to Planned Parenthood, which was the subject of a new congressional investigation by a Republican congressman. It was an attempt to achieve a political goal under the cover of neutral corporate governance.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When faced with a difficult, values-based decision, address the core issue directly and transparently. An indirect or \"clever\" solution will be seen as an act of cowardice.",
+        "War-game every major policy change by asking, \"How will this be reported by a skeptical journalist?\" If the story is about your clever maneuver rather than your stated principle, the policy is flawed.",
+        "Never create a \"neutral\" rule whose only practical effect is to target one specific entity. The true intent will be exposed, and the damage to your reputation will be far greater than the initial problem you were trying to solve.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const financeCards: BattleCardProps[] = [
+  {
+    title: "The Free Cash Flow Problem",
+    titleEmoji: "💰",
+    what: {
+      point: "Mature, highly profitable companies often suffer from a \"free cash flow problem,\" where they generate more cash than they have valuable investment opportunities, leading to wasteful spending and underperformance.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "This is the core conflict between management and shareholders. Management, lacking new high-return projects, is incentivized to hold onto cash and spend it on low-value initiatives or perks (e.g., private jets for golf trips).",
+        "Shareholders, like activist Carl Icahn questioning Apple CEO Tim Cook's $700 billion cash hoard, argue that if there are no great investments, the money should be returned to them via dividends or buybacks so they can reinvest it elsewhere.",
+        "The \"problem\" is that management's incentive is to grow the empire, even unprofitably, while shareholders' incentive is to receive the highest possible return on their capital.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a leader or board member, relentlessly question your company's cash reserves. Is every dollar on the balance sheet allocated to a project with a return that exceeds what shareholders could get elsewhere?",
+        "Establish a clear and disciplined capital allocation framework that forces a choice between high-return internal investments or returning capital to shareholders.",
+        "Be wary of using \"innovation\" as a blanket justification for holding excess cash. Demand specific, high-potential projects and kill those that are not delivering.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Three Levers of Value Creation",
+    titleEmoji: "🔧",
+    what: {
+      point: "Any strategy to improve a company's value, whether driven by activists or internal management, can be broken down into three fundamental levers: operational, financial, and governance.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Operational Changes: These involve altering the core business itself, such as changing the product mix, improving pricing, selling off underperforming divisions, or breaking up the company.",
+        "Financial Changes: These focus on the capital structure. Examples include paying out excess cash (dividends, buybacks) or taking on debt to pressure management and optimize the balance sheet.",
+        "Governance Changes: These target the decision-making and incentive structures. This includes changing the management team, altering executive compensation contracts to be more performance-based, or replacing board members.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When analyzing an underperforming company or business unit, structure your diagnosis around these three buckets. Where is the biggest opportunity for improvement?",
+        "Develop a clear, integrated plan that utilizes all three levers. For example, a governance change (new CEO) might be required to execute an operational change (selling a division), which then enables a financial change (a special dividend).",
+        "Use this framework to evaluate activist proposals. Are they offering a balanced plan across all three areas, or are they just focused on short-term financial engineering?",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Shareholder Activist Playbook",
+    titleEmoji: "📊",
+    what: {
+      point: "Shareholder activists follow a predictable playbook to force change at underperforming public companies: take a significant stake, wage a public campaign to win shareholder support, and drive changes designed to increase the stock price for an eventual exit.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The process begins by targeting a firm they believe is undervalued due to mismanagement. They then take a large equity stake (e.g., 5-7%, often costing hundreds of millions) to have \"skin in the game\" and make the effort worthwhile.",
+        "They wage a public \"war of ideas\" using weapons of mass destruction (PowerPoint decks) to convince other shareholders that the current management and board are destroying value and that their plan will unlock it.",
+        "The campaign often culminates in a proxy battle to replace board members, giving the activist the power to implement their proposed operational, financial, and governance changes.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a public company leader, proactively run the activist playbook on your own company. Identify your weaknesses and develop a compelling narrative for your long-term value creation before an activist does it for you.",
+        "Maintain strong relationships and clear communication with your largest institutional shareholders (like Vanguard and BlackRock), as their support is critical in a proxy fight.",
+        "Do not underestimate the power of a simple, potent narrative. Activists win by telling a clear story: \"Management sucks, we're amazing, join us.\" You must have an equally clear and compelling counter-narrative.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Agency Problem in Corporate Governance",
+    titleEmoji: "⚖️",
+    what: {
+      point: "The fundamental conflict in public companies is the \"agency problem\": the interests of management (the agents) are often not aligned with the interests of the shareholders (the owners), leading to decisions that benefit executives at the expense of the firm's value.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Shareholders want to maximize the long-term value of their investment. Management may prioritize other goals, such as empire-building, job security, or personal perks, which can lead to the \"free cash flow problem.\"",
+        "Traditional governance mechanisms like boards of directors and equity-based compensation are meant to solve this, but they are often flawed. Boards can be filled with friends of the CEO (\"I'm on your board, you're on my board\"), and compensation can be set by those same friendly boards.",
+        "Shareholder activism is an external market-based mechanism that attempts to correct this agency problem by forcibly realigning the company with shareholder interests.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a board member, prioritize true independence. Actively recruit directors who have no prior social or professional ties to the CEO and who have a track record of challenging management.",
+        "Design executive compensation that is tightly and transparently linked to long-term total shareholder return, not just short-term metrics that can be easily manipulated.",
+        "Foster a culture of ownership where all senior leaders are expected to think and act like shareholders, constantly questioning whether decisions are in the best long-term interest of the company's owners.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const marketReactionActivistCards: BattleCardProps[] = [
+  {
+    title: "The Credibility Gap in Activist Campaigns",
+    titleEmoji: "🎭",
+    what: {
+      point: "The market's reaction to an activist campaign is not based on the theoretical value of their plan, but on the activist's credibility and perceived ability to actually execute the proposed changes.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker presents a scenario where a company's stock is at $5. An activist (Rachel) presents a plan arguing the value should be $13. The market, however, only moves the price to $9.",
+        "This \"credibility gap\" exists because the market is pricing in the probability of the activist's success. A move to $9 implies the market believes there's roughly a 50/50 chance Rachel can pull off her plan.",
+        "Reputation is paramount. If a highly credible activist like Carl Icahn announced the same plan, the stock might jump directly to $13. If an unknown activist announced it, the stock might not move at all, or even go down.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a company leader facing an activist, your first line of defense is to attack their credibility and track record. Frame them as an outsider who doesn't understand the nuances of your business.",
+        "As an activist, building a strong, public track record of successful campaigns is your most valuable asset, as it directly impacts the market's belief in your future plans.",
+        "When evaluating an activist's claims, look beyond the PowerPoint deck and analyze their history. Have they successfully executed similar turnarounds in the past?",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Shareholder vs. Stakeholder Debate",
+    titleEmoji: "⚖️",
+    what: {
+      point: "The central conflict in corporate governance is between two opposing philosophies: shareholder maximization, which assumes all other stakeholders are protected by contracts, and stakeholder maximization, which argues for a more inclusive but complex decision-making process.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Shareholder Maximization (Friedman): This view argues that a company's sole focus should be maximizing equity value. The interests of all other stakeholders (employees, customers, debtholders, the community) are assumed to be protected through contracts (employment agreements, debt covenants, regulations). The market will punish the company's equity price if it violates these implicit or explicit contracts.",
+        "Stakeholder Maximization (Freeman): This view argues that the assumptions of the shareholder model are too strong and that all stakeholders should have a voice in decision-making. The downside is that this can lead to slow, consensus-driven processes that stifle innovation and decisive action, like \"a euro, which is very difficult to maneuver.\"",
+        "The Bell Canada LBO case highlights this tension. The private equity firm (representing new shareholders) made a decision that increased risk for existing debtholders (a key stakeholder), leading to a legal battle over whose interests should take priority.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Clearly define your company's governing philosophy. Are you a shareholder-first organization, or do you explicitly balance the needs of multiple stakeholders? This choice will have profound implications for your strategy and decision-making.",
+        "If you follow a shareholder maximization model, ensure your contracts and relationships with other stakeholders are robust and fair. The model's validity rests on the assumption that these contracts are honored and that markets will punish you for bad behavior.",
+        "If you adopt a stakeholder model, create a clear, efficient framework for gathering input and resolving conflicts between different groups to avoid decision-making paralysis.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Inherent Conflict Between Debt and Equity",
+    titleEmoji: "💥",
+    what: {
+      point: "Debtholders and equity holders have fundamentally misaligned incentives regarding risk, which can lead to strategic conflicts, especially when a company is in financial distress.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker uses a simple example: a company owes a debtholder (Deepak) $50. If the company generates more than $50, both parties win. If it generates less, the debtholder gets everything and the equity holder gets zero.",
+        "This creates a conflict over risky projects. The equity holder, who is already getting nothing, is incentivized to take a \"Going to Vegas\" bet—a high-risk, high-reward project. If it fails, they're no worse off (still at zero). If it succeeds, they could get a massive payoff.",
+        "The debtholder, however, hates this bet. Their upside is capped at $50, but they bear all the downside risk if the project fails and the company is destroyed. They prefer safe, predictable strategies.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a debtholder (lender), protect yourself from this conflict by writing restrictive covenants into the debt agreement that limit the company's ability to take on excessive risk (e.g., limiting acquisitions, M&A, or changes of control).",
+        "As an equity holder or manager, be aware that your appetite for risk is not shared by your lenders. Pushing for high-risk projects may violate debt covenants and trigger defaults.",
+        "Recognize that this conflict is a key reason private equity firms (as new equity holders) can create value. They replace the old capital structure with one designed to accommodate their specific high-leverage, high-risk strategy.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Double-Edged Sword of Debt (The LBO Model)",
+    titleEmoji: "⚔️",
+    what: {
+      point: "Private equity firms create value by strategically using debt, which provides a tax shield benefit but also introduces the risk of financial distress; their core skill is maximizing the former while managing the latter.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The \"good side\" of debt is the tax shield: interest payments are tax-deductible, so taking on more debt reduces the company's tax bill, increasing the cash flow available to owners.",
+        "The \"bad side\" is the cost of financial distress: too much debt increases the risk of bankruptcy. Even before bankruptcy, it can harm the business as customers worry about warranties, employees leave, and suppliers demand stricter terms.",
+        "A private equity firm's strategy is to argue that they have the skill to take on far more debt than the previous management, maximizing the tax shield benefit without tipping the company into distress, thereby increasing its total value. This is the financial engineering at the heart of a leveraged buyout (LBO).",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Continuously evaluate your company's capital structure. Are you leaving value on the table by carrying too little debt and paying too much in taxes?",
+        "Before taking on more leverage, rigorously assess your company's ability to service the debt, especially the stability of your cash flows and the tangibility of your assets.",
+        "Recognize that the optimal level of debt is a trade-off. Your goal is to find the \"sweet spot\" that maximizes the firm's value by balancing the tax benefits against the costs of financial distress.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Pre-Mortem Defense Playbook",
+    titleEmoji: "🛡️",
+    what: {
+      point: "The most effective way to defend against a shareholder activist is to proactively run their playbook on your own company, identify your vulnerabilities, and prepare a robust communication plan before they ever show up.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Consulting firms now offer \"pre-mortem\" simulations where they help companies anticipate an activist attack.",
+        "The process involves a rigorous self-assessment across the three buckets of value creation: operational (e.g., pricing, capex), financial (e.g., dividends, debt), and governance.",
+        "By identifying and addressing these weaknesses internally, or at least having a compelling public justification for your current strategy, you can neutralize an activist's main lines of attack. SAP's response to Elliot Management, welcoming them as a valued partner, showed they were prepared.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Schedule a \"pre-mortem\" with your board and senior leadership. Role-play as an activist and build the strongest possible case against your own company.",
+        "Develop a clear and compelling narrative for your capital allocation strategy, your operational performance, and your governance structure.",
+        "Communicate this narrative proactively and consistently to your key shareholders so they are already aligned with your vision when an activist comes knocking.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const decisionMakingCards: BattleCardProps[] = [
+  {
+    title: "The Sampling on the Dependent Variable Fallacy",
+    titleEmoji: "🚫",
+    what: {
+      point: "One of the most common and dangerous decision-making errors is \"sampling on the dependent variable\"—basing a conclusion only on cases of success while completely ignoring cases of failure, leading to a fundamentally flawed understanding of what drives outcomes.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "This was the core mistake in the Carter Racing case and the real-life Space Shuttle Challenger disaster. The engineers only analyzed the data from launches where O-ring failures occurred, completely ignoring the launches where no failures happened. This made it impossible to see the true relationship between temperature and failure.",
+        "The leadership assessment tool described in the lecture made the same error. It built its model of success by exclusively interviewing \"most successful employees,\" without ever talking to unsuccessful ones to see if they exhibited the same behaviors.",
+        "The speaker stresses this is a \"deal breaker\" and a \"fundamental flaw.\" If your data only includes successes, you can never know if the attributes you're observing are actually diagnostic of success or are just common to everyone.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When analyzing any problem, your first question must be, \"Do we have data on both the successes and the failures?\"",
+        "In any \"best practices\" or \"post-mortem\" analysis, create two columns: one for what the successful projects did, and a second for what the unsuccessful projects did. The real insights lie in the differences between the two.",
+        "Train yourself and your teams to spot this fallacy. When someone presents a conclusion based only on a sample of successes, immediately challenge it and demand to see the \"control group\" of failures.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Power of Defaults",
+    titleEmoji: "🎯",
+    what: {
+      point: "The default option in any choice has a profound and disproportionate influence on the final outcome, as most people will stick with the pre-selected path of least resistance.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker highlights the dramatic difference in organ donor registration rates between the US (~35%) and countries like Austria (~98%).",
+        "The decision is identical, but the default is flipped. In the US, the default is \"opt-in\" (you are not a donor unless you check a box). In Austria, the default is \"opt-out\" (you are a donor unless you check a box).",
+        "This \"default bias\" is so powerful that a decision researcher's first question when analyzing any situation should always be, \"What's the default?\" because it's a primary driver of the final result.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Audit the critical decisions in your organization and identify the default options. Are they set to encourage the desired outcome?",
+        "When designing any new process, product, or policy, be highly intentional about setting the default. If you want people to enroll in a 401k, make enrollment the default. If you want them to adopt a new software, make it the default tool.",
+        "Use defaults to steer behavior in a positive direction, but be transparent about it. Don't create \"dark patterns\" that trick users into a default they wouldn't otherwise choose.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Hierarchy-Induced Overconfidence",
+    titleEmoji: "👑",
+    what: {
+      point: "As leaders rise in an organization, they are at an increasing risk of overconfidence, not because they are experts, but precisely because they are not—they become generalists spread too thin across too many areas where they are novices.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Empirical research shows that novices, not experts, are more prone to overconfidence. Experts are often cautious and aware of the limits of their knowledge, while novices \"don't have a clue\" and can feel \"emboldened when they never should.\"",
+        "The pyramidal shape of a hierarchy forces senior leaders to become generalists. They lose deep, specific expertise and instead have a thin layer of knowledge across many domains.",
+        "The speaker warns that \"As you go higher and higher in organizations... you will have the most overconfidence you will ever have because of the fact that you are simply spread too thin.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Cultivate intellectual humility. Actively remind yourself that your position in the hierarchy does not equate to expertise in every subject.",
+        "Before making a decision in an area outside your core expertise, explicitly seek out and defer to the true subject matter experts on your team, even if they are more junior.",
+        "Create a culture where it is safe and encouraged for team members to challenge a leader's assumptions, providing a necessary check against hierarchy-induced overconfidence.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Common Information Effect",
+    titleEmoji: "📢",
+    what: {
+      point: "Groups naturally fail to harness their collective wisdom because they gravitate towards discussing commonly held (\"shared\") information, while systematically failing to surface unique (\"unshared\") information held by only one or two members.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker calls this the \"#1 thing to watch out for in how you manage group decisions.\" The premise of group decision-making is to benefit from diverse viewpoints, but the natural tendency of groups is to suppress this divergence in favor of convergence.",
+        "The CFO selection exercise is rigged to demonstrate this. For the \"wrong\" candidates (Suzanne and Kristen), the positive information is shared among many group members, while the negative is unshared. For the \"right\" candidate (Nancy), the positive information is unshared (held by only one person), while the negative is shared by everyone.",
+        "This structure almost guarantees the group will choose the wrong candidate, because the discussion will naturally focus on the shared negative information about Nancy and the shared positive information about the others, while Nancy's crucial, unshared positive attributes never get the attention they deserve.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Implement the Nominal Group Technique (NGT). Before any meeting, require each participant to silently write down their ideas and information. Collect and distribute this composite information to everyone before any open discussion begins. This ensures all unshared information is on the table from the start.",
+        "Explicitly assign roles. Task one person with being the \"information aggregator\" whose job is to go around the room and ensure that every person has shared their unique perspective.",
+        "As a leader, model the behavior of seeking out unshared information. Ask questions like, \"What's something we haven't considered yet?\" or \"Does anyone have a completely different perspective on this?\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Reversing the Dysfunctional Meeting Order",
+    titleEmoji: "🔄",
+    what: {
+      point: "Most group decision meetings are dysfunctional because they follow a backwards sequence: they start by deciding what to do, then discuss what they know, and rarely clarify what they want. A successful process reverses this order.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Groups naturally jump to a straw poll, which is a premature attempt to decide \"What do we do?\" This anchors the discussion and turns it into a debate where individuals defend their positions.",
+        "The correct, functional order is to first establish a shared understanding of the goal: \"1. What do we want?\" (e.g., What are the essential criteria for this CFO role?).",
+        "Only after the criteria are agreed upon should the group move to information sharing: \"2. What do we know?\" (e.g., Let's pool all our information about each candidate against these criteria). The final step is the decision itself: \"3. What do we do?\" By this point, the decision is often much clearer because it flows from a shared understanding of goals and facts.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "At the start of any decision-making meeting, explicitly block any discussion of solutions or preferences.",
+        "Dedicate the first phase of the meeting exclusively to aligning on the criteria for success (\"What do we want?\"). Write these criteria on a whiteboard for everyone to see.",
+        "Dedicate the second phase to a structured information-sharing round (\"What do we know?\"), where each person contributes their knowledge about the options as they relate to the agreed-upon criteria. Only then, in the final phase, should the group move to a vote or decision.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const investorPlaybooksCards: BattleCardProps[] = [
+  {
+    title: "The Public vs. Private Trade-Off (Control, Growth, Liquidity)",
+    titleEmoji: "⚖️",
+    what: {
+      point: "The decision of whether a company should be public or private is a constant negotiation between three competing priorities: maintaining founder/family control, funding aggressive growth, and providing liquidity for shareholders.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Control vs. Growth: To fund growth, a company may need to bring in external capital, which requires giving up some control to new investors. Cargill chose to maintain control, limiting its growth to what it could fund internally.",
+        "Growth vs. Liquidity: A company can reinvest its cash flows to fund growth, or it can pay them out to shareholders to provide liquidity (dividends, buybacks). There is a direct tension between these two uses of capital.",
+        "Control vs. Liquidity: Family owners or founders (like at Cargill) may prioritize long-term control, but this comes at the cost of liquidity for other shareholders who might want to cash out their investment.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Frame every major strategic and financial decision through the lens of this trade-off triangle. Which of the three priorities—control, growth, or liquidity—is this decision optimizing for, and which is it sacrificing?",
+        "Be explicit about your company's primary goal. Is your top priority to maintain founder control at all costs, to achieve maximum growth, or to provide returns to shareholders? This will clarify your decision-making.",
+        "Recognize that you cannot maximize all three simultaneously. A successful strategy involves making deliberate and conscious trade-offs between them based on the company's lifecycle and goals.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Valuation Gap Between Public and Private Capital",
+    titleEmoji: "💰",
+    what: {
+      point: "Private companies historically faced a higher cost of capital than public companies because their investors are less diversified and demand a premium for taking on idiosyncratic risk and illiquidity.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The Capital Asset Pricing Model (CAPM) used for public companies assumes a \"well-diversified investor\" who has eliminated firm-specific risks and only needs to be compensated for systematic market risk.",
+        "Investors in private companies (like VCs or family offices) are often not well-diversified. Their portfolios are concentrated, and their investments are illiquid.",
+        "To compensate for this, private market investors demand a much higher expected return. The speaker notes that while a public market discount rate might be 15%, a VC will use a discount rate of \"50, 60%\" in the back of their mind to account for the additional risk and illiquidity.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Understand that the \"cheaper capital\" of public markets is a primary driver for going public. Accessing a diversified investor base lowers your cost of capital, making more growth projects viable.",
+        "When raising private capital, be prepared to offer higher potential returns to compensate investors for the lack of diversification and liquidity.",
+        "Recognize that macro trends (like periods of very low interest rates) can temporarily blur this line, making private capital abundant and cheap, which reduces the incentive for companies to go public.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The \"Missing Mass\" of Public Companies",
+    titleEmoji: "📉",
+    what: {
+      point: "The number of publicly listed firms in the U.S. has significantly declined, driven by a confluence of factors that have simultaneously decreased the benefits of being public while increasing the availability of private capital.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Benefits Down: The \"cheaper capital\" advantage of public markets was blunted during the long period of low interest rates, which flooded private markets (VC and PE) with capital from institutional investors searching for yield.",
+        "Costs Up: The regulatory and disclosure costs of being a public company increased significantly after regulations like Sarbanes-Oxley.",
+        "Consolidation: About half of the \"missing firms\" disappeared due to M&A and consolidation, while the other half are simply staying private for longer or never going public at all.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a private company leader, recognize that staying private longer is a viable and increasingly common strategy. Do not rush to an IPO if the private capital markets can meet your growth needs.",
+        "As an investor, understand that a significant portion of economic value is now being created and captured in private markets. A public-market-only strategy will miss a large part of the innovation landscape.",
+        "Monitor the macroeconomic environment. As interest rates rise and private capital becomes scarcer and more expensive, the benefits of going public will increase, likely leading to a new wave of IPOs.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Blurring of Public and Private Structures (Dual-Class Shares)",
+    titleEmoji: "🔀",
+    what: {
+      point: "The traditional lines between public and private companies are blurring as firms increasingly use financial structures like dual-class shares to gain the benefits of public markets (liquidity, access to capital) while retaining the centralized control of a private firm.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Dual-class share structures give one class of shareholders (typically founders and insiders) superior voting rights, allowing them to maintain absolute control over the company's direction even with a minority of the economic ownership.",
+        "This structure was once a \"taboo\" because of the governance risks associated with entrenching founders, but it became a popular tool for tech companies like Google and Facebook to go public without ceding control.",
+        "These \"closely-held public companies\" represent a hybrid model, an attempt to get the \"best of both worlds\"—the cheap, liquid capital of the public markets and the long-term, founder-led vision of a private company.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "If you are a founder-led company considering an IPO, evaluate a dual-class structure as a way to protect your long-term vision from short-term market pressures and activist investors.",
+        "As an investor in a dual-class company, be aware that you are buying cash flow rights but have virtually no control rights. Your investment is a bet on the long-term judgment of the controlling shareholders.",
+        "Recognize that this structure is a direct response to the perceived costs of the traditional public model (short-termism, activist pressure). Its rise is a symptom of the broader shift in the public-private landscape.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Control Premium in Valuation",
+    titleEmoji: "👑",
+    what: {
+      point: "Control of a company has a quantifiable financial value, known as the \"control premium,\" which must be accounted for when valuing private or closely-held public companies.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Valuation methods like Discounted Cash Flow (DCF), where you project revenues and costs, implicitly calculate the value with control, because the person doing the analysis is dictating the strategy.",
+        "Valuation methods using trading multiples of comparable public firms implicitly calculate the value without control, reflecting the price of a non-controlling, minority share.",
+        "The difference between these two values is the control premium (or its inverse, the minority discount). Historically, this premium has averaged around 30% in acquisition transactions.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When valuing a private company for an acquisition, start with the trading multiples of public comps (value without control) and then add a control premium (e.g., ~30%) to arrive at the acquisition price.",
+        "When valuing a minority stake in a private company (e.g., for an employee stock plan), start with a DCF analysis (value with control) and then apply a minority discount to reflect the lack of control.",
+        "Always apply an additional \"illiquidity discount\" (ranging from 20% for stable firms to 50%+ for startups) to any private company valuation to account for the fact that the shares cannot be easily sold.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const donahoeLeadershipCards: BattleCardProps[] = [
+  {
+    title: "Getting Help is a Sign of Strength, Not Weakness",
+    titleEmoji: "💪",
+    what: {
+      point: "The most effective leaders, like world-class athletes, understand that proactively seeking help and coaching is a sign of strength and a critical investment in their ability to perform under pressure.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "John Donahoe recounts learning from Dr. Jim Loehr that world-class athletes train 10-20 hours for every hour they compete, constantly seeking feedback and coaching to improve. In contrast, business leaders often view getting help as a sign of weakness.",
+        "Michael Jordan, at the peak of his career, had a bench coach, a personal chef, and a psychological coach. He invested heavily in himself to ensure he could perform when it mattered most.",
+        "Donahoe embraces this model, utilizing multiple executive coaches, a personal board of directors for feedback, therapists, and spiritual advisors to ensure his own capabilities are not the limiting factor for his team or company.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Reframe \"getting help\" as a strategic investment in your leadership capacity. Actively build your own support system, which could include an executive coach, a therapist, a mentor, or a peer advisory group.",
+        "Make it a habit to proactively seek feedback. As a leader, you will receive less and less honest feedback the more successful you become, so you must explicitly invite it.",
+        "Publicly model this behavior to your team. When you openly talk about the coaching or help you're receiving, you create a culture where seeking development is seen as a strength.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Three Pillars of an Organization: Purpose, Strategy, and Culture",
+    titleEmoji: "🏛️",
+    what: {
+      point: "Every organization must have sharp, distinct answers to the \"Why\" (Purpose), the \"What\" (Strategy), and the \"How\" (Culture), and leaders must be careful not to confuse them, especially during times of change.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Purpose (The Why): Why do we exist? This is the organization's long-term aspiration and its role in society. It should remain consistent over a 5-10 year period.",
+        "Strategy (The What): What are our target segments, products, and business model? Strategy must be ruthlessly \"outside-in,\" constantly adapting to changing customer needs, technology, and competition. It should evolve continuously.",
+        "Culture (The How): How do we operate and behave to bring our purpose and strategy to life? Culture must evolve, keeping what serves the organization and changing what doesn't. Donahoe shares an example from eBay, where the initial resistance to moving from auctions to fixed-price sales was framed as a threat to the company's \"purpose,\" when in fact, auctions were a \"strategy\" that needed to evolve to serve the unchanging purpose of empowering buyers and sellers.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Clearly articulate and separate your organization's purpose, strategy, and culture. Ensure every leader and employee understands the distinct role of each.",
+        "When facing resistance to a necessary strategic change, diagnose if the resistance is due to a confusion between strategy and purpose or culture. Clarify that the strategy must adapt to serve the enduring purpose.",
+        "Regularly audit your strategy to ensure it is \"outside-in\" and confronting the current reality of the market, not just perpetuating historical practices.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Leader's Most Powerful Tools: Questions and Listening",
+    titleEmoji: "🎯",
+    what: {
+      point: "A leader's most powerful tools are not giving orders and making statements, but asking intentional questions and listening deeply, as this empowers talented people and guides the organization's focus.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Bain & Company founder Bill Bain taught Donahoe that \"talented people don't want to be told what to do. Talented people want to be listened to.\"",
+        "Asking intentional, repeated questions about a key priority (e.g., \"How are client results doing?\") signals what is important and influences behavior more effectively than a direct order. Donahoe used a \"question of the year\" to make cross-functional teamwork a priority without mandating it.",
+        "For complex, high-stakes decisions with no clear answer (the \"51-49\" decisions), a leader's job is not to pronounce the answer, but to facilitate a conversation, listen to all perspectives, and then make a well-informed call.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Be intentional about the questions you ask. Identify your top 1-2 strategic priorities and make it a habit to ask questions related to them in every meeting and visit.",
+        "Practice the discipline of listening more than you talk. At the end of each day, ask yourself, \"Did I ask more questions than I made statements today?\"",
+        "When faced with a complex decision, facilitate a structured debate. Frame the issue, ask for alternatives, let the team voice their perspectives, and then play back what you've heard before making a decision.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Good Decision-Making Hygiene",
+    titleEmoji: "🧠",
+    what: {
+      point: "Consistently making good decisions requires \"hygiene\"—the disciplined use of structured frameworks to ensure multiple perspectives are considered, risks are surfaced, and dissent is encouraged.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker stresses the importance of using some structured framework rather than \"bumbling around in the dark.\" The specific framework is less important than the discipline of using one.",
+        "One powerful and easy tool is the Pre-Mortem. Before making a final decision, the team imagines the project has failed catastrophically and brainstorms all the reasons why. This surfaces risks and anxieties that might otherwise remain unspoken.",
+        "Another key is creating a structured space for dissent. Research on the Supreme Court shows that the presence of a formal dissenting opinion improves the quality and longevity of the final decision. This can be implemented through a \"Devil's Advocate\" role.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Adopt a go-to decision-making framework for your team and use it consistently for all significant decisions.",
+        "Incorporate a pre-mortem exercise as a mandatory step for all high-stakes projects before they receive final approval.",
+        "Formalize the role of a Devil's Advocate in your decision meetings. Make sure it is a rotating role, not a single person, to prevent the \"curmudgeon\" effect.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Driving Change: Win the Middle, Ignore the Fringes",
+    titleEmoji: "🚂",
+    what: {
+      point: "Driving change in an organization is an unnatural act, and the most effective strategy is to energize the supporters, create momentum to win over the undecided middle, and accept that you will never win over the dedicated resistors.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "On any given change initiative, you will typically find 20% of people who are enthusiastic supporters (\"Yes, let's go!\"), 20% who are staunch opponents (\"No freaking way\"), and a large 60% in the middle who are waiting to see who wins.",
+        "Donahoe admits that for a good part of his career, he made the mistake of wasting too much time and energy trying to win over the 20% of people who were never going to change their minds.",
+        "The winning strategy is to focus on the 20% of supporters, empower them to create small wins, and build visible momentum. This creates a \"train\" that the undecided 60% will want to get on, making the change feel inevitable.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When launching a change initiative, identify your early adopters and evangelists. Make them your focus. Give them the resources and air cover to succeed.",
+        "Publicize and celebrate their early successes to create a powerful narrative of positive momentum.",
+        "Do not engage in endless debates with the staunchest resistors. Acknowledge their position and then move on, focusing your energy on the coalition of the willing and the persuadable.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Communicating in a Crisis: Acknowledge Fear and Reconnect to Purpose",
+    titleEmoji: "🌪️",
+    what: {
+      point: "In times of extreme uncertainty and fear, a leader's most effective communication strategy is not inspirational speeches or detailed plans, but to first acknowledge the fear and then reconnect the team to their shared, resilient purpose.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Donahoe notes that during crises like COVID or the George Floyd protests, both inspirational \"Al Pacino\" speeches and detailed consultant-style plans fail because the core issue is \"about heart, not head.\"",
+        "The first and most critical step is to acknowledge the fear. A leader must \"call it, label it,\" and validate the team's feelings of uncertainty without pretending to have all the answers. This builds trust and allows people to feel heard.",
+        "The second step is to shift the focus from the immediate crisis to the organization's enduring purpose. At Nike, during the burnout of 2022, Donahoe re-centered the team by asking \"Why are you here?\" and connecting their work to the power of sport to unite a polarized world.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When communicating during a crisis, begin by explicitly acknowledging the team's anxiety and uncertainty. Say, \"I know this is a difficult and uncertain time.\"",
+        "Resist the urge to provide false certainty or inspirational platitudes. It is more powerful to say, \"I don't have all the answers, but we will figure this out together.\"",
+        "Ground your message in your organization's core purpose. Remind everyone of the \"why\" behind their work, as this is the ultimate source of resilience and commitment during difficult times.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const ethicalImplicationsCards: BattleCardProps[] = [
+  {
+    title: "The Leader's Rationalization Trap",
+    titleEmoji: "🎭",
+    what: {
+      point: "Leaders can rationalize unethical behavior by framing it as a necessary evil for the greater good of the company, its employees, and its mission.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "HealthSouth CFO Aaron Beam rationalized the accounting fraud by telling himself, \"nobody gets hurt...people keep their jobs, the stock stays up, we keep acquiring companies with our stock...you're doing the thing that's most beneficial to the company.\"",
+        "This \"concern for others\" framing allows leaders to justify actions they know are wrong by focusing on the perceived positive outcomes for the organization, rather than the act itself.",
+        "The speaker notes a similar pattern with Elizabeth Holmes at Theranos, who maintained a strong mission-driven narrative about changing healthcare even as the fraud was unraveling.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Be highly skeptical of any justification for a questionable action that relies on the argument \"it's for the good of the company.\" This is a major red flag for rationalization.",
+        "Establish clear, non-negotiable ethical lines that cannot be crossed, regardless of the potential business benefit.",
+        "When faced with an ethical dilemma, ask \"Is this action right in and of itself?\" not just \"Will this action lead to a good outcome?\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Slippery Slope of Small Transgressions",
+    titleEmoji: "⛷️",
+    what: {
+      point: "Massive ethical failures and frauds rarely begin with a single, large criminal act; they start with small, seemingly manageable transgressions that create a psychological and practical lock-in, making each subsequent, larger transgression easier.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The HealthSouth fraud began with \"questionable accounting,\" like adjusting bad debt reserves—a gray area—which Beam initially didn't think of as fraud.",
+        "This escalated to a clear, intentional fraud to meet one quarterly earnings estimate, which CEO Richard Scrushy promised was a \"one-time thing\" they could \"make it up the next quarter.\"",
+        "Of course, it didn't stop. The fraud continued for the next quarter, and the next, growing larger each time until it became a \"multi-billion dollar\" scandal. The inexorable logic of covering up the previous fraud required an even bigger one.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Treat all small ethical gray-area decisions with the same seriousness as large, black-and-white ones. This is where the slippery slope begins.",
+        "Institute a \"no one-time exceptions\" rule for core accounting and ethical principles. The promise that a transgression can be \"made up later\" is a classic rationalization.",
+        "Create \"off-ramps.\" Build a culture where employees feel safe to flag a small transgression and stop the process before it escalates, without fear of retribution.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Power of Social Conformity",
+    titleEmoji: "👥",
+    what: {
+      point: "Human beings have a powerful, innate tendency to conform to the perceived consensus of a group, even when that consensus is demonstrably wrong.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The classic Solomon Asch experiment demonstrated this effect. When a group of confederates all gave an obviously incorrect answer about the length of a line, the real participant conformed and gave the same wrong answer about a third of the time.",
+        "Crucially, if just one other person broke with the incorrect majority, the real participant felt empowered to give the correct answer. This shows that a single dissenting voice can shatter the power of a false consensus.",
+        "This tendency is driven by a desire to fit in and the misinterpretation of public behavior as private belief (pluralistic ignorance), leading to situations where a group can make a decision that a majority of its members privately disagree with.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a leader, never take silence as agreement. Actively solicit dissenting opinions to break the pull of conformity.",
+        "Use anonymous polling for contentious issues to get a true reading of the group's private beliefs before an open discussion creates a false consensus.",
+        "When you are in the minority, have the courage to be the one dissenting voice. Your dissent can empower others to speak up and can shift the entire group's outcome.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Dangers of a Corrupted Social Context",
+    titleEmoji: "🏴‍☠️",
+    what: {
+      point: "Individual character is not enough to prevent unethical behavior; a flawed organizational context—driven by toxic leadership, bad incentives, and conflicts of interest—can compel otherwise normal people to do terrible things.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Richard Scrushy created a context of fear and intimidation. He was a \"very volatile person\" who carried a gun and made it clear he would deny everything if the fraud was exposed, placing all the blame on his subordinates.",
+        "The company set up conflicts of interest for auditors. Internal auditors were intentionally underqualified, making them dependent on their high-status jobs. External auditors (Ernst & Young) made most of their money from lucrative \"pristine audits\" (checking for cleanliness), creating an incentive to not look too closely at the financial audits.",
+        "The classic Stanley Milgram obedience experiments showed that two-thirds of normal people would administer seemingly fatal electric shocks to another person when instructed to do so by a legitimate authority figure in a lab coat. This demonstrates that context, not just character, drives behavior.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Recognize that as a leader, you are the primary architect of your team's social context. Your behavior sets the standard for what is acceptable.",
+        "Rigorously audit your organization for conflicts of interest and perverse incentives. Are you rewarding outcomes in a way that might encourage unethical behavior to achieve them?",
+        "Design your organization to make it easy to do the right thing and hard to do the wrong thing. Rely on systems and constraints, not just the assumed moral character of your employees.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Two Paths to Ethical Behavior: Inspiration vs. Constraint",
+    titleEmoji: "⚓",
+    what: {
+      point: "There are two primary strategies for leading a team through ethical challenges: the \"inspiration\" approach, which relies on a strong sense of mission to overcome temptation, and the \"constraint\" approach, which removes the temptation altogether.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "This is illustrated through the mythological story of sailors facing the Sirens. The first captain, Jason, uses the \"inspiration\" approach: he has Orpheus play such beautiful music that the crew is too inspired by their mission to be tempted by the Sirens' song.",
+        "The second captain, Odysseus, is more skeptical of human nature. He uses the \"constraint\" approach: he puts wax in his crew's ears so they cannot hear the temptation and has them tie him to the mast so he cannot act on it.",
+        "The speaker argues that the most effective organizations use a combination of both. They inspire their teams with a powerful mission and values, but they also build robust systems, rules, and constraints that make it difficult for people to go astray.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Develop and constantly communicate a strong, inspiring mission that gives your team a \"why\" for behaving ethically.",
+        "Simultaneously, build a system of constraints. This includes clear ethical guidelines, strong audit functions, and processes that remove the opportunity for bad behavior.",
+        "Do not rely solely on inspiration or individual heroism. Acknowledge that all people are fallible and design your organization to protect them (and the company) from their own worst impulses.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const businessRoleCards: BattleCardProps[] = [
+  {
+    title: "The Friedman Doctrine (Shareholder Primacy)",
+    titleEmoji: "💰",
+    what: {
+      point: "The one and only social responsibility of a business is to maximize its long-run profits for its owners (the shareholders), while operating within the basic rules of society, both legal and ethical.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "This argument positions shareholders as the owners of the company. Therefore, the company's primary duty is to serve the one interest they all share: making money.",
+        "It defines a clear division of labor: the role of business is to handle commerce, while the role of government is to handle societal problems like pollution or safety.",
+        "Friedman argues that if a majority of citizens believe a problem needs solving, a democratic government will create laws to address it. It is illegitimate for executives to spend shareholder money on social causes that haven't received this majority support.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Establish long-run shareholder value as the ultimate metric for all strategic decisions and executive compensation.",
+        "When faced with a societal problem not covered by law, view it as the government's responsibility to solve through regulation, not the company's responsibility to solve by sacrificing profit.",
+        "Frame all \"socially good\" activities in terms of their direct, provable contribution to long-term profitability and shareholder value.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Flaw in the Friedman Doctrine (The Government Failure Assumption)",
+    titleEmoji: "🏛️",
+    what: {
+      point: "Friedman's argument for shareholder primacy rests on the deeply flawed and utopian assumption that governments are perfect, responsive agents of the public will, which ignores the reality of political dysfunction and corporate influence.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker, a political economy scholar, states that the U.S. government is structurally \"designed not to do things\" and is not always responsive to the will of the majority.",
+        "The doctrine ignores the fact that companies actively influence the laws they are supposed to follow. If a company helps write the rules through lobbying, then simply \"complying with the law\" loses its moral authority.",
+        "The speaker points out the irony that Friedman, a famous critic of government effectiveness, bases this specific argument on a fantasy of a perfectly functioning government.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Recognize that \"legal compliance\" is the floor for ethical behavior, not the ceiling. Your responsibility extends beyond the letter of the law, especially if your industry has influenced that law.",
+        "Assume that government will be slow or ineffective in addressing negative externalities caused by your industry. You must decide on your own ethical guardrails.",
+        "Analyze how your own company's lobbying efforts might be shaping the \"rules of the society.\" Ensure these efforts align with your stated public values, not just your short-term profit motives.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Stakeholder Commitment Test",
+    titleEmoji: "🎯",
+    what: {
+      point: "A company's true commitment to stakeholder capitalism is not measured by its glossy brochures, but by whether it has embedded stakeholder considerations into its core organizational practices of prioritization, measurement, and incentives.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker argues that a genuine stakeholder-focused company must first explicitly define which stakeholders it prioritizes and how it will handle trade-offs when their interests conflict with shareholder interests.",
+        "You cannot manage what you do not measure. A committed company must develop clear metrics for its performance on key stakeholder issues.",
+        "Ultimately, commitment is proven through incentives. The company must \"pay people, promote them, and put them in positions of power based on whether they are delivering on those things.\" If not, the stakeholder talk is just \"virtue signaling.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Force your leadership team to move beyond vague statements and create a ranked list of your key stakeholders.",
+        "Develop specific, measurable KPIs for your performance with each prioritized stakeholder group (e.g., employee retention, customer satisfaction, supplier diversity, carbon reduction).",
+        "Integrate these stakeholder KPIs directly into your executive compensation and promotion criteria to ensure accountability.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Unregulated Market Dilemma",
+    titleEmoji: "🚗",
+    what: {
+      point: "In developing markets with weak safety regulations and price-sensitive consumers, companies face a direct and acute conflict between maximizing profit (and market access) and upholding a higher ethical standard of safety.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The auto safety case presents this trade-off starkly. In a country without safety mandates, adding features like stability control or backup cameras increases the car's price.",
+        "Marketing teams report that economically struggling consumers are \"not going to stretch their very thin budget to buy expensive add-on safety features.\" Raising the price could mean a customer can no longer afford a car at all, forcing them into a less safe alternative like a scooter.",
+        "The history of seatbelts in the U.S. shows that consumer willingness to pay for safety was initially negative, as the feature made the car seem inherently unsafe. This demonstrates the difficulty of selling safety in the absence of regulation.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Establish a global minimum standard for safety and ethics that applies to all your products in all markets, regardless of local regulations.",
+        "Analyze the cost-benefit of safety features in terms of \"value of a statistical life.\" The analysis showed stability control saved a life for every $500,000 in cost, a strong ethical argument for inclusion.",
+        "Recognize that your brand reputation in your high-regulation home market is at risk if your products are found to be unsafe in other markets. A global minimum standard is also a form of brand protection.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Safety Arms Race Externality",
+    titleEmoji: "🏁",
+    what: {
+      point: "In an unregulated market, individual rational choices can lead to a collective \"arms race\" that creates a negative externality for society as a whole, a situation that often requires government intervention to solve.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker describes how his own family, when expecting a child, made the rational decision to buy a larger, heavier car to be safer in a collision with \"other American vehicles.\"",
+        "When every individual makes this same rational choice, the result is a fleet of larger, heavier, taller vehicles that are collectively more dangerous to pedestrians and to each other. This is a negative externality where individual safety comes at the cost of societal safety.",
+        "This \"arms race\" dynamic, where the only way to feel safe is to escalate, is a classic market failure. The speaker suggests that government intervention—such as higher gas taxes or direct regulation—is often the only way to break the cycle.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify if your industry is prone to a negative externality or \"arms race\" dynamic, where your product's features have unintended negative consequences for the broader system.",
+        "Proactively engage with regulators to create smart, industry-wide standards that solve the collective action problem. This can create a level playing field and be a source of competitive advantage if you lead the change.",
+        "Consider how you can design your product to mitigate its negative externalities. Could a large vehicle be equipped with advanced pedestrian detection and automatic braking as a standard feature to offset the risk it creates?",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const auctionMechanismsCards: BattleCardProps[] = [
+  {
+    title: "Auctions as a Price Discovery Mechanism",
+    titleEmoji: "🔍",
+    what: {
+      point: "An auction is the most powerful tool for discovering the \"right price\" (where supply equals demand) when the true value of an item is decentralized and hidden in the private knowledge of potential buyers.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker gives the example of a pharmaceutical company trying to sell an IP for cancer detection. They had no idea if it was worth $2 million or $100 million to potential buyers like Roche. An auction is the perfect mechanism to solve this information asymmetry.",
+        "Google faced the same problem. They couldn't know the true value of a click for \"car insurance\" to every advertiser (e.g., Experian, Allstate). Instead of setting a price, they created an auction where advertisers bid their private values, allowing the market to set the price.",
+        "This is the core function of auctions in marketplaces: they allow the seller to efficiently set a market-clearing price for millions of unique items (like keywords or ad slots) without needing to know the specific value to each individual buyer.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When selling a unique asset with a wide range of potential values to different buyers (e.g., a business unit, a patent, a unique piece of real estate), use an auction to discover its true market price.",
+        "If you operate a marketplace, use auctions to dynamically price items with fluctuating demand and value. This is far more efficient than trying to administratively set prices for thousands of listings.",
+        "Recognize that an auction's purpose is information revelation. Design the process to elicit the most accurate private information from buyers.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The First-Price Auction Dilemma",
+    titleEmoji: "🤔",
+    what: {
+      point: "While simple to explain, a first-price sealed-bid auction (the highest bidder wins and pays their bid) is strategically complex and incentivizes bidders to shade their bids, requiring them to guess their competitors' valuations.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In a first-price auction, you will never bid your true value. If your maximum willingness to pay is $29 (like Ariel's), bidding $29 guarantees you zero profit even if you win. Therefore, you must bid less than your true value.",
+        "Determining how much less to bid is a complex trade-off between the probability of winning (which increases with your bid) and the profit you make if you win (which decreases with your bid).",
+        "Your optimal bid is highly dependent on external factors: the number of competitors, their likely valuations, and what they think your valuation is. This creates a high value for competitive intelligence and espionage.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When participating in a first-price auction (like for real estate), invest in gathering intelligence on your competition. Knowing the number of bidders is critical to determining how aggressively you need to bid.",
+        "Recognize that there is no single \"right\" bid. Your bid is a strategic calculation based on incomplete information about your competitors.",
+        "As a seller using a first-price auction, understand that bidders are incentivized to pay less than what they truly believe the item is worth.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Strategic Simplicity of the Ascending (English) Auction",
+    titleEmoji: "📈",
+    what: {
+      point: "An ascending-price auction (where the price rises until only one bidder remains) is strategically simple because the dominant strategy for every participant is to stay in until the price exceeds their true private value.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker demonstrates this with the class. A participant whose value is $5 knows to drop out as soon as the price exceeds $5. They don't need to know anything about their competitors' values or strategies.",
+        "This simplicity makes it an ideal format for situations with unsophisticated bidders, like the FCC auctioning spectrum to small local TV stations.",
+        "Because the optimal strategy is so straightforward, there are zero gains from espionage or complex game theory. Participants just need to know their own maximum willingness to pay.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a seller with a diverse or unsophisticated group of bidders, use an ascending auction to ensure a simple, transparent, and efficient process.",
+        "As a bidder in an ascending auction, the most important preparation is to determine your absolute maximum price before the auction begins. Do not get caught up in the \"winner's curse\" or emotional bidding.",
+        "Stick to your strategy: stay in as long as the current price is below your pre-determined maximum value, and drop out the moment it exceeds it.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Price is Determined by the Second-Highest Bidder",
+    titleEmoji: "🥈",
+    what: {
+      point: "In any competitive auction, the final clearing price is not determined by what the winner is willing to pay, but by the value of the second-most-competitive bidder.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In the ascending auction, the price stops rising and the auction ends the moment the second-to-last bidder drops out. The winner's actual maximum value is never revealed; they simply pay a tiny increment above the second-highest bidder's value.",
+        "The Levi's jeans story illustrates this perfectly. Levi's was willing to pay \"any price\" to win the auction for the oldest pair of jeans. They won, but they only paid $48,100 because that's when the second-highest bidder dropped out. The price could have been a million dollars if the competition had been stronger.",
+        "Google made a massive error in calculating the cost of Amazon dropping out of their ad auctions. They only counted the revenue lost from auctions Amazon won, failing to account for the much larger revenue lost because Amazon was no longer the second-highest bidder in thousands of other auctions, which drove down the prices for all of those.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a seller, the key to maximizing revenue is not finding one bidder with an extremely high value, but fostering a competitive environment with at least two strong bidders.",
+        "As a bidder, your primary goal is to outbid the second-strongest competitor, not necessarily to bid your absolute maximum.",
+        "When analyzing a competitive market, focus on the #2 and #3 players. Their strength and behavior are what truly set the price in the market, not the leader's.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Magic of the Second-Price Auction",
+    titleEmoji: "✨",
+    what: {
+      point: "A second-price sealed-bid auction (the highest bidder wins but pays the price of the second-highest bid) is a revolutionary mechanism because it makes it the dominant strategy for every participant to bid their true, honest value.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "This auction format elegantly solves the \"bid shading\" problem of the first-price auction. Because you don't pay your own bid, there is no penalty for bidding your true maximum value.",
+        "The speaker proves that for both the winner and the losers, there is no scenario where deviating from their true value (either by bidding higher or lower) can result in a better outcome. At best, it has no effect; at worst, it causes you to lose an auction you should have won or win an auction you should have lost (and overpay).",
+        "This \"truth-telling\" property makes it both logistically simple (sealed-bid) and strategically simple (no complex game theory needed), combining the best features of the other two formats. This is why it was so widely adopted for online advertising.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "For complex, automated marketplaces with sophisticated bidders (like online advertising), use a second-price auction to incentivize honest bidding and simplify the process.",
+        "As a bidder in a second-price auction, you can and should bid your absolute maximum willingness to pay. This is your optimal strategy.",
+        "As a seller, understand that while this format is efficient, its weakness is that it makes you vulnerable to cheating by the auctioneer (who can fabricate a fake second-highest bid to drive up the price). Transparency is key.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const secondPlaceAuctionCards: BattleCardProps[] = [
+  {
+    title: "Auctions as a Price Discovery Mechanism",
+    titleEmoji: "🔍",
+    what: {
+      point: "An auction is the most powerful tool for discovering the \"right price\" (where supply equals demand) when the true value of an item is decentralized and hidden in the private knowledge of potential buyers.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker gives the example of a pharmaceutical company trying to sell an IP for cancer detection. They had no idea if it was worth $2 million or $100 million to potential buyers like Roche. An auction is the perfect mechanism to solve this information asymmetry.",
+        "Google faced the same problem. They couldn't know the true value of a click for \"car insurance\" to every advertiser (e.g., Experian, Allstate). Instead of setting a price, they created an auction where advertisers bid their private values, allowing the market to set the price.",
+        "This is the core function of auctions in marketplaces: they allow the seller to efficiently set a market-clearing price for millions of unique items (like keywords or ad slots) without needing to know the specific value to each individual buyer.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When selling a unique asset with a wide range of potential values to different buyers (e.g., a business unit, a patent, a unique piece of real estate), use an auction to discover its true market price.",
+        "If you operate a marketplace, use auctions to dynamically price items with fluctuating demand and value. This is far more efficient than trying to administratively set prices for thousands of listings.",
+        "Recognize that an auction's purpose is information revelation. Design the process to elicit the most accurate private information from buyers.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Winner's Curse in Common Value Auctions",
+    titleEmoji: "😵",
+    what: {
+      point: "In a \"common value\" auction—where the item has a single true value but all bidders must estimate it—the winner is cursed to be the person who most overestimates the value, guaranteeing they will overpay.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The \"jar of money\" experiment illustrates this perfectly. The jar has a true, fixed value ($280), but each participant has to guess what it is. Bids will be distributed in a bell curve around the true value.",
+        "By definition, the winner of the auction will be the person with the highest, most optimistic estimate. Even if they pay the second-highest bid, both bids are likely to be on the far right tail of the distribution, well above the true value.",
+        "Zillow's home-flipping business failed precisely because of the winner's curse. They would only win auctions for houses where their algorithm had overestimated the true market value, leading them to consistently overpay. They lost hundreds of millions of dollars.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When bidding in a common value setting (e.g., for an oil field, a startup, or a company acquisition), never bid your own private estimate of the value.",
+        "You must strategically \"shade\" your bid significantly downwards to account for the winner's curse. The only time you should bid your estimate is if you possess superior, private information that other bidders do not have.",
+        "Before entering a high-stakes common value auction, explicitly model the winner's curse. Acknowledge that if you win, it's a strong signal that you were the most optimistic person in the room, and adjust your bidding strategy accordingly.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Price is Determined by the Second-Highest Bidder",
+    titleEmoji: "🥈",
+    what: {
+      point: "In any competitive auction, the final clearing price is not determined by what the winner is willing to pay, but by the value of the second-most-competitive bidder.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In an ascending auction, the price stops rising and the auction ends the moment the second-to-last bidder drops out. The winner's actual maximum value is never revealed; they simply pay a tiny increment above the second-highest bidder's value.",
+        "The Levi's jeans story illustrates this perfectly. Levi's was willing to pay \"any price\" to win the auction for the oldest pair of jeans. They won, but they only paid $48,100 because that's when the second-highest bidder dropped out. The price could have been a million dollars if the competition had been stronger.",
+        "Google made a massive error in calculating the cost of Amazon dropping out of their ad auctions. They only counted the revenue lost from auctions Amazon won, failing to account for the much larger revenue lost because Amazon was no longer the second-highest bidder in thousands of other auctions, which drove down the prices for all of those.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a seller, the key to maximizing revenue is not finding one bidder with an extremely high value, but fostering a competitive environment with at least two strong bidders.",
+        "As a bidder, your primary goal is to outbid the second-strongest competitor, not necessarily to bid your absolute maximum.",
+        "When analyzing a competitive market, focus on the #2 and #3 players. Their strength and behavior are what truly set the price in the market, not the leader's.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Second-Price Auction's Vulnerability",
+    titleEmoji: "🔓",
+    what: {
+      point: "While theoretically elegant, the second-price auction's greatest weakness is its vulnerability to a cheating auctioneer, who can manipulate the outcome and extract more value because bidders do not know the true second-highest bid.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In a sealed-bid second-price auction, only the central auctioneer sees all the bids. If the highest bid is $100 and the second-highest is $90, the auctioneer can lie and tell the winner the second-highest bid was $95, pocketing the difference.",
+        "This is not just a theoretical problem. The speaker describes how Google's \"Project Bernanke\" did exactly this, telling the winning advertiser one price while reporting a lower clearing price to the publisher and keeping the spread.",
+        "This lack of transparency and the incentive to cheat is why many online ad exchanges have moved away from pure second-price auctions and back towards first-price auctions, where the rules are simpler and harder to manipulate.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "If you are a seller using a second-price auction, commit to radical transparency to build trust. Consider using a third-party auditor to verify the results.",
+        "If you are a bidder in a second-price auction, be aware of the potential for manipulation. If the platform is not transparent, you may be overpaying.",
+        "Recognize the trade-off: a second-price auction encourages truth-telling from bidders, but a first-price auction provides more transparency and less opportunity for auctioneer fraud. Choose the format that best fits your market's trust level.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Market Mechanisms for Non-Monetary Allocation",
+    titleEmoji: "🏪",
+    what: {
+      point: "The power of a market mechanism—using a price system to aggregate decentralized information and allocate resources efficiently—can be applied to solve complex allocation problems even where no real money is involved.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The case of Feeding America presented a massive logistical challenge: how to allocate donated food from across the country to 210 regional food banks, each with different and unknown needs, capacities, and transportation costs.",
+        "The solution, designed by University of Chicago economists, was to create a market. They gave each food bank a daily budget of \"credits\" (a fake currency) proportional to the number of poor people they served.",
+        "They then ran a twice-daily sealed-bid auction for truckloads of food. A food bank in need of chicken with plenty of refrigeration would bid high; a food bank with too much chicken or high transport costs would bid low or not at all.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify complex resource allocation problems within your organization where a central planner lacks the necessary information to make optimal decisions (e.g., allocating engineering time, assigning sales leads, distributing marketing budgets).",
+        "Consider creating an internal \"market\" to solve this problem. Invent a form of internal currency or \"credits\" and allow teams to bid on the resources they need most.",
+        "Trust that the resulting \"prices\" that emerge from this market will reveal the true, decentralized priorities of your organization and lead to a more efficient allocation than a top-down approach.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const aiProductManagementCards: BattleCardProps[] = [
+  {
+    title: "AI-Powered Content & Media Generation",
+    titleEmoji: "🎨",
+    what: {
+      point: "You can dramatically elevate your product presentation and marketing by replacing traditional, manual content creation with AI that generates high-quality, consistent, and on-brand photography, videos, and text at scale.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "AI can generate any type of product imagery required, from standard packshots of pills and bottles to lifestyle shots for different categories like personal hygiene or baby care, including zoomed-in callouts.",
+        "Beyond static images, AI can create engaging social media content and video ads. The speaker demonstrates this with an example of a sophisticated video for an electronics company, stating, \"that's all AI.\"",
+        "This approach applies to text as well. The speaker notes that the entire website, including product descriptions, can be written by AI, ensuring consistency and quality.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Audit your current product display pages (PDPs) and identify inconsistent or low-quality media as the first target for an AI-powered overhaul.",
+        "Leverage AI tools to generate a wide variety of visual assets for each product to test which styles resonate best with your target segments.",
+        "Create an automated workflow to generate social media content (images, videos) directly from your product catalog, enabling a high-volume, high-quality content strategy to drive traffic.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The AI-Powered PIM as a Central Nervous System",
+    titleEmoji: "🧠",
+    what: {
+      point: "Transform your Product Information Management (PIM) system from a simple database into the central hub of your e-commerce operation, allowing AI to automatically manage, optimize, and enrich all product data in one place.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "A PIM can store all product information—descriptions, numbers, images, and more. The speaker describes it as \"like an Excel sheet, just a more glorified version of it.\"",
+        "By connecting an AI system to the PIM, you can automate critical tasks across the entire catalog. The speaker states the AI \"just goes across your PIM and says, pop, pop, pop. I've edited your text, I've made it consistent. I've edited your images, made it consistent.\"",
+        "This system can handle complex tasks beyond content, including competitive intelligence. The speaker mentions the AI can check pricing against competitors to ensure you have \"the best pricing that's out there.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Centralize all of your product data into a single PIM system. This is the foundational step for enabling AI-driven management.",
+        "Integrate AI tools that can connect directly to your PIM to perform automated tasks like content generation, text optimization, and competitive price analysis.",
+        "Shift your team's focus from manual data entry and content creation to managing the AI system and defining the strategic rules for optimization within the PIM.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Radical Headcount Efficiency Through AI",
+    titleEmoji: "⚡",
+    what: {
+      point: "By automating the core functions of e-commerce—content creation, website management, and customer support—you can dramatically reduce operational costs and achieve significant results with a radically smaller, more focused team.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker makes a bold claim based on the power of AI automation: \"You have over 50 people. You can reduce that out to like five, literally.\"",
+        "This efficiency is achieved by replacing entire departments. The functions of a photographer, designer, analyst, developer, and marketer can all be largely handled by AI systems.",
+        "The model shifts from a large team executing tasks to a small team managing an AI system, allowing the business to scale without a proportional increase in headcount.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map out every manual process in your e-commerce workflow, from product photography to responding to customer emails.",
+        "Systematically replace these manual processes with AI-driven tools, starting with the most time-consuming and repetitive tasks.",
+        "Restructure your organization around a small, highly-skilled team whose primary role is to manage the AI, analyze its output, and make strategic decisions, rather than performing the day-to-day operational tasks.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Shifting to Conversational Commerce",
+    titleEmoji: "💬",
+    what: {
+      point: "Reinvent the customer experience by moving away from a traditional, browse-based marketplace and toward an AI-powered conversational interface where customers can discover, inquire about, and purchase products through natural language.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker contrasts the \"copy it as Amazon\" model with a modern AI-native approach. Instead of a cluttered marketplace, the user is greeted with a clean interface and a conversational assistant.",
+        "This model allows for multimodal interaction. A customer can type a question, upload an image for a visual search, or even use voice commands, as demonstrated with the Spanish language query.",
+        "The primary interaction happens within the chat interface, with the website serving only as the final, simplified checkout page, accessed via a link provided by the assistant. The website becomes a utility, while the AI becomes the experience.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Develop an AI-powered chatbot as the primary entry point for your customers, positioning it as a \"health companion\" or personal shopper.",
+        "Integrate this assistant with popular messaging platforms where your customers already are, such as WhatsApp or Telegram, to make discovery and purchase seamless.",
+        "Simplify your website to serve as the backend for the conversational experience, focusing on a frictionless checkout process that can be triggered directly from the chat interface.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Parallel-Tracking Innovation for a Phased Transformation",
+    titleEmoji: "🛤️",
+    what: {
+      point: "De-risk a major business model transformation by running two initiatives in parallel: a short-term project to optimize the existing business for quick revenue gains, and a longer-term project to build a completely new, AI-native model.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker recommends a \"parallel track\" approach. The first track is a low-hanging fruit initiative: \"reinvent your current website... that'll take like two weeks in order to get that in good shape.\" This generates immediate revenue and shows progress.",
+        "The second track is more adventurous and resource-intensive: reinventing the business as an AI-native conversational experience. This is framed as a \"one quarter\" or \"three, four month\" project.",
+        "This phased approach allows the company to generate immediate returns from the existing asset while patiently building the future of the business, de-risking the overall transformation.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Create two separate, dedicated teams. Task one small team with rapidly optimizing the current website using AI content generation for quick wins.",
+        "Task a second small team with building the new, AI-native conversational model, treating it as an internal startup with a 3-4 month timeline to a minimum viable product.",
+        "Use the revenue generated from the optimized legacy site to fund the development of its eventual replacement, creating a self-sustaining innovation cycle.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const modelingBehaviorCards: BattleCardProps[] = [
+  {
+    title: "The Three Criteria for Effective Modeling",
+    titleEmoji: "🎯",
+    what: {
+      point: "For a leader's actions to effectively model desired behavior, they must be perceived as authentic, be widely observable, and, most importantly, be consistently routine.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Authenticity: The action must be seen as genuine. The speaker questions the authenticity of the Fastenal executives sharing a motel room, suggesting it could feel \"contrived.\" If the action doesn't resonate as sincere, it fails.",
+        "Observability: People have to see the behavior for it to be modeled. If the Fastenal story was a private anecdote shared only with a book author, it has no modeling power within the firm.",
+        "Routine: This is the most critical and most often missed criterion. Human adaptation relies on recognizing patterns. A one-time \"splashy\" or \"dramatic\" gesture gets noticed but doesn't change long-term behavior. The DaVita CEO's practice of starting every meeting by reviewing his follow-ups on previous commitments made accountability a routine, observable pattern.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify a key value or behavior you want to instill in your team (e.g., accountability, cost control, customer focus).",
+        "Design a simple, repeatable action that embodies this value. It should be something you can do in a routine setting, like a weekly meeting.",
+        "Commit to performing this action consistently over a long period. A single, dramatic act will be forgotten; a quiet, daily routine will shape the culture.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Curse of Knowledge",
+    titleEmoji: "🧠",
+    what: {
+      point: "As leaders become more expert and senior, they are afflicted by the \"curse of knowledge\"—an inability to remember what it was like to not know what they now know, causing them to chronically under-communicate.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker cites research showing that leaders are criticized for under-communicating versus over-communicating by a 10-to-1 margin.",
+        "This is demonstrated by the \"song tapping\" experiment. The tapper, who knows the song, grossly overestimates how many people in the audience can recognize the simple rhythm. What is obvious to them is opaque to everyone else.",
+        "Leaders fall into this trap because the rationale behind a decision is crystal clear in their own minds, so they fail to explain it sufficiently to others who lack the same context.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Make it a habit to use the word \"because\" in your communications. Don't just state a position; always provide the reason behind it.",
+        "Before any major communication, pre-test your message with a \"friendly\" audience who is not deeply involved in the topic. Ask them to play back what they heard to identify gaps in your explanation.",
+        "Assume your audience knows nothing. Start from first principles and build the logical case for your decision, rather than jumping straight to the conclusion.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Primacy and Recency Effect in Communication",
+    titleEmoji: "🔄",
+    what: {
+      point: "Human memory is not linear; we disproportionately remember the first and last things we hear, while the information in the middle gets lost. Savvy communicators craft their messages to account for this predictable cognitive bias.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "After reading a long list of company names, the audience is most likely to recall the first few names (the primacy effect) and the last few names (the recency effect).",
+        "The speaker notes that human working memory has a natural capacity of about seven \"bits\" of information, plus or minus two. Anything more than that is likely to be forgotten.",
+        "Leaders often fail to \"craft\" their communication, instead \"winging it\" and assuming the audience can absorb everything equally. A well-designed message intentionally places the most critical points at the beginning and end.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Structure your presentations and communications with a clear, powerful opening and a strong, memorable closing. Place your single most important message in one of these two positions.",
+        "If you must convey multiple points, use \"chunking.\" Break the information into distinct, six-minute segments (the average human attention span) to allow the audience to focus and refocus.",
+        "For your most critical takeaway, use \"triangulation\"—repeat the same core message using multiple modalities (e.g., technical data, a story, a visual demonstration) to reinforce it and ensure it sticks.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Persuasion is Driven by Contrast",
+    titleEmoji: "⚖️",
+    what: {
+      point: "The single most important element in any persuasive message is contrast. Our brains are not sensitive to absolute information; they are wired to make relative comparisons.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "To sell a wireless clicker, don't just say it has great features (absolute information). Say it is \"more attractive than X, more durable than Y, and less expensive than Z\" (relative information). This primes the brain to absorb, recall, and weigh the information more heavily.",
+        "Persuasion is fundamentally about movement from position A to position B. To be effective, you must clarify why B is superior to A. The overwhelming number of persuasive attempts fail because they lack this explicit contrast.",
+        "The most potent contrast is often simplicity versus complexity. In the iMac launch video, Phil Schiller spends 25 seconds reciting the complex name and specs of the Compaq computer, after which Steve Jobs simply says, \"I have an iMac.\" This tight coupling makes the simple option irresistible.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Never present your idea in a vacuum. Always frame it in contrast to an alternative—the status quo, a competitor's offering, or a more complex way of doing things.",
+        "When presenting a solution, first describe the complex, painful problem in detail, and then introduce your simple, elegant solution.",
+        "Identify the key dichotomy that will resonate with your audience (e.g., fast vs. slow, simple vs. complex, integrated vs. fragmented) and build your entire message around that central contrast.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Selective Normative Influence (Sheep Follow Sheep)",
+    titleEmoji: "🐑",
+    what: {
+      point: "People are most influenced not by what the general population is doing, but by what a narrow, selective, and aspirational group of \"similar others\" is doing.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker emphasizes the key phrase in the definition: people go along with what \"similar others are doing.\"",
+        "The utility company Opower initially had limited success comparing a household's energy use to their \"neighborhood.\" When they changed the comparison group to \"similar homes,\" the message became far more effective at changing behavior.",
+        "The speaker provides a simple mnemonic: \"Sheep follow sheep, don't follow lemmings. Lemmings follow lemmings, don't follow sheep.\" The more narrowly and relevantly you define the comparison group, the more powerful the normative influence will be.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When using social proof to persuade someone, don't use a broad comparison (e.g., \"everyone is doing it\").",
+        "Instead, use a highly specific and aspirational reference group (e.g., \"the top-performing sales teams in our division all use this method,\" or \"our most innovative competitors have already adopted this technology\").",
+        "Tailor your normative message to the specific identity of the person you are trying to influence. The comparison should be to a group they either belong to or aspire to join.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Power of Individuation",
+    titleEmoji: "👤",
+    what: {
+      point: "A message broadcast to a group will be diluted by a \"diffusion of responsibility\"; to drive action, a message must be individuated so that a specific person feels the unique onus to act.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The \"call for help\" study shows this starkly. When a person is alone, they almost always help. When they are in a group where no one else is acting, they are far less likely to help because responsibility is diffused.",
+        "The speaker notes that asking a group to do something is far less effective than asking a single individual to do it.",
+        "Subtle cues can trigger individuation. In one experiment, placing a mirror above a bowl of Halloween candy dramatically reduced theft because it made the children self-aware. At Stanford Hospital, requiring doctors to give patients a card with their photo on it markedly improved care quality because it made the doctors feel individually accountable.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Avoid sending mass emails with a general call to action. Whenever possible, assign a specific task to a specific individual by name.",
+        "Use techniques that increase self-awareness and personal accountability. For example, having people write down their commitments and mailing them a postcard later (as the speaker did) is a powerful way to individuate the promise.",
+        "Leverage the power of face-to-face communication. Research shows that a request made in person is five times more likely to be accepted than the same request made over email because it is a highly individuated interaction.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const motivationStrategiesCards: BattleCardProps[] = [
+  {
+    title: "The Three Barriers to Motivation (Can't, Won't, Isn't Worth It)",
+    titleEmoji: "🚧",
+    what: {
+      point: "Any lack of motivation can be diagnosed by answering three simple questions: Does the person believe they can accomplish the task, do they trust they will actually receive the promised reward, and do they personally value that reward?",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker's $20 bill exercise reveals these three barriers in real-time.",
+        "Can't do it: Some people didn't try because there was \"no way\" they could physically get to the front of the room in time. They lacked the capability.",
+        "Won't get it: Others, like Max, were skeptical, believing it was a \"trick.\" They lacked trust in the link between performance and outcome.",
+        "Isn't worth it: For some, like John, \"$20 wasn't enough motivation.\" The reward itself lacked sufficient value to justify the effort.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before launching any new initiative or incentive plan, explicitly vet it against these three questions for your target team.",
+        "Diagnose any existing motivation problem by asking your team which of the three barriers is the primary obstacle.",
+        "Focus your intervention on the specific barrier you identify. Don't offer a bigger reward (\"Is it worth it?\") if the real problem is a lack of skills or tools (\"Can't do it\").",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Loss Aversion and the Peril of Perks",
+    titleEmoji: "📉",
+    what: {
+      point: "A reward or perk, once given and then taken away, is perceived as a loss far more painful than the initial pleasure of the gain, creating a net negative impact on motivation and morale.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The Goldman Sachs \"Lifesaver\" program introduced popular perks like free fruit, snacks, and barista coffee, which were later removed when the economy soured.",
+        "The reaction was \"major trauma.\" As one employee put it, \"they may not remember the excitement of the work, but they will remember the cutting of the perks.\"",
+        "The removal of simple plastic silverware caused employees to \"storm the bastille,\" stealing supplies from the cafeteria in protest. This illustrates that the symbolic meaning of the loss often outweighs its material value.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Treat any new, recurring perk or benefit as a long-term commitment. Do not introduce a program you are not prepared to sustain through economic downturns.",
+        "If a cut to a perk is absolutely unavoidable, be transparent about the business reasons and acknowledge the team's frustration directly. Do not pretend it is insignificant.",
+        "Frame new rewards as explicit one-time bonuses or experiments to avoid creating an expectation of permanence and triggering future loss aversion.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Extrinsic Incentives Bias (What Really Motivates Them)",
+    titleEmoji: "💰",
+    what: {
+      point: "Leaders systematically underestimate the power of intrinsic motivation for their employees, assuming others are primarily driven by extrinsic rewards (money) while viewing themselves as motivated by intrinsic factors (purpose, mastery).",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker cites a study by his colleague Chip Heath where managers consistently rated themselves as more motivated by intrinsic factors but rated their employees as more motivated by extrinsic factors.",
+        "A study on blood donation by Dale Miller showed that people predict that paying for donations ($25) will be far more effective than asking for volunteers. In reality, the actual donation rates were nearly identical (60-75% in both cases), demonstrating the immense and underestimated power of intrinsic motivation.",
+        "The speaker's own experience with academic tenure—where extrinsic rewards are largely fixed—shows that intrinsic drivers are what sustain high performance once financial incentives are removed from the equation.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Stop assuming money is the primary or only lever for your team's motivation. Recognize that you are likely projecting your own \"extrinsic incentives bias\" onto them.",
+        "Directly ask your employees what truly motivates them beyond their paycheck. Use their answers to co-create a more motivating work environment.",
+        "Invest as much time and strategic thought into designing for intrinsic rewards (autonomy, learning, purpose) as you do on designing compensation and bonus plans.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Four Pillars of Intrinsic Motivation",
+    titleEmoji: "🏛️",
+    what: {
+      point: "Beyond extrinsic rewards, employee motivation is reliably and powerfully driven by four core intrinsic needs: Autonomy, Mastery, Relatedness, and Purpose.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Autonomy: The need for freedom, latitude, and independence in one's work.",
+        "Mastery: The need to learn, develop skills, and get better at stuff. The speaker notes this has the \"biggest delta in terms of what they desire and what gets delivered.\"",
+        "Relatedness: The need to feel part of a team, to have responsibility for others, and to receive recognition for contributions.",
+        "Purpose: The need to feel that the work is meaningful, matters, and is not trivial.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Grant Autonomy routinely, not as a rare event. Bake it into the daily and weekly workflow to have a lasting impact.",
+        "Frame new projects around their learning potential to fuel Mastery. Ask employees, \"What's my 20%?\"—the 20% of the project where they can learn something new.",
+        "Connect daily tasks to their impact on customers and colleagues to foster Relatedness, and give specific, thoughtful recognition.",
+        "Constantly link your team's work to the company's \"north star\" to instill a sense of shared Purpose.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Motivating Through Responsibility, Not Just Self-Interest",
+    titleEmoji: "🤝",
+    what: {
+      point: "Appealing to an employee's sense of responsibility to others is often a more powerful and underutilized motivator than appealing to their own direct self-interest.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker highlights that we are taught from childhood to motivate others by explaining \"what's in it for them,\" but we neglect the power of appealing to their interest in helping others.",
+        "A study on hand-washing in a hospital provides definitive proof. A sign saying \"Hand hygiene prevents you from catching diseases\" (self-interest) had no effect on compliance.",
+        "A sign saying \"Hand hygiene prevents patients from catching diseases\" (responsibility) caused a significant increase in hand-washing, from a baseline of 38% to 54%.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Frame tasks and projects in terms of their impact on the end customer, the team, or the broader community. Connect the work to the people it helps.",
+        "When giving feedback, connect an individual's performance (positive or negative) to its concrete effect on their colleagues' ability to succeed.",
+        "Use \"responsibility-focused\" language in your communications. Instead of \"this will help you hit your bonus,\" try \"completing this on time will unblock the entire engineering team.\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const privateEquityPublicCards: BattleCardProps[] = [
+  {
+    title: "The Two Masters Problem of Public Private Equity Firms",
+    titleEmoji: "⚖️",
+    what: {
+      point: "When a private equity firm goes public, its General Partners (GPs) become beholden to two masters with conflicting priorities: their traditional Limited Partners (LPs), who value long-term performance, and the public market, which values short-term, predictable earnings.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Limited Partners (LPs): LPs (like Stanford's endowment) invest in PE for long-term, illiquid, high-risk, high-return performance. They understand that value is created over many years through operational changes, which is reflected in \"carried interest.\"",
+        "Public Market Investors: The public market, using shortcut valuation methods, places a much higher multiple on predictable, recurring \"management fees\" than on uncertain, long-term \"carried interest.\"",
+        "This creates a conflict for the GP. To please the public market and boost their stock price, they are incentivized to focus on growing management fees (a short-term metric). To please their LPs, they must focus on long-term operational turnarounds that generate carried interest.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a public PE firm, you must develop a clear and consistent narrative that educates public market investors on the long-term nature of your value creation to mitigate their short-term focus.",
+        "As an LP considering investing in a public PE firm, scrutinize their strategy. Are they still focused on long-term operational improvements, or have they shifted to prioritizing management fee growth to appease the public market?",
+        "Recognize that this \"two masters\" problem applies to any business that goes public. You must find a way to balance the demands of the quarterly reporting cycle with the need for long-term strategic investment.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The \"Win-Win\" Fallacy of ESG & Impact Investing",
+    titleEmoji: "🎭",
+    what: {
+      point: "The popular narrative that ESG and impact investing are a \"win-win\"—delivering both superior financial returns and positive societal impact—is often a misleading sales pitch that glosses over the fundamental reality of trade-offs.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker cites the famous quote from a Harvard Business School professor: \"The idea of 'win-win' works if there are a ton of badly managed firms.\" If a project is truly both highly profitable and good for society, a well-run, profit-maximizing firm should have already been doing it.",
+        "The existence of a \"win-win\" opportunity implies a market failure or managerial incompetence. Private equity firms like TPG, which are experts at fixing badly governed firms, are essentially rebranding their existing playbook as \"impact investing.\"",
+        "When TPG's Jim Coulter came to the class and pitched their impact fund as a \"win-win,\" the speaker's pushback was simple: \"If it's win-win, why you didn't do it before?\" This exposes the tension in the narrative.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Be deeply skeptical of any investment pitch that promises superior returns and superior impact without acknowledging any trade-offs.",
+        "When evaluating an ESG or impact strategy, demand clarity on the source of the \"win-win.\" Is it based on fixing operational inefficiencies, accessing a new underserved market, or a genuine willingness to accept lower returns for higher impact?",
+        "Force a discussion about the trade-offs. Ask, \"In what scenario would we sacrifice financial return for impact, or vice versa?\" If there's no clear answer, the strategy is likely just a marketing wrapper.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Inconsistency of ESG Ratings",
+    titleEmoji: "📊",
+    what: {
+      point: "The ESG measurement ecosystem is plagued by a lack of standardized disclosure and divergent methodologies, resulting in wildly inconsistent ratings that make it nearly impossible to make objective, data-driven investment decisions.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "A study of the top ESG rating agencies (FTSE, Sustainalytics, MSCI) shows a \"huge dispersion\" in the scores they assign to the same company.",
+        "A scatterplot comparing the ratings from two different agencies shows virtually no correlation. The data looks like a random cloud, indicating that the agencies are not measuring the same underlying construct.",
+        "This happens because there is no standardized disclosure requirement for ESG data, and each rating agency uses its own proprietary model, weighting different pillars (E, S, G) and sub-components differently.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Do not rely on a single ESG rating as a source of truth. If you use ratings, triangulate across multiple providers and be aware of their methodological differences.",
+        "Recognize that in the current environment, ESG investing is largely a values-based decision, not a data-driven one. You cannot reliably equate a high ESG score with superior long-term performance.",
+        "Push for industry-wide and government-mandated disclosure standards for ESG data. Only with standardized, audited data can the market begin to make meaningful and consistent measurements.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "ESG as a Luxury Good",
+    titleEmoji: "💎",
+    what: {
+      point: "For many individual investors, the willingness to sacrifice financial returns for societal impact is a \"luxury good\"—something they are happy to afford when times are good, but which they quickly abandon when their own financial situation becomes tight.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "A 2022 survey showed that younger investors were highly willing to pay a fee (i.e., accept lower returns) for their managers to pursue ESG strategies.",
+        "The same survey conducted in 2023, after a period of economic tightening, showed a complete reversal. The same younger investors were no longer willing to sacrifice returns for ESG. Their preferences were highly sensitive to their economic circumstances.",
+        "Older investors, closer to retirement, were consistently unwilling to sacrifice returns for ESG in both years, regardless of their political affiliation.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Understand that retail investor demand for ESG products is likely to be cyclical and correlated with the broader economy. Do not build a long-term strategy on the assumption of stable and growing demand.",
+        "Recognize the generational divide. While younger investors may express a strong preference for ESG, their revealed preference (what they are actually willing to pay for) is highly elastic.",
+        "The most durable path for ESG is to focus on the \"win-win\" scenarios where a solution to a societal problem (like small nuclear reactors solving an energy crisis) also presents a compelling, high-return financial investment.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Passive vs. Active Investing Dilemma in ESG",
+    titleEmoji: "🔄",
+    what: {
+      point: "The \"passive\" ESG strategy of divesting from \"bad\" companies is logically inconsistent because it relies on the very market mechanisms it claims are broken to solve the problem.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The passive approach is to sell shares of a company like Exxon, hoping to drive its stock price down.",
+        "The intended chain reaction is: a lower stock price makes it more expensive for Exxon to raise capital, forcing them to change their ways to get their stock price back up.",
+        "The logical flaw is that this strategy implicitly assumes the market is efficient and will react rationally to the selling pressure. However, the initial premise of the ESG movement is that markets are not working and are failing to price in these externalities. You can't rely on a broken market to fix itself.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Recognize that simple divestment is unlikely to be an effective strategy for driving change. A lower stock price may just make the company an attractive target for investors who don't share your ESG concerns.",
+        "If you want to drive change, you must adopt an active approach. This means engaging directly with the company as a shareholder (like an activist), funding new technologies that can solve the problem profitably, or advocating for government regulation.",
+        "Choose a strategy that is internally consistent. If you believe markets are broken, you cannot rely on a market-based mechanism like divestment to be your theory of change.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const bigDataFintechCards: BattleCardProps[] = [
+  {
+    title: "The Fintech Playbook (Unbundle, Gather Data, Re-bundle)",
+    titleEmoji: "🔄",
+    what: {
+      point: "The standard playbook for fintech disruption is to first unbundle a single, profitable service from incumbent banks, use that entry point to gather proprietary data, and then leverage that data to re-bundle a full suite of new, superior financial products.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker lays out the model: banks are a \"bundle of activities\" (lending, payments, wealth management, etc.). A startup will \"pick one activity, unbundle it, go there, start generating insights from data.\"",
+        "Square is a prime example. They started by unbundling merchant payment processing, offering a lower transaction price to gain market share. This gave them access to a rich stream of merchant and consumer transaction data.",
+        "With that data, they began to re-bundle. On the merchant side, they offered payroll, working capital, and e-commerce services. On the consumer side, they offered loans, investing, and a credit card, creating a new, integrated financial ecosystem.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify a single, high-margin, poorly-served niche within a larger incumbent's product suite. This is your point of entry.",
+        "Design your initial product not just to solve the customer's immediate problem, but to generate a unique and valuable data stream that your competitors do not have.",
+        "Develop a clear roadmap for how you will use that data to expand into adjacent services, with the ultimate goal of creating a new, stickier, data-driven bundle that is superior to the incumbent's offering.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Technology vs. Regulatory Arbitrage",
+    titleEmoji: "⚖️",
+    what: {
+      point: "Disruptive innovation in highly regulated industries is often driven as much by clever regulatory arbitrage as it is by superior technology; new entrants succeed by operating in the gaps where incumbents are constrained by rules.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker poses this as the core question for any disruption: Is it the \"amazing app\" (technology) or the circumvention of rules that constrained incumbents (regulatory arbitrage)?",
+        "The rise of mortgage non-banks like Quicken Loans is a key example. While they had a superior technology front-end (convenience), two-thirds of their market share gain came from entering markets where banks had retreated due to high local regulatory burdens.",
+        "SoFi's initial success in student loans was not based on \"big data\" but on a simple regulatory arbitrage: they skimmed the lowest-risk borrowers (e.g., Stanford graduates) whom government-regulated programs were forced to lump in with higher-risk borrowers, allowing SoFi to offer them a better rate.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When analyzing a potential market for disruption, map the regulatory landscape. Where are the incumbents most heavily constrained by regulations that you, as a non-bank or new entrant, would not be subject to?",
+        "Frame your initial market entry strategy around exploiting these regulatory gaps.",
+        "Recognize that this advantage may be temporary. As you scale, you will attract regulatory scrutiny. Your long-term strategy must be to convert your initial regulatory advantage into a durable data and technology advantage.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Power of Alternative Data",
+    titleEmoji: "📊",
+    what: {
+      point: "The most valuable data for assessing risk and creating new financial products often lies outside the traditional financial system, in unstructured sources like e-commerce transactions, social interactions, and operational behavior.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The \"lazy bank\" problem in China was a data problem: banks wouldn't lend to new borrowers because there was no credit data, and there was no credit data because no one would lend.",
+        "Big tech firms like Alibaba broke this cycle by using their vast troves of e-commerce data—sales volume, selling prices, customer reviews, handling times, even the reputation of a seller's partners—to build a superior credit scoring model.",
+        "This alternative data allowed Mercado Libre in Latin America to profitably lend to a huge segment of small businesses that were deemed \"unscorable\" and \"high-risk\" by the traditional credit bureaus, unlocking a massive new market.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify non-traditional data sources that are predictive of behavior in your industry. What digital footprints are your potential customers leaving that incumbents are ignoring?",
+        "Build a model that fuses this alternative data with traditional data to create a more accurate and inclusive picture of risk and opportunity.",
+        "Use this data advantage not just to improve existing products, but to create entirely new products for customer segments that have been previously excluded by the traditional system.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The \"Big Data\" Blind Spot (The Zillow Fallacy)",
+    titleEmoji: "🏠",
+    what: {
+      point: "Relying solely on \"big data\" and algorithms without incorporating deep business intuition and an understanding of human incentives can lead to catastrophic failures, as models can't account for adverse selection.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Zillow's iBuyer business was built on the premise that its vast housing data and sophisticated models could accurately price homes, allowing them to buy and flip properties at scale.",
+        "The model failed to account for a critical human factor: adverse selection. The only homeowners who would eagerly accept Zillow's instant offer were those who knew their homes had hidden problems (termites, foundational issues) and were thus overpriced by the algorithm.",
+        "Zillow systematically bought the \"lemons,\" accumulating a portfolio of problem properties. Their failure was not a data science failure, but a failure to understand that cutting out the human inspection process created a powerful incentive for sellers to exploit their information advantage.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When developing a data-driven strategy, always ask: \"What are the human incentives at play here, and how might they lead to adverse selection?\"",
+        "Combine your quantitative data scientists with experienced business operators who have deep domain expertise and intuition. The \"whiz kids\" need to be balanced by the \"old scouts.\"",
+        "Never fully trust a model's output without understanding the \"why\" behind it. If a model's prediction seems to defy business logic, it's a signal to dig deeper, not to blindly follow the data.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Intertwined Worlds of Regulation",
+    titleEmoji: "🌐",
+    what: {
+      point: "In the modern economy, the traditionally separate domains of financial regulation, competition (antitrust) regulation, and data regulation are now deeply intertwined, and a successful strategy requires navigating all three simultaneously.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Data Regulators: They are concerned with privacy, consumer consent, and whether people should be compensated for the use of their data.",
+        "Competition Regulators: They are concerned that firms with exclusive access to vast datasets (like Big Tech) can create insurmountable moats, becoming anti-competitive monopolists who stifle innovation.",
+        "Financial Regulators: They are concerned with the stability of the system, but their traditional tools, which are focused on deposit-taking institutions, are ill-equipped to handle the risks posed by data-rich, non-bank tech firms.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Create a cross-functional team within your organization that includes legal, compliance, and strategy experts who understand all three regulatory domains.",
+        "When launching any new data-driven product, conduct an integrated risk assessment that considers not just financial rules, but also competition law and data privacy regulations.",
+        "Proactively engage with regulators across all three domains to help shape the new rules of the road. Recognizing their intertwined nature and offering holistic solutions can be a source of competitive advantage.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const walmartCovidCards: BattleCardProps[] = [
+  {
+    title: "The Ethics of Crisis Pricing",
+    titleEmoji: "⚖️",
+    what: {
+      point: "Raising prices on scarce goods during an emergency is economically efficient for allocating supply but creates significant moral and reputational risk, with public acceptance depending entirely on whether the product is a life-or-death necessity or a matter of convenience.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The survey results show a clear divide: a majority of participants found it ethical for Uber to use surge pricing for convenience (e.g., during busy times) but overwhelmingly found it unethical for hardware stores to raise prices on hurricane supplies or for medical suppliers to raise prices on face masks.",
+        "The economic argument for surge pricing is that it incentivizes supply (more drivers come out, stores stock more inventory before a crisis) and allocates limited goods to those who need them most, preventing hoarding by those who are first in line.",
+        "The ethical argument against it is one of fairness. In life-or-death situations, pricing based on ability to pay means the wealthy can acquire essential goods they may not need, while the poor who desperately need them are priced out of the market.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Categorize your products and services on a spectrum from \"convenience\" to \"life-or-death necessity.\"",
+        "Develop a formal crisis pricing policy before an emergency hits. The policy for a convenience good can be different from that for a necessary good.",
+        "If you must raise prices on a necessary good to manage supply, communicate the rationale transparently (e.g., \"to prevent hoarding and ensure availability\") and consider partnering with governments or NGOs to provide subsidized access for low-income populations.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The \"Moral Agent vs. Moral Patient\" Framework",
+    titleEmoji: "🎭",
+    what: {
+      point: "The public perceives corporations as \"moral agents\" (capable of doing right or wrong) but not as \"moral patients\" (incapable of being wronged), which means that in any public conflict with an individual, the company is automatically cast as the potential villain.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "This framework is illustrated by the Amazon vs. Christian Smalls unionization conflict. Amazon's strategy was to \"make him the most interesting part of the story, the face of the entire union organizing movement.\"",
+        "This backfired because it framed the conflict as a \"cyborg against a human.\" The public is not equipped to see a large, faceless company as a victim, but will naturally sympathize with the individual who can feel pain and suffering.",
+        "Amazon's strategy inadvertently turned Smalls into a hero. He was seen as a David fighting Goliath, which gave him the moral high ground and ultimately contributed to his success in unionizing the warehouse.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Never frame a public conflict as your corporation versus an individual. This is a PR battle you are structurally guaranteed to lose.",
+        "Depersonalize the conflict by focusing on principles, policies, data, or the broader context. Frame it as a matter of policy, not a personal dispute.",
+        "When an individual is involved, treat them with public respect, even when you disagree. Attacking them personally will only reinforce the \"Goliath\" narrative and generate sympathy for their cause.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Aligning Social Responsibility with Core Competency",
+    titleEmoji: "🎯",
+    what: {
+      point: "The most effective and authentic corporate social responsibility (CSR) is not disconnected philanthropy, but is deeply integrated with the company's core strategy and leverages its unique operational capabilities to create societal value.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Walmart's highly praised hurricane response is the prime example. They are not lauded for their charitable donations, but for \"running their core business effectively\"—using their world-class logistics to get essential goods to communities in need.",
+        "There is a powerful \"extreme synergy between their core business and this thing that gets them a very good reputation in society.\"",
+        "The speaker expresses frustration with companies that treat CSR as a separate activity, like giving \"money from the symphony,\" which is not as compelling or impactful as integrating it with what the company does best.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Audit your current CSR initiatives. Are they disconnected acts of charity, or are they a strategic application of your company's unique strengths?",
+        "Identify a societal problem that your company's core competencies (e.g., logistics, technology, manufacturing scale) are perfectly suited to solve.",
+        "Reframe and refocus your CSR efforts to be an extension of your core business model, creating a powerful, authentic narrative and maximizing your real-world impact.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Crisis IP Licensing Dilemma",
+    titleEmoji: "🔐",
+    what: {
+      point: "In a global crisis, a company with critical intellectual property (like a vaccine) faces a fundamental strategic trade-off between maximizing global access through broad licensing and protecting future innovation incentives through controlled, narrow licensing.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The case presents three options for COVID vaccine IP: 1) Don't license, 2) License to a few trusted partners for specific low-income markets, or 3) License to any manufacturer with the technical capacity.",
+        "The argument for narrow licensing (Option 2) is about control and long-term relationships. It allows the innovator to ensure quality, prevent their home markets from being undercut by low-priced generics, and work with proven, high-scale partners like the Serum Institute of India. This was the model used for HIV/AIDS drugs.",
+        "The argument for broad licensing (Option 3) is about maximizing speed and scale. It addresses the \"vaccine nationalism\" problem, where countries without local production fear being last in line. However, it risks diluting the brand, ensuring quality control is difficult, and requires transferring complex manufacturing know-how, not just the patent.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Evaluate your critical IP and develop a tiered crisis-response licensing strategy in advance. Don't wait for a crisis to decide your principles.",
+        "If choosing narrow licensing, select partners based on their manufacturing excellence and your ability to build a long-term, trusted relationship with clear rules of engagement.",
+        "If choosing broad licensing, recognize that success depends on transferring not just the patent, but the complex \"craft knowledge\" of the manufacturing process to ensure the product is made safely and effectively.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const zeroBillionDollarCards: BattleCardProps[] = [
+  {
+    title: "Entering a Zero-Billion-Dollar Market",
+    titleEmoji: "🚀",
+    what: {
+      point: "Entering a market that does not yet exist—a \"zero-billion-dollar market\"—provides powerful strategic advantages, including a lack of initial competition and a long horizon to develop the business model without pressure.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Nvidia's founders pitched their idea for a 3D graphics chip for video games when the market size was effectively zero. Venture capitalists and market research reports saw no market, and even the founder's mother told him to \"go get a job.\"",
+        "The primary advantage of this approach is having no initial competition. For three years, Nvidia was able to develop its technology and market without incumbents \"breathing down your neck on pricing or innovation.\"",
+        "This lack of pressure grants a \"long horizon.\" As Jack Ma explains, competing with established players in the short term is impossible, but if you have a unique insight about the world in 10 years, you can build for that future and win.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify a \"zero-billion-dollar market\" by looking for a powerful enabling technology (like accelerated computing) and a \"killer app\" (like video games) that could unlock a massive, currently non-existent, user need.",
+        "Frame your strategy around market creation, not market share competition. Your goal is to shape and grow the new market in a way that benefits you.",
+        "Leverage your long-horizon advantage. Make investments and strategic decisions based on your 10-year vision, not on quarterly pressures, allowing you to outmaneuver incumbents who are optimizing for the short term.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Logic of the Business (The Virtuous Cycle)",
+    titleEmoji: "🔄",
+    what: {
+      point: "A successful business is built on a clear, self-reinforcing \"logic\"—a virtuous cycle where each component of the strategy amplifies the others, creating a powerful growth engine.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Nvidia's logic is built on a \"Product Leadership Squared\" model. They aim to have the best GPUs, which attracts both high-end gamers and game developers.",
+        "This creates two reinforcing loops: more gamers attract more developers, and more (and better) games from those developers attract more gamers.",
+        "Nvidia actively strengthens these loops. They invest in R&D fueled by sales to make the \"best GPUs,\" and they create tools like CUDA to help developers make \"more and better games,\" which locks developers into their ecosystem.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Explicitly map out the \"logic\" of your business. What is the core value proposition, and what are the key reinforcing loops that drive growth?",
+        "Identify the most critical nodes in your virtuous cycle and invest disproportionately to strengthen them (e.g., Nvidia's investment in CUDA to lock in developers).",
+        "Ensure your entire business model is aligned with this logic. For example, Nvidia's high-margin pricing strategy is a direct consequence of its value proposition of offering the \"best gaming experience.\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Strategic Alignment Before Entering a New Market",
+    titleEmoji: "🎯",
+    what: {
+      point: "Before making a massive bet on a new market (like AI), a company must rigorously assess whether the new opportunity is strategically aligned with its existing, proven business model.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "When Jensen Huang saw the potential of AI in 2012, his decision to pivot the company was not just a leap of faith; it was based on a clear analysis of strategic fit.",
+        "The core technology fit: AI's heavy reliance on parallel processing (matrix multiplication) was perfectly aligned with Nvidia's core competency in accelerated computing via GPUs.",
+        "The business model fit: The company's \"logic\" for the graphics market was directly transferable to the AI market. \"Best gaming experience\" became \"best AI performance\"; \"game developers\" became \"AI researchers\"; \"more and better games\" became \"more and better models.\" The entire virtuous cycle could be replicated.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When evaluating a major new market opportunity, do not just analyze the market size. First, analyze its alignment with your company's core technology and business model.",
+        "Use your existing \"logic of the business\" as a framework. Can you map the key components of your current virtuous cycle onto the new market?",
+        "If the new market requires a fundamentally different business model (e.g., Nvidia's failed attempt at the low-margin smartphone market), be extremely cautious. The probability of success is much higher when the new opportunity leverages your existing strategic DNA.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Value Chain Strategy: Commoditize Your Complementors",
+    titleEmoji: "🔗",
+    what: {
+      point: "To capture the maximum value you create, you must strategically manage your value chain to commoditize your complementors—the partners who distribute or enable your product—and prevent them from gaining monopoly power.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Nvidia's GPUs are distributed through cloud computing providers like AWS, Microsoft Azure, and Google Cloud. These providers are \"complementors.\"",
+        "However, these big cloud providers are also becoming competitors by developing their own chips (e.g., AWS's Trainium). This threatens Nvidia's position.",
+        "Nvidia's strategy is to make the distribution market more competitive. They do this by preferentially allocating their scarce GPUs to new, smaller cloud players like CoreWeave and Oracle, and by entering the market themselves to serve enterprise data centers directly. This prevents any single cloud provider from having too much power over them.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map your value chain and identify your critical \"complementors.\"",
+        "Analyze the competitive dynamics in that part of the value chain. Is it a competitive market, or is it dominated by one or two powerful players?",
+        "If your complementors are becoming too powerful, take active steps to commoditize them. This could involve supporting new entrants, creating an open standard, or even entering that part of the value chain yourself to create more competition.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const modernaAiMrnaCards: BattleCardProps[] = [
+  {
+    title: "The Platform Business Model for R&D",
+    titleEmoji: "🧬",
+    what: {
+      point: "Structure your innovation efforts not as a series of bespoke, one-off products, but as a single, unified \"bio-platform\" that can generate a multitude of products from a common technological core, dramatically reducing costs and diversifying risk.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Noubar Afeyan, Moderna's chairman, explicitly contrasts the traditional \"bespoke\" drug development model with a tech-inspired platform approach: \"you don't get one drug out of them, but you get 10 or 20 or 50.\"",
+        "This model spreads the high fixed cost of developing the core platform across many products. Moderna is developing ~60 different medications on its single mRNA platform.",
+        "It provides a powerful hedge against the \"biology risk\" inherent in drug development. By pursuing many drugs in parallel, the failure of any single one is not catastrophic, allowing the company to diversify its innovation portfolio.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify the core, repeatable \"chassis\" of your technology and invest heavily in making it a robust, reusable platform.",
+        "Define clear rules (interface standards, policies, contracts) for how new \"components\" (products) can be rapidly developed on top of this platform.",
+        "Structure your R&D portfolio to leverage the platform, enabling you to pursue multiple product opportunities simultaneously and spread the risk of innovation.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The \"Born Digital\" Integrated Value Chain",
+    titleEmoji: "💻",
+    what: {
+      point: "A company that is \"born digital\" with a fully integrated software and data architecture from day one possesses a massive, almost insurmountable advantage in speed and learning over incumbents trying to bolt on digital capabilities to legacy systems.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Moderna's platform connects drug discovery, clinical trials, and robotic manufacturing in a single digital thread with \"straight through processing.\" This allowed them to design the COVID-19 vaccine in 63 days, while Pfizer, a much larger company with siloed systems, took 263 days.",
+        "Ford's CEO, Jim Farley, described the nightmare of legacy systems, with 150 different software modules from different suppliers that \"don't talk to each other,\" making change nearly impossible. In contrast, Tesla designs its cars starting with a single, integrated software architecture.",
+        "A vertically integrated digital chain eliminates manual handoffs, which are a primary source of errors and delays. The CEO of Moderna was spurred to digitize everything after seeing a researcher manually working with a massive, error-prone Excel spreadsheet.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When building a new venture, architect your entire value chain around a single, integrated digital backbone from the very beginning.",
+        "Insist on a unified data structure and eliminate manual data entry or transfers between different systems to accelerate your learning cycles and reduce errors.",
+        "View your integrated digital infrastructure as your primary competitive weapon, as it enables a speed of innovation that fragmented, legacy competitors cannot match.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Correlated Data Flywheel",
+    titleEmoji: "🔄",
+    what: {
+      point: "A digital platform creates a powerful competitive advantage by allowing you to correlate data across your entire product portfolio, using learnings from one project to dramatically accelerate and de-risk another.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Moderna's ability to develop the COVID vaccine in two days was a direct result of their platform's data. They leveraged learnings from their previous, experimental work on the MERS virus, which also used a spike protein.",
+        "Traditional companies like Pfizer have \"dark data\" that is \"scattered all over the place.\" Their information from different drug development efforts is not connected, making each project an independent, from-scratch effort.",
+        "By having a common database and algorithms, a platform can identify similarities between seemingly unrelated problems (like two different respiratory viruses), reusing components and knowledge to gain incredible speed.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Create a single, centralized data repository for all R&D, clinical, and manufacturing data across your entire product portfolio.",
+        "Invest in AI and data science capabilities to actively search for correlations and transferable insights between different projects.",
+        "Structure your teams to break down informational silos. Create processes that force teams working on different products to share data and learnings through the common platform.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "A Framework for Governing Enterprise AI",
+    titleEmoji: "📋",
+    what: {
+      point: "Manage the explosion of internal AI use by creating a governance framework that balances empowerment with risk, classifying applications based on their potential downside and organizational scope.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "After an initial phase of widespread internal use of ChatGPT, Moderna implemented a formal governance structure to manage the development of hundreds of internal AI tools (GPTs).",
+        "The framework is a matrix: Downside Risk (Low, Intermediate, High) vs. Scope (Individual, Team, Function, Company).",
+        "Low-risk, individual-scope tools are governed by simple policy, allowing for rapid, democratized innovation. High-risk, company-wide tools require a rigorous approval process involving compliance and IT. Intermediate tools are subject to a technical IT review to ensure security and robustness.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Instead of a blanket \"yes\" or \"no\" to generative AI, create a tiered governance model based on risk and scope.",
+        "Empower your employees to experiment with AI for individual and team-level tasks within a clear set of policies, fostering a culture of innovation.",
+        "Establish a formal, cross-functional review board (including IT, legal, and compliance) to vet any AI application that is high-risk, has a company-wide scope, or will be customer-facing.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Centralized AI Control Platform (The JP Morgan Model)",
+    titleEmoji: "🏦",
+    what: {
+      point: "In a large, highly-regulated enterprise, the safest and most effective way to deploy AI is through a single, mandatory internal platform that acts as a gatekeeper for all AI usage, ensuring security, compliance, and quality control.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "JP Morgan, a 325,000-person firm, controls all AI use through its internal \"LLM Suite\" platform. No application can be deployed unless it runs through this system.",
+        "The platform enforces a strict bias towards using internal data. When external data is used, it is explicitly firewalled and shown on a separate screen with a warning.",
+        "It enforces a promotion hierarchy: no application can become an agent (taking autonomous action) until it has first proven itself over time as an assistant (providing recommendations to a human). All tools are deployed internally before ever being used with external customers.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "For mission-critical or highly regulated functions, build a centralized AI platform to act as the single, mandatory gateway for all development and use.",
+        "Create a curated library of pre-vetted LLMs and tools that your teams can access through the platform, ensuring you are not dependent on a single provider.",
+        "Implement a strict, staged rollout process for all new AI applications: 1) Deploy internally as an assistant. 2) Once proven, deploy internally as an agent. 3) Only after extensive internal validation should an AI be allowed to interact with external customers.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const populationFoodSecurityCards: BattleCardProps[] = [
+  {
+    title: "The Contrarian's Playbook: Creating a Market from Zero",
+    titleEmoji: "🎯",
+    what: {
+      point: "The greatest opportunities often lie in \"zero-billion-dollar markets\" that incumbents and investors dismiss, allowing a company with a unique, long-term perspective to create and dominate an entirely new category.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "When Nvidia started, the common sense was that there was \"no video game market.\" VCs rejected the idea, and market research showed its size was zero.",
+        "The key advantage was the lack of competition, which provided a long horizon to develop the technology and business model without the short-term pressures of an existing market.",
+        "This approach requires a deep conviction in a non-consensus view of the future. As Jack Ma stated, \"If you want to win 10 years later, you have a chance.\" Nvidia's conviction was that the demand for 3D graphics was \"insatiable,\" even if customers didn't know it yet.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify a powerful, accelerating technology (like Moore's Law for Nvidia) and ask what fundamentally new markets it could create, rather than just how it could improve existing ones.",
+        "Develop a contrarian but defensible thesis about long-term demand. Use this long-horizon view to make investments that seem illogical to competitors focused on the next quarter.",
+        "In the early stages, be prepared to \"ignore your customers\" when their feedback is constrained by the present reality. Trust your unique insight into the future state of the market you are creating.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Product Leadership Squared: The Gamer-Developer Virtuous Cycle",
+    titleEmoji: "🔄",
+    what: {
+      point: "Build an exponential growth engine and a deep competitive moat by creating a product that establishes leadership with two distinct but interdependent customer segments—end-users and developers—creating a powerful two-sided virtuous cycle.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Nvidia's model was \"Product Leadership Squared.\" They focused on making the best GPUs, which delivered the \"best gaming experience\" to gamers.",
+        "This leadership with gamers attracted game developers, who wanted to build for the largest and most engaged audience. More and better games from developers, in turn, attracted even more gamers.",
+        "Nvidia cemented this flywheel by creating CUDA, a software platform that made it easier for developers to use their chips. This accelerated game development and created \"stickiness,\" locking developers into the Nvidia ecosystem because the tools \"work only with our chips.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map your ecosystem. Identify the key players on both the demand side (your end-users) and the supply/creation side (the developers or creators who build for your platform).",
+        "Define a clear value proposition for both sides and invest in being the undisputed product leader for each.",
+        "Build a proprietary software layer or set of tools (your version of CUDA) that makes it easier for developers to create value on your platform, creating powerful lock-in effects.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "When the Market Finds You: Pivoting from Your Core Platform",
+    titleEmoji: "🔍",
+    what: {
+      point: "The biggest market shifts are often discovered not through internal strategy, but when an external group of innovators unexpectedly adopts your core technology for a new purpose, signaling a massive opportunity to pivot the entire company.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "As Jensen Huang stated, \"it's not that Nvidia discovered AI. The AI researchers discovered Nvidia.\" The signal to pivot came from the outside.",
+        "The AlexNet moment in 2012, where researchers hacked Nvidia's gaming GPUs for AI image recognition, was the critical event. They demonstrated that Nvidia's core competency—accelerated parallel computing—was the key to unlocking the future of AI.",
+        "The pivot was successful because the new AI market was perfectly aligned with Nvidia's existing business model. The \"logic of the business\" could be directly applied by substituting \"AI performance\" for \"gaming experience\" and \"AI researchers\" for \"game developers.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Pay close attention to how \"off-label\" customers are using your product. Are there emergent use cases in adjacent markets that you did not anticipate?",
+        "When a significant new use case is discovered, rigorously analyze its alignment with your core technological competency and business model. Is your existing \"virtuous cycle\" transferable?",
+        "If the alignment is strong, have the courage to make a decisive company-wide pivot. As Jensen Huang did, send the clear message that \"we're going to start being an AI company.\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Weaponizing the Value Chain: Arming a Competitive Distribution Layer",
+    titleEmoji: "⚔️",
+    what: {
+      point: "To avoid being commoditized by powerful distributors who are also potential competitors, a company must strategically use its own product as a weapon to foster competition within its distribution channel.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Nvidia's biggest distributors are the major cloud providers (AWS, Microsoft, Google), who are also their biggest potential competitors as they develop their own chips.",
+        "If Nvidia sold only to these big players, the distributors would hold immense power and could eventually squeeze Nvidia's margins or replace them.",
+        "Nvidia's strategy is to \"commoditize its complementors.\" They intentionally allocate their scarce, high-demand GPUs to smaller, up-and-coming cloud providers like CoreWeave and Oracle.",
+        "This \"arms\" the smaller players, making the cloud distribution market more competitive. This reduces the power of any single distributor and ensures that Nvidia, as the creator of the core technology, captures the majority of the value.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify the key distributors or \"complementors\" in your value chain. Assess their market power and whether they pose a long-term competitive threat.",
+        "If your distributors are too concentrated or are becoming competitors, develop a strategy to increase competition in that layer.",
+        "Preferentially supply or partner with smaller, non-threatening distributors to build them up as viable alternatives to the dominant players, thereby shifting the balance of power back in your favor.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const collaborationBarriersCards: BattleCardProps[] = [
+  {
+    title: "The Real Barrier to Collaboration: The Fear of Asking",
+    titleEmoji: "🙋",
+    what: {
+      point: "The primary obstacle to collaboration is not a lack of willingness to help, but a deep-seated, culturally ingrained reluctance to ask for help in the first place.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In the Reciprocity Ring exercise, providing help (the \"blue Post-it notes\") flows easily and enthusiastically. The true bottleneck is the initial act of asking for help (the \"yellow Post-it notes\").",
+        "Asking for help is often perceived as a sign of weakness, a lack of competence, or a threat to one's reputation, especially for senior leaders who feel they have \"more to lose.\"",
+        "The speaker notes that when he announced the exercise required asking for help, he was met with groans and eye-rolls, indicating a visceral, negative reaction to the act of requesting assistance.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Reframe asking for help as a core competency. In performance reviews, add a metric that explicitly evaluates an individual's willingness to seek assistance.",
+        "Mandate a \"needs statement\" at the beginning of routine team meetings. Require every person to state one thing they need help with, normalizing the act of asking.",
+        "Model the behavior yourself. As the leader, be the first to publicly and frequently ask for help on specific challenges, demonstrating that it is a sign of strength and confidence, not weakness.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Leader's Job is to Initiate, Not Facilitate",
+    titleEmoji: "🚀",
+    what: {
+      point: "A leader's most leveraged role in fostering collaboration is not to facilitate ongoing interactions, but to intentionally and structurally initiate the initial connections between people and groups who would not otherwise interact.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker emphasizes, \"your job is to initiate it. Your job is not to facilitate it, it's not to monitor it, it's not to maintain it.\" The hardest part is the \"incipient stage,\" the \"first point of contact.\"",
+        "The Google Chromecast story is a prime example. Two key employees, Kenji and Olav, sat 10 yards from each other but never connected until a structured exercise forced the initial interaction, which led to a monumental success.",
+        "Even physical proximity is not enough to initiate collaboration. Proximity without intentional intervention fails to create the \"grist for the mill\" needed for new connections to form.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Implement a \"Slice of Life\" routine for all new hires. Mandate that they give a 20-minute presentation to a broad group about who they are, what they know, and what they're working on to create an initial repository of knowledge about them.",
+        "Reject a \"hope is a course of action\" mindset. Do not assume that proximity or social events will create valuable connections. Instead, design specific, structured interventions that force these connections to happen.",
+        "Focus your energy on creating more \"first interactions.\" Once a connection is made, it is much easier for collaboration to continue organically.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Engineering Serendipity for Weak-Tie Connections",
+    titleEmoji: "🔗",
+    what: {
+      point: "The most innovative and valuable collaborations come from \"weak ties\"—connections outside of one's immediate team—and these connections must be structurally engineered, as they rarely happen organically.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Research on corporate social events shows they are a myth for creating new connections. People spend about 90% of their time talking to people they already know, reinforcing existing silos.",
+        "A Microsoft Research study of 60,000 employees showed that remote work caused the collaboration network to shrink and become more siloed, with people spending far less time with their weak ties who are the source of new information.",
+        "The Zapier \"Uber ride\" example provides the solution. A forced, structured, 30-minute interaction between two random employees on the way to the airport successfully created lasting communication ties between them, regardless of their background, because it was a designed intervention.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Stop investing in generic, unstructured social events like happy hours and holiday parties with the expectation they will foster cross-functional collaboration.",
+        "Create structured, mandatory interaction routines that force collisions between people from different teams. This could be a \"randomized coffee\" program or pairing people from different departments for short-term projects.",
+        "Use Organizational Network Analysis (ONA) tools to map your company's informal collaboration network, identify the silos, and then surgically introduce the key informal leaders from different silos to each other.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Open Office Fallacy",
+    titleEmoji: "🏢",
+    what: {
+      point: "Despite their widespread adoption with the goal of increasing collaboration, open-plan offices actively decrease the rate and quality of meaningful communication by creating social friction that drives people into digital isolation.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker cites research from Harvard's Ethan Bernstein showing that when companies switch to open offices, face-to-face interaction plummets and is replaced by electronic messaging.",
+        "The reason is social friction and a lack of privacy. People think, \"I could have a conversation with Tolga, but now I'm going to interrupt Lisa and Francisco and make a scene. I can't do that. So instead, I know he's right there, but I'll send a slack message.\"",
+        "The result is a quiet, \"chapel-like\" environment where employees have headphones on and are locked into their screens, paradoxically making the physical space less collaborative than a traditional office.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Recognize that simply removing walls is not a collaboration strategy; it often creates more problems than it solves.",
+        "If you have an open office, you must introduce explicit routines to counteract the natural tendency towards silence.",
+        "Implement a \"three things is a problem\" rule (as a Google manager did): if a topic requires more than three back-and-forth digital messages, the rule is you must get up and have a face-to-face conversation or pick up the phone.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const gsbAlumniLeadershipCards: BattleCardProps[] = [
+  {
+    title: "Getting Help is a Sign of Strength, Not Weakness",
+    titleEmoji: "💪",
+    what: {
+      point: "The most effective leaders, like world-class athletes, understand that proactively seeking help and coaching is a sign of strength and a critical investment in their ability to perform under pressure.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "John Donahoe recounts learning from Dr. Jim Loehr that world-class athletes train 10-20 hours for every hour they compete, constantly seeking feedback and coaching to improve. In contrast, business leaders often view getting help as a sign of weakness.",
+        "Michael Jordan, at the peak of his career, had a bench coach, a personal chef, and a psychological coach. He invested heavily in himself to ensure he could perform when it mattered most.",
+        "Donahoe embraces this model, utilizing multiple executive coaches, a personal board of directors for feedback, therapists, and spiritual advisors to ensure his own capabilities are not the limiting factor for his team or company.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Reframe \"getting help\" as a strategic investment in your leadership capacity. Actively build your own support system, which could include an executive coach, a therapist, a mentor, or a peer advisory group.",
+        "Make it a habit to proactively seek feedback. As a leader, you will receive less and less honest feedback the more successful you become, so you must explicitly invite it.",
+        "Publicly model this behavior to your team. When you openly talk about the coaching or help you're receiving, you create a culture where seeking development is seen as a strength.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Three Pillars of an Organization: Purpose, Strategy, and Culture",
+    titleEmoji: "🏛️",
+    what: {
+      point: "Every organization must have sharp, distinct answers to the \"Why\" (Purpose), the \"What\" (Strategy), and the \"How\" (Culture), and leaders must be careful not to confuse them, especially during times of change.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Purpose (The Why): Why do we exist? This is the organization's long-term aspiration and its role in society. It should remain consistent over a 5-10 year period.",
+        "Strategy (The What): What are our target segments, products, and business model? Strategy must be ruthlessly \"outside-in,\" constantly adapting to changing customer needs, technology, and competition. It should evolve continuously.",
+        "Culture (The How): How do we operate and behave to bring our purpose and strategy to life? Culture must evolve, keeping what serves the organization and changing what doesn't.",
+        "Donahoe shares an example from eBay, where the initial resistance to moving from auctions to fixed-price sales was framed as a threat to the company's \"purpose,\" when in fact, auctions were a \"strategy\" that needed to evolve to serve the unchanging purpose of empowering buyers and sellers.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Clearly articulate and separate your organization's purpose, strategy, and culture. Ensure every leader and employee understands the distinct role of each.",
+        "When facing resistance to a necessary strategic change, diagnose if the resistance is due to a confusion between strategy and purpose or culture. Clarify that the strategy must adapt to serve the enduring purpose.",
+        "Regularly audit your strategy to ensure it is \"outside-in\" and confronting the current reality of the market, not just perpetuating historical practices.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Leader's Most Powerful Tools: Questions and Listening",
+    titleEmoji: "❓",
+    what: {
+      point: "A leader's most powerful tools are not giving orders and making statements, but asking intentional questions and listening deeply, as this empowers talented people and guides the organization's focus.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Bain & Company founder Bill Bain taught Donahoe that \"talented people don't want to be told what to do. Talented people want to be listened to.\"",
+        "Asking intentional, repeated questions about a key priority (e.g., \"How are client results doing?\") signals what is important and influences behavior more effectively than a direct order. Donahoe used a \"question of the year\" to make cross-functional teamwork a priority without mandating it.",
+        "For complex, high-stakes decisions with no clear answer (the \"51-49\" decisions), a leader's job is not to pronounce the answer, but to facilitate a conversation, listen to all perspectives, and then make a well-informed call.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Be intentional about the questions you ask. Identify your top 1-2 strategic priorities and make it a habit to ask questions related to them in every meeting and visit.",
+        "Practice the discipline of listening more than you talk. At the end of each day, ask yourself, \"Did I ask more questions than I made statements today?\"",
+        "When faced with a complex decision, facilitate a structured debate. Frame the issue, ask for alternatives, let the team voice their perspectives, and then play back what you've heard before making a decision.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Good Decision-Making Hygiene",
+    titleEmoji: "🧹",
+    what: {
+      point: "Consistently making good decisions requires \"hygiene\"—the disciplined use of structured frameworks to ensure multiple perspectives are considered, risks are surfaced, and dissent is encouraged.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker stresses the importance of using some structured framework rather than \"bumbling around in the dark.\" The specific framework is less important than the discipline of using one.",
+        "One powerful and easy tool is the Pre-Mortem. Before making a final decision, the team imagines the project has failed catastrophically and brainstorms all the reasons why. This surfaces risks and anxieties that might otherwise remain unspoken.",
+        "Another key is creating a structured space for dissent. Research on the Supreme Court shows that the presence of a formal dissenting opinion improves the quality and longevity of the final decision. This can be implemented through a \"Devil's Advocate\" role.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Adopt a go-to decision-making framework for your team and use it consistently for all significant decisions.",
+        "Incorporate a pre-mortem exercise as a mandatory step for all high-stakes projects before they receive final approval.",
+        "Formalize the role of a Devil's Advocate in your decision meetings. Make sure it is a rotating role, not a single person, to prevent the \"curmudgeon\" effect.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Driving Change: Win the Middle, Ignore the Fringes",
+    titleEmoji: "🎯",
+    what: {
+      point: "Driving change in an organization is an unnatural act, and the most effective strategy is to energize the supporters, create momentum to win over the undecided middle, and accept that you will never win over the dedicated resistors.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "On any given change initiative, you will typically find 20% of people who are enthusiastic supporters (\"Yes, let's go!\"), 20% who are staunch opponents (\"No freaking way\"), and a large 60% in the middle who are waiting to see who wins.",
+        "Donahoe admits that for a good part of his career, he made the mistake of wasting too much time and energy trying to win over the 20% of people who were never going to change their minds.",
+        "The winning strategy is to focus on the 20% of supporters, empower them to create small wins, and build visible momentum. This creates a \"train\" that the undecided 60% will want to get on, making the change feel inevitable.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When launching a change initiative, identify your early adopters and evangelists. Make them your focus. Give them the resources and air cover to succeed.",
+        "Publicize and celebrate their early successes to create a powerful narrative of positive momentum.",
+        "Do not engage in endless debates with the staunchest resistors. Acknowledge their position and then move on, focusing your energy on the coalition of the willing and the persuadable.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Communicating in a Crisis: Acknowledge Fear and Reconnect to Purpose",
+    titleEmoji: "📢",
+    what: {
+      point: "In times of extreme uncertainty and fear, a leader's most effective communication strategy is not inspirational speeches or detailed plans, but to first acknowledge the fear and then reconnect the team to their shared, resilient purpose.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Donahoe notes that during crises like COVID or the George Floyd protests, both inspirational \"Al Pacino\" speeches and detailed consultant-style plans fail because the core issue is \"about heart, not head.\"",
+        "The first and most critical step is to acknowledge the fear. A leader must \"call it, label it,\" and validate the team's feelings of uncertainty without pretending to have all the answers. This builds trust and allows people to feel heard.",
+        "The second step is to shift the focus from the immediate crisis to the organization's enduring purpose. At Nike, during the burnout of 2022, Donahoe re-centered the team by asking \"Why are you here?\" and connecting their work to the power of sport to unite a polarized world.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When communicating during a crisis, begin by explicitly acknowledging the team's anxiety and uncertainty. Say, \"I know this is a difficult and uncertain time.\"",
+        "Resist the urge to provide false certainty or inspirational platitudes. It is more powerful to say, \"I don't have all the answers, but we will figure this out together.\"",
+        "Ground your message in your organization's core purpose. Remind everyone of the \"why\" behind their work, as this is the ultimate source of resilience and commitment during difficult times.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const negotiationStrategiesCards: BattleCardProps[] = [
+  {
+    title: "Negotiation as Collaborative Problem-Solving",
+    titleEmoji: "🤝",
+    what: {
+      point: "You must fundamentally reframe negotiation from a win-lose battle to a collaborative problem-solving process to expand your opportunities and achieve superior outcomes.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The \"battle mentality\" is a destructive filter. It forces you to view your counterpart as an \"enemy,\" interpret their actions in the most \"malevolent, aggressive, conflictual way possible,\" and limits who you are willing to negotiate with.",
+        "The goal is not simply to \"get to yes.\" The true goal is to get a good deal—one that leaves you better off than your alternatives. A successful outcome can, and sometimes should, be an impasse.",
+        "The most effective proposals are framed as a solution to a problem your counterpart has. This requires you to deeply understand their interests, preferences, and the barriers they face.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before any negotiation, explicitly reframe your objective from \"how can I win?\" to \"how can we solve this problem together?\"",
+        "Dedicate a significant portion of your preparation to understanding your counterpart's problems, not just your own positions.",
+        "Treat an impasse not as a failure, but as a successful outcome when the alternative is accepting a bad deal.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Compounding Cost of Not Negotiating",
+    titleEmoji: "📈",
+    what: {
+      point: "The cost of failing to negotiate an initial offer is not a one-time loss but a massive, compounding annuity that impacts your earnings, perceived value, and career trajectory for decades.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "A study by Linda Babcock found a 7.6% starting salary gap between male and female MBAs, driven almost entirely by the fact that 57% of men negotiated while only 7% of women did.",
+        "The \"Chris and Frazier\" thought experiment demonstrates the compounding effect. An initial 7.6% salary difference means Frazier has to work seven more years to earn the same amount as Chris, assuming identical 5% annual raises.",
+        "This gap widens dramatically over time. If the higher-paid employee (Chris) receives a slightly better raise (e.g., 6% vs. 5%) because they are perceived as \"better,\" the lower-paid employee (Frazier) \"can't live long enough\" to ever catch up.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Treat every initial offer—for salary, a contract, or a promotion—as the start of a negotiation, not the end.",
+        "Before accepting an initial offer, calculate the long-term financial impact of a successful negotiation. The decision is not about a few thousand dollars today; it's about hundreds of thousands over a career.",
+        "Establish a culture in your organization that expects and respects negotiation from new hires and internal candidates for promotion.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Agreement Bias Trap",
+    titleEmoji: "🪤",
+    what: {
+      point: "Human beings have a powerful, irrational bias toward reaching an agreement, which often leads us to accept disadvantageous deals simply to avoid an impasse.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker describes a study where a choice was presented as \"Option A vs. Option B\" and then as \"the agreement option vs. the disagreement option.\"",
+        "Simply labeling a disadvantageous option as \"the agreement\" dramatically increased the number of people who chose it. This gap represents our \"bias to agreement.\"",
+        "This bias is often exploited tactically with phrases like, \"If we can just make this last concession, we have a deal,\" which uses the allure of agreement to extract value.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before entering any negotiation, explicitly define your reservation price and commit to walking away if a deal does not meet it. This is your primary defense against the agreement bias.",
+        "When you feel a strong pull to close a deal, pause and ask, \"Is this a good deal, or do I just want the psychological comfort of reaching an agreement?\"",
+        "Be aware when a counterpart is leveraging this bias against you. When they frame a final concession as the key to a deal, recognize it as a tactic and re-evaluate the proposal on its own merits.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Reservation Price: Your Safety Net, Not Your Target",
+    titleEmoji: "🎯",
+    what: {
+      point: "Your reservation price (your bottom line) is a critical safety net to protect you from a bad deal, but it is a disastrous anchor if you treat it as your target or aspiration.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Your alternative to a negotiated agreement (your safety net) determines your reservation price (the point of indifference between a yes and a no). The better your alternative, the stronger your reservation price.",
+        "A common failure is to treat this reservation price as a \"standard of acceptability.\" This limits your downside but also severely limits your upside, as you become anchored to simply getting a deal that is slightly better than your bottom line.",
+        "The speaker uses the metaphor of a trapeze artist: the safety net is there to catch you if you fall, but your goal is to perform your act high above it, not to land in it.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "In your preparation, clearly separate your alternative, your reservation price, and your aspiration.",
+        "Treat your reservation price as a sacred, bright-line standard that you will not violate under any circumstances.",
+        "Focus all of your energy and creativity during the negotiation on achieving your aspiration (an optimistic assessment of what's possible), knowing your reservation price is there to protect you.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Power of Aspiration",
+    titleEmoji: "🚀",
+    what: {
+      point: "Setting a high, specific, and well-researched aspiration is one of the most powerful drivers of negotiation success, as it fundamentally changes your expectations and subsequent behavior.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Focusing only on your reservation price and alternative leads to underperformance. You need an optimistic assessment of what you could achieve if things go well.",
+        "Expectations drive behavior. A study showed that when female negotiators were exposed to negative stereotypes about female negotiators, their aspirations and performance plummeted. When exposed to negative stereotypes about male negotiators, their aspirations and performance surged past the men's.",
+        "This is especially critical for women, who research shows often have systematically lower expectations. The speaker advises women to set their aspiration and then \"jump that aspiration up about 20% because you're probably too low.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before any negotiation, conduct thorough research to set an ambitious but justifiable aspiration.",
+        "Write down your aspiration and keep it front-of-mind during the negotiation to anchor your focus on a high-value outcome.",
+        "Actively challenge and raise the aspirations of your team members, particularly women, to counteract the powerful effect of negative stereotypes and low initial expectations.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "When Not to Negotiate",
+    titleEmoji: "🛑",
+    what: {
+      point: "A critical leadership skill is recognizing situations where negotiation is not the right tool, either because a deal is impossible, the costs outweigh the benefits, or a massive power differential removes your ability to walk away.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "No Overlap: If there is no objective overlap between your reservation price and your counterpart's, a negotiated agreement is not possible.",
+        "Costs vs. Benefits: You shouldn't negotiate when the issues are too trivial (the time cost isn't worth it) or too important (you cannot risk a \"no,\" like with a single job offer you desperately need).",
+        "Power Differential: If you cannot walk away, it is not a negotiation; it is a \"hostage situation.\" The speaker uses the example of being mugged: you don't negotiate with someone holding a gun to your head because you have no alternative.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before engaging, quickly assess if a \"Zone of Possible Agreement\" (ZOPA) exists. If you know your counterpart's bottom line is worse than your own, don't waste time trying to negotiate.",
+        "Do a quick cost-benefit analysis. Is the potential gain from this negotiation worth the time and energy you will invest?",
+        "Evaluate the power dynamics. Do you have a viable alternative that allows you to walk away if necessary? If not, you must either find an alternative to build your power or recognize that you are not in a true negotiation.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const negotiationValueCreationCards: BattleCardProps[] = [
+  {
+    title: "The Negotiator's Seesaw: Balancing Value Creation and Claiming",
+    titleEmoji: "⚖️",
+    what: {
+      point: "Every negotiation is a seesaw between two opposing activities—creating value (enlarging the pie) and claiming value (dividing the pie)—and the strategies for one actively undermine the other, requiring a constant and deliberate balancing act.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Value Creation requires sharing information to identify \"integrative issues\" where parties have different priorities, allowing for mutually beneficial trades. It thrives on openness and trust.",
+        "Value Claiming often involves withholding information, taking aggressive positions, and focusing on a single \"distributive\" issue like price. It is an adversarial, zero-sum activity.",
+        "The core challenge is that the transparency needed for value creation makes a negotiator vulnerable during value claiming, while the hardball tactics of value claiming destroy the trust needed for value creation.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Explicitly separate the two phases in your negotiation process. Start with a collaborative, open-ended \"value creation\" phase to brainstorm options and understand interests before moving to a \"value claiming\" phase to divide resources.",
+        "Before sharing a piece of information, ask yourself: \"Will this help us enlarge the pie, or will it simply weaken my position when we start dividing it?\"",
+        "Use \"if-then\" proposals to link issues together, forcing a move from single-issue value claiming to multi-issue value creation (e.g., \"If I concede on the delivery date, then we need to move on price\").",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Uncovering the Three Types of Issues",
+    titleEmoji: "🔍",
+    what: {
+      point: "To move beyond simple haggling, you must identify the three distinct types of issues in any negotiation: distributive (win-lose), integrative (trade-offs), and congruent (shared interests).",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Distributive Issues: These are zero-sum issues where one party's gain is the other party's loss. Salary is the classic example; every dollar more for the candidate is a dollar less for the company.",
+        "Integrative Issues: These are issues where parties have different priorities, allowing for value-creating trades. In the exercise, the candidate cared more about the signing bonus, while the recruiter cared more about vacation days. Trading one for the other made both parties better off.",
+        "Congruent Issues: These are issues where both parties want the same outcome but mistakenly assume they are in conflict. In the exercise, both the candidate and the recruiter wanted the New York assignment, but many pairs failed to discover this and compromised on a less desirable location.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "During your preparation, create a matrix of all potential issues and hypothesize which category each one falls into for both you and your counterpart.",
+        "In the negotiation, ask open-ended diagnostic questions to test your hypotheses. Instead of asking \"Do you want New York?\" ask \"What are the most important characteristics of a location for you?\" This helps reveal underlying congruent interests.",
+        "Resist the default assumption that all issues are distributive. Actively search for integrative and congruent issues, as this is where the vast majority of value is created.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Peril of Assuming a Zero-Sum Game",
+    titleEmoji: "⚠️",
+    what: {
+      point: "The default \"battle mentality\" causes negotiators to incorrectly assume that all issues are zero-sum, leading them to miss congruent interests and \"split the difference\" on integrative issues, destroying significant value for both sides.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In the negotiation exercise, several teams failed to secure the New York assignment and Division A—the optimal outcome for both—because they assumed it was a point of conflict and unnecessarily compromised on Chicago or Division C.",
+        "This happens because of an \"intellectually adversarial\" mindset, where even cooperative negotiators feel they must \"give\" something to get something, leading them to trade away a congruent issue they could have had for free.",
+        "Similarly, splitting the difference on an integrative issue (like taking a medium signing bonus and medium vacation days) is far less valuable than trading what you care about less for what you care about more (a high bonus and few vacation days).",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Enter every negotiation with the hypothesis that congruent and integrative issues exist. Your first job is to discover them.",
+        "Never offer a concession on an issue without first understanding your counterpart's priorities. You may be giving away something they don't value in exchange for nothing.",
+        "When a congruent issue is discovered, use a \"direct strategy\": immediately agree and provide a rationale (e.g., \"New York is great because that office needs your expertise\"). This builds trust and goodwill, in contrast to a trading strategy that reinforces an adversarial frame.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The First Offer Dilemma: Information vs. Anchoring",
+    titleEmoji: "🎯",
+    what: {
+      point: "The decision of whether to make the first offer is a strategic trade-off between gaining information (by receiving) and setting the anchor (by making). The right choice depends on your level of preparation and the information asymmetry in the negotiation.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Advantage of Receiving: When you receive the first offer, you gain valuable information about your counterpart's perception of the value and their range of expectations. This is especially powerful if you are less prepared or have less information than they do.",
+        "Advantage of Making: When you make the first offer, you create a powerful psychological anchor that pulls the final settlement point in your direction. It frames the negotiation around your aspiration, forcing your counterpart to focus on their reservation price.",
+        "The optimal strategy depends on the context. If you are well-prepared and your counterpart is not, let them make the first offer and potentially make a mistake. If both parties are well-prepared, you should make the first offer to gain the anchoring advantage.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "If you are unprepared, you are in a terrible position. But if you must choose, it is better to make an extreme first offer (a potential mistake) than to receive one and be guaranteed to be anchored by it.",
+        "Before making a first offer, do your homework to understand the \"boundary to Crazy Land\"—the most aggressive offer you can make that will still be seen as a legitimate starting point for discussion.",
+        "Justify your first offer. Providing a rationale, even a simple one, makes the anchor stick more effectively and reduces the chance that your counterpart will reject it out of hand.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Power of the Ask",
+    titleEmoji: "💬",
+    what: {
+      point: "We consistently and dramatically underestimate the willingness of others to help, and the simple, direct act of asking for what we want is one of the most underutilized and effective strategies in any interaction.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The \"May I use the copy machine?\" experiment is a classic demonstration. With a simple request and no justification, 60% of people agreed to let a stranger cut in line.",
+        "The speaker notes that his MBA students, when tasked with negotiating a discount on a fixed-price item, predicted a 15% success rate. In reality, 87% were successful.",
+        "The barrier is internal. We are afraid of looking greedy or demanding, or we assume the answer will be no, so we don't even ask. In doing so, we leave enormous value on the table.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Make \"the ask\" your default behavior. Assume that everything is negotiable until proven otherwise.",
+        "Frame your requests clearly and confidently. The research shows that people feel a sense of agency and competence when they are able to fulfill a request.",
+        "Combine your ask with a justification. The copy machine study showed that adding the word \"because\"—even with a nonsensical reason—jumped the compliance rate from 60% to over 90%. Providing a reason, any reason, makes it easier for people to say yes.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const pomdpCards: BattleCardProps[] = [
+  {
+    title: "The Peril of Bad Data and Flawed Frames",
+    titleEmoji: "⚠️",
+    what: {
+      point: "Even genius fails when it relies on bad data or a flawed frame; intelligence is not a defense against catastrophic errors if the underlying information and problem framing are incorrect.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The decision to launch the Space Shuttle Challenger was made by 14 \"literal rocket scientists,\" proving that raw intelligence is not the primary constraint in high-stakes decisions.",
+        "Their fatal error was a flawed analytical frame: they only analyzed the data from launches where O-ring failures occurred, completely ignoring the successful launches where failures did not occur.",
+        "This is a classic case of \"sampling on the dependent variable,\" which Richard Feynman later exposed. It made it impossible for them to see the true relationship between temperature and failure, leading to a disastrously wrong conclusion.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before making any high-stakes decision, rigorously vet your data and your analytical frame. Ask, \"What information are we not looking at? What successful cases are we ignoring?\"",
+        "Challenge the way the problem is framed. Is there an alternative framing that could lead to a completely different conclusion?",
+        "Recognize that your team's intelligence is not a safeguard against flawed data. The process for vetting the data is more important than the genius of the people analyzing it.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Modeling Sequential Decisions Under Uncertainty",
+    titleEmoji: "🔗",
+    what: {
+      point: "Most critical business decisions are not single-shot problems but sequential processes that unfold over time under uncertainty; these must be modeled and solved using frameworks that account for future actions and probabilistic outcomes.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker contrasts a simple \"single-shot\" decision (go to Disneyland or the Computer History Museum) with a sequential problem like the \"Secretary Problem\" (interviewing a sequence of candidates).",
+        "In a sequential problem, the decision you make now affects the options and information available to you later. The optimal strategy involves an initial \"exploration\" phase to learn about the environment, followed by a \"commitment\" phase.",
+        "Frameworks like Markov Decision Processes (MDPs) and Partially Observable MDPs (POMDPs) provide a formal mathematical language for modeling these problems by defining states, actions, transition probabilities, and rewards.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Frame your strategic challenges not as isolated choices but as sequential decision problems. What is the optimal sequence of actions over time?",
+        "Explicitly define an \"exploration\" phase for new initiatives. What is the minimum set of experiments you need to run to understand the \"population\" of possible outcomes before you commit significant resources?",
+        "Adopt a \"dynamic programming\" mindset. Work backward from your desired future state to determine the optimal action to take at each preceding step.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Power of Partially Observable Models (POMDPs)",
+    titleEmoji: "👁️",
+    what: {
+      point: "In the real world, you never have perfect information about the current state; the most robust and powerful decision-making models are those that explicitly account for this state uncertainty.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "An MDP assumes you have \"perfect state information.\" In contrast, a POMDP (Partially Observable MDP) acknowledges that your sensors are imperfect and your knowledge of the world is a probability distribution, not a certainty.",
+        "This is critical for autonomous systems. The speaker notes the 737-MAX disasters were caused by a system that relied on a single, faulty sensor. A POMDP-based system would use redundant sensors and maintain a \"belief\" (a probability distribution) over the aircraft's true state.",
+        "This framework allows you to make optimal decisions in the face of imperfect information by weighting all possible states by their likelihood and choosing the action with the highest expected value across that distribution.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Challenge any model or plan that assumes perfect information. Actively ask, \"What are the uncertainties in our key assumptions, and how do we model them?\"",
+        "Embrace a probabilistic mindset. Instead of thinking \"we are in state X,\" think \"there is a 70% chance we are in state X and a 30% chance we are in state Y.\"",
+        "Build systems that leverage redundant data sources to create a more robust \"belief state\" before an automated system takes a critical action.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Counterintuitive Nature of Superhuman Intelligence",
+    titleEmoji: "🤖",
+    what: {
+      point: "A truly optimal, superhuman AI will often produce solutions that are counterintuitive to human experts because it can compute the expected value of all possible future trajectories in a way that the human brain cannot.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The initial output of the ACAS X collision avoidance system produced a \"notch\" in its decision logic, advising the system to \"do nothing\" in a situation where human intuition would scream to take evasive action.",
+        "The speaker initially thought this was a bug, but extensive simulations proved the notch was optimal. By waiting a moment longer to gather more information, the system avoided committing to a maneuver it might later have to reverse, ultimately leading to a lower rate of near-mid-air collisions.",
+        "Another counterintuitive result was the system advising no action if a collision was less than 5 seconds away. This was because the model, using a 5-second human response delay, calculated that an alert was futile and would only \"accumulate the cost of alerting you to the fact that you're going to die.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When an AI model produces a counterintuitive recommendation, do not immediately dismiss it as a bug. Treat it as an opportunity to discover a non-obvious, potentially superior strategy.",
+        "Rigorously test and validate these counterintuitive results through extensive simulation. The goal is to understand the \"infinite intelligence\" of the model's logic.",
+        "Use these insights to update your own mental models. The AI is not just a tool for execution; it is a powerful engine for discovering fundamentally new and better ways of solving problems.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const aiAdvancementsCards: BattleCardProps[] = [
+  {
+    title: "The Combinatorial Explosion of Technology",
+    titleEmoji: "🚀",
+    what: {
+      point: "The current pace of technological change feels unprecedented because it is not driven by a single innovation but by the combinatorial effect of multiple exponential curves—in cloud, compute, memory, and now AI—converging at once.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker charts the adoption time for major technologies, showing a dramatic compression from decades (for the telephone) to years (for the internet) to just 60 days for ChatGPT to reach 100 million users.",
+        "This acceleration \"didn't happen in a vacuum.\" It is the result of layering new technologies on top of previously established ones. The AI wave was only possible because of the preceding \"elastic cloud\" wave, which provided the necessary compute infrastructure.",
+        "This combinatorial effect creates a super-exponential rate of change, forcing companies and individuals to adapt at a speed they have never experienced before.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map the key enabling technologies in your industry. How do they combine and reinforce one another to create new, disruptive possibilities?",
+        "Build your strategy on the assumption that the pace of change will continue to accelerate. What seems like a five-year roadmap may need to be executed in 18 months.",
+        "Foster a culture of continuous learning and adaptation. As the Shopify CEO's memo stated, if you think \"the old way of doing it is the right way, you're probably not a fit to stay in our company.\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Accidental Breakthrough (The \"Canada\" Mistake)",
+    titleEmoji: "🍁",
+    what: {
+      point: "Seminal breakthroughs are often not the result of a deliberate, linear plan but of a serendipitous mistake that reveals a previously unknown property of a system, forcing a complete paradigm shift.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The key insight that led to transformer models (the foundation of modern AI) was a mistake. A Google Translate engineer used the wrong training file for the language Kannada, which should have yielded a zero result.",
+        "Instead, the model still worked, demonstrating a surprising level of \"connectivity that occurs\" when processing a massive density of data, even the wrong data.",
+        "This accidental discovery forced the research team to rethink their fundamental assumptions about language processing, leading directly to the \"Attention Is All You Need\" paper and the subsequent AI revolution. The authors of that paper were all working on or around the Translate project.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Create a culture that is not just tolerant of failure but actively mines mistakes for unexpected insights.",
+        "When an experiment yields an anomalous or \"impossible\" result, don't just dismiss it as an error. Treat it as a high-potential signal that your underlying model of the world might be wrong.",
+        "Foster interaction between different teams and projects. The most valuable insights often come from the unexpected collision of ideas, as seen with the team at the Google Translate \"campfire.\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Shift to a Post-Big Data World",
+    titleEmoji: "🎯",
+    what: {
+      point: "The competitive advantage in AI is shifting from who has the most data to who has the best data; small, high-signal, proprietary datasets can be used to fine-tune large foundation models to achieve superhuman performance.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Google's Palm model, with 540 billion parameters, went from 50-60% accuracy on a medical exam to over 92% accuracy—outperforming most human doctors—by fine-tuning on just 1,840 high-quality examples.",
+        "An AI material science company was able to solve a five-year problem in nine months by training a model on a company's internal experimental data. The value wasn't just the one successful experiment, but the \"999 things you tried that didn't work.\"",
+        "The speaker argues that the most valuable data \"lives behind the firewall.\" It's the proprietary, expensive, hard-won research and operational data that companies generate internally, not the public data of the internet.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify and inventory your company's most valuable, unique, and high-signal internal datasets. This is your most critical strategic asset in the AI era.",
+        "Invest in fine-tuning existing foundation models with your proprietary data rather than trying to build a new model from scratch.",
+        "Shift your data strategy from collecting everything to curating the most valuable information. The quality and uniqueness of the training data are now more important than the sheer quantity.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Power of Synthetic Data",
+    titleEmoji: "🧬",
+    what: {
+      point: "You can overcome the \"cold start\" problem of not having enough real-world data to train an AI model by creating vast quantities of high-fidelity synthetic data based on the known physical constraints of a system.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Robotics researchers faced a recursive problem: they needed lots of videos of robots performing tasks to train their models, but they didn't have robots capable of performing the tasks to create the videos.",
+        "The breakthrough was to use \"diffusion\" models to generate synthetic images. They could start with an image of a robot completing a task and work backward, generating a physically accurate sequence of images of the steps just before.",
+        "Stitched together, these synthetic images create a video that can be used as training data. This allowed researchers to create millions of hours of training video without needing a real robot to perform the actions.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify areas in your business where a lack of real-world data is a bottleneck for AI model development.",
+        "Explore using simulation and generative models to create synthetic data that adheres to the known physical or business rules of your environment.",
+        "Use this synthetic data to pre-train your models, dramatically accelerating your ability to deploy and learn in the real world.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Two Scaling Laws of AI Performance",
+    titleEmoji: "⚖️",
+    what: {
+      point: "The performance of AI models is not just a function of pre-training compute (the traditional scaling law), but is also a function of \"inference time compute\"—how long you allow the model to \"think\" about a problem.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The traditional scaling law states that performance improves as you increase the amount of data and compute used to train the model.",
+        "A new, equally powerful scaling law has been discovered: performance also improves dramatically if you allow the model more time and compute resources to reason about a prompt before giving an answer.",
+        "This is demonstrated by a stunning result from Meta: a smaller, less powerful Llama model, when given more time to think, can exceed the performance of a much larger model that is forced to answer instantly.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Categorize the AI-driven tasks in your business. Which ones require an instantaneous response (like search), and which ones are high-stakes decisions where a better, more thoughtful answer is more valuable than a fast one?",
+        "For high-stakes problems, architect your systems to allow for longer inference times. Frame it as giving your AI \"thinking time\" to produce a more reasoned and accurate output.",
+        "Leverage smaller, more efficient models for complex reasoning tasks. You may not need the largest, most expensive frontier model if you can get a better result by giving a smaller model more time to work on the problem.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Dawn of the Post-Trust World",
+    titleEmoji: "🌐",
+    what: {
+      point: "The ability of AI to manipulate information and behavior at an individual level is so profound that we are entering a \"post-trust world\" where all online information should be assumed false by default, and value will accrue to the few authenticated sources of truth.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Researchers at Anthropic demonstrated they could fundamentally alter a model's behavior by changing a single \"feature weight\" inside it, making a helpful model become \"sycophantic\" and dishonest. This manipulation is nearly impossible to detect from the outside.",
+        "This creates a massive risk at a societal level. A bad actor could use this capability to create unique, personalized disinformation campaigns for every single individual, subtly shifting their beliefs and behaviors on energetic topics over time.",
+        "The speaker's hypothesis is that as a result, the next generation of relationships will be built around a small set of \"authentic, authenticated\" sources (people or companies) that individuals choose to trust, and these sources will \"own your attention\" and become incredibly valuable.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a business, recognize that trust is becoming your most valuable and scarcest asset. Every action you take should be evaluated on whether it builds or erodes that trust.",
+        "Invest in creating transparent, verifiable, and authentic communication channels. In a world of AI-generated noise, being a reliable source of truth is a powerful competitive advantage.",
+        "As an individual, be hyper-critical of all information you consume online. Actively curate a small circle of trusted sources and verify information before acting on it.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const rlTurbotalkCards: BattleCardProps[] = [
+  {
+    title: "The Three Core Components of AI Breakthroughs",
+    titleEmoji: "🔺",
+    what: {
+      point: "Any major breakthrough in artificial intelligence is the result of a confluence of three essential components: massive and relevant data, novel algorithms, and immense computational power.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Data: The AlphaFold breakthrough in protein structure prediction was enabled by a massive dataset painstakingly compiled by \"a whole bunch of PhD students who were cranking away in the lab over many, many years.\"",
+        "Algorithms: Reinforcement learning was the key algorithmic innovation that allowed AlphaFold to \"teach itself\" and improve its predictions over time. These algorithms often originate from university research.",
+        "Compute: Massive computational power, typically from GPUs, is required to run the algorithms on the data. The speaker notes that for AlphaFold, \"you can buy that compute from nowadays.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When evaluating any potential AI initiative, assess its viability across these three dimensions. Do you have a defensible and unique dataset? Do you have the algorithmic talent to build a superior model? Do you have access to the necessary computational resources?",
+        "Recognize that a weakness in any one of these three pillars can derail the entire project.",
+        "Build your AI strategy around creating a defensible advantage in at least one of these areas, preferably through a unique, proprietary dataset.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Reinforcement Learning Feedback Loop",
+    titleEmoji: "🔄",
+    what: {
+      point: "Reinforcement Learning (RL) is a powerful method for training models to achieve goals in complex environments by having an agent learn from experience through a continuous feedback loop of actions, observations, and rewards.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The fundamental RL feedback loop involves an agent (the model) that takes an action within an environment.",
+        "After taking the action, the agent makes an observation of the new state of the environment and receives a reward (or penalty) signal.",
+        "This loop repeats, allowing the agent to learn a policy—a strategy for choosing actions—that maximizes its cumulative reward over time. This process is fundamental to how systems like ChatGPT were trained to be helpful and how AlphaFold learned to predict protein structures.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify business problems that can be framed as an RL problem. What is the environment, who is the agent, what are the possible actions, and how do you define the reward signal?",
+        "Use RL to optimize processes with complex, sequential decisions where the optimal path is not obvious, such as supply chain logistics, ad campaign bidding, or robotic control.",
+        "Be highly intentional about designing the reward function. The system will ruthlessly optimize for whatever you reward, so a poorly designed reward signal can lead to unintended and undesirable behavior.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Exploration vs. Exploitation Trade-off",
+    titleEmoji: "⚖️",
+    what: {
+      point: "A fundamental challenge in any learning system, whether human or machine, is balancing \"exploration\" (gathering new information to find better strategies) with \"exploitation\" (using the current best-known strategy to maximize immediate rewards).",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker gives a personal example of failing at exploration: he took the same path to work every day for seven years, only to discover a major shortcut on his second-to-last day.",
+        "The \"Secretary Problem\" (or dating problem) provides a formal mathematical solution: you should spend the first 37% of your time or candidate pool purely on exploration (learning the distribution) and then commit to the next candidate who is better than anyone you've seen so far.",
+        "This trade-off is critical. Too little exploration means you might get stuck with a suboptimal strategy. Too much exploration means you waste time gathering information instead of capitalizing on what you already know.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Explicitly define an \"exploration budget\" for your strategic initiatives. How much time or resources will you dedicate to testing new, unproven ideas versus optimizing your current, proven models?",
+        "Apply the 37% rule as a mental model for decision-making under uncertainty. When evaluating a series of options (e.g., hiring candidates, testing marketing campaigns), dedicate a portion of your resources to pure exploration before committing to a final choice.",
+        "Recognize that the optimal balance depends on the environment. In a stable, well-understood market, favor exploitation. In a rapidly changing, uncertain market, favor exploration.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Model Mismatch Problem",
+    titleEmoji: "❌",
+    what: {
+      point: "An AI system can be mathematically optimal according to its internal model of the world, yet fail catastrophically if that model does not accurately reflect the complexities and constraints of reality.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker shares the story of Michael Trick, an operations research professor who used the optimal 37% rule from the Secretary Problem to decide when to propose marriage. The model told him to propose, but he was turned down.",
+        "The \"model mismatch\" was that his mathematical model failed to account for the fact that marriage is a \"consensual kind of thing\"—the other person has to agree. The model was perfectly solved for the wrong problem.",
+        "The legacy TCAS aircraft collision avoidance system had a similar mismatch. It modeled the other aircraft as flying in a straight line, failing to account for the fact that the other pilot might also be taking evasive action, leading to a tragic mid-air collision.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before deploying any AI system, rigorously challenge the assumptions embedded in its model. How does the model's simplified view of the world differ from messy reality?",
+        "Identify potential sources of model mismatch. What critical factors (e.g., human behavior, external constraints, consensual actions) has the model failed to account for?",
+        "Treat the initial deployment of any AI system as an experiment to test for model mismatch. Monitor its performance closely and be prepared to update the model as you learn how it interacts with the real world.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Deep Learning as a Generalization Engine",
+    titleEmoji: "🧠",
+    what: {
+      point: "Deep neural networks are powerful because they can learn to generalize from a limited set of experiences to novel situations, a foundational problem for all of machine learning.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "A neural network is a flexible input-output function, represented by layers of interconnected \"neurons\" with associated \"weights.\" The learning process involves adjusting these weights to optimize a desired outcome.",
+        "The term \"deep learning\" refers to using a network with many hidden layers. More layers allow the network to learn more complex and abstract relationships in the data.",
+        "The speaker's race car driving algorithm is an example. It learned a successful driving policy from a limited number of training laps and was then able to generalize that policy to drive the track better than a human expert. This ability to generalize is what makes RL applicable to real-world problems where you will never encounter the exact same state twice.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Leverage deep learning for problems that require complex pattern recognition and generalization, such as computer vision, natural language understanding, and predictive modeling.",
+        "Understand that the \"black box\" nature of deep learning is a trade-off. It provides powerful predictive capabilities but often lacks transparency, making it difficult to understand why it made a particular decision.",
+        "For safety-critical applications, supplement deep learning models with validation and verification systems to ensure their behavior remains within acceptable bounds, even when faced with novel situations.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const corporateGovernanceCards: BattleCardProps[] = [
+  {
+    title: "The Two Fundamental Agency Conflicts",
+    titleEmoji: "⚔️",
+    what: {
+      point: "Corporate governance failures stem from two distinct and context-dependent agency conflicts: the classic \"Principal-Agent\" problem common in diffusely-owned Western firms, and the \"Principal-Principal\" problem prevalent in firms with concentrated ownership.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Principal-Agent Conflict (Shareholders vs. Management): This occurs when professional managers (agents), delegated to run the firm by diffuse shareholders (principals), make decisions in their own self-interest (empire building, excessive perks, risk aversion) rather than to maximize shareholder value. This is the dominant problem in traditional US/UK-style corporations.",
+        "Principal-Principal Conflict (Controlling vs. Minority Shareholders): This occurs in firms with a dominant controlling shareholder (e.g., a founding family, a founder with super-voting shares). The primary risk is that the controlling shareholder (the first principal) will \"expropriate\" assets or extract \"private benefits of control\" at the expense of non-controlling minority shareholders (the second principal). This is the dominant problem in most of the world and in modern tech firms.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Diagnose your own company's governance structure. Do you have diffuse ownership, making you vulnerable to a Principal-Agent conflict, or concentrated ownership, making you vulnerable to a Principal-Principal conflict?",
+        "Tailor your governance solutions to the specific conflict you face. Board independence and executive compensation are key tools for the Principal-Agent problem. Strong minority shareholder protections and transparent related-party transaction rules are critical for the Principal-Principal problem.",
+        "Recognize that as an executive, you are operating within one of these two contexts, and your own incentives and constraints are shaped by which type of conflict is dominant.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Institutional Foundations of Corporate Governance",
+    titleEmoji: "🏛️",
+    what: {
+      point: "A company's governance structure is not a choice made in a vacuum; it is a direct and rational adaptation to the strength or weakness of the country's underlying formal institutions (legal system, political system, rule of law).",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In economies with strong institutions, deep and efficient markets for capital, labor, and products can develop. This allows for the emergence of firms with diffuse ownership, standalone business structures, and arm's-length transactions (the \"US/UK model\").",
+        "In economies with weak institutions (\"institutional voids\"), markets are thin and trust is low. Firms cannot rely on courts to enforce contracts, so they adapt by creating different structures: concentrated family ownership, large diversified business groups, and relationship-based transactions. These structures are a rational response to a high-friction environment.",
+        "The speaker uses this framework to explain why Alibaba's governance, which seemed problematic to US investors, was a logical adaptation to the Chinese institutional context.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When expanding into a new country, conduct a deep analysis of its institutional environment. The strength of its legal system and rule of law will dictate the types of business arrangements and governance structures that are viable.",
+        "Do not try to impose a US/UK-style governance model (e.g., relying on a board of independent directors) in an environment with weak institutions where relationship-based trust is the primary enforcement mechanism.",
+        "Adapt your own governance and control systems to the local context. What works in Germany (a hybrid model) will not work in Brazil, which in turn is different from the US.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Dual-Class Share Structure: A Governance Trade-Off",
+    titleEmoji: "🔄",
+    what: {
+      point: "Dual-class share structures, which give founders super-majority voting rights, represent a deliberate trade-off: they protect a founder's long-term vision from market pressures but create a significant risk of a Principal-Principal conflict where the founder can act against minority shareholder interests.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Alibaba chose to list on the NYSE instead of Hong Kong specifically because the NYSE allowed its dual-class structure, which violated Hong Kong's \"one share, one vote\" principle.",
+        "Facebook's IPO documents explicitly state that Mark Zuckerberg has the ability to \"control the management and affairs of the company\" and that his \"own interests may not always be in the interest of shareholders in general.\"",
+        "This structure allows founders like Zuckerberg to make massive, long-term, and potentially unpopular bets (like the pivot to the Metaverse) that would be difficult in a traditional firm subject to shareholder pressure. However, it also creates the risk of \"expropriation,\" as seen when Jack Ma carved out Alipay from Alibaba for his own benefit, to the detriment of Yahoo (a minority shareholder).",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "As a founder, consider a dual-class structure if you believe your company requires a long-term, singular vision that could be threatened by the short-term focus of the public markets.",
+        "As a minority investor in a dual-class firm, recognize that you are explicitly betting on the founder's long-term judgment and integrity. Your ability to influence the company's direction is virtually zero.",
+        "As a board member in a dual-class firm, your primary role shifts from direct oversight to advising the founder and ensuring their actions, while autocratic, still adhere to their fiduciary duties to all shareholders.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Two Levers for Solving Misalignment: Frictions and Incentives",
+    titleEmoji: "🎛️",
+    what: {
+      point: "All corporate governance solutions to solve internal misalignment boil down to two fundamental approaches: imposing \"frictions and costs\" to constrain bad behavior, or creating \"incentives\" to align self-interest with the company's goals.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Frictions (The Stick): This is the bureaucratic approach. To prevent self-dealing, you require multiple signatures on purchases, extensive due diligence, and legal reviews. These are \"guardrails\" designed to make it costly and difficult to make bad decisions. The risk is that an over-reliance on frictions leads to a slow, bureaucratic, and risk-averse culture.",
+        "Incentives (The Carrot): This is the alignment approach. You tie employee compensation (bonuses, stock options) directly to the KPIs that reflect the company's strategic goals. Frameworks like balanced scorecards or OKRs are incentive alignment mechanisms. The risk is that poorly designed incentives can lead to unintended negative consequences.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Audit your current control systems. Are you relying primarily on frictions or incentives? A healthy organization uses a balance of both.",
+        "When designing a new process, first try to solve the problem with incentives. Can you create a structure where people want to do the right thing?",
+        "Use frictions and bureaucratic guardrails surgically. Apply them only in the highest-risk areas where the potential negative impact of a bad decision is catastrophic, to avoid slowing down the entire organization.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+// Define the topics and their card sets
+const topics = [
+  {
+    title: "1. Bonding",
+    cards: cardData.slice(0, 7),
+  },
+  {
+    title: "2. Discovering Strategy By Design",
+    cards: section2Cards,
+  },
+  {
+    title: "3. The Obstacle Is You",
+    cards: section3Cards,
+  },
+  {
+    title: "4. The Power of Irreplaceability",
+    cards: barnettCards,
+  },
+  {
+    title: "5. The Innovator's Matrix",
+    cards: barnett2Cards,
+  },
+  {
+    title: "Network Effect - Part 2",
+    cards: networkEffect2Cards,
+  },
+];
 
 export default function Home() {
   // Add new cards for section 2
@@ -590,6 +5628,81 @@ export default function Home() {
         ],
         emoji: "⚙️",
       },
+    },
+  ];
+
+  const battleCardLibraryCards: BattleCardProps[] = [
+    {
+      title: "The Search Cost Monopoly",
+      titleEmoji: "🔍",
+      what: {
+        point: "A small amount of friction or \"search cost\" for a customer can transform a perfectly competitive market into a de facto monopoly, allowing sellers to charge significantly higher prices.",
+        emoji: "⚡️",
+      },
+      why: {
+        points: [
+          "The \"three coffee shops\" thought experiment demonstrates this: if you only learn the price after walking to the shop (incurring a $1 search cost), each shop gains a local monopoly and can charge you the maximum you're willing to pay.",
+          "Conversely, if prices are transparent upfront (on a website), competition immediately drives prices down to their lowest level. The ordering of price discovery vs. cost incurred is critical.",
+          "This isn't just theoretical. The high fees charged by ATMs in tourist areas are a real-world example. Because you don't know the fee until you're at the machine, you are captured by the search cost of finding another one."
+        ],
+        emoji: "📘",
+      },
+      how: {
+        points: [
+          "Audit your sales funnel for friction: Identify every point where a customer must invest time, effort, or money before they learn your final price. This friction gives you pricing power.",
+          "Weaponize transparency as a challenger: If you are trying to break into a market, create a platform that provides radical, upfront price transparency to eliminate the incumbents' search cost advantage.",
+          "Engineer search costs against competitors: If you are the incumbent, subtly increase the perceived cost (inconvenience, uncertainty, time) for your customers to evaluate alternatives."
+        ],
+        emoji: "🛠️",
+      }
+    },
+    {
+      title: "The Negative Loop: Why Marketplaces Aren't Winner-Take-All",
+      titleEmoji: "🔄",
+      what: {
+        point: "The growth of a marketplace is always limited by a \"negative loop\"—the fact that more suppliers create more competition among those same suppliers, reducing their individual value.",
+        emoji: "⚡️",
+      },
+      why: {
+        points: [
+          "The positive flywheel (more supply -> more demand -> more supply) is only half the story. The often-ignored negative loop is that more Airbnb hosts in Berlin leads to more competition and lower revenue for each individual host.",
+          "This supplier congestion is the primary reason most two-sided marketplaces (ride-sharing, food delivery) support multiple competing platforms. When the #1 platform becomes too crowded, new suppliers are incentivized to join the #2 platform for a better chance to earn.",
+          "This contrasts with one-sided social networks (like early Instagram), where more users are almost purely beneficial, leading to a stronger winner-take-all dynamic."
+        ],
+        emoji: "📘",
+      },
+      how: {
+        points: [
+          "Monitor supplier health, not just supply growth: Track metrics like \"revenue per supplier\" or \"rides per driver\" as a leading indicator of platform congestion and churn risk.",
+          "Position yourself as the \"un-crowded\" alternative: If you are a challenger, market your platform to suppliers as the place where they can stand out and earn more, specifically targeting those feeling squeezed on the dominant platform.",
+          "Build tools for differentiation: To mitigate the negative loop, provide your suppliers with tools to compete on factors other than just price (e.g., quality, specialization, unique services)."
+        ],
+        emoji: "🛠️",
+      }
+    },
+    {
+      title: "Solve the Cold Start by Buying the First Spin",
+      titleEmoji: "🚀",
+      what: {
+        point: "Overcoming the initial \"cold start problem\" where a platform has no value because it has no users is not a matter of magic; it's a matter of targeted, temporary subsidies.",
+        emoji: "⚡️",
+      },
+      why: {
+        points: [
+          "In the early days, the cost for a user to adopt your platform (learning it, creating a profile) is higher than the value it provides. Subsidies bridge this gap.",
+          "An estimated 95% of successful marketplaces solved this problem by \"buying\" one side of the market. Google paid Yahoo to get its search engine in front of users; dating apps often pay the first wave of users to create profiles.",
+          "The key is to identify which side of your market is the bottleneck. Uber was supply-constrained (it needed drivers), while the dog-walking platform Rover was demand-constrained (it needed to convince owners to trust the walkers)."
+        ],
+        emoji: "📘",
+      },
+      how: {
+        points: [
+          "Declare your constrained side: Determine whether your growth is limited by a lack of supply or a lack of demand. Focus all subsidy and incentive efforts there.",
+          "Frame subsidies as a CAPEX, not OPEX: Treat the money spent acquiring your initial network not as a marketing expense, but as a capital investment in building your platform's core, defensible asset.",
+          "Design an exit ramp for subsidies: Plan your subsidy program with clear metrics and milestones that trigger a gradual tapering as the organic flywheel begins to spin on its own."
+        ],
+        emoji: "🛠️",
+      }
     },
   ];
 
@@ -1110,7 +6223,7 @@ export default function Home() {
           "Choose Your Path: Declare whether your strategy is to be the 'Reliable Ricky' (differentiator) or the 'Shady Sandy' (low-cost leader) of your industry. Align your operational priorities to that choice.",
           "Eliminate Inefficiency: If you are inside the frontier, your immediate priority is to either cut costs without reducing quality or increase quality without raising costs to get back to the edge.",
         ],
-        emoji: "⚙️",
+        emoji: "📝",
       },
     },
     {
@@ -1209,7 +6322,7 @@ export default function Home() {
           "Isolate discovery costs: When exploring new initiatives, run them with a separate, lean team and P&L. Do not let the 'main' company's resources subsidize unproven bets.",
           "Favor variable costs early on: Before building your own factory or hiring a massive sales team, use contractors, third-party logistics, or channel partners to validate the model without incurring massive fixed costs.",
         ],
-        emoji: "⚙️",
+        emoji: "📝",
       },
     },
     {
@@ -2903,7 +8016,7 @@ export default function Home() {
       },
       why: {
         points: [
-          'The professor stated, "To pretend like you aren\'t having them...is to deprive yourself of useful information."',
+          'The professor stated directly: "To pretend like you aren\'t having them...is to deprive yourself of useful information."',
           "A limited emotional vocabulary (mad, sad, happy) is like trying to paint a masterpiece with only primary colors; nuance is lost.",
           "The example of judges giving harsher sentences before lunch shows how unexamined physical/emotional states can lead to poor decisions.",
         ],
@@ -4106,6 +9219,180 @@ export default function Home() {
     },
   ];
 
+const antitrustCards: BattleCardProps[] = [
+  {
+    title: "Distribution is the Kingmaker",
+    titleEmoji: "👑",
+    what: {
+      point: "Controlling the distribution channel that connects a product to the end-user is often more powerful than having a technically superior product.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Google understood early on that controlling the \"middleman\" (like a browser or mobile OS) was critical. It paid AOL, and later Apple, billions annually to be the default search engine, securing query volume regardless of user preference.",
+        "Microsoft struggled to get its Bing search engine adopted because it lost control of key distribution points. Google controlled the default on Android, struck an exclusive deal with Apple for the iPhone, and even created its own browser (Chrome) to own the channel.",
+        "The inability to get distribution on mobile was a primary factor in Bing's failure to meaningfully compete, demonstrating that even a tech giant can be sidelined without a path to the consumer.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map your customer's journey: Identify every gatekeeper (e.g., OS, browser, app store, marketplace) that stands between you and your target customer.",
+        "Prioritize distribution deals: Dedicate significant business development resources to securing default placements or preferred partnerships with those gatekeepers.",
+        "Build or buy your channel: If feasible, consider developing a complementary product that can serve as your own proprietary distribution channel to end-users.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Ecosystem as a Fortress",
+    titleEmoji: "🏰",
+    what: {
+      point: "The new antitrust focus is on how acquiring complementary products can illegally lock out rivals and entrench a monopoly.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The old view that mergers of complementary products (e.g., a software company buying a hardware company) were always pro-competitive is dead. The new Merger Guidelines explicitly target acquisitions of products that rivals need to compete.",
+        "The DOJ's case against Apple alleges that it intentionally degrades the functionality of complementary products it doesn't own (e.g., cross-platform watches, messaging, game streaming) to make it harder for users to switch away from the iPhone, thus softening competition with Android.",
+        "Google's acquisitions of DoubleClick (ad tech) and ITA (flight search) were waved through years ago but are now seen as key steps that allowed it to build a fortress and disadvantage competitors who relied on those services.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Scan your value chain for dependencies: Identify any critical inputs, data sources, or distribution channels in your business that are supplied by a single third party. A competitor acquiring that supplier is your key vulnerability.",
+        "Leverage regulatory complaints: If a dominant competitor acquires a critical input you rely on, recognize that the modern DOJ and FTC are highly receptive to complaints about this \"vertical foreclosure\" theory of harm.",
+        "Assess M&A through a new lens: When evaluating an acquisition target, consider its strategic value in the context of your competitors. Is the target a critical input that your rivals need? Acquiring it is a powerful but now risky strategic move.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Antitrust Law is an Offensive Weapon",
+    titleEmoji: "⚔️",
+    what: {
+      point: "Antitrust is no longer just a defensive compliance issue for large firms; it is a strategic tool that smaller, agile companies can use to challenge anticompetitive behavior by incumbents.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Private lawsuits are a potent force. Epic Games sued Apple and won on California's Unfair Competition law, forcing the first-ever change to Apple's App Store business model and demonstrating that even the most powerful firms are vulnerable in court.",
+        "Regulators rely on private complaints. Behind the scenes of every major merger or conduct investigation, there is a chorus of customers and smaller competitors providing information to the government, which holds immense power to delay or block deals.",
+        "There is broad, bipartisan political motivation to rein in Big Tech, driven by complaints from small businesses in both red and blue states who feel squeezed by platform power.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Document everything: Keep meticulous records of any instance where a dominant platform's actions (e.g., algorithm changes, fee changes, self-preferencing) harm your business and your customers.",
+        "Learn the complaint process: Understand that you can file complaints with the DOJ, the FTC, and state attorneys general. They are actively looking for evidence of anticompetitive harm.",
+        "Don't go it alone: If you are being harmed by a platform's conduct, it's highly likely others are too. Form coalitions with other affected businesses to amplify your voice with regulators and in potential litigation.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Labor & Hiring is an Antitrust Minefield",
+    titleEmoji: "💼",
+    what: {
+      point: "Antitrust laws are now being aggressively applied to labor markets, meaning that anti-competitive behavior related to hiring and wages is a serious criminal and civil risk.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Monopsony power—market power held by a buyer—is a major focus of current enforcement. This applies directly to companies as buyers of labor.",
+        "The DOJ successfully prosecuted poultry processors who colluded to set wage caps for their factory workers. This is legally equivalent to price-fixing.",
+        "Hospital mergers have been shown to suppress wages for nurses because the merged entity becomes the dominant employer in a town and can dictate pay without fear of competition.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Never coordinate on compensation: Do not engage in any formal or informal agreements with competing companies about salaries, benefits, or no-poaching policies. This can be a criminal offense.",
+        "Use compensation data carefully: While using compensation consultants is legal, ensure the process does not facilitate explicit or implicit wage-fixing among competitors. The data should be properly anonymized and aggregated.",
+        "Assess your local power: If your startup becomes the dominant employer for a specific skill set in your geographic area, be aware that your actions in the labor market (e.g., wage setting, non-competes) will face a higher level of scrutiny.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const networkEffectCards: BattleCardProps[] = [
+  {
+    title: "The Search Cost Monopoly",
+    titleEmoji: "🔍",
+    what: {
+      point: "A small amount of friction or \"search cost\" for a customer can transform a perfectly competitive market into a de facto monopoly, allowing sellers to charge significantly higher prices.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The \"three coffee shops\" thought experiment demonstrates this: if you only learn the price after walking to the shop (incurring a $1 search cost), each shop gains a local monopoly and can charge you the maximum you're willing to pay.",
+        "Conversely, if prices are transparent upfront (on a website), competition immediately drives prices down to their lowest level. The ordering of price discovery vs. cost incurred is critical.",
+        "This isn't just theoretical. The high fees charged by ATMs in tourist areas are a real-world example. Because you don't know the fee until you're at the machine, you are captured by the search cost of finding another one.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Audit your sales funnel for friction: Identify every point where a customer must invest time, effort, or money before they learn your final price. This friction gives you pricing power.",
+        "Weaponize transparency as a challenger: If you are trying to break into a market, create a platform that provides radical, upfront price transparency to eliminate the incumbents' search cost advantage.",
+        "Engineer search costs against competitors: If you are the incumbent, subtly increase the perceived cost (inconvenience, uncertainty, time) for your customers to evaluate alternatives.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Negative Loop: Why Marketplaces Aren't Winner-Take-All",
+    titleEmoji: "🔄",
+    what: {
+      point: "The growth of a marketplace is always limited by a \"negative loop\"—the fact that more suppliers create more competition among those same suppliers, reducing their individual value.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The positive flywheel (more supply -> more demand -> more supply) is only half the story. The often-ignored negative loop is that more Airbnb hosts in Berlin leads to more competition and lower revenue for each individual host.",
+        "This supplier congestion is the primary reason most two-sided marketplaces (ride-sharing, food delivery) support multiple competing platforms. When the #1 platform becomes too crowded, new suppliers are incentivized to join the #2 platform for a better chance to earn.",
+        "This contrasts with one-sided social networks (like early Instagram), where more users are almost purely beneficial, leading to a stronger winner-take-all dynamic.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Monitor supplier health, not just supply growth: Track metrics like \"revenue per supplier\" or \"rides per driver\" as a leading indicator of platform congestion and churn risk.",
+        "Position yourself as the \"un-crowded\" alternative: If you are a challenger, market your platform to suppliers as the place where they can stand out and earn more, specifically targeting those feeling squeezed on the dominant platform.",
+        "Build tools for differentiation: To mitigate the negative loop, provide your suppliers with tools to compete on factors other than just price (e.g., quality, specialization, unique services).",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Solve the Cold Start by Buying the First Spin",
+    titleEmoji: "🧰",
+    what: {
+      point: "Overcoming the initial \"cold start problem\" where a platform has no value because it has no users is not a matter of magic; it's a matter of targeted, temporary subsidies.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In the early days, the cost for a user to adopt your platform (learning it, creating a profile) is higher than the value it provides. Subsidies bridge this gap.",
+        "An estimated 95% of successful marketplaces solved this problem by \"buying\" one side of the market. Google paid Yahoo to get its search engine in front of users; dating apps often pay the first wave of users to create profiles.",
+        "The key is to identify which side of your market is the bottleneck. Uber was supply-constrained (it needed drivers), while the dog-walking platform Rover was demand-constrained (it needed to convince owners to trust the walkers).",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Declare your constrained side: Determine whether your growth is limited by a lack of supply or a lack of demand. Focus all subsidy and incentive efforts there.",
+        "Frame subsidies as a CAPEX, not OPEX: Treat the money spent acquiring your initial network not as a marketing expense, but as a capital investment in building your platform's core, defensible asset.",
+        "Design an exit ramp for subsidies: Plan your subsidy program with clear metrics and milestones that trigger a gradual tapering as the organic flywheel begins to spin on its own.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
   return (
     <main className="bg-gray-50 min-h-screen w-full p-4 sm:p-8">
       <PdfDownloadButton />
@@ -4117,7 +9404,7 @@ export default function Home() {
           ))}
         </div>
         <hr className="my-10 border-t border-gray-300 w-full" />
-        <h2 className="text-3xl font-bold text-center mb-8">2. Discovering Stratergy By Design</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">2. Discovering Strategy By Design</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {section2Cards.map((card, index) => (
             <BattleCard key={index} {...card} />
@@ -4409,7 +9696,294 @@ export default function Home() {
           ))}
         </div>
         <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Antitrust</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {antitrustCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Network Effect</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {networkEffectCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Network Effects - Part 2</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {networkEffect2Cards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Business Model</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {businessModelCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Crossing the Chasm</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {crossingTheChasmCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">LLMs and AI</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {llmsAndAiCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Supply Chain Fundamentals</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {supplyChainFundamentalsCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Tamagoya</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {tamagoyaCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Disruption</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {disruptionCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Positioning</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {positioningCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Swarm Technologies and Starlink innovation overview with Sarah Spangala</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {swarmTechnologiesCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Amazon and Nokia</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {amazonNokiaCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Yossi: AI strategy</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {yossiAiStrategyCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Innovation</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {innovationCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Crisis Management</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {crisisManagementCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Finance</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {financeCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Market Reaction and Activist Investor - Impact on Share Price Valuation</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {marketReactionActivistCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Decision making</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {decisionMakingCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Investor Playbooks and Value Creation in - Public vs Private Markets</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {investorPlaybooksCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Fireside with John Donahoe: Stanford Leadership & Exec Insights</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {donahoeLeadershipCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Ethical Implications of Accounting Fraud</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {ethicalImplicationsCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Business Role in Society - Survey Insights</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {businessRoleCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Auction mechanisms for Pricing Strategy</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {auctionMechanismsCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Second Place Auction Strategy Session</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {secondPlaceAuctionCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">AI-Driven Product Management Strategies for Marketing</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {aiProductManagementCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Modeling Behavior in Communication Strategies</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {modelingBehaviorCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Motivation Strategies for Employee Engagement</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {motivationStrategiesCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Private Equity Firms Going Public - Implications</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {privateEquityPublicCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Big Data Insights and Fintech Trends</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {bigDataFintechCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Walmart COVID Policy Implications and Challenges</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {walmartCovidCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Zero Billion Dollar Market Advantages</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {zeroBillionDollarCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Moderna's AI and mRNA platform overview</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {modernaAiMrnaCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Population Growth and Food Security Trends</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {populationFoodSecurityCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Collaboration Barriers and Solutions Workshop</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {collaborationBarriersCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Business Leadership Best Practices - GSB Alumni</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {gsbAlumniLeadershipCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Negotiation Strategies - Mindset Shift</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {negotiationStrategiesCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Negotiation Strategies for Value Creation & Claiming</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {negotiationValueCreationCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">POMDP</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {pomdpCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">AI Advancements & Industry Insights</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {aiAdvancementsCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">RL Turbotalk</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {rlTurbotalkCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Corporate Governance and Value Creation Strategies</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {corporateGovernanceCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
       </div>
     </main>
   )
 }
+
