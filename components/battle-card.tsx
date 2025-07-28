@@ -17,7 +17,7 @@ export interface BattleCardProps {
 
 export function BattleCard({ title, titleEmoji, what, why, how }: BattleCardProps) {
   return (
-    <div className="w-[380px] bg-notion-white rounded-20px shadow-subtle flex flex-col border border-gray-100">
+    <div className="w-[380px] bg-gray-50 rounded-20px shadow-subtle flex flex-col border border-notion-border">
       {/* Header */}
       <div className="px-6 py-5 flex items-center gap-3">
         <span className="text-3xl">{titleEmoji}</span>
@@ -27,20 +27,20 @@ export function BattleCard({ title, titleEmoji, what, why, how }: BattleCardProp
       {/* Content Area */}
       <div className="px-5 py-4 flex flex-col gap-4 flex-1">
         {/* The What Section */}
-        <div className="bg-accent-blue-bg rounded-lg p-4">
-          <h2 className="flex items-center gap-2 text-xs font-bold text-text-primary mb-2">
-            <span className="text-base">{what.emoji}</span>
-            <span>THE WHAT:</span>
-          </h2>
+        <div className="bg-notion-white border border-notion-border rounded-2xl p-4">
+          <div className="inline-flex items-center gap-2 bg-accent-blue-bg text-text-primary px-3 py-1 rounded-full text-xs font-bold mb-3">
+            <span className="text-base">🎯</span>
+            <span>The What</span>
+          </div>
           <p className="text-sm text-gray-800 leading-relaxed">{what.point}</p>
         </div>
 
         {/* The Why Section */}
-        <div className="bg-notion-block rounded-lg p-4">
-          <h2 className="flex items-center gap-2 text-xs font-bold text-text-primary mb-2">
-            <span className="text-base">{why.emoji}</span>
-            <span>THE WHY:</span>
-          </h2>
+        <div className="bg-notion-white border border-notion-border rounded-2xl p-4">
+          <div className="inline-flex items-center gap-2 bg-notion-block text-text-primary px-3 py-1 rounded-full text-xs font-bold mb-3">
+            <span className="text-base">🔍</span>
+            <span>The Why</span>
+          </div>
           <ul className="space-y-2">
             {why.points.map((point, index) => (
               <li key={index} className="flex items-start gap-2 text-sm text-gray-800 leading-relaxed">
@@ -52,11 +52,11 @@ export function BattleCard({ title, titleEmoji, what, why, how }: BattleCardProp
         </div>
 
         {/* The How Section */}
-        <div className="bg-accent-green-bg rounded-lg p-4">
-          <h2 className="flex items-center gap-2 text-xs font-bold text-text-primary mb-2">
-            <span className="text-base">{how.emoji}</span>
-            <span>THE HOW:</span>
-          </h2>
+        <div className="bg-notion-white border border-notion-border rounded-2xl p-4">
+          <div className="inline-flex items-center gap-2 bg-accent-green-bg text-text-primary px-3 py-1 rounded-full text-xs font-bold mb-3">
+            <span className="text-base">⚡</span>
+            <span>The How</span>
+          </div>
           <ul className="space-y-2">
             {how.points.map((point, index) => (
               <li key={index} className="flex items-start gap-2 text-sm text-gray-800 leading-relaxed">
