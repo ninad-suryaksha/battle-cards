@@ -5175,6 +5175,2250 @@ const corporateGovernanceCards: BattleCardProps[] = [
   },
 ];
 
+const reinforcementLearningCards: BattleCardProps[] = [
+  {
+    title: "The Three Pillars of AI Breakthroughs",
+    titleEmoji: "🏗️",
+    what: {
+      point: "Any major breakthrough in artificial intelligence is the result of a confluence of three essential components: massive and relevant data, novel algorithms, and immense computational power.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "As in the AlphaFold breakthrough in protein structure prediction, having access to a massive dataset (painstakingly compiled by \"a whole bunch of PhD students who were cranking away in the lab over many, many years\") was key.",
+        "The driving algorithmic innovation was reinforcement learning, which enabled AlphaFold to \"teach itself\" and improve its predictions over time, and these algorithms often originate from university research.",
+        "Finally, running these on a massive scale requires immense computational power, typically from GPUs, and \"you can buy that compute from nowadays.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When evaluating any potential AI initiative, assess its viability across these three dimensions. Do you have a defensible and unique dataset? Do you have the algorithmic talent to build a superior model? Do you have access to the necessary computational resources?",
+        "Recognize that a weakness in any one of these three pillars can derail the entire project.",
+        "Build your AI strategy around creating a defensible advantage in at least one of these areas, preferably through a unique, proprietary dataset.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Reinforcement Learning Feedback Loop",
+    titleEmoji: "🔄",
+    what: {
+      point: "Reinforcement Learning (RL) is a powerful method for training models to achieve goals in complex environments by having an agent learn from experience through a continuous feedback loop of actions, observations, and rewards.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The fundamental RL feedback loop involves an agent (the model) that takes an action within an environment, makes an observation of the new state of the environment, and receives a reward (or penalty) signal.",
+        "This loop repeats, allowing the agent to learn a policy—a strategy for choosing actions—that maximizes its cumulative reward over time.",
+        "This process is fundamental to how systems like ChatGPT were trained to be helpful and how AlphaFold learned to predict protein structures.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify business problems that can be framed as an RL problem. What is the environment, who is the agent, what are the possible actions, and how do you define the reward signal?",
+        "Use RL to optimize processes with complex, sequential decisions where the optimal path is not obvious, such as supply chain logistics, ad campaign bidding, or robotic control.",
+        "Be highly intentional about designing the reward function. The system will ruthlessly optimize for whatever you reward, so a poorly designed reward signal can lead to unintended and undesirable behavior.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Achieving Superhuman Performance Through Self-Play",
+    titleEmoji: "🎯",
+    what: {
+      point: "An AI agent can achieve superhuman performance by learning entirely through self-play, eliminating the need for vast quantities of human expert data and allowing it to discover strategies beyond human comprehension.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The initial version of AlphaGo was trained on a large dataset of expert human games. However, the breakthrough version, AlphaGo Zero, was \"just trained on itself, just through self-play, no expert knowledge brought into it.\"",
+        "The system learned \"3,000 years of human knowledge in 40 days\" by simply playing against itself repeatedly and learning from its own mistakes and successes.",
+        "This demonstrates that for well-defined problems with clear rules (like the game of Go), an RL agent can surpass the best human players by exploring the problem space more extensively and creatively than any human ever could.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "For problems with a clear set of rules and a measurable outcome (e.g., optimizing a manufacturing process, designing a network configuration), consider using a self-play approach.",
+        "Create a simulation of the problem environment where an AI agent can \"play\" millions of games against itself to discover optimal strategies.",
+        "Be prepared for the AI to develop novel and counterintuitive solutions. The value of self-play is its ability to find strategies that are not constrained by conventional human wisdom.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Exploration vs. Exploitation Trade-off",
+    titleEmoji: "⚖️",
+    what: {
+      point: "A fundamental challenge in any learning system, whether human or machine, is balancing \"exploration\" (gathering new information to find better strategies) with \"exploitation\" (using the current best-known strategy to maximize immediate rewards).",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker gives a personal example of failing at exploration: he took the same path to work every day for seven years, only to discover a major shortcut on his second-to-last day.",
+        "The \"Secretary Problem\" (or dating problem) provides a formal mathematical solution: you should spend the first 37% of your time or candidate pool purely on exploration (learning the distribution) and then commit to the next candidate who is better than anyone you've seen so far.",
+        "This trade-off is critical. Too little exploration means you might get stuck with a suboptimal strategy. Too much exploration means you waste time gathering information instead of capitalizing on what you already know.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Explicitly define an \"exploration budget\" for your strategic initiatives. How much time or resources will you dedicate to testing new, unproven ideas versus optimizing your current, proven models?",
+        "Apply the 37% rule as a mental model for decision-making under uncertainty. When evaluating a series of options (e.g., hiring candidates, testing marketing campaigns), dedicate a portion of your resources to pure exploration before committing to a final choice.",
+        "Recognize that the optimal balance depends on the environment. In a stable, well-understood market, favor exploitation. In a rapidly changing, uncertain market, favor exploration.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Model Mismatch Problem",
+    titleEmoji: "⚠️",
+    what: {
+      point: "An AI system can be mathematically optimal according to its internal model of the world, yet fail catastrophically if that model does not accurately reflect the complexities and constraints of reality.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker shares the story of Michael Trick, an operations research professor who used the optimal 37% rule from the Secretary Problem to decide when to propose marriage. The model told him to propose, but he was turned down.",
+        "The \"model mismatch\" was that his mathematical model failed to account for the fact that marriage is a \"consensual kind of thing\"—the other person has to agree. The model was perfectly solved for the wrong problem.",
+        "The legacy TCAS aircraft collision avoidance system had a similar mismatch. It modeled pilots as following their advisories perfectly after a five-second delay, failing to account for the reality that a pilot might react in one second or twenty seconds.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before deploying any AI system, rigorously challenge the assumptions embedded in its model. How does the model's simplified view of the world differ from messy reality?",
+        "Identify potential sources of model mismatch. What critical factors (e.g., human behavior, external constraints, consensual actions) has the model failed to account for?",
+        "Treat the initial deployment of any AI system as an experiment to test for model mismatch. Monitor its performance closely and be prepared to update the model as you learn how it interacts with the real world.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const exemplaryLeadershipCards: BattleCardProps[] = [
+  {
+    title: "The Two Mindsets of Motivation: Protect vs. Prospect",
+    titleEmoji: "🧠",
+    what: {
+      point: "The human brain operates in one of two distinct, mutually exclusive motivational states at any given time: a \"protect\" state focused on avoiding threats and failure, or a \"prospect\" state focused on seeking opportunities and growth.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Protect State: This is a risk-averse, \"play it safe\" mindset driven by the stress-to-comfort neural pathway (cortisol vs. serotonin). It is characterized by a \"Type 1\" fear of making a mistake. In this state, the brain prioritizes the familiar, the tried-and-trusted, and low-risk options.",
+        "Prospect State: This is a risk-tolerant, \"opportunity-seeking\" mindset driven by the boredom-to-excitement pathway (dopamine). It is characterized by a \"Type 2\" fear of missing out (FOMO). In this state, the brain spontaneously reframes failure as an exciting challenge and is driven to explore.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Diagnose the current motivational state of your team. Are they in a \"protect\" mode (fearful, avoiding risks) or a \"prospect\" mode (energized, seeking new challenges)?",
+        "Recognize that you cannot simply tell someone to switch states. To move a team from \"protect\" to \"prospect,\" you must first address the source of their stress and re-establish a stable level of comfort and psychological safety.",
+        "Tailor your leadership approach to the current state. If the team is in \"protect\" mode, provide clarity, reassurance, and familiar routines. If they are in \"prospect\" mode, provide them with new, exciting challenges and the autonomy to explore.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Comfort is the Gateway to Risk-Taking",
+    titleEmoji: "🛡️",
+    what: {
+      point: "The brain cannot switch to the opportunity-seeking \"prospect\" mindset until it has first achieved a stable state of comfort; psychological safety is a non-negotiable prerequisite for innovation and risk-taking.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker uses the example of a professional reception. Upon arrival, a person's brain is in a \"protect\" state, causing them to seek out a familiar face to establish comfort. Only after this comfort is established can the brain switch to the \"prospect\" state of exploring and meeting new people.",
+        "When faced with a new, stressful situation (like meeting a celebrity), the brain immediately switches back to the \"protect\" state and will seek comfort-providing behaviors (taking a sip of water, forcing a laugh, rejoining a familiar conversation) before it can explore again.",
+        "This has profound evolutionary logic. If an animal is stressed, it signals danger. The brain's priority is to keep the animal safe by suppressing exploratory impulses until the threat has passed.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "If you want your team to be innovative and take risks, your first job as a leader is to create an environment of psychological safety and comfort.",
+        "Before asking your team to \"get out of their comfort zone,\" you must first ensure they are in their comfort zone. Address their fears, provide clear support, and eliminate unnecessary stressors.",
+        "Recognize that common corporate behaviors like endless meetings (\"let us set up a committee\") or analysis paralysis (\"let us get more data\") are often symptoms of a team stuck in the \"protect\" state, trying to avoid the stress of making a risky decision.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Emotional Brain is the Master",
+    titleEmoji: "🎭",
+    what: {
+      point: "Human decisions are not driven by rational, deliberative thought, but by the fast, non-conscious, emotional brain; the rational brain's primary job is to rationalize decisions the emotional brain has already made.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker cites Daniel Kahneman's \"Thinking, Fast and Slow,\" noting that the vast majority (90-95%) of human decisions are shaped by the \"fast thinking,\" emotional System 1.",
+        "He argues that the emotional brain is the \"master\" and the rational brain is \"subservient.\" The rational brain is \"not good at being rational,\" but is \"a great rationalizer.\"",
+        "This is rooted in our evolutionary history. We share 98.4% of our DNA with chimpanzees; the \"animal side\" of our brain, which is instinctual and emotional, has a profound impact on our behavior.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When trying to persuade someone, focus your appeal on the emotional brain first. Connect with their feelings, fears, and aspirations before presenting a logical, data-driven case.",
+        "Understand that if your proposal does not \"feel\" right to your counterpart, no amount of rational evidence will convince them. The emotional brain will simply find reasons to reject your logic.",
+        "Listen for the emotional content behind your team's \"rational\" arguments. When they are resisting a change, they may present logical reasons, but the root cause is often an underlying emotional fear or discomfort.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Using Stress as a Competitive Weapon",
+    titleEmoji: "⚔️",
+    what: {
+      point: "By understanding the brain's motivational architecture, a company can strategically create stress and uncertainty for its customers to prevent them from switching to a competitor.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In the Shell vs. ExxonMobil case, Shell's new competitor, Exxon, represents an unfamiliar, uncertain, and potentially risky choice for the airline mechanics.",
+        "Sam Singh's counterintuitive decision to increase the price of his established, proven grease was a brilliant strategic move. It was a signal designed to amplify the stress and doubt in the customer's mind.",
+        "The price increase sends the signal: \"We are so confident our product is superior that we are raising the price. Do you really want to take a chance on this unproven, cheaper alternative for a mission-critical component?\" This pushes the customer's brain into the \"protect\" state, where they will stick with the \"familiar, tried and trusted\" option (Shell).",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "If you are the incumbent facing a new, low-cost competitor, don't immediately react by dropping your price.",
+        "Instead, craft a marketing and communication strategy that sows fear, uncertainty, and doubt (FUD) about the new entrant. Emphasize your long track record, reliability, and the hidden risks of switching.",
+        "Consider a strategic price increase to signal superior quality and confidence, forcing the customer to confront the perceived risk of choosing the \"cheap\" option. This leverages the brain's natural tendency to avoid stress and stick with what is safe and familiar.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const decisionShapingCustomerExperienceCards: BattleCardProps[] = [
+  {
+    title: "The Two Brain States: Protect vs. Prospect",
+    titleEmoji: "🧠",
+    what: {
+      point: "Customers and stakeholders make all decisions from one of two mutually exclusive, neurochemically distinct brain states: a risk-averse \"Protect\" state or an opportunity-seeking \"Prospect\" state, and you cannot appeal to one using the logic of the other.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The Protect State: This is a \"play it safe\" mindset driven by the stress-to-comfort neural pathway (cortisol vs. serotonin). It is characterized by a \"Type 1\" fear of making a mistake. In this state, the brain prioritizes the familiar, the tried-and-trusted, and seeks validation to reduce uncertainty.",
+        "The Prospect State: This is a risk-tolerant, \"opportunity-seeking\" mindset driven by the boredom-to-excitement pathway (dopamine). It is characterized by a \"Type 2\" fear of missing out (FOMO). In this state, the brain spontaneously reframes failure as an exciting challenge and is driven to explore new things.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Diagnose your customer's or stakeholder's current state. Is their problem frame about avoiding a threat (Protect) or capturing an opportunity (Prospect)?",
+        "To encourage risk-taking (e.g., adopting a new product), you must first get your customer into a stable state of comfort. Address their fears and establish safety before you can appeal to their desire for novelty.",
+        "Frame your pitch to match their state. For a \"Protect\" mindset, emphasize safety, reliability, and social proof. For a \"Prospect\" mindset, emphasize novelty, excitement, and opportunity.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Incumbent's Counter-Disruption Play",
+    titleEmoji: "🛡️",
+    what: {
+      point: "An incumbent can defend against a low-price disruptor not by matching the price, but by counterintuitively increasing its price to signal superior quality and sow fear, uncertainty, and doubt (FUD) in the customer's mind.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In the Shell vs. ExxonMobil case, Sam Singh was faced with a competitor launching an \"identical\" product at half the price. His response was to increase his own price.",
+        "This strategy works because it targets the emotional brain of the B2B customer. The end-user (the mechanic) is not a rational cost-cutter; their primary motivation is \"peace of mind\" and avoiding the catastrophic risk of an aircraft failure.",
+        "The price increase is a powerful signal of confidence. It reinforces the incumbent's 10-year, zero-incident track record and amplifies the perceived risk of the unproven alternative, pushing the risk-averse decision-maker to stick with the familiar, trusted solution.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When faced with a low-price competitor in a mission-critical B2B market, resist the immediate pressure from your sales team to engage in a price war.",
+        "Shift the sales conversation from a rational discussion of price to an emotional discussion of risk. Emphasize your track record, reliability, and the unquantifiable costs of a potential failure with the new entrant.",
+        "Consider a strategic price increase as a high-confidence signal to reinforce your premium positioning and to frame the competitor's offering as cheap and risky.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The IKEA Effect for Stakeholder Buy-In",
+    titleEmoji: "🔧",
+    what: {
+      point: "Gain buy-in for a new initiative by presenting it as a rough, incomplete prototype and asking key stakeholders for advice, not feedback. This leverages the IKEA effect, making them co-owners of the idea and invested in its success.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The IKEA effect is the principle that when the brain perceives it is making an investment (monetary, physical, or mental), it becomes more invested in the outcome.",
+        "Presenting a polished, perfect prototype invites criticism and positions the stakeholder as a judge. Presenting a rough prototype (\"napkin sketch,\" whiteboard drawing) invites co-creation and positions them as a partner.",
+        "Asking for \"advice\" is a powerful tool. It grants status to the stakeholder, shifts them into a constructive, opportunity-seeking \"Type 2\" mindset, and makes the improved idea feel like their idea.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When socializing a new idea internally, intentionally present it as a rough draft or \"napkin sketch\" to encourage collaboration.",
+        "Frame your request as \"I'd love to get your advice on this,\" not \"I'd like your feedback.\" This grants status, reduces defensiveness, and encourages constructive input.",
+        "Deliberately leave a small, obvious flaw (a \"hairy arm\") in your proposal so the stakeholder can easily contribute by fixing it, making them feel valued and invested in the project's success.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Mapping the Cyclical Customer Journey",
+    titleEmoji: "🔄",
+    what: {
+      point: "Customer journeys are not linear funnels but cyclical processes of discovery, evaluation, and experience that must be understood through the lens of customer pain points and pleasure points at every stage.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker dismisses linear journey maps as flawed. A comprehensive map must be cyclical, accounting for how a positive or negative experience feeds back into loyalty and future decisions.",
+        "The journey begins before a customer is even aware of a problem. Your job is to create awareness, trigger motivation, and then guide them through evaluation and purchase.",
+        "The ultimate goals are to win the initial purchase (acquisition), ensure a positive experience that builds loyalty (retention), and maximize lifetime value by encouraging repeat engagement (re-engagement).",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map your customer's entire cyclical journey, from pre-awareness to post-purchase loyalty loops.",
+        "For each stage, use design thinking and customer research to identify the specific \"pain points\" (disasters) and \"pleasure points\" (delights).",
+        "Focus your product strategy and CX design on systematically eliminating the pain points and augmenting the pleasure points to build a durable competitive advantage.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Top Salesperson Paradox: Introverts Who Mimic",
+    titleEmoji: "🎭",
+    what: {
+      point: "The most elite salespeople are often not stereotypical extroverts, but introverts who possess two key skills: they are masters of social mimicry, and they have a phenomenal memory for personal details.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "A study of a top engineering company found that the 99th percentile salespeople were differentiated by their mastery of \"social mimicry\"—subtly mirroring a customer's posture, tone, and language. This works because it taps into the brain's deep-seated preference for familiarity.",
+        "These top performers also had a \"phenomenal memory for names\" and other personal details, allowing them to build strong emotional connections.",
+        "Counterintuitively, the top performers were all introverts on personality scales. This is because introverts \"tend to listen more than they speak,\" which allows them to better gauge the customer's emotional state and adapt their approach accordingly.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When hiring salespeople, screen for high levels of empathy, listening skills, and attention to detail, not just extroversion and charisma.",
+        "Train your sales team in the art of social mimicry and mirroring. This is a learnable skill that can significantly improve rapport-building.",
+        "Implement a CRM system that prioritizes the capture of personal, \"small talk\" details, and train your team to use this information to build genuine human connections, not just to track transactions.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const newVenturesEvaluationCards: BattleCardProps[] = [
+  {
+    title: "The Innovator's Dilemma in Regulated Markets",
+    titleEmoji: "⚖️",
+    what: {
+      point: "Innovating in a highly regulated industry often requires a \"flanking attack\"—launching a next-generation product that makes the current offering obsolete—rather than engaging in a direct price war with a new competitor.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Shell faced a new competitor, ExxonMobil, launching a chemically identical grease at half the price. A direct price cut was a losing game.",
+        "Any change to the existing product, even a minor one, would require a lengthy and expensive re-approval process from bodies like the FAA, Airbus, and Boeing, taking a year or more.",
+        "The strategic solution was to accelerate the development of a new, superior product (Aeroshell Grease 44) that was already in the R&D pipeline. This allowed them to compete on innovation rather than price.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Continuously invest in a next-generation R&D pipeline, even when you have a monopoly, in anticipation of future competition.",
+        "When a low-price competitor enters, avoid a direct price war. Instead, announce your superior, next-generation product to create doubt and cause customers to delay their switching decision.",
+        "Use the development timeline of your new product to lock in key customers by offering them early access and making them \"design partners\" in the new product's development.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "De-Risking the Venture Through Mitigation",
+    titleEmoji: "🛡️",
+    what: {
+      point: "Successful entrepreneurs are not high-risk takers; they are obsessive risk mitigators who systematically identify and neutralize the biggest threats to their venture as early as possible.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker emphasizes a key finding from his research: \"the best entrepreneurs are risk mitigators.\"",
+        "New ventures face a multitude of risks across technology, market, team, and finance. A common failure mode is underestimating these risks and overstating potential revenues.",
+        "The process of forcing founders to articulate the key risk factors for their business and create a plan to \"de-risk\" them is a critical discipline for avoiding failure.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Use a comprehensive framework (like the 10-category model presented) to identify the major risk factors in your venture.",
+        "Prioritize the risks that have the highest probability and the greatest potential negative impact on your business.",
+        "Focus your early efforts and resources on designing and executing experiments to systematically reduce these top risks, rather than just on building the product.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Power of a \"Lighthouse\" Investor",
+    titleEmoji: "🏮",
+    what: {
+      point: "For an early-stage venture, securing an investment from a top-tier, \"lighthouse\" investor provides a powerful signal of quality and credibility that can dramatically change the company's trajectory and attract other investors, partners, and talent.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Zoom struggled for its first six years to attract a \"named investor.\" While it had funding, it lacked the stamp of approval from a major firm.",
+        "In 2017, securing a Series D investment from Sequoia, a premier venture capital firm, was a \"signature\" event that changed the perception of the company.",
+        "This \"lighthouse\" investment was a critical step that validated Zoom's strategy and paved the way for its successful IPO two years later.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify the \"lighthouse\" investors, customers, or partners in your industry whose endorsement would provide the most significant credibility boost.",
+        "Even if you don't need the capital, strategically pursue an investment from a top-tier firm for the signaling value it provides.",
+        "Once you secure a lighthouse partner, leverage their brand and network aggressively to attract other key stakeholders and accelerate your growth.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Double-Edged Sword of Becoming a Verb",
+    titleEmoji: "🗣️",
+    what: {
+      point: "When your brand becomes synonymous with the category (e.g., \"to Google\" or \"to Zoom\"), it is a powerful sign of market dominance, but it also carries the significant risk that you will be blamed for any negative event that happens in the category, even if it doesn't involve your product.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The term \"Zoom-bombing\" became a global phenomenon, describing disruptive intrusions into video calls.",
+        "The problem was that any video conference that was disrupted was labeled a \"Zoom-bombing,\" even if the company was using a competitor's product like Microsoft Teams.",
+        "By becoming the generic term for the category, Zoom inherited the baggage for all the category's problems, creating a massive PR crisis that was exploited by competitors.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Recognize that achieving \"verb\" status is a mixed blessing. Prepare your PR and legal teams for the likelihood that you will become the public face for the entire industry's problems.",
+        "Invest heavily in user education and security protocols to minimize the occurrence of negative events associated with your category.",
+        "When a negative event occurs, respond with radical transparency (as Zoom's CEO Eric Yuan did) to take control of the narrative and demonstrate your commitment to solving the problem, even if it wasn't directly your fault.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Necessity of Alignment in the Founding Team",
+    titleEmoji: "🎯",
+    what: {
+      point: "A lack of alignment among the top management team regarding the company's past progress, current strengths, and future strategy is a devastating and common cause of failure in new ventures.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker describes an exercise where he asks multiple members of a founding team to independently assess their venture across 10 key categories at different points in time.",
+        "He notes that the results are often \"devastating,\" revealing that the leaders do not share a common perception of the company's reality: \"is this the same company?\"",
+        "This misalignment leads to conflicting priorities, wasted resources, and an inability to execute a coherent strategy, which is often a root cause of why a venture fails.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Implement a disciplined \"audit\" process at regular, event-driven intervals (e.g., after a funding round, when a competitor makes a major move).",
+        "Have each member of the leadership team independently and silently fill out a comprehensive assessment of the business (using a framework like the one provided).",
+        "Dedicate a management offsite to reviewing the results, identifying areas of misalignment, and forcing a debate to arrive at a shared understanding of the company's strategy, priorities, and key risks.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const partnershipAgreementNikeCards: BattleCardProps[] = [
+  {
+    title: "The Entrepreneurial Motivation Matrix",
+    titleEmoji: "🎯",
+    what: {
+      point: "Entrepreneurs are driven by a diverse set of motivations beyond pure financial gain, and understanding your own primary driver—and ensuring it aligns with your investors' and team's—is critical for long-term success.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "VC-Aligned: Focused on a \"go big or go home\" strategy, taking high risks for exponential returns, which aligns with a venture capital portfolio model.",
+        "Viable & Sustainable: Prioritizes building a durable, profitable business with a lower risk profile and a longer time horizon, which may clash with VC expectations for rapid, massive scale.",
+        "Social Problem Solving: Driven by a mission to solve a specific societal problem (e.g., child safety with Zūm), where financial return is a means to an end.",
+        "Technology Powerhouse: Motivated by the desire to create a path-breaking technology and be the undisputed leader in a field, even if it means turning down lucrative but less innovative contract work.",
+        "Regret Minimization (The Bezos Model): Driven by the fear of looking back at age 45 and regretting not having taken the entrepreneurial leap.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Conduct a \"motivation audit\" with your founding team. What is the primary, non-negotiable driver for each founder?",
+        "Be transparent about your core motivation with potential investors. A misalignment between a \"Viable & Sustainable\" founder and a \"Go Big or Go Home\" VC is a recipe for future conflict.",
+        "When your venture is at a crossroads, use your core motivation as the \"North Star\" to guide your decision-making.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Idea vs. Team First Approach",
+    titleEmoji: "💡",
+    what: {
+      point: "There are two distinct and valid paths to starting a new venture: the \"Idea First\" approach, where a founder identifies a pain point and builds a team to solve it, and the \"Team First\" approach, where a talented team forms and then searches for a problem to solve.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Idea First (Pain Point Driven): This is the classic model. The founder of Zola, a wedding registry platform, experienced a personal pain point (limited, inflexible gift registries) and built a solution around it.",
+        "Team First (Capability Driven): The speaker cites his colleague Scott Brady, who formed a team of three other highly capable individuals and then systematically searched for a large, unsolved problem, eventually creating a multi-billion dollar company in telecommunications.",
+        "Neither approach is inherently superior, but each requires a different process. The \"Idea First\" model is about validating a specific solution, while the \"Team First\" model is about a structured search for a market opportunity that fits the team's capabilities.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Assess your own starting position. Do you have a burning, specific idea, or do you have a group of highly talented people you want to work with?",
+        "If you are \"Team First,\" implement a structured ideation and market analysis process (like the RDI methodology mentioned) to systematically evaluate potential opportunities.",
+        "If you are \"Idea First,\" recognize that your initial idea is just a hypothesis. Your primary job is to validate it and be willing to pivot based on market feedback.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Strategic Pivot (Customer vs. Technology)",
+    titleEmoji: "🔄",
+    what: {
+      point: "A \"pivot\" is a fundamental change in business strategy, but it can occur along different dimensions. A company can pivot its customer segment (from B2C to B2B) or its core technology (from diesel to electric), each with its own set of profound challenges.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Customer Pivot (Zūm): Zūm started as a B2C \"Uber for Kids\" but pivoted to a B2B model selling transportation solutions to entire school districts. This changed everything: the sales cycle (from single transactions to 5-10 year contracts), the competitive landscape (facing large incumbents), and the political environment (dealing with school boards and potential corruption).",
+        "Technology Pivot (Zūm): Zūm later pivoted its technology from traditional diesel buses to an electric fleet. This fundamentally changed their operations, capital requirements, and even created new revenue opportunities (selling excess electricity back to the grid).",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When considering a pivot, clearly define which dimension of your business you are changing: your customer, your technology, your channel, or your revenue model.",
+        "Analyze the second-order consequences of the pivot. A customer pivot requires a completely new go-to-market motion. A technology pivot requires a different operational and talent infrastructure.",
+        "Communicate the pivot and its rationale with radical transparency to your team and investors. As seen with Zūm, a pivot can be emotionally wrenching for employees who signed up for the original vision.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Entrepreneur's Real Job: Risk Mitigation",
+    titleEmoji: "🛡️",
+    what: {
+      point: "The most successful entrepreneurs are not reckless risk-takers; they are disciplined and systematic risk mitigators who identify the greatest threats to their venture and focus their initial efforts on neutralizing them.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "New ventures face a host of risks: product, market, financial, and team risks. The speaker emphasizes that \"de-risk, de-risk, de-risk\" is the key to survival.",
+        "Many ventures fail because they focus solely on building a product while ignoring a fundamental flaw in their business model or a major market risk that ultimately kills them.",
+        "The speaker describes how he forces founders to use a 10-category framework to identify the weakest parts of their venture and think about how to de-risk those areas first.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "At the outset of your venture, brainstorm a comprehensive list of all the potential risks that could kill your company.",
+        "Prioritize these risks based on their probability and potential impact. What is the single biggest \"leap of faith\" assumption your business is built on?",
+        "Design your initial experiments and milestones around testing and mitigating your highest-priority risks. Your goal is not just to build, but to learn and de-risk as quickly and cheaply as possible.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Document Hygiene and the Founding Team",
+    titleEmoji: "📋",
+    what: {
+      point: "A lack of clear, written agreements among the founding team—particularly regarding equity and roles—is a ticking time bomb that can lead to devastating and costly disputes later on.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker recounts a \"massive dispute\" where two informal advisors to a joint venture later claimed they were owed a significant equity stake. The lack of a clear, upfront agreement led to a lawsuit that resulted in an $180 million settlement.",
+        "Founding teams often avoid these difficult conversations in the early, optimistic \"pizza night\" phase, leading to misaligned expectations. A common failure is giving equal equity to all founders from day one, without a mechanism for vesting or adjusting based on future contributions.",
+        "These disputes often surface when a venture becomes successful, as early, informal contributors come out of the woodwork to claim a piece of the pie.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Practice rigorous \"document hygiene\" from day one. Engage legal counsel to create clear, written agreements that define equity splits, vesting schedules, roles, and responsibilities for all founders.",
+        "Establish an \"earn-in\" equity structure. Instead of splitting equity equally at the start, hold a significant portion in a pool that is allocated over time based on achieving specific milestones and contributions.",
+        "Have the difficult conversations early. Explicitly define who is \"all-in\" on the venture and who is an advisor or friend. A handshake agreement is not enough.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const virtualRealityApplicationsCards: BattleCardProps[] = [
+  {
+    title: "The DICE Framework for High-Value VR",
+    titleEmoji: "🎲",
+    what: {
+      point: "You should use VR sparingly, treating it not as a replacement for everyday tasks but as a powerful tool to solve specific, high-stakes problems that are Dangerous, Impossible, Counterproductive, or Expensive (DICE) to address in the real world.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker argues against the idea of using VR for mundane tasks like typing emails or working on spreadsheets, as computers and phones are better suited for them. A little VR \"goes a long way.\"",
+        "Dangerous: Walmart uses VR to train employees for active shooter scenarios. It allows them to experience the stress and make mistakes in a safe environment so they perform better in a real crisis.",
+        "Impossible: A school in Alaska on a treeless island used VR to teach students how to measure trees, a required part of the curriculum that was physically impossible for them to do otherwise.",
+        "Counterproductive/Expensive: Derek Belch founded Striver to train NFL quarterbacks in VR. It allows them to get thousands of \"mental repetitions\" reading defenses without the physical wear and tear of being on the practice field, which would be counterproductive to their physical health.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Audit your company's most critical training and operational challenges.",
+        "Instead of asking \"How can we use VR?\" ask \"Which of our biggest problems are too dangerous, impossible, expensive, or counterproductive to solve with traditional methods?\"",
+        "Apply VR as a targeted solution to these specific DICE problems to achieve a high return on investment, rather than attempting a broad, unfocused implementation.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "VR as an Empathy and Connection Machine",
+    titleEmoji: "🤝",
+    what: {
+      point: "Immersive VR experiences that allow users to virtually \"travel\" to a new place or share a sensory experience with another person can create a powerful sense of connection and empathy that transcends physical distance.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "A study in Brazil by Anna Queiroz showed that when inland children who had never seen the ocean experienced a marine science lesson in VR, their level of care for the ocean rose to match that of children living on the coast.",
+        "A study by Monique Santoso demonstrated that having users explore a distant city in Google Earth VR for a few minutes made them significantly more likely to care about a negative news story from that city and volunteer their time to help.",
+        "A study on \"vicarious touch\" showed that when two people share a haptic (touch) experience in VR, they subsequently like each other more, treat each other better, and are more willing to help one another.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "To build empathy for distant customers or stakeholders, create a VR experience that allows your team to virtually visit their environment and see the world from their perspective.",
+        "In a remote or hybrid team, use shared VR experiences to build social connection and rapport that is difficult to achieve through video calls alone.",
+        "Leverage shared haptic experiences, like the one demonstrated at the Sphere, to create a powerful, memorable, and unifying moment for a large group.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Peril of Perceptual Dis-Integration (The AR Problem)",
+    titleEmoji: "⚠️",
+    what: {
+      point: "The widespread adoption of Augmented Reality (AR), where different people see different digital overlays on the physical world, threatens to destroy \"common ground,\" leading to a breakdown in trust, communication, and productivity.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Psychologist Herb Clark's theory of \"common ground\" states that human collaboration depends on a shared set of assumptions about the world. AR fundamentally breaks this by creating different perceptual realities for different users.",
+        "A study by Mark Miller showed that the mere presence of a virtual avatar in a chair would change where a real person chose to sit, even after the avatar was gone. People will violate real-world social norms to accommodate virtual objects.",
+        "A current study in the lab shows that when two people collaborate on a physical task but are unknowingly shown different AR versions of it, their productivity declines and they lose trust in each other.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When designing AR applications for a collaborative workplace, prioritize maintaining a shared perceptual common ground.",
+        "Be aware of the \"deletion\" capability of AR. The ability to visually erase people or objects from one's view of the real world has profound and potentially negative social consequences.",
+        "Before deploying AR at scale, conduct small-scale experiments to understand how having different versions of reality impacts team dynamics, trust, and communication.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "VR as a Performance Enhancement Tool",
+    titleEmoji: "🏆",
+    what: {
+      point: "VR can be used as a powerful tool to enhance performance in high-stakes fields like professional sports by providing risk-free mental repetitions and by allowing athletes to visualize and internalize success.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Striver's work with NFL quarterbacks allows them to practice reading defenses and making split-second decisions thousands of times without physical risk.",
+        "For basketball players struggling with free throws, VR is used to create a \"highlight reel\" of their own perfect shots. Watching themselves succeed in VR before a game helps overcome the \"slump\" where they can only visualize failure, leading to a 10% increase in performance.",
+        "German national soccer team goalies used VR to watch a thousand penalty kicks, training them to read the subtle body language of the kicker to better predict the shot's direction.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify the most critical decision-making moments in your business that require rapid pattern recognition under pressure. Use VR to create a simulation where employees can get thousands of \"mental reps.\"",
+        "When an employee is struggling with a performance slump or confidence issue, use VR to create an experience of their own past successes, helping them to break the negative mental cycle.",
+        "For complex spatial tasks, use VR to train employees to recognize subtle patterns and cues that are difficult to teach in a classroom or through a manual.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Power of Non-Verbal Data in VR",
+    titleEmoji: "📊",
+    what: {
+      point: "VR provides an unprecedented opportunity to capture and analyze the rich, non-verbal data of human interaction at a massive scale, allowing us to understand and predict the dynamics of group formation and performance with microscopic detail.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "VR headsets automatically capture 19 degrees of freedom (head and hand movements) at 90 times per second, creating the \"largest data set in the history of human nonverbal behavior.\"",
+        "This data allows researchers to measure concepts like \"non-verbal synchrony\"—the correlation of body movements between people—which is a powerful predictor of group success.",
+        "By analyzing the structure of turn-taking, themes of conversation (via NLP), and even how people physically arrange themselves and modify their shared environment over time, researchers can build predictive models of how high-performing groups form.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When using VR for team collaboration, leverage the platform's ability to capture data on interaction patterns. Analyze this data to identify which teams are siloed and which are highly interconnected.",
+        "Use non-verbal synchrony as a KPI for team health. Are team members \"in sync\" with each other, or are their interaction patterns chaotic and disconnected?",
+        "Use AI to analyze the non-verbal data from your VR meetings to provide feedback to your teams on how to improve their collaboration and communication dynamics.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const innovationHealthcareOperationsCards: BattleCardProps[] = [
+  {
+    title: "Design Thinking for Problem Discovery",
+    titleEmoji: "🔍",
+    what: {
+      point: "Design thinking is a structured approach to understanding customer problems through direct interaction, observation, and iterative experimentation before committing to solutions.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Andy Ratcliffe at Wealthfront discovered through 40 customer interviews that millennials wanted holistic wealth management solutions, not access to professional traders - this insight only came from talking to real customers, not internal assumptions",
+        "Microsoft's Databox team identified that enterprise customers in remote locations (oil rigs, banks) needed physical data transfer solutions because they lacked network connectivity - a need discovered through customer interaction",
+        "The process prevents costly mistakes by validating assumptions early, as shown when Wealthfront had already burned $10 million on a product nobody wanted",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Conduct at least 30-40 structured customer interviews focusing on understanding their actual behaviors and pain points, not what they say they want",
+        "Create paper-based or minimal digital MVPs to test core concepts with 5-10 potential customers before any significant development",
+        "Document all customer interactions in a shared wiki or repository that your entire team can access to build collective understanding",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Evidence-Based Pivot Decision Making",
+    titleEmoji: "📊",
+    what: {
+      point: "Pivoting requires building a culture of transparency and data-driven decision making where engineers and teams buy into change through concrete evidence rather than top-down mandates.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Wealthfront's engineers (two-thirds stayed) only agreed to the pivot after seeing actual customer interaction recordings and data in their shared wiki - engineers need data to make decisions",
+        "Salesforce's Tableau pivot was driven by hard data: growth dropped from 40% during COVID to minus 1% post-COVID, with zero new logo acquisition",
+        "Microsoft's pivot to cloud was validated through competitor analysis (AWS precedent) and customer feedback about on-premises limitations",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Create a transparent data repository where all customer feedback, usage metrics, and market analysis are accessible to the entire team",
+        "Implement rapid testing cycles (2-4 weeks) where you build, measure, and learn from actual customer behavior, not assumptions",
+        "Establish clear metrics for pivot decisions (e.g., customer acquisition rate, revenue growth) and share them openly with the team",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Precedent Thinking for Innovation",
+    titleEmoji: "🧩",
+    what: {
+      point: "Precedent thinking involves identifying successful solutions from other industries or competitors and recombining them to solve your specific problem.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Ford revolutionized car manufacturing by combining slaughterhouse disassembly lines, quick-drying paint technology, Procter & Gamble's profit sharing, and Singer's dealer networks",
+        "Microsoft successfully used AWS's model as a precedent for developing competitive cloud storage solutions like Databox",
+        "This approach reduces risk by building on proven concepts rather than creating entirely new solutions from scratch",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map your core problem clearly (e.g., \"make cars affordable\" or \"help customers without connectivity get data to the cloud\")",
+        "Research 3-5 analogous solutions from different industries that solve similar underlying problems",
+        "Create a synthesis document showing how combining these precedents could create a unique solution for your specific context",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Agile Learning Cycles for Pivots",
+    titleEmoji: "🔄",
+    what: {
+      point: "Implement short, iterative cycles of building, testing, and learning that allow teams to validate pivot decisions with real market feedback before full commitment.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Wealthfront's team went through multiple digital MVP iterations in just 3 months, leading to more customers than they could handle",
+        "Salesforce tested Tableau Pulse as a free Instagram-like experience, gaining 2,000 enterprise customers in 3 months before committing to the full pivot",
+        "These cycles prevent the \"all-or-nothing\" risk of traditional pivots by allowing incremental validation",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Design 2-week sprints where each cycle produces a testable change to your product or service",
+        "Define specific learning goals for each sprint (e.g., \"Will customers pay for this feature?\" or \"Does this reduce friction in onboarding?\")",
+        "Hold weekly data reviews where the entire team examines customer behavior metrics and decides on the next iteration",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Organizational Architecture for Innovation",
+    titleEmoji: "🏗️",
+    what: {
+      point: "Successful pivots require aligning four elements: people (team composition), architecture (incentives and structure), routines (processes), and culture to enable change.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Wealthfront succeeded by offering equity retention for believers and generous severance for skeptics, ensuring only committed team members stayed",
+        "Microsoft's embedded innovation approach (keeping pivot teams within business units rather than as external consultants) proved more effective for driving real change",
+        "Salesforce created two separate teams - one maintaining the $2 billion legacy Tableau business while another built the new Pulse product",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Design incentive structures that reward innovation risk-taking while providing safety nets for failure (like Wealthfront's severance packages)",
+        "Embed innovation teams directly within business units rather than creating separate innovation labs",
+        "Create clear decision rights about resource allocation between maintaining existing business and investing in new directions",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Customer-Centric Operating Model Changes",
+    titleEmoji: "🎯",
+    what: {
+      point: "Pivots require not just business model changes but fundamental shifts in operating models, including how you build, deliver, and support your product.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Microsoft's StorSimple to Databox pivot required shifting from software-centric operations to managing a global fleet of physical devices like a \"rental car business\"",
+        "Wealthfront had to completely abandon their professional trader matching system for automated investing algorithms",
+        "The operating model changes often determine whether a pivot succeeds or fails in execution",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map your current operating model across key dimensions: product development, delivery, customer support, and partnerships",
+        "Identify which elements must change to support your new business model (e.g., from one-time sales to subscription management)",
+        "Build new operational capabilities through a combination of hiring, training existing staff, and strategic partnerships",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Market Disruption Response Strategies",
+    titleEmoji: "⚡",
+    what: {
+      point: "When facing market disruption or stagnation, companies must quickly identify whether to compete directly, find new customer segments, or fundamentally reimagine their value proposition.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Tableau's growth collapsed when Microsoft released free Power BI, forcing them to pivot from selling to analysts (who were being laid off) to everyday business users",
+        "The construction industry example showed willingness to pay for integrated, industry-specific solutions rather than generic analytics tools",
+        "Waiting too long to respond to disruption can be fatal - Wealthfront only had $1.5 million left when they pivoted",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Monitor competitor moves and market shifts weekly, looking for early signals of disruption",
+        "When disruption appears, immediately conduct customer interviews to understand changing needs and willingness to pay",
+        "Test 2-3 different response strategies simultaneously (like Microsoft running multiple experiments) rather than betting everything on one approach",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const restaurantDeliveryServiceCards: BattleCardProps[] = [
+  {
+    title: "Precedent Thinking for Breakthrough Innovation",
+    titleEmoji: "🔄",
+    what: {
+      point: "Innovation happens by creatively combining existing precedents from different industries or contexts to solve new problems in non-consensus ways.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "DoorDash succeeded by combining Domino's delivery system + Uber's driver network + FedEx routing optimization, creating a $50+ billion company from precedent synthesis",
+        "Tesla revolutionized automotive by merging Milan coffee shop experience (luxury/artisanal) with McDonald's operational excellence (scalable/consistent), demonstrating how contradictory precedents create competitive advantage",
+        "Every breakthrough innovation follows this pattern - Ford combined internal combustion engines with assembly line manufacturing, iPod merged hard drive technology + iTunes software + legal Napster concept",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map your core challenge against 3-5 seemingly unrelated industries that have solved similar problems differently",
+        "Identify the \"essential elements\" from each precedent rather than copying entire models - extract principles, not processes",
+        "Test precedent combinations through rapid prototyping before building full solutions",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The DICE Framework for Innovation Execution",
+    titleEmoji: "🎲",
+    what: {
+      point: "Every successful innovation follows four phases: Define (problem/customer), Ideate (solution concepts), Create (first instance), Experiment (test and iterate).",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "DoorDash founders went from 250 orders in one weekend to market leadership by systematically moving through all four phases - defining restaurant delivery problem, ideating Uber-like driver model, creating MVP with phone orders, experimenting with 3-deliveries-per-hour economics",
+        "Tesla's roadmap from Roadster to Model 3 wasn't pivoting but planned progression through DICE phases - each model was an experiment building toward mass market accessibility",
+        "The framework prevents innovation chaos by providing structure while allowing non-linear movement between phases based on learning",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Start each innovation initiative by explicitly identifying which DICE phase you're in and what success metrics define completion",
+        "Map your current innovation tools to phases - use design thinking for Define/Ideate, lean startup for Create/Experiment, precedent thinking for Define/Ideate",
+        "Build phase-specific teams and resources rather than using same approach across all innovation stages",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Non-Consensus Positioning for Market Creation",
+    titleEmoji: "🎯",
+    what: {
+      point: "Breakthrough opportunities emerge when you develop insights that are non-consensus yet proven right, rather than following conventional wisdom.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Starbucks combined contradictory precedents (Milan artisanal coffee experience + McDonald's standardization) that seemed impossible to reconcile, creating the $100+ billion third-place market category",
+        "Tesla made electric vehicles desirable by rejecting the Prius precedent (utilitarian, boring) and instead combining Lotus sports car performance with Apple software integration",
+        "Non-consensus thinking creates defensible market positions because competitors dismiss ideas that seem contradictory or impossible",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Test your innovation hypothesis against industry conventional wisdom - if everyone agrees it makes sense, you're likely in consensus territory",
+        "Actively seek precedents that appear contradictory to your core idea, then identify ways to synthesize their essential elements",
+        "Validate non-consensus positioning through small experiments before major resource commitments",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Challenge Decomposition for Complex Innovation",
+    titleEmoji: "🧩",
+    what: {
+      point: "Break down overwhelming innovation challenges into specific sub-challenges that can be solved with targeted precedents and experiments.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Tesla's \"make EVs accessible to mass market\" broke into: make them cool (Lotus sports car precedent), high performance batteries (Panasonic partnership), eliminate dealer network (Apple store + software service model), charging infrastructure (open source precedent)",
+        "Starbucks decomposed \"compelling coffee experience\" into: good quality beans (original Starbucks precedent), scalable processes (McDonald's), takeout option (fast food), community space (The Great Good Place book concept)",
+        "Each sub-challenge allows focused experimentation and precedent research rather than trying to solve everything simultaneously",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Write your core challenge as a single sentence, then ask \"what needs to happen for this to work?\" until you have 5-7 specific sub-challenges",
+        "Assign different team members to research precedents for different sub-challenges rather than having everyone work on the same piece",
+        "Validate that solving all sub-challenges actually addresses the core challenge before proceeding with implementation",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "MVP Development Through Resource Leverage",
+    titleEmoji: "🚀",
+    what: {
+      point: "Build minimum viable products by repurposing existing resources and infrastructure rather than creating everything from scratch.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "DoorDash started with taking photos of restaurant menus, posting them online with a phone number - no app, no technology, just testing core demand with existing resources",
+        "Tesla's first prototype used a Lotus Roadster chassis with internal combustion engine removed and custom battery/motor installed, proving electric performance without building entire car from zero",
+        "Walmart's grocery pickup started with one store manager experimenting with associate processes, not massive technology buildout",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify the one core feature that defines your innovation and find existing products/services you can modify to test it",
+        "Start experiments with manual processes and human coordination before building automated systems",
+        "Use your MVP results to justify investment in custom-built solutions only after proving core demand",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Competitor Learning Through Direct Experience",
+    titleEmoji: "🕵️",
+    what: {
+      point: "Gain competitive intelligence by directly participating in competitor operations as employee or customer rather than just observing from outside.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "DoorDash founders worked as Domino's delivery drivers for a month and FedEx drivers for another month, learning operational details impossible to discover through external research",
+        "This inside knowledge revealed Domino's demand variability problems (sometimes too much demand requiring free pizzas, sometimes idle drivers) and FedEx routing optimization techniques",
+        "Direct experience provides tactical implementation knowledge that transforms from \"what they do\" to \"how they actually do it\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify 2-3 key competitors or precedent companies and spend 30-90 days as customer, employee, or partner to understand their operations",
+        "Focus on operational details and pain points rather than just strategic positioning during your competitive research",
+        "Document specific processes, tools, and decision-making frameworks rather than general observations",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Strategic Evolution vs. Pivoting",
+    titleEmoji: "📈",
+    what: {
+      point: "Distinguish between planned strategic evolution (expanding market reach through deliberate phases) and true pivoting (changing fundamental business model due to lack of traction).",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Tesla's progression from Roadster (100K+) to Model S (70K) to Model 3 ($35K) was planned strategy to expand market reach, not pivoting due to failure",
+        "DoorDash's expansion from restaurant delivery to general last-mile delivery represents strategic evolution building on core competency",
+        "Misunderstanding evolution vs. pivoting leads to abandoning successful strategies too early or sticking with failing models too long",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Define your long-term strategic vision upfront, then plan 3-5 phases of market expansion or product development to reach that vision",
+        "Set specific criteria for when to pivot (market validation failure) vs. when to evolve to next phase (current phase success + growth opportunity)",
+        "Communicate evolution plans to investors and team to maintain alignment and prevent confusion about strategic direction",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Systematic Experimentation for Scale",
+    titleEmoji: "🔬",
+    what: {
+      point: "Create repeatable systems for testing innovations across multiple locations or customer segments before full deployment.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Walmart designated entire Dallas region as innovation hub, testing new concepts in 1 store, then 5, then 10, then 100 stores before national rollout",
+        "This systematic approach prevented costly failures while building organizational capability for continuous innovation",
+        "Companies without experimentation systems either move too slowly (over-analyzing) or too quickly (expensive failures)",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Establish dedicated geographic regions or customer segments as permanent \"test labs\" for new innovations",
+        "Create standardized experimentation protocols: success metrics, timeline, scaling thresholds, and go/no-go criteria",
+        "Build feedback loops between test locations and central innovation teams to capture learning and iterate rapidly",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Cultural Transformation for Innovation Adoption",
+    titleEmoji: "🔄",
+    what: {
+      point: "Innovation success requires changing organizational culture and incentive systems, not just introducing new processes or technologies.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Walmart's grocery pickup experiment failed for six months because store manager had no incentive to make it work - only succeeded after changing compensation structure",
+        "The company inverted traditional hierarchy (customer at top, CEO at bottom) and created feedback systems where associate input drives innovation decisions",
+        "Cultural misalignment kills more innovations than technical or market failures",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Align individual performance metrics and compensation with innovation success rather than just operational efficiency",
+        "Create visible feedback loops where employee suggestions lead to implemented changes and recognition",
+        "Restructure decision-making authority to give front-line employees power to experiment and adapt processes locally",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Global Precedent Research for Local Innovation",
+    titleEmoji: "🌍",
+    what: {
+      point: "Source innovation precedents from international markets where similar challenges have been solved, then adapt solutions to local context.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Walmart's grocery pickup model came from Asda (UK subsidiary) competing with Tesco's online delivery - successful international precedent adapted to US market",
+        "Chris Nicolas brought UK grocery pickup expertise to US but had to modify equipment (larger milk cartons required different shopping carts) and processes for American context",
+        "International precedents often provide 2-3 year head start on trends and solutions",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Research how your innovation challenge has been addressed in 3-5 different international markets with different constraints",
+        "Identify the core principles that work across markets vs. specific implementations that need local adaptation",
+        "Bring in executives or consultants with direct experience in international precedent markets rather than just studying from distance",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const creativityFrameworkCards: BattleCardProps[] = [
+  {
+    title: "The Five-Stage Creativity Framework",
+    titleEmoji: "🎨",
+    what: {
+      point: "Creativity requires five distinct stages with incompatible mindsets: problem definition (abstract), input gathering (open), idea generation (associative), idea selection (practical), and implementation (committed).",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Most people think creativity is just \"generating ideas\" but effective creative output requires switching between contradictory mental modes - being open during input gathering but ruthlessly practical during selection",
+        "Henry Ford's apocryphal quote \"If I asked customers what they wanted, they'd say a faster horse\" demonstrates how wrong problem definition kills creative potential before it starts",
+        "Research shows that bringing the wrong mindset to any stage dramatically reduces effectiveness - trying to judge ideas while generating them leads to creative paralysis",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Map your current creative projects to these five stages and identify which stage you're actually in rather than assuming you're always \"being creative\"",
+        "Assign different team members to different stages based on their natural strengths rather than expecting everyone to excel at all phases",
+        "Create explicit transition points between stages with different physical spaces, time blocks, and evaluation criteria for each phase",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Five Whys Problem Abstraction Technique",
+    titleEmoji: "❓",
+    what: {
+      point: "Ask \"why\" five times to move from concrete problem statements to abstract functional needs, exponentially expanding your solution space.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "NASA spent $58 million developing a space pen when the real problem was \"recording information in space\" - pencils, voice recorders, tablets, and multiple other solutions existed in the broader problem space",
+        "Moving from \"I need to shorten my commute\" to \"I need to be a better parent\" opens up universe of solutions beyond transportation improvements",
+        "When you define problems in solution space (\"faster horse\") rather than problem space (\"transportation from A to B\"), you artificially constrain possible innovations",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Take your current biggest business challenge and literally ask \"why is this important?\" five consecutive times, writing down each answer",
+        "Stop asking \"how can we do X better?\" and start asking \"why do we need X in the first place?\" to identify the underlying function",
+        "Train your team to think in functions (what job needs to be done) rather than features (how we currently do it) when approaching any business problem",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Cognitive Closure and Confirmation Bias in Information Gathering",
+    titleEmoji: "🧠",
+    what: {
+      point: "Humans are \"cognitive misers\" who categorize information instantly and test hypotheses only in confirmatory ways, missing creative inputs that are right in front of them.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In the \"2, 4, 6\" sequence exercise, virtually everyone assumes they know the pattern (adding by 2) and only tests confirming sequences like \"8, 10, 12\" rather than disconfirming tests like \"3, 2, 1\"",
+        "The card trick and gorilla videos demonstrate that when focused on one goal (figure out the trick), we become completely oblivious to environmental changes that could spark new ideas",
+        "Schemata (mental categories) cause us to write off observations instantly rather than investigating them with curiosity - the opposite of the input-gathering mindset creativity requires",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When researching market opportunities, deliberately seek disconfirming evidence by asking \"what would prove this assumption wrong?\" rather than just looking for validation",
+        "Schedule \"wandering time\" in your calendar where you consume information completely outside your industry or expertise area",
+        "Practice disconfirmatory hypothesis testing by actively seeking examples of when your business assumptions fail rather than just collecting success stories",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Serendipity and Willingness to Wander",
+    titleEmoji: "🌟",
+    what: {
+      point: "Breakthrough innovations often emerge from \"accidental\" discoveries when people stay curious about irritations or deviations rather than dismissing them.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Velcro was invented because Georges Mastro got curious about burdock seeds stuck to his dog's fur instead of just seeing it as an annoyance to remove",
+        "Alexander Fleming discovered penicillin by investigating why one bacterial culture wasn't growing rather than discarding the \"failed\" experiment and starting over",
+        "Keith Richards described how everything became music once Rolling Stones achieved success - \"get off of my cloud\" from party conversation became a hit song because he remained open to unexpected inputs",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When your team encounters \"failures\" or unexpected results, mandate a 10-minute curiosity session asking \"why did this happen?\" before moving on to fixes",
+        "Create formal processes for capturing and investigating anomalies, irritations, or unexpected user behaviors rather than immediately trying to prevent them",
+        "Implement \"pivot opportunities\" in project planning where you deliberately pause to ask if discovered side-effects are more interesting than your original goal",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Separating Divergent and Convergent Thinking",
+    titleEmoji: "🔀",
+    what: {
+      point: "You cannot generate ideas and judge ideas simultaneously - these require opposite mental states and attempting both creates creative paralysis.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Su Qi Huang and Melanie Brooks' research showed people told to \"be creative\" generated fewer novel ideas than people just told to \"generate ideas\" because self-judgment interfered with association",
+        "Aaron Copland noted that inspiration is \"the antithesis of self-consciousness\" - when you focus inward on evaluation, you lose ability to make external connections",
+        "Alan Watts observed \"you can't be spontaneous within reason\" - the mental effort and tension people think creativity requires actually makes it worse",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Establish \"no judgment zones\" during brainstorming where criticism, evaluation, or quality assessment is explicitly forbidden until idea generation is complete",
+        "Use time separation - dedicate specific blocks for pure idea generation, then separate blocks for evaluation, never mixing the two activities",
+        "Train managers to ask \"are we generating or evaluating right now?\" when teams get stuck, and redirect focus to single mode rather than attempting both",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Persistence Principle in Idea Generation",
+    titleEmoji: "⚡",
+    what: {
+      point: "People drastically underestimate how many more ideas they can generate because perceived difficulty is not predictive of remaining creative capacity.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In coffee cup exercise, most people generated significantly more ideas in the second three-minute round than they predicted, despite feeling \"exhausted\" after the first round",
+        "Unlike physical tasks (bicep curls) where fatigue predicts capacity, creative idea flow is non-linear - you hit blank spots then suddenly connect to clusters of related concepts",
+        "Albert Einstein said \"I'm not that smart, it's just that I stay with problems longer\" and John Cleese attributed Monty Python success to continuing ideation when others wanted to settle for first decent option",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When your team says \"we're out of ideas,\" mandate one more equal time period of idea generation before moving to selection phase",
+        "Set quantity targets (50 ideas minimum) rather than quality targets during brainstorming to push past premature closure",
+        "Create decision deadlines that force extended thinking - if you need to decide by Monday but have first acceptable solution Thursday, wait until Monday to capture weekend insights",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Constraints as Creativity Enhancers",
+    titleEmoji: "🎯",
+    what: {
+      point: "Artificial limitations paradoxically increase creative output quality and participant satisfaction compared to completely open-ended creative tasks.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Drawing exercise with pre-drawn squiggles produced \"night and day\" quality improvements compared to blank page drawings - constraints provide starting points that spark associations",
+        "Creative professionals from composers to poets deliberately impose artificial constraints because limitations force novel problem-solving approaches",
+        "Research shows people both enjoy constrained creative tasks more and produce higher-quality output as rated by experts in the field",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Instead of asking \"how can we improve our product?\" give specific constraints like \"how can we improve our product using only features that existed 10 years ago?\"",
+        "Create artificial limitations around resources, time, or tools when teams report being \"stuck\" on open-ended creative challenges",
+        "Use random input constraints - select arbitrary objects, words, or concepts and require incorporating them into your creative solution",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Maker vs. Manager Scheduling for Creative Teams",
+    titleEmoji: "⏰",
+    what: {
+      point: "Creative work requires uninterrupted long-form time blocks, while management work operates effectively in short meeting-based intervals.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Manager schedules (30-minute back-to-back meetings) optimize for information processing and decision-making but destroy creative flow states",
+        "Creative projects need extended periods to get into problems deeply enough for breakthrough thinking - half-hour blocks allow no time for real creative work",
+        "Modern workplaces are \"designed to stifle creativity to the maximum possible extent\" through constant interruption and high closure pressure",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Block 3-4 hour uninterrupted periods for creative team members and protect these blocks from all meeting requests or administrative tasks",
+        "Separate your creative contributors from your managers in terms of scheduling expectations - don't impose management calendar structures on makers",
+        "Create \"creative zones\" in your organization where different communication and availability norms apply during designated creative work periods",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Threat Mitigation for Creative Confidence",
+    titleEmoji: "🛡️",
+    what: {
+      point: "Creativity threatens three fundamental human needs (competence, autonomy, relatedness), causing most people to underestimate their creative abilities compared to other skills.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "While 85% of people believe they're above-average drivers, only 50% believe they're above-average in creativity - we're overconfident about everything except creative ability",
+        "Creative people can't explain how they generate ideas (\"Hotel California just filled out on the page,\" \"DNA structure occurred to me in a dream\") creating autonomy anxiety",
+        "Fear of being a \"laughingstock\" for bad ideas threatens relatedness needs, while inability to guarantee creative success threatens competence needs",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Normalize creative uncertainty by sharing stories of famous \"failures\" and emphasizing that even prolific creators feel like \"they can't do it again\" after each success",
+        "Create psychological safety for creative risk-taking by celebrating intelligent failures and learning rather than only rewarding successful outcomes",
+        "Establish team creative norms that frame ideas as \"building blocks\" rather than final products to reduce individual performance anxiety",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Functions vs. Features Problem Framing",
+    titleEmoji: "⚙️",
+    what: {
+      point: "Define problems by their underlying function (job to be done) rather than current solution features to avoid artificially constraining innovation possibilities.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Horse function is \"transportation from A to B\" while horse feature is \"running at horse speed\" - defining by function enabled automobile invention while feature focus only optimizes current solution",
+        "Space pen function is \"recording information\" while space pen feature is \"writing in zero gravity\" - function framing reveals multiple solution paths (pencils, voice recorders, tablets)",
+        "When you presuppose solutions in problem definitions, you create \"solution space of one\" instead of exploring the full range of functional alternatives",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Rewrite every problem statement by removing solution assumptions - change \"how do we make our app faster?\" to \"how do users accomplish their goals more efficiently?\"",
+        "Challenge feature-focused requests by asking \"what job is this feature supposed to do?\" until you reach the underlying functional need",
+        "Test problem definitions by asking whether they would exclude known good solutions - if \"faster horse\" excludes automobiles, the problem is mis-framed",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const warmthVsColdNegotiationCards: BattleCardProps[] = [
+  {
+    title: "The Primacy of Warmth in Human Perception",
+    titleEmoji: "🔥",
+    what: {
+      point: "Warmth (perceived intentions and trustworthiness) is the first and most influential dimension people judge in others, carrying greater weight than competence in behavioral responses.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Research demonstrates that when meeting someone new, humans make two critical assessments: \"What are this person's intentions toward me?\" (warmth dimension) and \"Are they able to affect those intentions?\" (competence dimension), with warmth being perceived first and weighted more heavily.",
+        "This framework emerged from bottom-up data reduction techniques like principal components analysis, where people rated individuals across characteristics (intelligence, extroversion, kindness) and consistently revealed these two primary dimensions.",
+        "Despite executives' obsession with status and power, warmth encompasses multiple interconnected traits (friendly, helpful, sincere, trustworthy, moral) that fundamentally drive how others respond to you.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Recognize that demonstrating warmth creates the foundation for all other influence attempts - prioritize signaling benevolent intentions before showcasing competence.",
+        "Consciously assess each key interaction to determine whether warmth or coldness serves your objectives (client relationships require warmth, tough negotiations may require coldness).",
+        "Understand that the campfire scenario applies to business: people instinctively assess your intentions before your capabilities, so lead with signals of trustworthiness.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Genuine Liking as the Master Key to Warmth",
+    titleEmoji: "💝",
+    what: {
+      point: "Summoning authentic appreciation for another person automatically triggers reciprocal liking and naturally produces warm body language without conscious effort.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The \"reciprocity of liking\" principle demonstrates that if you genuinely like someone, they will like you back, with this effect being even stronger for naturally \"prickly\" people who rarely show appreciation.",
+        "Unlike trained actors who can consciously control facial expressions, most executives struggle to maintain multiple warm behaviors simultaneously, but genuine liking automatically activates the right physical signals.",
+        "This approach is more efficient than mantras because it's a one-step mental shift: thinking \"I can't wait to learn from you\" or \"I'm so excited to meet you\" naturally produces the desired warmth behaviors.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before entering any important interaction, deliberately identify what you genuinely appreciate about the person or what you're excited to learn from them.",
+        "For unknown individuals, cultivate anticipatory enthusiasm by focusing on potential insights, shared interests, or opportunities for mutual benefit.",
+        "Replace forced behavioral modifications with authentic internal shifts - your body will naturally reflect genuine positive feelings without conscious management.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Science of Duchenne Smiles and Facial Warmth",
+    titleEmoji: "😊",
+    what: {
+      point: "Authentic smiles that activate both zygomatic muscles (mouth corners) and orbicularis oculi muscles (around eyes) are easily distinguished from fake smiles and dramatically increase perceived warmth.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Alexander Todorov's research using computer-generated faces and domed camera arrays revealed that smiling and raised eyebrows are the strongest facial correlates of perceived trustworthiness and friendliness, with over 90% of people distinguishing between authentic and fake smiles.",
+        "Guillaume Duchenne's physiological studies identified that genuine smiles activate orbicularis oculi muscles around the eyes (creating \"crow's feet\"), which happy people develop more of over time due to frequent genuine expression.",
+        "Mirror neurons in the brain promote automatic mimicry, so when you smile authentically, others are neurologically compelled to smile back, creating instant mutual positive feelings before any words are exchanged.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Practice deliberate entry into rooms and meetings by pausing to flash a genuine smile, combining this with your internal appreciation for the person you're meeting.",
+        "Train yourself to activate eye muscles during smiling (though this is difficult without practice), or more simply, focus on genuine liking which automatically produces Duchenne smiles.",
+        "Leverage the automatic nature of mirror neurons by initiating with authentic warmth, knowing that others will unconsciously reciprocate your positive emotional state.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Physical Warmth Signals: The Complete Body Language Arsenal",
+    titleEmoji: "🤝",
+    what: {
+      point: "Specific physical behaviors including open postures, strategic eye contact, physical orientation, and mirroring create powerful warmth perceptions when combined with genuine internal states.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Both warmth and status signals share common elements of comfort and ease - anxiety or irritability lowers both perceived warmth and competence, while relaxed confidence enhances both dimensions.",
+        "Research shows that people naturally orient physically toward those they like (turning toward them, crossing legs in their direction), lean forward when interested, and adopt similar postures when interactions are going well, as demonstrated in Tanya Chartran's lab meeting photo where everyone unconsciously adopted identical postures.",
+        "Eye contact follows a precise pattern: up to 4 seconds signals interest and warmth, while more than 4 seconds creates discomfort requiring either conflict or intimacy resolution.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Maintain open postures (uncrossed arms, visible hands) and orient your body toward people you're engaging, using physical positioning to signal psychological availability.",
+        "Practice calibrated eye contact by maintaining 3-4 second intervals before naturally looking away, avoiding both the coldness of no eye contact and the discomfort of staring.",
+        "Allow natural mirroring to occur by staying relaxed and observing whether you and your conversation partner are adopting similar postures as a sign of successful rapport building.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Mastering Receptiveness: Beyond Surface-Level Listening",
+    titleEmoji: "👂",
+    what: {
+      point: "True receptiveness requires demonstrating understanding of someone's perspective and emotions, not just comprehending their words, through validation and authentic care for their experience.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The distinction between hearing words and understanding meaning is illustrated by couples' fights where one says \"you're not listening\" and the other responds with word-for-word repetition - true listening means grasping where someone is coming from and why they feel that way.",
+        "Receptiveness comprises four elements: listening (with physical signals like nodding, leaning in, and back-channel responses like \"mm-hm\"), understanding their perspective, validation (confirming their reaction is reasonable), and demonstrating genuine care for their wellbeing.",
+        "Most communication (beyond simple information transfer like \"report by Friday\") is designed to elicit emotional responses, making the quality of your emotional reciprocity crucial for perceived warmth and connection.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Use physical listening signals (nodding, leaning forward) and verbal back-channel responses (\"uh-huh,\" \"yeah\") to actively demonstrate engagement during conversations.",
+        "Focus on understanding the \"why\" behind someone's statements - not just what happened, but what made it frustrating, exciting, or meaningful to them personally.",
+        "Provide validating responses that acknowledge their emotional reaction as reasonable, even if you wouldn't personally respond the same way to their situation.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Emotional Calibration: The Goldilocks Principle of Response Intensity",
+    titleEmoji: "⚖️",
+    what: {
+      point: "Matching the appropriate emotional intensity level in your responses - neither too high nor too low - is critical for being perceived as genuine and empathetic rather than phony or uncaring.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The emotional Goldilocks exercise demonstrates that miscalibrated responses immediately feel wrong: responding \"oh cool\" to someone finding a $100 bill seems uncaring, while responding \"wow, that's amazing!\" seems phony and excessive.",
+        "People can rapidly improve their calibration accuracy within minutes of practice, and this skill dramatically affects how warm and authentic you're perceived across interactions.",
+        "Disappointment from receiving wrong-intensity responses is profound and immediate - getting too little enthusiasm for good news or excessive sympathy for minor setbacks damages connection and perceived warmth.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Practice the emotional Goldilocks technique by having someone share emotional statements and receiving feedback on whether your response intensity was \"just right,\" \"too high,\" or \"too low.\"",
+        "Pay systematic attention across multiple interactions to identify whether you consistently err toward too much or too little emotional intensity in your responses.",
+        "Recognize that each person's subjective experience determines the \"correct\" intensity level, requiring careful attention to their emotional cues and cultural background.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Cultural Intelligence in Emotional Expression",
+    titleEmoji: "🌍",
+    what: {
+      point: "Massive cultural and regional differences in emotional expressiveness create profound miscommunication risks that require conscious calibration for effective warmth signaling.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The professor's Iowa-to-California transition illustrates extreme regional differences: Midwestern \"fine\" means actually fine, while California \"fine\" signals serious problems requiring intervention, and California \"fantastic\" represents normal positive experience while Midwestern \"good\" indicates strong approval.",
+        "Geographically distributed executive teams frequently experience major conflicts where Americans perceive Scandinavians as disengaged and unexcited, while Scandinavians view Americans as wildly over-expressive and potentially disingenuous.",
+        "These differences aren't limited to international cultures but exist within the United States and individual organizations, where the \"ground zero for emotional expressiveness\" (California) requires dramatically different calibration than other regions.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Research and observe the emotional expressiveness norms of your team members' cultural backgrounds before important interactions, particularly with international or geographically distributed teams.",
+        "Consciously adjust your baseline emotional expressiveness to match your conversation partner's cultural expectations, even if it feels unnatural initially.",
+        "Recognize that people often feel more expressive internally than they appear externally, so deliberately amplify your expressiveness to match your internal emotional state, especially if you come from less expressive cultures.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Value-Based Influence Through Pet Peeve Analysis",
+    titleEmoji: "🎯",
+    what: {
+      point: "Understanding someone's core values through their emotional reactions (especially complaints and frustrations) enables powerful influence through intrinsic motivation alignment.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The pet peeve exercise reveals that people can accurately identify underlying values from just 1-2 minutes of listening to someone's frustrations, as demonstrated by the professor's planning example revealing his core value of communication rather than time management.",
+        "Shalom Schwartz's universal values research and the national parks study show that framing identical proposals using different value language (\"parks belong to all of us\" for liberals vs. \"national treasure\" and \"forefathers' vision\" for conservatives) dramatically changes support levels.",
+        "Values serve as lenses through which people interpret events, and understanding these lenses allows true empathy even when you don't share their specific concerns, plus enables task framing that triggers intrinsic rather than extrinsic motivation.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When someone complains or expresses frustration, listen for underlying values rather than surface-level content by asking yourself what deeper principle makes this situation problematic for them.",
+        "Frame your requests, proposals, and communications using language that resonates with the recipient's identified values rather than your own value system.",
+        "Create value-aligned task assignments or descriptions that help team members see how their work furthers their personal values, increasing intrinsic motivation and performance quality.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Strategic Questioning for Enhanced Connection",
+    titleEmoji: "❓",
+    what: {
+      point: "Asking genuine follow-up questions that encourage self-disclosure significantly increases perceived responsiveness and warmth by satisfying people's fundamental desire to talk about themselves.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "People inherently enjoy discussing themselves and appreciate those who encourage this natural tendency, making strategic questioning a reliable path to increased liking and perceived warmth.",
+        "The distinction between authentic follow-up questions (\"What was that like?\" \"How did that feel?\") and mere conversational tactics or subject-changing attempts is crucial - only genuine interest in elaboration increases warmth perception.",
+        "Follow-up statements that encourage continued sharing (\"That must have been scary,\" \"I bet you didn't know what to do\") achieve the same connection-building effect as questions while demonstrating empathy.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Replace surface-level questions with follow-up inquiries that invite emotional elaboration and personal reflection about their experiences.",
+        "Use empathetic statements that demonstrate understanding while encouraging further disclosure, showing both that you comprehend their situation and want to hear more.",
+        "When uncertain about someone's values or motivations, ask direct but open-ended clarifying questions like \"It sounds like you get frustrated when people aren't efficient - is that right?\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Strategic Power-Warmth Balance in Leadership",
+    titleEmoji: "⚖️",
+    what: {
+      point: "Effective leadership requires understanding that correlation between high power and reduced social sensitivity doesn't mean being an \"ass\" is required for success, and strategic status lowering can actually increase influence.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Sam's observation about CEO behavior creating organizational \"DNA\" is correct - leaders' communication styles become prescriptive norms that others emulate throughout the organization - but this represents a choice between descriptive (how people do behave) and prescriptive (how people should behave) norms.",
+        "Research shows that supportive, warm leadership produces better performance (the professor gets superior results from PhD students through supportive rather than harsh approaches), and people prefer working for competent, nice leaders over competent jerks.",
+        "Strategic status lowering can be more effective than status competition: letting others feel important and think ideas are theirs often achieves better outcomes than trying to \"out-status\" peers or subordinates.",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Consciously decide whether to establish organizational norms that prioritize warmth and collaboration versus cold efficiency, understanding that your behavior sets the standard for others.",
+        "Evaluate each influence situation to determine whether raising your status or strategically lowering it will better achieve your objectives, using warmth and deference when appropriate.",
+        "Document the performance differences between warm, supportive leadership approaches and cold, demanding approaches in your specific context to guide future behavioral choices.",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const compassionMeditationCards: BattleCardProps[] = [
+  {
+    title: "Centering as Executive Presence Reset",
+    titleEmoji: "🎯",
+    what: {
+      point: "Centering is the deliberate practice of pulling back scattered mental energy to inhabit your current role fully, transforming from fragmented to coherent leadership presence.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker demonstrates this by noting how he walked in thinking about \"partners in Mexico visiting family\" and \"helping with her daughter tonight,\" but centered to offer coherent teaching rather than scattered attention",
+        "Research shows three distinct meditation types (mindfulness, repetitive focus, and compassion) create different brain impacts, with centering being foundational to accessing these benefits",
+        "Physical centering requires \"relaxing these muscles in your core\" because \"otherwise you're not in your center, you're defending,\" directly impacting your effectiveness in any interaction",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Stop and consciously relax your core muscles and abdomen when entering any important meeting or conversation, breathing into your abdomen rather than maintaining defensive tension",
+        "Practice the \"I belong right here\" mindset by acknowledging that since you're already present, you might as well fully inhabit where you are rather than being mentally elsewhere",
+        "Implement a two-minute centering ritual before high-stakes interactions, putting down distractions and expanding your abdomen when inhaling to counteract anxiety's natural breathing restrictions",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Positive Inquiry as Leadership Intelligence",
+    titleEmoji: "🔍",
+    what: {
+      point: "Systematically investigating positive qualities in yourself, your team, and situations prevents anxiety-driven negative spirals while unlocking dormant human potential.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The transcript reveals that \"you cannot investigate positive qualities when anxious, because all you do then is investigate anxiety,\" creating a destructive feedback loop that limits access to actual capabilities",
+        "Positive questions like \"What are you proud of?\" \"What are you looking forward to?\" and \"How can I appreciate what I have?\" become \"dormant in you\" when you're \"anxious and hurried and distracted,\" limiting your humanity and effectiveness",
+        "Speaker B, a four-startup founder, demonstrates this by sharing excitement about upcoming opportunities and simple pleasures like \"good friends, great cup of [coffee]\" rather than dwelling on past failures",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Schedule weekly \"positive inventory\" sessions asking yourself specific questions: \"What am I proud of from this week?\" \"What's working well in my business?\" \"What gives me contentment?\" allowing each question to sit rather than rushing to answers",
+        "Train your team in positive inquiry by regularly asking open-ended questions about what's going well, what they're excited about, or what they appreciate, giving them space to contemplate rather than demanding immediate responses",
+        "Replace default problem-focused check-ins with balanced inquiries that include both challenges and positive developments, modeling the investigation of strengths alongside addressing weaknesses",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Strategic Speech as Conflict Prevention",
+    titleEmoji: "🗣️",
+    what: {
+      point: "Controlling your speech intelligently serves as a \"phenomenal conflict reducer\" that prevents unnecessary disagreements while maintaining effectiveness in difficult conversations.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker illustrates this with the Hawaii hotel example: instead of calling management angrily about a bathroom problem, saying \"Hey, I'm in Hawaii. It's gorgeous out. You have a nice hotel. Unfortunately, the bathroom doesn't work. What can we do about it?\" achieves the same outcome with less conflict",
+        "Research demonstrates that \"humans are designed to be negative\" - we naturally \"fly to Hawaii, get off the plane, go to the hotel, check in and complain because there's something wrong in our bathroom\" while ignoring the \"grand, remarkable thing\" of the entire experience",
+        "The practice works because \"when you reduce anxiety and you reduce distraction, your brain has more available to it\" for both focus and information processing, while \"distraction and hurry and worry generate fear\" that limits incoming information",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before addressing problems, explicitly acknowledge what's working well in the situation, following the Hawaii model of recognizing the broader positive context before stating the specific issue",
+        "Implement a \"pause and process\" protocol when someone says something triggering: center yourself and ask \"I just heard them say X. I want to rip their nose off. Maybe that's not the best strategy. Let me see if I still want to rip their nose off after centering\"",
+        "Practice reframing complaints as collaborative problem-solving by replacing accusatory language with partnership language, asking \"What can we do about it?\" rather than \"How dare you give me this problem?\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Compassion Meditation for Reduced Business Anxiety",
+    titleEmoji: "💝",
+    what: {
+      point: "The Stanford C Care compassion practice significantly reduces anxiety and increases pro-social behavior through the systematic affirmation that your needs are \"no more or less important than other people's.\"",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "C Care's research at Stanford, founded with a seed grant from the Dalai Lama 15 years ago, demonstrated that six weeks of compassion training increased helping behavior from 40% to 75% in controlled experiments with fake doctor waiting rooms and injured people",
+        "MRI research shows \"the part of the brain that activates to find other people a threat gets less activated when you practice mindfulness,\" making you \"not as easily scared or aroused by other people\"",
+        "The practice specifically \"reduces your anxiety, makes you more likely to strike up a conversation\" when entering rooms with strangers, and helps in threatening situations by remembering \"may I be happy, may they be happy\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Practice the core affirmation sequence daily: \"May I be happy. May those I love and cherish be happy. May those I have yet to meet be happy. May anyone that has hurt me intentionally or unintentionally be happy. May anyone that I have hurt intentionally or unintentionally be happy. May everyone everywhere be happy\"",
+        "Before difficult business conversations or negotiations, mentally repeat \"Just like me, everyone I know wants to be happy. Just like me, everyone I know wants to be loved. Just like me, everyone I know wants to be safe\" to reduce threat perception and improve information processing",
+        "Apply the practice to specific challenging relationships by thinking \"Just like me, [difficult team member/competitor/investor] wants to be happy, wants to be loved, wants to be safe\" to create \"a different atmosphere for the relationship\" without anyone knowing you're practicing",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Good Samaritan Urgency Trap",
+    titleEmoji: "⏰",
+    what: {
+      point: "Urgency and hurry systematically destroy compassion and effectiveness, as demonstrated by research showing less than half of ministers rushing to give sermons on helping others actually stopped to help someone in distress.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The famous Good Samaritan study revealed that ministers in training, despite preparing sermons on compassion, walked past a confederate researcher in distress when told to \"hurry up, hurry up\" to give their talks early",
+        "Additional studies showed helping behavior dropped dramatically based on tribal identity (soccer team colors), and in doctor waiting rooms where social proof suggested not helping, only 40% of people offered seats to someone with a cast",
+        "The pattern demonstrates that \"hurry and worry\" create fear states where \"your brain is busy protecting you, which limits information coming in,\" preventing optimal processing of situations requiring compassion or good judgment",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Build buffer time into your schedule specifically to prevent the urgency trap, recognizing that rushed decisions consistently lead to missing important human elements in business situations",
+        "When team members pressure you to rush important decisions, explicitly state that urgent timelines may cause you to miss crucial information, and negotiate for adequate processing time",
+        "Create \"compassion check\" protocols for high-pressure situations by asking \"Am I missing something important about the people involved because I'm feeling urgent?\" before proceeding with rushed choices",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Founder Identity Detachment Strategy",
+    titleEmoji: "🎭",
+    what: {
+      point: "Successful serial entrepreneurs practice emotional detachment from outcomes, recognizing that \"you are not defined by the success, you are not determined by the failure\" in the inherently luck-dependent startup environment.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Speaker B, who has \"built about four startups,\" describes the founder journey as \"always like a roller coaster\" and emphasizes taking \"strides away from the achievement\" while taking \"responsibility that I should guide the team the right way\"",
+        "The founder acknowledges that success involves \"some luck, some teamwork, a lot of good things, right place, right time, right market\" beyond individual control, making emotional attachment to outcomes counterproductive",
+        "When selling companies or closing them, the feeling is better described as \"relief\" rather than celebration - \"relief from a point of tension\" - indicating that emotional equilibrium comes from detachment rather than outcome dependence",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Regularly practice separating your identity from your company's performance by asking \"What can I control today?\" versus \"What outcomes am I hoping for?\" and focusing energy exclusively on controllable factors",
+        "Develop a \"relief metric\" alongside traditional success metrics, tracking when you feel relief from tension rather than just celebrating wins or mourning losses, using this as a guide for sustainable founder psychology",
+        "Build team guidance systems that emphasize process excellence over outcome dependence, taking responsibility for providing direction while acknowledging the role of market timing and external factors in results",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Threat-Detection Optimization for Leaders",
+    titleEmoji: "🛡️",
+    what: {
+      point: "Mindfulness training helps you \"use threat-detection capacity more skillfully\" rather than eliminating it, ensuring you can access essential protective instincts without being overwhelmed by them.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker emphasizes that \"threat-based parts of us are absolutely essential. You can't give that up, you don't want to give that up\" because knowing \"what danger lurks\" is critical for survival and business success",
+        "However, \"when anxiety or threat get high enough, you're not capable of using it skillfully,\" meaning threat detection becomes counterproductive when it overwhelms your processing capacity",
+        "The centering practice allows leaders to maintain access to threat awareness while not being dominated by it, similar to how the speaker centers before teaching to be effective rather than scattered",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Distinguish between useful threat information and overwhelming anxiety by regularly asking \"Is this threat signal giving me actionable information, or is it just creating noise?\" and responding accordingly",
+        "Practice threat calibration by consciously noting when your threat detection is activated, centering yourself, and then reassessing whether the threat level matches the actual situation",
+        "Develop threat-response protocols that include centering before reacting to perceived business threats, ensuring you can access both protective instincts and strategic thinking rather than being overwhelmed by either",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
+const huggyRaoScalingCards: BattleCardProps[] = [
+  {
+    title: "Signal vs Noise Executive Focus Protocol",
+    titleEmoji: "📡",
+    what: {
+      point: "Effective leaders sample signal, not noise, by ruthlessly protecting their attention from \"stupid emails\" and low-value interruptions that fragment their capacity to offer coherent leadership.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The speaker demonstrates immediate boundary-setting by threatening to \"stand in front of the person using a cell phone or iPad and gaze at them with adoration\" when people check devices during important sessions",
+        "Research shows that scattered attention creates fragmented leadership presence - the speaker notes being \"less scattered\" allows \"what I offer to be more coherent\" whether \"as a teacher, parent, person, friend, or someone standing in line waiting for food\"",
+        "Time poverty forces leaders into reactive mode where \"there's just a lot of people who want shit from me\" but effective leaders maintain the discipline that \"they can wait\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Implement a \"signal sampling\" policy where you only engage with communications that directly advance your core objectives, explicitly telling your team that non-essential requests \"can wait\"",
+        "Create physical and digital boundaries during high-value work by putting devices away and modeling the behavior you expect from others, just as the speaker refuses to tolerate device usage during critical sessions",
+        "Establish clear criteria for what constitutes \"signal\" versus \"noise\" in your specific role, and communicate these boundaries to your team so they can filter requests appropriately",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Scaling as Reinvention Mental Model",
+    titleEmoji: "🔄",
+    what: {
+      point: "Scaling isn't \"more of the same\" but complete process reinvention at each level, just as making ramen noodles for one person versus 1,000 people requires entirely different approaches.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Tuan, former CTO of Uber, worked at one company for four years but \"feels as though I work for 16 different companies\" because every quarter brought fundamental changes requiring new systems and processes",
+        "The cooking analogy reveals that \"making dosas for 100 people is completely different than making dosas for one person\" - the same principle applies to business operations at different scales",
+        "At 100,000 rides Uber was \"one kind of company,\" at 900,000 rides \"another kind of company,\" demonstrating that scale transitions demand complete operational overhauls",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Audit your current processes every quarter to identify which systems will break at 2x, 5x, and 10x your current scale, proactively redesigning rather than waiting for failure",
+        "Create \"scaling checkpoints\" at specific growth milestones where you mandate process reinvention rather than just adding resources to existing systems",
+        "Train your team to think \"reinvention\" not \"addition\" when approaching growth challenges, asking \"What would we build from scratch at this new scale?\" rather than \"How do we do more of what we're doing?\"",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Elephant vs Hippopotamus Leadership",
+    titleEmoji: "🐘",
+    what: {
+      point: "When leading through uncertainty, choose the elephant model (big ears, big trunk, big eyes) over the hippopotamus model (big mouth, small ears, small nose) to gather information before making decisions.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The hippopotamus model represents leaders who \"open your mouth and tell people what to do\" when they don't actually know enough, which is counterproductive during scaling phases",
+        "As referenced by Stanford colleague Frank Flynn, scaling companies require leaders who can listen and observe more than they speak, especially when navigating unfamiliar territory",
+        "The elephant model emphasizes gathering intelligence through multiple channels before acting, which becomes critical when \"you will be leading when you feel you don't know enough\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before making major scaling decisions, implement a \"listening tour\" where you gather input from at least three different organizational levels before forming conclusions",
+        "Create formal mechanisms for information gathering (big ears), hands-on investigation (big trunk), and direct observation (big eyes) rather than defaulting to directive communication",
+        "When facing unfamiliar scaling challenges, explicitly tell your team \"I'm in elephant mode\" to signal that you're gathering information rather than making immediate decisions",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Curiosity and Generosity as Scaling Muscles",
+    titleEmoji: "💪",
+    what: {
+      point: "The two essential muscles every company needs to scale are curiosity (\"looking around the corner, asking questions, disagreeing\") and generosity, because \"zero curiosity equals no innovation\" and \"zero generosity equals no scale.\"",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Cooking serves as a \"traffic junction where two roads meet\" - curiosity and generosity - demonstrating that \"if you're not curious, you'll never be a great chef\" and \"if you're not generous, what's the point of making food?\"",
+        "Companies fail to scale when leaders don't actively \"activate those muscles\" of curiosity and generosity, leading to stagnation and inability to inspire others to help with growth",
+        "The framework connects to the core scaling challenge: without curiosity, teams can't innovate solutions for new scale challenges, and without generosity, they can't build the collaborative relationships needed for execution",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Establish \"curiosity metrics\" by tracking how often your team asks probing questions, challenges assumptions, or proposes alternative approaches during planning sessions",
+        "Create \"generosity opportunities\" where team members can contribute to others' success without direct personal benefit, measuring and rewarding cross-functional helping behavior",
+        "Schedule regular \"muscle activation\" sessions where you explicitly practice curiosity by exploring unknown areas of your business and generosity by identifying ways to help other teams or stakeholders",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Felt Accountability Through Ownership + Obligation",
+    titleEmoji: "🎯",
+    what: {
+      point: "Excellent organizations create \"felt accountability\" where people do the right thing without supervision by balancing the feeling that \"I own the place\" with \"the place owns me.\"",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The job title experiment with 82 startups showed that teams where people chose titles like \"Guru of Cybersecurity\" and \"Chief Instigator\" outperformed control groups because choice creates both ownership and obligation to live up to the title",
+        "Plantronics gave business cards to 3,000 blue collar workers in Tijuana, transforming how they described their work from \"I work at Plantronics\" to taking out the card and saying \"I work in Plantronics, I'm in that section, that's what I'm responsible for\"",
+        "When workers show their business cards to 10 acquaintances, \"what happens to your mind? You become more committed\" through the psychological principle that public commitments increase accountability",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Allow team members to create their own role definitions and titles that reflect their biggest skills and contributions, creating ownership through choice rather than top-down assignment",
+        "Implement \"accountability amplifiers\" like business cards, public role announcements, or signature responsibilities that make people's commitments visible to their network",
+        "Create systems where employees can publicly claim ownership of specific outcomes or projects, increasing their felt obligation to deliver because their reputation is attached",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Self-Anonymity as Scaling Poison",
+    titleEmoji: "👤",
+    what: {
+      point: "Large companies suffer from \"self-anonymity\" where people feel invisible and give themselves \"the green light to do bad things,\" just like people wearing dark sunglasses cheat four times more than those wearing clear glasses.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The dark sunglasses experiment demonstrates that when people think they're invisible, they behave worse because they believe they can hide deception and avoid consequences",
+        "In large all-hands meetings, \"a lot of people may be feeling as though they're wearing dark sunglasses, which is why these meetings usually don't have much of an impact\"",
+        "Good people in large organizations unconsciously give themselves permission for poor behavior when they feel anonymous and unobserved",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Implement \"visibility systems\" that make individual contributions clear and trackable, similar to how the business card experiment counteracted felt anonymity",
+        "Structure large meetings to include small group discussions or individual input opportunities rather than passive listening that enables mental \"dark sunglasses\"",
+        "Create regular one-on-one or small team interactions that ensure every employee has face-to-face contact with leadership, preventing the psychological invisibility of large-scale operations",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Time Poverty as Performance Destroyer",
+    titleEmoji: "⏰",
+    what: {
+      point: "Time poverty causes people to \"devote more attention to looking good before the boss than doing the job\" and destroys the willpower needed to choose curious and generous versions of themselves.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Research on Bay Area startups revealed that increased linguistic emphasis on speed correlates with faster unicorn status but also significantly higher lawsuit probability two years later because \"people make mistakes\" and \"cut corners\" under time pressure",
+        "The chocolate cake experiment shows people given seven-digit numbers (high cognitive load) eat more cake than those given two-digit numbers because cognitive burden depletes willpower needed to resist temptation",
+        "Companies compound this by giving people \"seven things to remember or 14 or 21\" instead of preserving cognitive capacity for good decision-making",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Audit your team's cognitive load by counting how many active projects, systems, and priorities each person manages, then systematically reduce to preserve mental bandwidth for quality work",
+        "Replace speed-emphasis language with effectiveness-emphasis language in communications, focusing on \"doing the right things well\" rather than \"doing things fast\"",
+        "Create \"cognitive space\" for your team by eliminating unnecessary decisions, streamlining systems, and batching similar tasks to preserve willpower for high-value choices",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Addition Bias as Organizational Disease",
+    titleEmoji: "➕",
+    what: {
+      point: "Human beings suffer from \"addition bias\" where we \"love to add things\" and \"don't like to subtract,\" leading to organizational complexity that destroys performance and exhausts people.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Leidy Klaas at University of Virginia ran 20 experiments showing people always choose addition - preferring 15 LEGO blocks over 5 for building spaceships even though \"15 is lot more components, lot more interdependencies\" and \"5 is way simpler\"",
+        "When asked to reform a university, only 11% of suggestions involved subtraction while 89% involved addition, demonstrating the universal tendency to solve problems by adding rather than removing",
+        "\"Relentless addition destroys our willpower\" and once you've \"destroyed my willpower, can I choose to be curious and generous?\" - the answer is no because people become cognitively overwhelmed",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before approving any new initiative, mandate that teams identify what existing work will be eliminated to make room, requiring \"subtraction before addition\"",
+        "Implement quarterly \"subtraction audits\" where teams must identify and eliminate outdated processes, redundant meetings, or unnecessary tasks before discussing new projects",
+        "Train yourself and leadership team to ask \"What should we stop doing?\" before \"What should we start doing?\" in every planning session",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Extra Milers vs Pricks Framework",
+    titleEmoji: "⭐",
+    what: {
+      point: "High performers fall into two categories - \"pricks\" who deliver results but are \"high maintenance\" and constantly want raises/promotions, versus \"extra milers\" who improve others' performance around them.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Pricks represent a \"bimodal distribution\" of high performers who \"give you high performance but are extremely high maintenance\" and \"always want a raise, always want a promotion\"",
+        "Extra milers \"give you high performance, but they improve the performance of people around them,\" making them more valuable for organizational scaling",
+        "The key insight: \"Are you going to take your best people and spread them thinly like peanut butter on a slice of toast? Is that how you're going to get high performance? Of course not.\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Categorize your high performers into these two buckets during performance reviews, identifying who actually lifts others versus who demands constant attention",
+        "Concentrate your best initiatives and growth opportunities with extra milers rather than distributing them equally among all high performers",
+        "Protect extra milers from becoming over-extended by creating boundaries around their helping behavior and giving them \"the gift of time\" to focus on high-impact work",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Gift of Time Strategy",
+    titleEmoji: "🎁",
+    what: {
+      point: "Give your extra milers \"the gift of time\" by reducing interruptions and requests for help, because \"extra milers interrupt themselves to help other people\" leading to lower productivity and job search behavior.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Research shows extra milers who receive \"more than 15 to 20 requests to help per week begin to click on passive job advertisements\" because they're considering leaving due to overwhelm",
+        "The more interruptions extra milers receive, \"the lower their productivity and the greater their frustration\" even though they're your most valuable performers",
+        "When you give people gifts, \"they reciprocate\" with gifts \"ranging anywhere on average from 3 to $7\" for every dollar received, creating positive cycles",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Establish \"office hours\" for your extra milers (e.g., \"Monday, Wednesday, 1 to 2 PM\") so people can get help without constant interruptions throughout the week",
+        "Implement \"fixed time, variable scope\" policies where extra milers control what gets done within protected time blocks rather than being pulled in multiple directions",
+        "Create \"help request quotas\" where teams can only make a limited number of requests per week to extra milers, forcing them to prioritize and batch their needs",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Good Samaritan Urgency Paradox",
+    titleEmoji: "🚶",
+    what: {
+      point: "Urgency systematically destroys compassion and good judgment, as demonstrated by ministers rushing to give sermons on helping others who walked past people needing help.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The famous Good Samaritan study showed \"less than half\" of ministers preparing sermons on compassion actually stopped to help someone in distress when told to \"hurry up, hurry up\"",
+        "Ministers later rationalized their behavior saying \"of course I would have stopped, but I was busy, I was in a hurry\" demonstrating how urgency creates moral blind spots",
+        "This connects to business because urgent timelines cause people to miss crucial human elements and make poor decisions that create long-term problems",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Build buffer time into critical decisions and project timelines specifically to prevent urgency-induced poor judgment about people and relationships",
+        "When team members pressure you to rush important decisions, explicitly state that urgent timelines may cause you to miss crucial information about stakeholder impact",
+        "Create \"compassion checks\" in high-pressure situations by asking \"Am I missing something important about the people involved because I'm feeling urgent?\" before proceeding",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Melinda Ashton's Subtraction Campaign",
+    titleEmoji: "✂️",
+    what: {
+      point: "Hawaii Pacific's \"Let's Get Rid of Stupid Shit\" campaign identified 188 subtraction targets, reduced to 87 after spillover analysis, saving 1,700 nursing hours per month from eliminating one 24-second mouse click.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Electronic patient record systems contained processes that were \"poorly designed, unnecessary, or just plain stupid\" but persisted because no one systematically targeted them for elimination",
+        "The spillover analysis was crucial because \"simply because Nasir says we need to subtract this, you can't\" since \"Mary downstream or upstream might find the same thing very helpful and beneficial\"",
+        "One seemingly trivial change (24-second mouse click elimination) across \"lots of nurses, lots of patients, four hospitals\" generated massive time savings equivalent to multiple full-time employees",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Launch systematic \"stupid shit identification\" campaigns where frontline employees can flag processes that seem unnecessary or poorly designed",
+        "Conduct spillover analysis for every proposed subtraction by checking with upstream and downstream stakeholders before eliminating seemingly redundant work",
+        "Calculate the multiplicative effect of small time savings across your entire organization - even seconds saved per transaction can equal significant capacity when multiplied across users and frequency",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "AstraZeneca's 2 Million Hour Gift",
+    titleEmoji: "🏥",
+    what: {
+      point: "Pushkara Subramanian's team at AstraZeneca saved 2 million hours (equivalent to 1,148 full-time employees) by systematically reducing reviews, eliminating repeated mistakes, and empowering employees to identify inefficiencies.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "The goal \"was not to save 1,148 full-time employees' salaries\" but \"to save 2 million hours and give it back to the company to build capacity\" to \"serve 4 million more patients\" and \"run 400 early phase trials, 26 late phase trials\"",
+        "They avoided the failed approach of setting per-employee targets, instead going to R&D saying \"you got some reviews in each of these three phases, let's think about how we can shave reviews without violating any FDA rules\"",
+        "A security guard contributed by eliminating morning traffic jams, saying \"we all heard that you want to save AstraZeneca 2 million hours to serve 4 million more patients, I thought I would give you half an hour more every day\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Set organizational-level time-saving goals focused on capacity building rather than cost reduction, framing subtraction as investment in growth rather than expense cutting",
+        "Target systematic inefficiencies like repeated mistakes (AstraZeneca was \"hiring lousy sales reps, firing them, spending more time and money hiring lousy sales reps\") that create recurring time waste",
+        "Empower every employee level to contribute time-saving ideas by clearly communicating the organizational purpose behind efficiency efforts",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "The Ridiculous List Protocol",
+    titleEmoji: "📋",
+    what: {
+      point: "Dedicate 15 minutes of weekly executive meetings to a \"ridiculous list\" identifying \"crazy stupid things\" the company does, because \"the larger a company, the greater the probability\" of absurd inefficiencies.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "One CEO discovered engineers earning $180,000 were \"interviewing new hires\" instead of \"writing code,\" creating a double problem of lost productivity plus bad hiring decisions since \"interviewing is the worst way to recruit people\"",
+        "Companies develop ridiculous processes over time, like the Middle Eastern company requiring \"weekly highlights\" from every level where people had to \"be creative\" and essentially \"make up stories\" because positive news doesn't occur weekly",
+        "The higher executives are in organizations, \"the less likely you are to search\" for problems because \"powerful people don't search\" while \"people without power search\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Establish weekly 15-minute \"ridiculous list\" sessions in leadership meetings where you systematically identify one clearly wasteful practice to eliminate",
+        "Focus the ridiculous list on recurring activities that consume significant time but produce questionable value, like reports that \"90% are useless\" or meetings where \"half the people are not listening\"",
+        "Empower \"black sheep\" employees who \"nobody likes\" and \"think they're a pain in the ass\" to contribute to ridiculous list identification since they often see problems that leadership misses",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Mowing the Lawn Leadership",
+    titleEmoji: "🌱",
+    what: {
+      point: "Leaders must \"mow the lawn\" by continuously removing organizational weeds (inefficient processes) rather than only \"planting\" new initiatives, because \"if you don't mow the lawn, weeds are going to overrun the place.\"",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Drew Houston at Dropbox discovered that \"subtraction isn't one and done, it's like mowing the lawn\" after his meeting elimination memo \"had no impact\" and \"the problem was worse than ever\" within 10 days",
+        "Most companies fail because \"everybody wants to plant something, you don't mow\" and \"nobody mows the lawn in your company\" leading to process proliferation that chokes performance",
+        "The metaphor highlights that organizational maintenance requires constant attention - just as home lawns need regular mowing to prevent weed takeover",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Schedule regular \"lawn mowing\" sessions where leadership systematically reviews and eliminates outdated processes, just as you would schedule regular lawn maintenance",
+        "Assign specific responsibility for organizational maintenance rather than assuming it will happen naturally - designate someone as the \"groundskeeper\" for process efficiency",
+        "Track process proliferation over time and set \"mowing triggers\" where you automatically review and eliminate when you reach certain thresholds of complexity or administrative burden",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Clock Suckers vs Time Stewards",
+    titleEmoji: "⏱️",
+    what: {
+      point: "Distinguish between leaders who are \"clock suckers\" (waste employee time) versus \"trustees of other people's time\" who carefully protect and respect their team's capacity.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Engineers at one company coined the term \"clock suckers\" for \"bosses who waste the time of employees,\" demonstrating how time theft creates toxic leadership reputations",
+        "Great leaders realize they are \"trustees of other people's time\" while \"the worst leaders piss away the time of their employees\" through unnecessary meetings, unclear processes, and poor planning",
+        "The speaker's personal boundary illustrates this: \"I always ask when people invite me to a meeting, is that going to make me more curious, more generous? If the answer is no, I don't care who calls the meeting\"",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Before calling any meeting or creating any process, explicitly ask \"Will this make people more curious or generous?\" and only proceed if the answer is yes",
+        "Audit your own behavior for \"time theft\" patterns like unclear communication, redundant meetings, or processes that require multiple data entries across different systems",
+        "Establish a personal reputation as a \"time steward\" by consistently demonstrating that you value others' time more than your own convenience or preferences",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Bullshit Work Quantification",
+    titleEmoji: "📊",
+    what: {
+      point: "Systematically calculate \"average number of bullshit work hours per employee\" multiplied by total employees and working days to quantify organizational waste and target reduction efforts.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "Companies often operate with employees doing \"five hours of bullshit work a day\" including \"meetings where half the people are not listening\" and administrative tasks that \"don't add any value\"",
+        "One executive noted the challenge: \"if I total up this work of 5 hours per day, what's going to happen is I'm going to have a complaint from HR that I'm discriminating\" showing how organizational politics protect inefficiency",
+        "The Middle Eastern company that required weekly highlights and spent \"four months planning\" only to have \"the CEO tell us what to do\" demonstrated how bullshit work can reach 23 million hours annually",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Conduct anonymous surveys asking employees to honestly estimate daily hours spent on work that feels unnecessary, duplicative, or purely administrative",
+        "Calculate the total organizational cost by multiplying average bullshit hours by total employees and annual working days to create urgency around efficiency improvements",
+        "Start reduction efforts with the most obviously wasteful activities (like reports no one reads or meetings with unclear purposes) to build momentum before tackling more complex inefficiencies",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Black Sheep as Change Agents",
+    titleEmoji: "🐑",
+    what: {
+      point: "Leverage \"black sheep\" employees - people \"nobody likes\" who \"think they're a pain in the ass\" - as the most effective agents for identifying and eliminating organizational inefficiencies.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "At insurance company Sigma Viluna, 30 \"black sheep\" employees were given a two-day workshop and are now \"focusing on how to save the company a million dollars\" because they see problems others miss",
+        "Ground-level employees and mid-level managers provide better ridiculous list items than C-level executives because \"sea levels see themselves as the process designers\" and \"they like the process design, they're risk averse of eliminating process things\"",
+        "Black sheep employees have less investment in existing systems and more willingness to challenge sacred cows that drain organizational efficiency",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "Identify employees who are known for questioning existing processes or being \"difficult\" about inefficiencies, and formally engage them in improvement initiatives rather than marginalizing them",
+        "Create safe spaces for black sheep to contribute improvement ideas without fear of being labeled as troublemakers or negative influences",
+        "Balance black sheep insights with implementation feasibility by pairing them with pragmatic operators who can help refine and execute their suggestions for change",
+      ],
+      emoji: "⚙️",
+    },
+  },
+  {
+    title: "Stanford Trustee Hiring Paradox",
+    titleEmoji: "🎓",
+    what: {
+      point: "When hiring for improvement roles, choose candidates who understand there's \"nothing to do\" rather than empire-builders who will create unnecessary work and bureaucracy.",
+      emoji: "💡",
+    },
+    why: {
+      points: [
+        "In hiring for a faculty retention role, candidate #4 was \"the most incompetent\" by traditional standards but \"the only person who knows there is nothing to do\" making them the best choice for a role that shouldn't exist",
+        "Candidate #1, a \"senior VP at Charles Schwab,\" would be \"a lethal son of a bitch\" who \"is a good knife fighter in a bureaucracy\" and would create a team of five people with \"nothing to do\"",
+        "People with nothing to do \"send surveys to other people\" and create \"stupid reports saying 20% of the spouses are gerontologists, 20% are chemists\" that provide no value",
+      ],
+      emoji: "📝",
+    },
+    how: {
+      points: [
+        "When hiring for roles that involve process improvement or efficiency, prioritize candidates who demonstrate understanding of subtraction over those with impressive expansion track records",
+        "Screen for candidates who can articulate what should NOT be done rather than only what should be added to existing operations",
+        "Avoid hiring empire-builders for efficiency roles, even if they have impressive credentials, because they will inevitably create more work rather than eliminating waste",
+      ],
+      emoji: "⚙️",
+    },
+  },
+];
+
 // Define the topics and their card sets
 const topics = [
   {
@@ -9979,6 +12223,90 @@ const networkEffectCards: BattleCardProps[] = [
         <h2 className="text-3xl font-bold text-center mb-8">Corporate Governance and Value Creation Strategies</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {corporateGovernanceCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Reinforcement Learning Overview + Feedback Loop</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {reinforcementLearningCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Exemplary Leadership: Decision Shaping Strategies</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {exemplaryLeadershipCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Decision Shaping Strategies for Customer Experience</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {decisionShapingCustomerExperienceCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">New Ventures Evaluation and Insights</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {newVenturesEvaluationCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Partnership Agreement Strategy for Nike</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {partnershipAgreementNikeCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Virtual Reality Applications and Limitations</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {virtualRealityApplicationsCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Innovation in Healthcare Operations - Insights from Stefano Genios</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {innovationHealthcareOperationsCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Restaurant Delivery Service : Launch Strategy</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {restaurantDeliveryServiceCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Creativity Framework for Effective Management</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {creativityFrameworkCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Warmth vs Cold in Negotiation Strategies</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {warmthVsColdNegotiationCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Compassion Meditation Techniques & Benefits</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {compassionMeditationCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Huggy Rao: Scaling</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {huggyRaoScalingCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
