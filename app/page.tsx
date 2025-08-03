@@ -13218,6 +13218,711 @@ const networkEffectCards: BattleCardProps[] = [
   },
 ];
 
+  const huggyRaoDontBeACFOCards: BattleCardProps[] = [
+    {
+      title: "Best Self Over Skill Lists",
+      titleEmoji: "🌟",
+      what: {
+        point: "You are not a collection of skills and competencies but a unique individual with a 'best self' that must be discovered and actively mobilized to scale excellence.",
+        emoji: "💡",
+      },
+      why: {
+        points: [
+          "Cynthia Burks rose from part-time HR business partner to Genentech's executive committee Chief People Officer in 11 years by operating from her best self of 'helping others' - demonstrated when she adopted twin children of her sister with mental health problems at age 26 while single and starting her first job",
+          "The professor's own experience at Kellogg showed how success metrics can extinguish your best self - despite being a chair professor, he was unhappy because constant executive education teaching prevented him from expressing his core drives of 'curiosity, generosity, and research'",
+          "Wipro's study of 15,000 annual hires (equivalent to Stanford's entire population) proved that new employees who went through best self exercises had the fewest mistakes, highest engagement, and lowest turnover compared to regular onboarding or listening to C-suite executives",
+        ],
+        emoji: "📝",
+      },
+      how: {
+        points: [
+          "Conduct the three-word exercise: identify three action words (verbs and adjectives, not nouns) that describe what you were doing when you accomplished something significant while working with others and feeling exhausted but fulfilled",
+          "Create two compelling stories that bring those three words alive and demonstrate your best self in action, focusing on moments of meaningful achievement rather than just successful outcomes",
+          "Calculate your current best self activation percentage at work - if you're below 50%, implement daily reminders and systematic practices to increase this metric",
+        ],
+        emoji: "⚙️",
+      },
+    },
+    {
+      title: "Choosing Versions of Yourself",
+      titleEmoji: "🔄",
+      what: {
+        point: "Every major decision is not just choosing between options but selecting which version of yourself you want to become.",
+        emoji: "💡",
+      },
+      why: {
+        points: [
+          "When 200 MBA admits choose between Stanford and Harvard, they think they're choosing between products, but they're actually choosing between an 'entrepreneurial version' versus a 'deal maker version' of themselves",
+          "Kate Foster's Columbia Business School bathroom incident where a classmate assumed she was a cleaner reveals how others may see you as an 'exception,' but you must maintain connection to your 'exceptional self'",
+          "The professor's decision to leave Kellogg for Stanford wasn't about weather or career advancement but about choosing a version of himself that could express curiosity and research rather than being trapped in executive education",
+        ],
+        emoji: "📝",
+      },
+      how: {
+        points: [
+          "Reframe major career decisions by asking 'Which version of myself does this choice activate?' rather than just comparing job titles, compensation, or company prestige",
+          "When facing situations where others treat you as an 'exception,' deliberately reconnect with your 'exceptional self' to avoid falling into resentment or defensive patterns",
+          "Evaluate potential roles and companies based on how much they enable expression of your three best self words rather than just skills utilization or career progression",
+        ],
+        emoji: "⚙️",
+      },
+    },
+    {
+      title: "The Best Self Activation System",
+      titleEmoji: "⚡",
+      what: {
+        point: "Most people activate their best self only 5-10% of the time at work; reaching 50% requires deliberate systems and good friction.",
+        emoji: "💡",
+      },
+      why: {
+        points: [
+          "The professor's honest assessment showed that even accomplished executives struggle to recruit their best self consistently without systematic reminders and practices",
+          "Research demonstrates that people who activate their best self are perceived as more authentic, trusted more by colleagues, and experience positive well-being compared to those operating from skill-based personas",
+          "The Wipro study's control group comparison proved that best self activation produces measurably better performance outcomes than traditional competency-based onboarding",
+        ],
+        emoji: "📝",
+      },
+      how: {
+        points: [
+          "Place a card with your three best self words on your desk and look at them daily, asking 'What am I going to do today to activate more of this?'",
+          "Implement 'good friction' systems that force you to pause and consider your best self before entering meetings, making decisions, or responding to conflicts",
+          "Track your best self activation percentage weekly and identify specific triggers or situations where you consistently default to lesser versions of yourself",
+        ],
+        emoji: "⚙️",
+      },
+    },
+    {
+      title: "Best Self in Conflict Resolution",
+      titleEmoji: "🛡️",
+      what: {
+        point: "Your worst self typically gets activated during conflicts; deliberately orienting toward your best self transforms how you approach and resolve disputes.",
+        emoji: "💡",
+      },
+      why: {
+        points: [
+          "Most people's default conflict response is 'my way or the highway' thinking that excludes collaboration and creative problem-solving",
+          "When operating from best self during conflicts, you're perceived as more authentic and trustworthy, increasing the likelihood of productive resolution",
+          "The professor's example of using curiosity and generosity during disagreements creates different outcomes than ego-driven or defensive responses",
+        ],
+        emoji: "📝",
+      },
+      how: {
+        points: [
+          "Create a pre-conflict ritual where you remind yourself of your three best self words before entering any difficult conversation or negotiation",
+          "Practice asking 'How would my best self handle this situation?' when you feel defensive reactions or anger rising during disputes",
+          "Design conflict resolution processes that activate the best selves of all parties involved rather than focusing solely on positions or demands",
+        ],
+        emoji: "⚙️",
+      },
+    },
+    {
+      title: "Extending Best Self Beyond Work",
+      titleEmoji: "🏠",
+      what: {
+        point: "Your best self must be activated at home and in personal relationships, not just compartmentalized to professional settings.",
+        emoji: "💡",
+      },
+      why: {
+        points: [
+          "The professor's pandemic realization that he was 'sparking curiosity at work but only being generous at home' led to his wife's feedback about eating 'the same boring food every day'",
+          "The West Sumatra cooking experiment using atlas randomization activated curiosity at home, leading to a two-week rabbit hole into Indonesian maritime history and transformed their cooking routine",
+          "Parents who don't understand their children's best selves default to 'be like me' advice that fails because children are different individuals with unique best self expressions",
+        ],
+        emoji: "📝",
+      },
+      how: {
+        points: [
+          "Apply your three best self words to home life situations - if curiosity is core to you, find ways to inject exploration and discovery into domestic routines",
+          "Study and understand your partner's and children's best selves rather than assuming they should replicate your approach to life and work",
+          "Create family practices that activate everyone's best self, such as the atlas randomization cooking method that transforms routine tasks into opportunities for exploration",
+        ],
+        emoji: "⚙️",
+      },
+    },
+    {
+      title: "The Huh-Aha-Haha Feedback Framework",
+      titleEmoji: "💬",
+      what: {
+        point: "Effective feedback follows a three-step pattern: surprise (Huh?), illumination (Aha!), and self-reflection with humor (Haha!).",
+        emoji: "💡",
+      },
+      why: {
+        points: [
+          "Traditional feedback using corporate jargon like 'alignment issues' fails to create behavior change because it lacks emotional engagement and personal recognition",
+          "The professor's CFO (Chief F*ck Off) example from his wife created immediate behavior change because it combined surprise, clarity, and self-deprecating humor",
+          "This framework transforms feedback from performance evaluation into feed-forward self-discovery that people remember and act upon",
+        ],
+        emoji: "📝",
+      },
+      how: {
+        points: [
+          "Structure feedback to first surprise the recipient with an unexpected perspective or interpretation of their behavior",
+          "Provide clear illumination about the impact or pattern you're observing, helping them connect dots they hadn't previously seen",
+          "Include an element that allows them to laugh at themselves rather than feel attacked, creating openness to change rather than defensiveness",
+        ],
+        emoji: "⚙️",
+      },
+    },
+    {
+      title: "Remote Work Psychological Contract Shift",
+      titleEmoji: "📱",
+      what: {
+        point: "The psychological contract has evolved from 'I give you time and talent, you pay and manage me' to 'I give you my best self, you enable its expression.'",
+        emoji: "💡",
+      },
+      why: {
+        points: [
+          "Traditional management approaches of monitoring, policing, and punishment are incompatible with remote work environments where physical oversight is impossible",
+          "When people can express their best self at work, they require less supervision and monitoring because they're intrinsically motivated rather than externally controlled",
+          "The shift represents a fundamental change in what employees expect from work - not just compensation but opportunities for authentic self-expression and meaningful contribution",
+        ],
+        emoji: "📝",
+      },
+      how: {
+        points: [
+          "Redesign job descriptions and performance metrics to emphasize best self activation rather than just task completion or time investment",
+          "Create systems that help remote employees identify and express their best selves rather than focusing primarily on productivity monitoring and check-ins",
+          "Evaluate management practices to determine whether they enable or inhibit best self expression among team members",
+        ],
+        emoji: "⚙️",
+      },
+    },
+    {
+      title: "Best Self as Competitive Advantage",
+      titleEmoji: "🏆",
+      what: {
+        point: "Organizations that systematically activate employee best selves gain measurable performance advantages in accuracy, engagement, and retention.",
+        emoji: "💡",
+      },
+      why: {
+        points: [
+          "Wipro's controlled study of 15,000 new hires demonstrated that best self activation produced superior outcomes compared to traditional onboarding or exposure to high performer stories",
+          "Cynthia Burks' approach of treating HR as 'employee success officers' rather than administrators enabled Genentech employees to perform at higher levels",
+          "When subordinates operate from their best selves, managers can reduce monitoring and policing because intrinsic motivation replaces external control",
+        ],
+        emoji: "📝",
+      },
+      how: {
+        points: [
+          "Implement best self discovery processes during onboarding rather than just skills training and company culture presentations",
+          "Train managers to identify and activate the best selves of their team members rather than just managing performance metrics",
+          "Design organizational systems and processes that systematically support best self expression rather than forcing people into standardized role definitions",
+        ],
+        emoji: "⚙️",
+      },
+    },
+    {
+      title: "Personal Authenticity Through Best Self",
+      titleEmoji: "✨",
+      what: {
+        point: "Operating from your best self increases perceived authenticity and trustworthiness because you're expressing genuine characteristics rather than performing roles.",
+        emoji: "💡",
+      },
+      why: {
+        points: [
+          "Kate Foster's maintenance of her 'exceptional self' despite being treated as an 'exception' at Columbia Business School enabled her rise to J&J's executive committee",
+          "Research shows that best self activation correlates with increased trust from colleagues because people recognize authentic versus performed behavior",
+          "The professor's ability to express curiosity and generosity authentically at Stanford versus performing at Kellogg demonstrates how environment can either support or suppress authentic self-expression",
+        ],
+        emoji: "📝",
+      },
+      how: {
+        points: [
+          "Audit your current role and environment to identify where you're performing versus expressing your authentic best self",
+          "Seek opportunities and make choices that align with your three best self words rather than just advancing conventional career metrics",
+          "Practice expressing your best self characteristics in low-stakes situations to build confidence for high-pressure professional moments",
+        ],
+        emoji: "⚙️",
+      },
+    },
+  ];
+
+  const ambidextrousOrgsCards: BattleCardProps[] = [
+    {
+      title: "Microsoft's Five-Lever Culture Transformation",
+      titleEmoji: "🔄",
+      what: {
+        point: "Systematic culture change requires simultaneous deployment of five integrated levers: senior team alignment, involvement processes, reward system overhaul, symbolic actions, and HR system realignment.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Microsoft's transformation from stack ranking (20% forced out annually with 7% getting \"5s\" and 13% getting \"4s\") to growth mindset required Nadella training 27,000 managers using all five levers simultaneously over multiple years",
+          "The \"precision questioning\" culture where leaders would \"drill until logic fell apart\" was replaced with \"I don't know yet\" language, demonstrating how systematic approach changed actual behavior patterns",
+          "Dean's testimony shows the culture shift survived 15,000 layoffs and leadership changes because it was embedded across all organizational systems, not just as messaging",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Implement senior team alignment first by having your entire leadership read the same foundational material (Microsoft used Marshall Rosenberg's nonviolent communication) and establish consistent behavioral expectations",
+          "Create systematic involvement through 9-month data gathering with focus groups, town halls, and surveys asking three questions: what to maintain, what culture is needed for strategy, and what existing culture blocks success",
+          "Redesign reward systems completely - eliminate stack ranking, implement culture interviews for VP promotions, and track employee signal scores (Microsoft targets 80 average, 75-85 range) with manager accountability for poor scores",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "The Innovation Antibody Problem",
+      titleEmoji: "🦠",
+      what: {
+        point: "Large corporations have natural organizational antibodies that systematically kill innovation, requiring physical and structural separation of exploratory ventures from core operations.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Walmart's Store Number Eight succeeded initially because it operated with separate badges, pay structures, and complete autonomy from Bentonville headquarters, but was eventually killed when CFO pressure for immediate ROI overcame innovative potential",
+          "Cypress's internal VC model created 14 separate businesses with only 1 success (saving the company), but failed when TJ Rogers lost board control and the acquiring company (Infineon) imposed slow, methodical culture that drove talent away",
+          "Sam's testimony revealed the constant political battle between \"everyday low price\" Bentonville culture and innovation-focused teams, showing how core business values inherently conflict with exploratory ventures",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Establish physical separation for innovation units - different locations, badges, compensation structures, and reporting lines to prevent core business antibodies from infiltrating exploratory ventures",
+          "Create explicit governance processes that protect innovation budgets from core business ROI pressures, as AGC did by maintaining corporate control of new venture budgets even after transfer to business units",
+          "Design innovation metrics and timelines that explicitly differ from core business expectations - accept that breakthrough innovation requires longer time horizons and different success definitions than operational excellence",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Ambidextrous Organizational Design",
+      titleEmoji: "🤲",
+      what: {
+        point: "Successfully managing disruption requires simultaneously operating three distinct business types with different alignments: core (efficiency), growth (scaling), and exploratory (innovation).",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Ball Corporation demonstrated this principle across 140+ years, moving from wooden buckets (1880) to kerosene containers to glass to aerospace (Hubble Telescope), constantly applying metal-glass interface capabilities to new markets",
+          "HP lost innovation capacity when Carly Fiorina and Mark Hurd centralized their previously successful divisional structure that enabled experimentation, showing how wrong alignment destroys innovation capability",
+          "Matt Prince's Cloudflare strategy of sending senior team members to Austin specifically to avoid headquarters influence demonstrates the necessity of structural separation for breakthrough thinking",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Establish different success metrics for each business type: core businesses focus on margins and efficiency, growth businesses on scaling existing capabilities, exploratory on learning and option creation",
+          "Hire different personality types for each unit: deep functional experts for core, experienced scalers for growth, creative unstructured thinkers for exploratory ventures",
+          "Design separate governance processes where core business operates through extensive metrics and processes while exploratory units operate with minimal structure and maximum autonomy",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "AGC's Ideation-Incubation-Scaling Model",
+      titleEmoji: "📊",
+      what: {
+        point: "Successful corporate innovation requires a systematic funnel process with only 10% advancement rates between stages and corporate budget protection during business unit transfers.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "AGC identified three target industries (mobility, electronics, healthcare) based on existing capabilities, then built systematic Business Development Division that generated 30% of company profits by 2023",
+          "The 10% advancement rate from ideation to incubation to scaling mirrors venture capital success rates, acknowledging that most innovations will fail but the few successes drive overall returns",
+          "Corporate budget control during transfer prevents line-of-business managers from killing lower-margin new products, as happened when Siemens robotics division killed a successful robotics product due to margin pressure",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Create explicit funnel metrics expecting 90% failure at each stage transition - only 1% of initial ideas should reach full scaling, matching venture capital mathematics",
+          "Establish Business Development Division separate from existing business units, combining megatrend analysis, R&D capabilities, and customer listening to generate innovation pipeline",
+          "Maintain corporate budget control for transferred innovations for minimum 3-5 years to prevent line-of-business optimization from killing promising but immature ventures",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Success-Inertia Dynamics",
+      titleEmoji: "⚖️",
+      what: {
+        point: "Organizational success creates structural and cultural inertia that makes companies vulnerable to disruption, requiring conscious counter-measures to maintain adaptability.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Research across 50-100 years of companies in photolithography, semiconductors, disk drives, automobiles, motorcycles, and cement shows consistent pattern: success leads to bigger size, more systems/processes, stronger cultures, and leadership overconfidence",
+          "Microsoft under Gates and Ballmer exemplified this with rigid hierarchical culture, internal competition (Geneva process for resolving team conflicts), and know-it-all mentality that nearly led to irrelevance",
+          "The professor's analysis shows that performance improvements lead to structural inertia (systems/processes), cultural inertia (values/norms), and cognitive inertia (leadership mindset), creating vulnerability during environmental change",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Institutionalize culture adaptability by regularly refreshing cultural elements as Dean described Microsoft adding \"intensity\" back into their model-coach-care framework after 10 years",
+          "Build systematic processes for challenging your own success formulas - regularly ask what capabilities made you successful that might now be liabilities in changing environment",
+          "Create structural mechanisms that force fresh thinking, such as Matt Prince's practice of sending senior leaders to remote locations specifically to escape headquarters groupthink",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Darwin's Adaptation Principle for Organizations",
+      titleEmoji: "🦕",
+      what: {
+        point: "Organizational survival depends not on size or intelligence but on adaptability to changing environments, requiring different capabilities than those that create initial success.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "General Motors was the largest US company in 1959 but went bankrupt in 2009, while Long-Term Capital Management had two Nobel laureates but collapsed in 2008, proving size and intelligence don't guarantee survival",
+          "Continental Airlines went from worst US airline (10th in lost bags, complaints, on-time arrival) to industry leader in 18 months through systematic culture change using the five-lever approach",
+          "Studies of strong, strategically aligned cultures with adaptation capacity show superior net income growth and total shareholder return compared to strong cultures lacking adaptability",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Measure and monitor your organization's adaptation capacity separately from operational performance - track cultural flexibility, experimentation rates, and leadership openness to challenging existing approaches",
+          "Design systematic processes for organizational learning that don't depend on current success formulas - create mechanisms for detecting environmental changes before they threaten core business",
+          "Build adaptation muscles through regular practice of changing non-critical elements of culture, structure, and processes to maintain organizational flexibility for when major adaptations become necessary",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Corporate Venture Capital Internal Model",
+      titleEmoji: "💰",
+      what: {
+        point: "Internal venture capital models can generate breakthrough innovations but require accepting venture capital mathematics: expect 90%+ failure rates while protecting the few successes from corporate antibodies.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Cypress's TJ Rogers created 14 separate businesses with one-page term sheets and $40 million revenue targets, achieving 13 failures but 1 success that saved the company through programmable systems-on-chip for automotive industry",
+          "Intel's ideation-incubation-scaling process generated two billion-dollar businesses in three years before Pat Gelsinger killed it for being \"not about manufacturing,\" demonstrating how leadership changes can destroy successful innovation systems",
+          "IBM's EBO (Emerging Business Opportunities) process generated $15 billion in top-line revenue before Ginny Rometty abandoned it for the failed Watson bet, showing how impatience with systematic innovation leads to big unsuccessful bets",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Establish clear venture capital mathematics expectations internally: communicate that 90%+ of innovation investments will fail, but the 10% successes must generate 10x+ returns to justify the portfolio",
+          "Create one-page term sheets for internal ventures with clear revenue targets (Cypress used $40 million in 3 years) and separation from core business reporting structures and metrics",
+          "Protect successful innovations from corporate resource reallocation by maintaining separate funding sources and preventing core business managers from optimizing them according to existing business metrics",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Store Number Eight Innovation Model",
+      titleEmoji: "🏪",
+      what: {
+        point: "Corporate innovation units require complete operational separation from parent company culture and metrics, but must navigate inevitable political tensions between innovation and efficiency mandates.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Walmart Labs grew from $900 million to $35 billion revenue in four years by operating with separate badges, pay structures, and complete autonomy from Bentonville's \"everyday low price\" culture",
+          "Store Number Eight's success in conversational commerce and future-of-retail innovations was ultimately killed by political tensions between Bentonville's ROI focus and San Bruno's innovation mandate, with CFO pressure for immediate returns",
+          "The acquisition of Jet.com and 300 PhD engineers from top-tier schools (Stanford, Caltech) created cultural tensions between pre-acquisition and post-acquisition employees, requiring careful management of \"entitled\" vs. \"integrated\" mindsets",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Create complete operational separation with different physical locations, compensation structures, badge systems, and success metrics to prevent corporate antibodies from infiltrating innovation efforts",
+          "Establish explicit political governance for innovation units, clearly defining decision-making authority between corporate headquarters (Bentonville) and innovation centers (San Bruno) before conflicts arise",
+          "Design transition processes for successful innovations that protect them from immediate ROI pressure while creating pathways for eventual integration with core business operations",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Culture Change Measurement and Monitoring",
+      titleEmoji: "📈",
+      what: {
+        point: "Successful culture change requires systematic measurement using pulse surveys, network analysis, and behavioral indicators rather than relying on executive intuition or employee sentiment.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Microsoft's employee signal score system targets 80 average (75-85 range) with manager accountability for poor performers, making culture performance as measurable as financial performance",
+          "Network analysis of internal email systems identified \"sociometric stars\" - influential employees who became key culture change ambassadors, proving that systematic influence mapping outperforms intuitive stakeholder identification",
+          "Dean's testimony about managers with 65 scores requiring \"CDP level discussions\" demonstrates how quantitative culture metrics drive concrete management actions and accountability",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Implement bi-annual employee signal surveys measuring 30+ consistent metrics to track cultural trends over time, with individual manager accountability for team scores below organizational averages",
+          "Conduct network analysis of communication patterns to identify actual influence networks rather than assuming formal hierarchy represents real influence relationships",
+          "Create pulse check systems that measure behavioral indicators (like frequency of \"I don't know yet\" language) rather than just sentiment, linking culture change to observable behavior modifications",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Symbolic Leadership in Culture Change",
+      titleEmoji: "🎭",
+      what: {
+        point: "Culture change requires leaders to take visible personal risks that demonstrate authentic commitment to new values, creating costly signals that employees believe.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Nadella's public apology to the entire company after making insensitive comments at a women's computer science conference demonstrated growth mindset by acknowledging mistakes and modeling learning behavior",
+          "The transformation from \"precision questioning\" meetings designed to expose knowledge gaps to collaborative environments where \"I don't know yet\" became acceptable required leaders to personally model vulnerability",
+          "Continental Airlines' Gordon Bethune's systematic use of vivid examples, symbols, and language changes created visible culture transformation from worst to best US airline in 18 months",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Create personal vulnerability moments where you publicly acknowledge mistakes and demonstrate the new cultural behaviors you're asking others to adopt",
+          "Replace competitive meeting dynamics with collaborative ones by personally modeling the new behaviors - ask \"What don't we know yet?\" instead of \"Who has the right answer?\"",
+          "Design systematic symbolic actions that reinforce new values through stories, awards, and recognition systems that employees discuss during their \"car ride home\" after work",
+        ],
+        emoji: "⚡️",
+      },
+    },
+  ];
+
+  const babaShivMBTCards: BattleCardProps[] = [
+    {
+      title: "On-Day State Recognition and Optimization",
+      titleEmoji: "⚡",
+      what: {
+        point: "Your neurobiological system has distinct \"on days\" where excellence flows naturally versus \"off days\" where the same demands feel overwhelming and trigger suboptimal responses.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "The same external demands (report writing, traffic interruptions, family requests) produce dramatically different outcomes depending on your neurobiological state - on an \"on day\" the report flows flawlessly, traffic disruptions don't trigger anger, and you respond positively to family needs",
+          "Top athletes like Glenn McGrath, Roger Federer, and Djokovic dedicate significant resources to instrumenting more \"on days\" because the difference between 100% and 95% performance determines wins versus losses",
+          "Stanford research shows 240 students applied for 80 slots in the Neuro Excellence course, with students reporting life-changing impacts including freedom from ADHD medication and improved family relationships",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Conduct a daily morning assessment of your neurobiological state using a 2.5-minute heart rate variability baseline reading before making any major decisions or commitments",
+          "Document patterns between your subjective \"on day\" feelings and objective HRV measurements to build personal awareness of your optimal performance windows",
+          "Schedule your most critical tasks and important conversations during confirmed \"on day\" states rather than forcing productivity during suboptimal neurobiological conditions",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Heart Rate Variability as Executive Performance Metric",
+      titleEmoji: "💓",
+      what: {
+        point: "Heart rate variability (HRV) provides real-time data on your autonomic nervous system's integrity, specifically measuring the harmony between sympathetic and parasympathetic branches that determines agility and stability.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Professional athletes like Warriors players allegedly use real-time cortisol monitoring patches to optimize performance and prevent burnout during games",
+          "Research with Stanford MBA students shows HRV numbers directly correlate with cognitive abilities including pattern recognition, emotional intelligence, and decision-making clarity",
+          "The Reading the Mind in the Eyes test demonstrates that individuals with healthy HRV can rapidly and accurately identify emotions from facial expressions, a critical leadership capability",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Implement daily HRV measurement using a Polar H10 chest strap with Elite HRV app, focusing on SDNN (autonomic tone) and PNN50 (vagal tone) metrics rather than the summary HRV score",
+          "Track the correlation between your HRV baseline readings and subsequent performance on important tasks like presentations, negotiations, or strategic planning sessions",
+          "Establish personal HRV benchmarks over 3-4 weeks of consistent measurement to understand your individual optimal ranges rather than comparing to population averages",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Strategic Breathing Interventions for Performance",
+      titleEmoji: "🫁",
+      what: {
+        point: "Specific breathing protocols can rapidly elevate heart rate variability within 10 minutes, shifting your neurobiological system from a reactive state to an optimal performance state.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Glenn McGrath uses singing during cricket deliveries to maintain focus and prevent his inner voice from disrupting his performance, demonstrating how breath control affects elite athletic performance",
+          "Djokovic famously takes medical timeouts to perform breathing exercises mid-match, returning to defeat opponents after falling behind",
+          "The speaker's personal data shows breathing interventions can increase PNN50 from 20% to 32% and HF Power from 1108 to 2166 within a single 10-minute session",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Execute a 10-minute morning protocol: 5 minutes of alternate nostril breathing to smooth HRV curves, followed by 5 minutes of rapid diaphragmatic breathing (kapalbhati) or Wim Hof breathing to stimulate vagal tone",
+          "Deploy emergency breathing interventions before high-stakes situations - take 2-3 minutes for parasympathetic breathing (4:8 inhale to exhale ratio) to shift from reactive to responsive state",
+          "Measure pre and post-intervention HRV to validate which specific breathing techniques produce optimal results for your individual neurobiological system",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Type 1 vs Type 2 Neurobiological State Management",
+      titleEmoji: "🧠",
+      what: {
+        point: "Your brain operates in two distinct neural circuits - Type 1 (protect/threat avoidance) driven by cortisol, and Type 2 (prospect/opportunity seeking) supported by elevated serotonin levels and requiring a foundation of comfort.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Leaders like Satya Nadella emphasize that raising team spirits during adversity requires operating from Type 2 state, as Type 1 mindset samples from negative outcomes and creates pessimistic interpretations",
+          "Surgeons and pilots need Type 2 state for optimal performance - not for innovation, but for maintaining calm focus and clear decision-making under pressure, as demonstrated by the Hudson River landing",
+          "The neurobiological system must first establish comfort before accessing Type 2 capabilities, explaining why \"getting out of your comfort zone\" requires first being genuinely in your comfort zone",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Monitor your daily interpretations of neutral events - if you're consistently finding negative explanations or feeling pessimistic, recognize this as Type 1 state activation and implement immediate serotonin-boosting interventions",
+          "Create pre-meeting protocols that establish comfort before important decisions - use 5 minutes of breathing, review positive recent outcomes, or engage in brief social connection to shift into Type 2 state",
+          "Assess team dynamics during meetings by observing whether discussions focus on problems and threats (Type 1) versus opportunities and solutions (Type 2), then guide the group toward Type 2 framing",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Sleep Architecture Optimization for Leadership Performance",
+      titleEmoji: "😴",
+      what: {
+        point: "Sleep operates in 90-minute cycles where consistency of bedtime matters more than total hours, with the first two cycles providing critical deep sleep for serotonin restoration.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Roger Federer maintained 12 hours of sleep during peak performance, while Virat Kohli gets 14 hours and reports that adequate sleep allows him to achieve the same gym results in 30 minutes that would otherwise require 90 minutes",
+          "Controlling for total sleep duration, the biggest predictor of next-day HRV is bedtime consistency - even sleeping fewer hours at your regular time produces better neurobiological outcomes than sleeping more hours at an irregular time",
+          "The first two 90-minute cycles contain the majority of deep sleep when tonic levels of serotonin and dopamine restore to baseline, making early sleep cycles non-negotiable for leadership performance",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Establish and maintain the exact same bedtime every night regardless of social obligations or work demands, treating this as seriously as you would a critical client meeting",
+          "Calculate your optimal sleep cycles by tracking 7.5-hour (5 cycles), 6-hour (4 cycles), or 9-hour (6 cycles) patterns and measuring subsequent day performance and HRV readings",
+          "When travel disrupts sleep timing, prioritize the first 3 hours of sleep at your target bedtime over total sleep duration, using prescription Ambien only when necessary for time zone transitions",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Strategic Napping for Performance Recovery",
+      titleEmoji: "💤",
+      what: {
+        point: "Three types of naps serve different performance functions - cat naps (brief alertness), power naps (under 20 minutes to avoid deep sleep), and siestas (90-minute full cycles) - with caffeine power naps providing optimal energy timing.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Japanese commuters demonstrate cat nap mastery by reliably waking at their stop after brief train naps, showing the trainable nature of short-duration recovery",
+          "Caffeine requires 20 minutes to enter bloodstream and hit adenosine receptors, making caffeine power naps scientifically optimal for combining rest with energy activation",
+          "Weekend siestas can compensate for insufficient weeknight sleep, providing the full 90-minute cycle needed for complete neurobiological restoration",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Implement caffeine power naps during afternoon energy dips by consuming your normal caffeine dose, immediately taking a 20-minute nap, and waking as the caffeine activates for maximum alertness",
+          "Train cat nap capability by practicing brief relaxation periods in consistent environments, starting with 5-10 minute sessions and gradually developing the ability to quickly enter and exit light sleep states",
+          "Schedule 90-minute weekend siestas when weeknight sleep falls below your optimal range, treating these as strategic performance investments rather than luxury activities",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Social Connection as Stress Mitigation Strategy",
+      titleEmoji: "🤝",
+      what: {
+        point: "Social bonding activates the \"tend and befriend\" stress response system, with shared activities like moderate alcohol consumption with friends producing superior neurobiological outcomes compared to solo consumption.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Mediterranean diet research shows wine consumption benefits occur in social contexts with family and friends, not from the alcohol itself but from the social bonding and laughter accompanying consumption",
+          "The speaker's personal experimentation shows that consuming alcohol with friends while laughing produces elevated next-day HRV readings, while solo consumption consistently depresses HRV",
+          "Social bonds represent one of the most powerful stress-alleviating mechanisms available, with authentic connection occurring when social shields drop and genuine personality emerges",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Restructure stress-relief activities from solo pursuits to social experiences - replace individual drinks with friend gatherings, solo entertainment with shared laughter experiences",
+          "Create deliberate social bonding rituals around existing consumption habits, ensuring alcohol or food consumption includes meaningful connection and laughter with others",
+          "Use moderate social drinking as a tool for authentic connection by allowing your genuine personality to emerge while maintaining awareness of the social bonding benefits rather than focusing on the substance itself",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Self-Compassion as Performance Foundation",
+      titleEmoji: "💝",
+      what: {
+        point: "Top performers maintain excellence through self-compassion rather than self-criticism, with harsh self-judgment creating neurobiological conditions that prevent sustained high performance.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Glenn McGrath, one of cricket's greatest fast bowlers, identifies self-compassion as the key differentiator between players who reach the top and stay there versus those who burn out from self-criticism",
+          "High achievers typically show kindness to others while being harsh on themselves, creating a pattern where mistakes trigger self-abuse that compromises subsequent performance",
+          "The speaker's personal experience shows that compassionate meditation specifically targeting self-kindness produced 20-30 point increases in HRV measurements",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Observe your internal dialogue after mistakes or setbacks - when you catch yourself using harsh self-criticism, consciously shift to the same tone you would use with a respected colleague facing the same situation",
+          "Implement daily compassionate meditation by spending 5 minutes feeling love and affection for someone important to you, then deliberately directing that same warm feeling toward yourself",
+          "Create a self-compassion checkpoint before important performances or decisions by asking \"Am I approaching this from a place of self-kindness or self-criticism?\" and adjusting your internal state accordingly",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Time Management Through Strategic Subtraction",
+      titleEmoji: "⏰",
+      what: {
+        point: "Effective time management requires subtraction rather than addition, with elite performers like Warren Buffett maintaining calendars with only 2-3 meetings per week despite having unlimited resources.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "Warren Buffett, despite having enough money to buy almost anything, emphasizes that time cannot be purchased and maintains an intentionally sparse calendar to preserve his most valuable resource",
+          "Bill Gates observes that executives mistakenly believe productivity comes from cramming calendars with meetings, when effectiveness actually requires strategic calendar protection",
+          "The principle \"busy equals stupid\" reflects that truly important work requires uninterrupted time blocks that crowded schedules eliminate",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Conduct a \"Marie Kondo\" audit of your calendar, eliminating any meeting or commitment that doesn't directly advance your three most important professional objectives",
+          "Implement a \"subtraction before addition\" rule where any new commitment requires removing an existing commitment of equal or greater time investment",
+          "Protect 2-3 hour blocks of unscheduled time each week for strategic thinking and high-value work, treating these blocks as non-negotiable commitments to yourself",
+        ],
+        emoji: "⚡️",
+      },
+    },
+    {
+      title: "Morning Neurobiological State Assessment Protocol",
+      titleEmoji: "🌅",
+      what: {
+        point: "A systematic morning assessment combining subjective awareness with objective HRV measurement provides real-time data on your performance capacity and determines optimal daily scheduling decisions.",
+        emoji: "🎯",
+      },
+      why: {
+        points: [
+          "The speaker's personal data from four years of daily measurements demonstrates clear correlations between morning HRV readings and subsequent daily performance across multiple domains",
+          "Portfolio managers in Singapore research are being trained to avoid trading decisions on days with poor morning HRV readings, instead spending time on golf courses to preserve capital",
+          "Elite athletes use various monitoring technologies to determine whether they're operating at 95% or 100% capacity, with this difference determining competitive outcomes",
+        ],
+        emoji: "🧠",
+      },
+      how: {
+        points: [
+          "Complete a 2.5-minute baseline HRV reading immediately after morning routines but before coffee or exercise, recording both the breath-to-heart rate curve smoothness and numerical metrics",
+          "Cross-reference HRV readings with planned daily activities, rescheduling high-stakes meetings or important decisions to days when measurements indicate optimal neurobiological state",
+          "Develop personal intervention protocols for suboptimal readings, using specific breathing techniques, light exposure, or other practices to elevate HRV before proceeding with critical tasks",
+        ],
+        emoji: "⚡️",
+      },
+    },
+  ];
+
   return (
     <main className="bg-gray-50 min-h-screen w-full p-4 sm:p-8">
       <PdfDownloadButton />
@@ -13937,6 +14642,27 @@ const networkEffectCards: BattleCardProps[] = [
         <h2 className="text-3xl font-bold text-center mb-8">AI Bias</h2>
         <div className="flex flex-wrap justify-center items-stretch gap-8">
           {aiBiasCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Huggy Rao: Don't be a CFO</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {huggyRaoDontBeACFOCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Ambidextrous Orgs</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {ambidextrousOrgsCards.map((card, index) => (
+            <BattleCard key={index} {...card} />
+          ))}
+        </div>
+        <hr className="my-10 border-t border-gray-300 w-full" />
+        <h2 className="text-3xl font-bold text-center mb-8">Baba Shiv: MBT</h2>
+        <div className="flex flex-wrap justify-center items-stretch gap-8">
+          {babaShivMBTCards.map((card, index) => (
             <BattleCard key={index} {...card} />
           ))}
         </div>
